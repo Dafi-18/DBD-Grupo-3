@@ -26,6 +26,13 @@
 
 ### Modulos
 - Login
+- Home
+- Prestamos
+- Alquiler
+- Estadisticas
+- Perfil
+### Modulos
+- Login
 - Registro
 - Recuperación de contraseña
 - Acutalización de datos
