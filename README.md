@@ -1,6 +1,6 @@
 # DBD-Grupo-3
 
-
+## [Figma](https://www.figma.com/file/600QmGXcDGzgKVtZu9jm7g/DBD-GRUPO3?type=design&node-id=38-6&mode=design&t=0TAzfWjCKlUIWavj-0)
 
 ### Requerimientos Funcionales Usuario
 - Registro de Usuario
