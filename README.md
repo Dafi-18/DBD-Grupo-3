@@ -23,3 +23,19 @@
 - Visualizar la reputación de cada usuario
 - Estadisticas de prestamos y horario
 - Gestión de turnos en la oficina
+
+### Modulos
+- Login
+- Registro
+- Recuperación de contraseña
+- Acutalización de datos
+- Home
+- Quienes somos?
+- Servicios
+- Contactanos
+- Prestamos (Usuario) (Administrador)
+- Alquiler 
+- Historial de Usuario
+- Reputación
+- Estadisticas
+- 
