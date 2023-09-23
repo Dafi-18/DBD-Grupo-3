@@ -1,6 +1,17 @@
 # DBD-Grupo-3
 ## "Implementación de un software ..."
 
+## 1. Descripción de la Empresa, del Proceso de Negocio Elegido y Motivación
+### 1.1 Descripción de la empresa
+    1.1.1 Datos generales:
+    -Nombre de la empresa:
+    -Tipo empresa:
+    -Función
+    -Pagina de facebook:
+### 1.2 Procesos ineternos de la empresa
+    1.2.1 Proceso de alquiler 
+    1.2.2 Proceso de prestamos
+
 
 
 
