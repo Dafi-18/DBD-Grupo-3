@@ -11,6 +11,7 @@
 ### 1.2 Procesos ineternos de la empresa
     1.2.1 Proceso de alquiler 
     1.2.2 Proceso de prestamos
+    
 
 
 
