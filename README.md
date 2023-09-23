@@ -24,13 +24,12 @@
 - Estadisticas de prestamos y horario
 - Gestión de turnos en la oficina
 
-### Modulos
-- Login
-- Home
-- Prestamos
-- Alquiler
+### Modulos por funcionalidad
+- Seguridad
+- Encuestas
 - Estadisticas
-- Perfil
+- Finanzas
+
 ### Modulos
 - Login
 - Registro
