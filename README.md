@@ -29,6 +29,7 @@
 - Encuestas
 - Estadisticas
 - Finanzas
+- Prestamos
 
 ### Modulos
 - Login
