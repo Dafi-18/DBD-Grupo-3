@@ -36,6 +36,24 @@
 
 ### 2.1 Requerimientos funcionales
     Caso de uso N°1: Registro de usuario
+
+    Caso de uso N°2: Login de usuario
+
+    Caso de uso N°3: Visualizador de noticias
+
+    Caso de uso N°4: Reserva de lozas deportivas
+
+    Caso de uso N°5: Prestamos de objetos y materiales
+
+    Caso de uso N°6: Observar disponibilidad en tiempo real
+
+    Caso de uso N°7: Visualizador de historial
+
+    Caso de uso N°8: Visualizar paginas "Acerca de nosotros"
+
+    Caso de uso N°9: Visualizar reputacion de usuario
+
+    Caso de uso N°10: Encuestas a usuarios
 ### 2.1 Requerimientos de atributos
 
 ## 3. Modulos
