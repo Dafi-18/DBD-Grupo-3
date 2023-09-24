@@ -43,11 +43,12 @@ Pagina de facebook: [Facebook CEIIS](https://www.facebook.com/ceiis.oficial)
 - El usuario puede registrarse proporcionando informacion personal, como nombre, correo institucional, contraseña, y datos de contacto.
 - El sistema debe verificar en la base de datos la validez de la información registrada por el usuario.
 - El sistema debe enviar un correo de confirmación despues del registro.
+  
 **Caso de uso N°2: Login de usuario**
-  - El usuario registrado podrá iniciar secion con su correo institucional y contraseña.
-  - El sistema debe tener una opción para recuperar contraseña en caso de olvido
-  - El sistema debe autentificar las credenciales y redirigir al usuario a su perfil.
-  - Dependiendo del rol de usuario (administrador, alumno) , podrá acceder a las pestañas establecidas por funcionalidad para cada usuario
+- El usuario registrado podrá iniciar secion con su correo institucional y contraseña.
+- El sistema debe tener una opción para recuperar contraseña en caso de olvido
+- El sistema debe autentificar las credenciales y redirigir al usuario a su perfil.
+- Dependiendo del rol de usuario (administrador, alumno) , podrá acceder a las pestañas establecidas por funcionalidad para cada usuario
 
 **Caso de uso N°3: Visualizador de noticias**
 
