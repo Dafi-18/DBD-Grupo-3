@@ -107,7 +107,7 @@
 ### Modulos por funcionalidad
 
 
-### Modulos
+### Vistas
 - Login
 - Registro
 - Recuperación de contraseña
