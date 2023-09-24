@@ -54,7 +54,13 @@
     Caso de uso N°9: Visualizar reputacion de usuario
 
     Caso de uso N°10: Encuestas a usuarios
-### 2.1 Requerimientos de atributos
+### 2.2 Requerimientos de atributos
+- Seguridad
+- Usabilidad
+- Rendimiento
+- Automatizacion de procesos
+- Accesibilidad
+- Retroalimentación y Sugerencias de Usuarios
 
 ## 3. Modulos
 - Seguridad
