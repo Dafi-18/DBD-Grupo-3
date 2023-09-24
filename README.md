@@ -4,6 +4,7 @@
 ## 1. Descripción de la Empresa, del Proceso de Negocio Elegido y Motivación
 ### 1.1 Descripción de la empresa
 **1.1.1 Datos generales:**
+
     -Nombre de la empresa: Centro de Estudiantes de Ingeniería Industrial y de Sistemas (CEIIS).
     -Tipo empresa: Organización sin fines de lucro.
     -Función: El CEIIS es el máximo órgano representativo de todos los estudiantes de la Facultad de Ingeniería Industrial, Sistemas y Software.
