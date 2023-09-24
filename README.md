@@ -48,15 +48,18 @@
 - Gestión de turnos en la oficina
 
 ### Modulos por funcionalidad
-1.  Seguridad
-   1.1 Responsabilidades: Gestionar todo inicio de sesión, registro y recuperación de contraseñas de la pagina asi mismo de la seguridad de la integración de las cuentas, y el acceso a los campos respectivo de cada usuario y contraseña.
-2.  Encuestas
-    2.1 Responsabilidades: Gestionar las preguntas que se pondran para hacer un cuestionario a los alumnos, para reacuadar información a travez de preguntas concisas, en base a alternativa  y a partir de la información recolectada poder hacer cuadros estadisticos, mostrando las tendencias de respuesta.
-3.  Estadisticas:
-    3.1 Responsabilidades: 
-6.  Finanzas
-7.  Prestamo
-8.  Notificaciones
+- Seguridad
+  - Responsabilidades: Gestionar todo inicio de sesión, registro y recuperación de contraseñas de la pagina asi mismo de la seguridad de la integración de las cuentas, y el acceso a los campos respectivo de cada usuario y contraseña.
+-   Encuestas
+    - Responsabilidades: Gestionar las preguntas que se pondran para hacer un cuestionario a los alumnos, para reacuadar información a travez de preguntas concisas, en base a alternativa  y a partir de la información recolectada poder hacer cuadros estadisticos, mostrando las tendencias de respuesta.
+-  Estadisticas: 
+    - Responsabilidades: A partir de todos los movimientos registrados, como alquileres y prestamos de objetos se puede elaborar, se pueda lograr una visualización de la cantidad de prestamos y alquieleres que se hicieron por día y por hora.
+-  Finanzas
+    - Responsabilidades: Registrar y gestionar por parte de los administradores los datos de manera eficiente. Seguimiento del presupuesto asignado y disponible, actualizar de manera automatica el dinero. Generación de informes para auditorias.
+7.  Prestamo: 
+    - Responsabilidades: Gestión de inventario, para mantener un registro de cada articulo. Podeer valdiar la disponibilidad de los objetos solicitados asi mismo registrar la fecha de inicio y de la devolución esperada. Permitir a los usuarios poder reservar las lozas deportivas, y que el administrador pueda gestioanr la disponibilidad de estas.
+8.  Notificaciones:
+    - Responsabilidades: Estar actualizados de cuanto tiempo les queda por producto alquilado o prestado, que sirva como una notificación de un recordatorio, asi como notificar eventos o noticias importantes y encuestas por realizar.
 
 ### Modulos
 - Login
