@@ -7,7 +7,8 @@
     -Nombre de la empresa: Centro de Estudiantes de Ingeniería Industrial y de Sistemas (CEIIS).
     -Tipo empresa: Organización sin fines de lucro.
     -Función: El CEIIS es el máximo órgano representativo de todos los estudiantes de la Facultad de Ingeniería Industrial, Sistemas y Software.
-    -Pagina de facebook: https://www.facebook.com/ceiis.oficial
+
+Pagina de facebook: [Facebook CEIIS](https://www.facebook.com/ceiis.oficial)
 ### 1.2 Procesos internos de la empresa
     1.2.1 Proceso de alquiler
     __1.2.1.1 Proceso de prestamos__
