@@ -10,7 +10,21 @@
     -Pagina de facebook: https://www.facebook.com/ceiis.oficial
 ### 1.2 Procesos internos de la empresa
     1.2.1 Proceso de alquiler
-    __1.2.2 Proceso de prestamos__
+    __1.2.1.1 Proceso de prestamos__
+    __1.2.1.2 Recepción de la solicitud de préstamos__
+    __1.2.1.3 Evaluación de la solicitud__
+    __1.2.1.4 Cargo de tarifa (Facturación) y acuerdos (términos y condiciones)__
+    __1.2.1.5 Ejecución del préstamo__
+    __1.2.1.6 Seguimiento y registro (documentación)__
+    
+    1.2.2 Proceso de gestión de inventario
+    __1.2.2.1 Recepción de los items
+    __1.2.2.2 Registro y etiquetado de items
+    __1.2.2.3 Almacenamiento de los items
+    __1.2.2.4 Seguimiento del inventario
+    __1.2.2.5 Actualización del inventario
+    __1.2.2.6 Seguimiento de los préstamos
+    __1.2.2.7 Evaluación y control de calidad del inventario
     
 ### 1.3 Descripcion del tema
 
