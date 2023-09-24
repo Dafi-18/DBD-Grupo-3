@@ -26,6 +26,8 @@
     __1.2.2.6 Seguimiento de los préstamos
     __1.2.2.7 Evaluación y control de calidad del inventario
     
+![Alt texasdt](image.png)
+
 ### 1.3 Descripcion del tema
 
 ### 1.4 Motivación del trabajo
