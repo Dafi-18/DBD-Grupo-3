@@ -25,12 +25,14 @@
     __1.2.2.5 Actualización del inventario
     __1.2.2.6 Seguimiento de los préstamos
     __1.2.2.7 Evaluación y control de calidad del inventario
-    
+
+### 1.3 Diagrama de Procesos
+
 ![Alt texasdt](image.png)
 
-### 1.3 Descripcion del tema
+### 1.4 Descripcion del tema
 
-### 1.4 Motivación del trabajo
+### 1.5 Motivación del trabajo
     
 ## 2. Requerimientos
 
