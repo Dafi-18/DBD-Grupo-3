@@ -1,5 +1,5 @@
 # DBD-Grupo-3
-# **"Implementación de un software ..."** 
+# "Implementación de un software ..."
 
 ## 1. Descripción de la Empresa, del Proceso de Negocio Elegido y Motivación
 ### 1.1 Descripción de la empresa
