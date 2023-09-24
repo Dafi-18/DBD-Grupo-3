@@ -56,9 +56,9 @@
     - Responsabilidades: A partir de todos los movimientos registrados, como alquileres y prestamos de objetos se puede elaborar, se pueda lograr una visualización de la cantidad de prestamos y alquieleres que se hicieron por día y por hora.
 -  Finanzas
     - Responsabilidades: Registrar y gestionar por parte de los administradores los datos de manera eficiente. Seguimiento del presupuesto asignado y disponible, actualizar de manera automatica el dinero. Generación de informes para auditorias.
-7.  Prestamo: 
+-  Prestamo: 
     - Responsabilidades: Gestión de inventario, para mantener un registro de cada articulo. Podeer valdiar la disponibilidad de los objetos solicitados asi mismo registrar la fecha de inicio y de la devolución esperada. Permitir a los usuarios poder reservar las lozas deportivas, y que el administrador pueda gestioanr la disponibilidad de estas.
-8.  Notificaciones:
+-  Notificaciones:
     - Responsabilidades: Estar actualizados de cuanto tiempo les queda por producto alquilado o prestado, que sirva como una notificación de un recordatorio, asi como notificar eventos o noticias importantes y encuestas por realizar.
 
 ### Modulos
