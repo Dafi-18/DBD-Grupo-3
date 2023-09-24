@@ -48,11 +48,15 @@
 - Gestión de turnos en la oficina
 
 ### Modulos por funcionalidad
-- Seguridad
-- Encuestas
-- Estadisticas
-- Finanzas
-- Prestamos
+1.  Seguridad
+   1.1 Responsabilidades: Gestionar todo inicio de sesión, registro y recuperación de contraseñas de la pagina asi mismo de la seguridad de la integración de las cuentas, y el acceso a los campos respectivo de cada usuario y contraseña.
+2.  Encuestas
+    2.1 Responsabilidades: Gestionar las preguntas que se pondran para hacer un cuestionario a los alumnos, para reacuadar información a travez de preguntas concisas, en base a alternativa  y a partir de la información recolectada poder hacer cuadros estadisticos, mostrando las tendencias de respuesta.
+3.  Estadisticas:
+    3.1 Responsabilidades: 
+6.  Finanzas
+7.  Prestamo
+8.  Notificaciones
 
 ### Modulos
 - Login
