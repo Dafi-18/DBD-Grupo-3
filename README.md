@@ -33,7 +33,7 @@
 ## 2. Requerimientos
 
 ### 2.1 Requerimientos funcionales
-    **Caso de uso N°1: Registro de usuario**
+    Caso de uso N°1: Registro de usuario
 ### 2.1 Requerimientos de atributos
 
 ## 3. Modulos
