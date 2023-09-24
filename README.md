@@ -53,40 +53,38 @@
 - Dependiendo del rol de usuario (administrador, alumno) , podrá acceder a las pestañas establecidas por funcionalidad para cada usuario
 
 **Caso de uso N°3: Visualizador de noticias**
--La pagina mostrará noticias relevantes, como eventos deportivos organizados por el CEIIS, ecentos culturales y actividades del CEIIS. 
-
--El sistema debe hacer posible filtrar por fecha, categoria o palabra clave.
-
--Los administradores deben tener la capacidad de agregar, editar y eliminar noticias.
+- La pagina mostrará noticias relevantes, como eventos deportivos organizados por el CEIIS, ecentos culturales y actividades del CEIIS. 
+- El sistema debe hacer posible filtrar por fecha, categoria o palabra clave.
+- Los administradores deben tener la capacidad de agregar, editar y eliminar noticias.
 
 **Caso de uso N°4: Reserva de lozas deportivas** 
--El sistema debe permitir que los usuarios registrados puedan ver la disponibilidad de las lozas deportivas en tiempo real. 
--El usuario debe poder seleccionar la fecha y hora deseada para la reserva.
--El sistema debe mostrar la disponibilidad de lozas y perimtir a los usuarios reservas una loza especifica.
--El usuario debe notificar al usuario la confirmacióon de reserva.
--El sistema debe mostrar una opción para cancelar reservas.
+- El sistema debe permitir que los usuarios registrados puedan ver la disponibilidad de las lozas deportivas en tiempo real. 
+- El usuario debe poder seleccionar la fecha y hora deseada para la reserva.
+- El sistema debe mostrar la disponibilidad de lozas y perimtir a los usuarios reservas una loza especifica.
+- El usuario debe notificar al usuario la confirmacióon de reserva.
+- El sistema debe mostrar una opción para cancelar reservas.
 
 **Caso de uso N°5: Prestamos de objetos y materiales**
- -El usuario registrado debe poder ver un catalogo de objetos diisponibles para prestamo.
- -El sistema debe permitir al usuario solicitar prestamos de objetos seleccionando el articulo desea y proporcionando detalles del prestamo, como la duracion del prestamo.
- -El sistema debe mostrar una confirmación del prestamo.
- -El sistema debe mostrar cuando un objeto no está disponible por falta de stock.
- -Debe existir un registro de prestamos y devoluciones.
+- El usuario registrado debe poder ver un catalogo de objetos diisponibles para prestamo.
+- El sistema debe permitir al usuario solicitar prestamos de objetos seleccionando el articulo desea y proporcionando detalles del prestamo, como la duracion del prestamo.
+- El sistema debe mostrar una confirmación del prestamo.
+- El sistema debe mostrar cuando un objeto no está disponible por falta de stock.
+- Debe existir un registro de prestamos y devoluciones.
 
 **Caso de uso N°6: Observar disponibilidad en tiempo real**
 
 **Caso de uso N°7: Visualizador de historial**
--El usuario registrado debe poder acceder a un historial de sus actividades, incluyendo prestamos pasados, reservas anteriores y noticias visualziadas.
+- El usuario registrado debe poder acceder a un historial de sus actividades, incluyendo prestamos pasados, reservas anteriores y noticias visualziadas.
 
 **Caso de uso N°8: Visualizar paginas "Acerca de nosotros"**
--La pagina debe tener una seccion "Acerca de Nosotros" que proprocione información sobre el CEIIS, la junta directiva y la misión del CEIIS.
+- La pagina debe tener una seccion "Acerca de Nosotros" que proprocione información sobre el CEIIS, la junta directiva y la misión del CEIIS.
 
 **Caso de uso N°9: Visualizar reputacion de usuario**
 
 **Caso de uso N°10: Encuestas a usuarios**
--Los administradores deben tener la capacidad de crear encuenstas dirigidas a los ususarios.
--El usuario debe poder responder a encuestas y proporcionar retroalimentacion sobre la calidad de los servicias y expreciencia del usuario.
--Debe haber un sistema de analisis para resumir los resultados de las encuestas.
+- Los administradores deben tener la capacidad de crear encuenstas dirigidas a los ususarios.
+- El usuario debe poder responder a encuestas y proporcionar retroalimentacion sobre la calidad de los servicias y expreciencia del usuario.
+- Debe haber un sistema de analisis para resumir los resultados de las encuestas.
 
 ### 2.2 Requerimientos de atributos
 - Seguridad
