@@ -53,8 +53,11 @@
 - Dependiendo del rol de usuario (administrador, alumno) , podrá acceder a las pestañas establecidas por funcionalidad para cada usuario
 
 **Caso de uso N°3: Visualizador de noticias**  
+
 -La pagina mostrará noticias relevantes, como eventos deportivos organizados por el CEIIS, ecentos culturales y actividades del CEIIS. 
+
 -El sistema debe hacer posible filtrar por fecha, categoria o palabra clave.
+
 -Los administradores deben tener la capacidad de agregar, editar y eliminar noticias.
 
 **Caso de uso N°4: Reserva de lozas deportivas** 
