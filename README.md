@@ -3,7 +3,7 @@
 
 ## 1. Descripción de la Empresa, del Proceso de Negocio Elegido y Motivación
 ### 1.1 Descripción de la empresa
-    1.1.1 Datos generales:
+**1.1.1 Datos generales:**
     -Nombre de la empresa: Centro de Estudiantes de Ingeniería Industrial y de Sistemas (CEIIS).
     -Tipo empresa: Organización sin fines de lucro.
     -Función: El CEIIS es el máximo órgano representativo de todos los estudiantes de la Facultad de Ingeniería Industrial, Sistemas y Software.
@@ -40,23 +40,23 @@ Pagina de facebook: [Facebook CEIIS](https://www.facebook.com/ceiis.oficial)
 ### 2.1 Requerimientos funcionales
 **Caso de uso N°1: Registro de usuario**
 
-    Caso de uso N°2: Login de usuario
+**Caso de uso N°2: Login de usuario**
 
-    Caso de uso N°3: Visualizador de noticias
+**Caso de uso N°3: Visualizador de noticias**
 
-    Caso de uso N°4: Reserva de lozas deportivas
+**Caso de uso N°4: Reserva de lozas deportivas**
 
-    Caso de uso N°5: Prestamos de objetos y materiales
+**Caso de uso N°5: Prestamos de objetos y materiales**
 
-    Caso de uso N°6: Observar disponibilidad en tiempo real
+**Caso de uso N°6: Observar disponibilidad en tiempo real**
 
-    Caso de uso N°7: Visualizador de historial
+**Caso de uso N°7: Visualizador de historial**
 
-    Caso de uso N°8: Visualizar paginas "Acerca de nosotros"
+**Caso de uso N°8: Visualizar paginas "Acerca de nosotros"**
 
-    Caso de uso N°9: Visualizar reputacion de usuario
+**Caso de uso N°9: Visualizar reputacion de usuario**
 
-    Caso de uso N°10: Encuestas a usuarios
+**Caso de uso N°10: Encuestas a usuarios**
 
 ### 2.2 Requerimientos de atributos
 - Seguridad
