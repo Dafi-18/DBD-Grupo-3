@@ -38,7 +38,7 @@ Pagina de facebook: [Facebook CEIIS](https://www.facebook.com/ceiis.oficial)
 ## 2. Requerimientos
 
 ### 2.1 Requerimientos funcionales
-    **Caso de uso N°1: Registro de usuario**
+**Caso de uso N°1: Registro de usuario**
 
     Caso de uso N°2: Login de usuario
 
@@ -57,6 +57,7 @@ Pagina de facebook: [Facebook CEIIS](https://www.facebook.com/ceiis.oficial)
     Caso de uso N°9: Visualizar reputacion de usuario
 
     Caso de uso N°10: Encuestas a usuarios
+
 ### 2.2 Requerimientos de atributos
 - Seguridad
 - Usabilidad
