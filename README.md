@@ -17,6 +17,10 @@
 ### 1.4 Motivación del trabajo
     
 ## 2. Requerimientos
+
+### 2.1 Requerimientos funcionales
+
+## 3. Modulos
 - Seguridad
   - Responsabilidades: Gestionar todo inicio de sesión, registro y recuperación de contraseñas de la pagina asi mismo de la seguridad de la integración de las cuentas, y el acceso a los campos respectivo de cada usuario y contraseña.
 -   Encuestas
@@ -29,9 +33,6 @@
     - Responsabilidades: Gestión de inventario, para mantener un registro de cada articulo. Podeer valdiar la disponibilidad de los objetos solicitados asi mismo registrar la fecha de inicio y de la devolución esperada. Permitir a los usuarios poder reservar las lozas deportivas, y que el administrador pueda gestioanr la disponibilidad de estas.
 -  Notificaciones:
     - Responsabilidades: Estar actualizados de cuanto tiempo les queda por producto alquilado o prestado, que sirva como una notificación de un recordatorio, asi como notificar eventos o noticias importantes y encuestas por realizar.
-### 2.1 Requerimientos funcionales
-
-
 
 
 
