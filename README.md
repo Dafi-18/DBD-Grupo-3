@@ -1,17 +1,23 @@
 # DBD-Grupo-3
-# **"Implementación de un software ..."**
+# **"Implementación de un software ..."** 
 
 ## 1. Descripción de la Empresa, del Proceso de Negocio Elegido y Motivación
 ### 1.1 Descripción de la empresa
     1.1.1 Datos generales:
-    -Nombre de la empresa:
-    -Tipo empresa:
-    -Función
-    -Pagina de facebook:
+    -Nombre de la empresa: Centro de Estudiantes de Ingeniería Industrial y de Sistemas (CEIIS).
+    -Tipo empresa: Organización sin fines de lucro.
+    -Función: El CEIIS es el máximo órgano representativo de todos los estudiantes de la Facultad de Ingeniería Industrial, Sistemas y Software.
+    -Pagina de facebook: https://www.facebook.com/ceiis.oficial
 ### 1.2 Procesos ineternos de la empresa
     1.2.1 Proceso de alquiler 
     1.2.2 Proceso de prestamos
     
+### 1.3 Descripcion del tema
+
+### 1.4 Motivación del trabajo
+    
+## 2. Requerimientos
+### 2.1 Requerimientos funcionales
 
 
 
