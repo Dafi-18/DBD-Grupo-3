@@ -42,7 +42,7 @@
 
 ### 2.1 Requerimientos funcionales
 **Caso de uso N°1: Registro de usuario**
-- El usuario puede registrarse proporcionando informacion personal, como nombre, correo institucional, contraseña, y datos de contacto.
+- El usuario puede registrarse proporcionando informacion personal, como nombre, correo institucional, código universitario, contraseña, y datos de contacto.
 - El sistema debe verificar en la base de datos la validez de la información registrada por el usuario.
 - El sistema debe enviar un correo de confirmación despues del registro.
   
