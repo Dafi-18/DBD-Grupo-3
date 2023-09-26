@@ -86,6 +86,12 @@
 - El usuario debe poder responder a encuestas y proporcionar retroalimentacion sobre la calidad de los servicias y expreciencia del usuario.
 - Debe haber un sistema de analisis para resumir los resultados de las encuestas.
 
+**Caso de uso N°11: Visualizar estadisticas**
+
+  
+**Caso de uso N°12: Control de horario de lozas deportivas**
+
+**Caso de uso N°13: Actualización de noticias**
 ### 2.2 Requerimientos de atributos
 - Seguridad
 - Usabilidad
@@ -137,14 +143,27 @@
 ### Modulos por funcionalidad
 
 
-### Vistas
+### Vistas usuario
 - Login-
 - Registro-
 - Recuperación de contraseña-
 - Acutalización de datos
 - Home-
 - Quienes somos?(acerca de)
-- Servicios
+- Servicios(se visualiza prestamos y alquiler)
+- Contactanos(se visualiza correo y celular de contacto)
+- Prestamos (se visualizan los objetos, stock, costo)
+- Alquiler (se visualizan las lozas, disponibilidad de horarios, costo)
+- Historial de Usuario(sus prestamos)
+- Reputación
+### Vistas admin
+- Login-
+- Registro-
+- Recuperación de contraseña-
+- Acutalización de datos
+- Home
+- Quienes somos?(acerca de)
+- Servicios(se visualiza prestamos y alquiler)
 - Contactanos
 - Prestamos (Usuario) (Administrador)
 - Alquiler 
