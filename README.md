@@ -138,12 +138,12 @@
 
 
 ### Vistas
-- Login
-- Registro
-- Recuperación de contraseña
+- Login-
+- Registro-
+- Recuperación de contraseña-
 - Acutalización de datos
-- Home
-- Quienes somos?
+- Home-
+- Quienes somos?(acerca de)
 - Servicios
 - Contactanos
 - Prestamos (Usuario) (Administrador)
@@ -151,4 +151,8 @@
 - Historial de Usuario
 - Reputación
 - Estadisticas
-- 
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
