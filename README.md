@@ -45,6 +45,19 @@
 - El usuario puede registrarse proporcionando informacion personal, como nombre, correo institucional, código universitario, contraseña, y datos de contacto.
 - El sistema debe verificar en la base de datos la validez de la información registrada por el usuario.
 - El sistema debe enviar un correo de confirmación despues del registro.
+| Objetivo | Verificar la identidaddel usuario mediante la confirmación de la existencia de su código y que la contraseña que ingresa sea correcta | 
+|--------------|--------------|
+| Descripción | El usuario ingresa sus datos personales como su código y su contraseña y el sistema se encarga de verificar si los datos son correctos  | 
+| Actor primario   | Usuario alumno o administrador  | 
+|Actor secundario| - |
+|Precondiciones |	Los datos del usuario deben de estar en la base de datos |
+| Paso | 	Acción |
+| 1 |	El usuario ingresa al sistema |
+| 2	|El usuario ingresa su código y contraseña |
+| 3	| El sistema verifica si el código existe en su base de datos de usuarios registrados. |
+| 4	| El sistema verifica que la contraseña y el código coincidan con la base de datos. |
+| 5	| El sistema verificará el tipo de usuario en la base de datos. |
+| 6	| El caso termina |
   
 **Caso de uso N°2: Login de usuario**
 - El usuario registrado podrá iniciar secion con su correo institucional y contraseña.
