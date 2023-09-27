@@ -56,7 +56,10 @@
 - La pagina mostrará noticias relevantes, como eventos deportivos organizados por el CEIIS, ecentos culturales y actividades del CEIIS. 
 - El sistema debe hacer posible filtrar por fecha, categoria o palabra clave.
 - Los administradores deben tener la capacidad de agregar, editar y eliminar noticias.
-| Objetivo  | Mostrar al estudiante las noticias más recientes que suceden en la FIIS  |
+
+  
+| Objetivo    | Mostrar al estudiante las noticias más recientes que suceden en la FIIS |
+| ------------- | ------------- |
 | Descripción  | Visualización actualizada de las últimas noticias que hay en la FIIS  |
 | Actor primario  | Alumno FIIS  |
 | Actores secundarios  | -  |
