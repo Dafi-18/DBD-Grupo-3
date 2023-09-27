@@ -103,9 +103,9 @@
 | Actores secundarios  | -  |
 | Precondiciones  | Content Cell  |
 | Paso  | Acción |
-| 1  | El alumno ingresa a la página  |
+| 1  | El usuario accede a la página de inicio de sesión de la aplicación.  |
 | 2  | El alumno ingresa su correo y su contraseña  |
-| 3  | El sistema valida el ingreso  |
+| 3  | El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos.  |
 | 4  | El alumno hace clic sobre Ver noticias  |
 | 5  | El sistema muestra las noticias más recientes  |
 | 6  | El caso termina  |
@@ -116,6 +116,21 @@
 - El sistema debe mostrar la disponibilidad de lozas y perimtir a los usuarios reservas una loza especifica.
 - El usuario debe notificar al usuario la confirmacióon de reserva.
 - El sistema debe mostrar una opción para cancelar reservas.
+
+| Objetivo | <p align="left">Realizar la reserva de una loza deportiva</p> | 
+|:--------------:|--------------|
+| Descripción | Proceso para reservar una loza deportiva que este diponible en la FIIS  | 
+| Actor primario   | Alumno FIIS | 
+|Actor secundario| - |
+|Precondiciones | El usuario debe estar registrado en la aplicación y la loza debe de estar desocupada |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El alumno accede a la página de inicio de sesión de la aplicación. |
+| 2	| El alumno ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
+| 7 | El alumno ingresa a la opcion de servicios|
+| 8 | El sistema muestra la pantalla de servicios |
+| 9 | Una vez que la contraseña se ha restablecido con éxito, el usuario puede volver a intentar iniciar sesión. |
+| 10 | El caso termina |
 
 **Caso de uso N°5: Prestamos de objetos y materiales**
 - El usuario registrado debe poder ver un catalogo de objetos diisponibles para prestamo.
