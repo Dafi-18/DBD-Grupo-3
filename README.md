@@ -47,22 +47,22 @@
 - El sistema debe enviar un correo de confirmación despues del registro.
 
   
-| Objetivo | Verificar la identidaddel usuario mediante la confirmación de la existencia de su código y que la contraseña que ingresa sea correcta | 
-|--------------|--------------|
-| Descripción | El usuario ingresa sus datos personales como su código y su contraseña y el sistema se encarga de verificar si los datos son correctos  | 
-| Actor primario   | Usuario alumno o administrador  | 
+| Objetivo | Permitir que los usuarios se registren proporcionando información personal y validar su registro. | 
+|:--------------:|--------------|
+| Descripción | Proceso de registro de usuarios en la aplicación, incluyendo la verificación de la información proporcionada y el envío de un correo de confirmación.  | 
+| Actor primario   | Alumno FIIS  | 
 |Actor secundario| - |
-|Precondiciones |	Los datos del usuario deben de estar en la base de datos |
+|Precondiciones | - |
 | Paso | 	Acción |
 | 1 | El usuario accede a la página de registro de la aplicación |
 | 2	| El usuario proporciona información personal, incluyendo nombre, correo institucional, código universitario, contraseña y datos de contacto. |
 | 3	| El sistema verifica la validez de la información proporcionada, incluyendo la comprobación del formato del correo electrónico y la fortaleza de la contraseña. |
 | 4	| El sistema registra al usuario en la base de datos. |
 | 5	| El sistema genera un correo electrónico de confirmación y lo envía a la dirección proporcionada por el usuario. |
-| 6 | El recibe el correo de confirmación y sigue las instrucciones para activar su cuenta. |
+| 6 | El usuario recibe el correo de confirmación y sigue las instrucciones para activar su cuenta. |
 | 7 | El usuario hace clic en el enlace de confirmación en el correo electrónico. |
 | 8 | El sistema verifica el enlace y, si es válido, activa la cuenta del usuario. |
-| 9 | El recibe una notificación de éxito y puede comenzar a utilizar la aplicación con su cuenta activa. |
+| 9 | El usuario recibe una notificación de éxito y puede comenzar a utilizar la aplicación con su cuenta activa. |
 | 10 | El caso termina |
   
 **Caso de uso N°2: Login de usuario**
@@ -70,6 +70,25 @@
 - El sistema debe tener una opción para recuperar contraseña en caso de olvido
 - El sistema debe autentificar las credenciales y redirigir al usuario a su perfil.
 - Dependiendo del rol de usuario (administrador, alumno) , podrá acceder a las pestañas establecidas por funcionalidad para cada usuario
+
+
+| Objetivo | Permitir que los usuarios registrados inicien sesión en la aplicación y accedan a sus perfiles. | 
+|:--------------:|--------------|
+| Descripción | Proceso de registro de usuarios en la aplicación, incluyendo la verificación de la información proporcionada y el envío de un correo de confirmación.  | 
+| Actor primario   | Alumno FIIS o Administrador | 
+|Actor secundario| - |
+|Precondiciones | El usuario debe estar registrado en la aplicación. |
+| Paso | 	Acción |
+| 1 | El usuario accede a la página de inicio de sesión de la aplicación. |
+| 2	| El usuario proporciona su correo institucional y contraseña en los campos de usuario correspondientes. |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
+| 4	| El sistema redirige al usuario a su perfil ya las funcionalidades correspondientes a su rol. |
+| 5	| Si las credenciales son incorrectas, el sistema ofrece la opción de "Recuperar Contraseña".|
+| 6 | El usuario puede hacer clic en "Recuperar Contraseña" para iniciar el proceso de recuperación. |
+| 7 | El sistema envía un correo electrónico al usuario con instrucciones para restablecer su contraseña. |
+| 8 | El usuario sigue las instrucciones del correo electrónico y crea una nueva contraseña. |
+| 9 | Una vez que la contraseña se ha restablecido con éxito, el usuario puede volver a intentar iniciar sesión. |
+| 10 | El caso termina |
 
 **Caso de uso N°3: Visualizador de noticias**
 - La pagina mostrará noticias relevantes, como eventos deportivos organizados por el CEIIS, ecentos culturales y actividades del CEIIS. 
