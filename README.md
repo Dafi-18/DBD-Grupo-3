@@ -47,13 +47,13 @@
 - El sistema debe enviar un correo de confirmación despues del registro.
 
   
-| Objetivo | Permitir que los usuarios se registren proporcionando información personal y validar su registro. | 
+| Objetivo | <p align="left">Permitir que los usuarios se registren proporcionando información personal y validar su registro.</p> | 
 |:--------------:|--------------|
 | Descripción | Proceso de registro de usuarios en la aplicación, incluyendo la verificación de la información proporcionada y el envío de un correo de confirmación.  | 
 | Actor primario   | Alumno FIIS  | 
 |Actor secundario| - |
 |Precondiciones | - |
-| Paso | 	Acción |
+| Paso | <p align="center"> Acción </p> |
 | 1 | El usuario accede a la página de registro de la aplicación |
 | 2	| El usuario proporciona información personal, incluyendo nombre, correo institucional, código universitario, contraseña y datos de contacto. |
 | 3	| El sistema verifica la validez de la información proporcionada, incluyendo la comprobación del formato del correo electrónico y la fortaleza de la contraseña. |
@@ -72,17 +72,17 @@
 - Dependiendo del rol de usuario (administrador, alumno) , podrá acceder a las pestañas establecidas por funcionalidad para cada usuario
 
 
-| Objetivo | Permitir que los usuarios registrados inicien sesión en la aplicación y accedan a sus perfiles. | 
+| Objetivo | <p align="left">Permitir que los usuarios registrados inicien sesión en la aplicación y accedan a sus perfiles. </p> | 
 |:--------------:|--------------|
 | Descripción | Proceso de registro de usuarios en la aplicación, incluyendo la verificación de la información proporcionada y el envío de un correo de confirmación.  | 
 | Actor primario   | Alumno FIIS o Administrador | 
 |Actor secundario| - |
 |Precondiciones | El usuario debe estar registrado en la aplicación. |
-| Paso | 	Acción |
+| Paso | <p align="center"> Acción </p> |
 | 1 | El usuario accede a la página de inicio de sesión de la aplicación. |
 | 2	| El usuario proporciona su correo institucional y contraseña en los campos de usuario correspondientes. |
 | 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
-| 4	| El sistema redirige al usuario a su perfil y a las funcionalidades correspondientes a su rol. |
+| 4	| El sistema redirige al usuario a su perfil con las funcionalidades correspondientes a su rol. |
 | 5	| Si las credenciales son incorrectas, el sistema ofrece la opción de "Recuperar Contraseña".|
 | 6 | El usuario puede hacer clic en "Recuperar Contraseña" para iniciar el proceso de recuperación. |
 | 7 | El sistema envía un correo electrónico al usuario con instrucciones para restablecer su contraseña. |
