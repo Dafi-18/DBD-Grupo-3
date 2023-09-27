@@ -82,7 +82,7 @@
 | 1 | El usuario accede a la página de inicio de sesión de la aplicación. |
 | 2	| El usuario proporciona su correo institucional y contraseña en los campos de usuario correspondientes. |
 | 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
-| 4	| El sistema redirige al usuario a su perfil ya las funcionalidades correspondientes a su rol. |
+| 4	| El sistema redirige al usuario a su perfil y a las funcionalidades correspondientes a su rol. |
 | 5	| Si las credenciales son incorrectas, el sistema ofrece la opción de "Recuperar Contraseña".|
 | 6 | El usuario puede hacer clic en "Recuperar Contraseña" para iniciar el proceso de recuperación. |
 | 7 | El sistema envía un correo electrónico al usuario con instrucciones para restablecer su contraseña. |
