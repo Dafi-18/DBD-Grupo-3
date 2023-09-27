@@ -56,6 +56,18 @@
 - La pagina mostrará noticias relevantes, como eventos deportivos organizados por el CEIIS, ecentos culturales y actividades del CEIIS. 
 - El sistema debe hacer posible filtrar por fecha, categoria o palabra clave.
 - Los administradores deben tener la capacidad de agregar, editar y eliminar noticias.
+| Objetivo  | Mostrar al estudiante las noticias más recientes que suceden en la FIIS  |
+| Descripción  | Visualización actualizada de las últimas noticias que hay en la FIIS  |
+| Actor primario  | Alumno FIIS  |
+| Actores secundarios  | -  |
+| Precondiciones  | Content Cell  |
+| Paso  | Acción |
+| 1  | El alumno ingresa a la página  |
+| 2  | El alumno ingresa su correo y su contraseña  |
+| 3  | El sistema valida el ingreso  |
+| 4  | El alumno hace clic sobre Ver noticias  |
+| 5  | El sistema muestra las noticias más recientes  |
+| 6  | El caso termina  |
 
 **Caso de uso N°4: Reserva de lozas deportivas** 
 - El sistema debe permitir que los usuarios registrados puedan ver la disponibilidad de las lozas deportivas en tiempo real. 
