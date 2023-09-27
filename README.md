@@ -54,12 +54,16 @@
 |Actor secundario| - |
 |Precondiciones |	Los datos del usuario deben de estar en la base de datos |
 | Paso | 	Acción |
-| 1 |	El usuario accede a la página de registro de la aplicación |
-| 2	|El usuario ingresa su código y contraseña |
-| 3	| El sistema verifica si el código existe en su base de datos de usuarios registrados. |
-| 4	| El sistema verifica que la contraseña y el código coincidan con la base de datos. |
-| 5	| El sistema verificará el tipo de usuario en la base de datos. |
-| 6	| El caso termina |
+| 1 | El usuario accede a la página de registro de la aplicación |
+| 2	| El usuario proporciona información personal, incluyendo nombre, correo institucional, código universitario, contraseña y datos de contacto. |
+| 3	| El sistema verifica la validez de la información proporcionada, incluyendo la comprobación del formato del correo electrónico y la fortaleza de la contraseña. |
+| 4	| El sistema registra al usuario en la base de datos. |
+| 5	| El sistema genera un correo electrónico de confirmación y lo envía a la dirección proporcionada por el usuario. |
+| 6 | El recibe el correo de confirmación y sigue las instrucciones para activar su cuenta. |
+| 7 | El usuario hace clic en el enlace de confirmación en el correo electrónico. |
+| 8 | El sistema verifica el enlace y, si es válido, activa la cuenta del usuario. |
+| 9 | El recibe una notificación de éxito y puede comenzar a utilizar la aplicación con su cuenta activa. |
+| 10 | El caso termina |
   
 **Caso de uso N°2: Login de usuario**
 - El usuario registrado podrá iniciar secion con su correo institucional y contraseña.
