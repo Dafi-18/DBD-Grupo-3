@@ -20,7 +20,7 @@ El proceso actual de alquiler comienza cuando un estudiante consulta la disponib
 
 1.2.2 Proceso de préstamo
 
-Actualmente el proceso de préstamos empieza
+Actualmente el proceso de préstamos empieza cuando solicita en préstamo un objeto al CEIIS, el encagado verificará la disponibilidad del obejto, en caso se encuentre disponible solicitará el carnet universitario al estudiante para poder registrar el préstamo y entregar el objeto. El estudiante recibe el objeto prestado, despues de un par de horas el estudiante se dirige al CEIIS para hacer la devolcuón del objeto prestado y recoger su carnet universitario para finalizar el proceso.
 
 1.2.3 Proceso de venta
 
