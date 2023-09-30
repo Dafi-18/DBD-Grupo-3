@@ -136,7 +136,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
 | 4 | El alumno ingresa a la opcion de servicios|
 | 5 | El sistema muestra la pantalla de servicios |
-| 6 | Una vez que la contraseña se ha restablecido con éxito, el usuario puede volver a intentar iniciar sesión. |
+| 6 | Una vez que la contraseña se ha restablecido con éxito, el usuario puede volver a intentar iniciar sesión |
 | 7 | El caso termina |
 
 **Caso de uso N°5: Prestamos de objetos y materiales**
