@@ -215,16 +215,30 @@
     
 **-   Encuestas**
     - Responsabilidades: Gestionar las preguntas que se pondran para hacer un cuestionario a los alumnos, para reacuadar información a travez de preguntas concisas, en base a alternativa  y a partir de la información recolectada poder hacer cuadros estadisticos, mostrando las tendencias de respuesta.
-    **A. Administrador encuesta** 
-     **Responsabilidades:**
-     **Interaccion:**
-    **B. Administrador crear encuesta**
-    **C. Administrador respuestas y estadisticas encuestas**
-    **D. Usuario encuesta**
     
-   **Responsabilidades:**
+**A. Administrador encuesta**  
+    
+**Responsabilidades:**
 
-   **Interaccion:**
+**Interaccion:**
+
+**B. Administrador crear encuesta**
+
+**Responsabilidades:**
+
+**Interaccion:**
+
+**C. Administrador respuestas y estadisticas encuestas**
+
+**Responsabilidades:**
+
+**Interaccion:**
+
+**D. Usuario encuesta**
+    
+**Responsabilidades:**
+
+**Interaccion:**
     
 -  Estadisticas: 
     - Responsabilidades: A partir de todos los movimientos registrados, como alquileres y prestamos de objetos se puede elaborar, se pueda lograr una visualización de la cantidad de prestamos y alquieleres que se hicieron por día y por hora.
