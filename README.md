@@ -214,39 +214,45 @@
     **H. Perfil del administrador**
     
 **-   Encuestas**
+
     - Responsabilidades: Gestionar las preguntas que se pondran para hacer un cuestionario a los alumnos, para reacuadar información a travez de preguntas concisas, en base a alternativa  y a partir de la información recolectada poder hacer cuadros estadisticos, mostrando las tendencias de respuesta.
     
 **A. Administrador encuesta**  
     
-**Responsabilidades:**
+**Responsabilidades:** Permite gestionar y administrar todas las encuestas en la plataforma. Crear editar y elimnar las encestas, además de asignar los permisos para que los usuarios puedan acceder a la encuesta. 
 
-**Interaccion:**
+**Interaccion:** Con el módulo de seguridad.
 
 **B. Administrador crear encuesta**
 
-**Responsabilidades:**
+**Responsabilidades:** Permite al administrador definir los detalles de la encuesta, diseñar las preguntas, opciones de respuestas y lógica de encuesta. 
 
-**Interaccion:**
+**Interaccion:** Con el módulo de seguridad.
 
 **C. Administrador respuestas y estadisticas encuestas**
 
-**Responsabilidades:**
+**Responsabilidades:** Permite acceder y analizar las respuestas de las encuestas y proporcionar información estadistica para la toma de decisiones.
 
-**Interaccion:**
+**Interaccion:** Con el módulo de seguridad.
 
 **D. Usuario encuesta**
     
-**Responsabilidades:**
+**Responsabilidades:** Permite al usuario participar en las encuestas creadas por los aministradores.
 
-**Interaccion:**
+**Interaccion:** Con el módulo de seguridad.
     
--  Estadisticas: 
+**-  Estadisticas:**
+
     - Responsabilidades: A partir de todos los movimientos registrados, como alquileres y prestamos de objetos se puede elaborar, se pueda lograr una visualización de la cantidad de prestamos y alquieleres que se hicieron por día y por hora.
--  Finanzas
+    
+**-  Finanzas**
     - Responsabilidades: Registrar y gestionar por parte de los administradores los datos de manera eficiente. Seguimiento del presupuesto asignado y disponible, actualizar de manera automatica el dinero. Generación de informes para auditorias.
--  Prestamo o Alquiler: 
+    
+**-  Prestamo o Alquiler:**
+
     - Responsabilidades: Gestión de inventario, para mantener un registro de cada articulo. Podeer valdiar la disponibilidad de los objetos solicitados asi mismo registrar la fecha de inicio y de la devolución esperada. Permitir a los usuarios poder reservar las lozas deportivas, y que el administrador pueda gestioanr la disponibilidad de estas.
--  Logistica:
+    
+**-  Logistica:**
     - Responsabilidades: Gestionar y mantener actualizados el inventario de recursos y suministros disponibles. Validar la disponibilidad de los recursos solicitados. Se mantendria un registro detallado de las transacciones de los recursos.
 
 
