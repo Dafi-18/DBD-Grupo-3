@@ -180,16 +180,19 @@
     **B. Login**
     
     **Responsabilidades:** Permite que los usuarios ingresen a su cuenta personal proporcionando sus credenciales de autenticación, en este caso su correo institucional y su contraseña.
+    
     **Interaccion:** Con el módulo de prestamos o alquiler, encuestas.
     
     **C. Recuperar cuenta**
     
     **Responsabilidades:** Proporciona a los usuarios una forma de restablecer el acceso a su cuenta personal en caso de que hayan olvidado su contraseña o enfrenten problemas para iniciar sesión.
+    
     **Interaccion:** Con el modulo de prestamos o alquiler.
     
     **D. Reestablecer contraseña**
     
     **Responsabilidades:** Permite a los usuarios cambiar su contraseña actual por una nueva en caso de olvido.
+    
     **Interaccion:** Con el módulo de prestamos o alquiler.
     
     **E. Perfil del usuario**
@@ -200,6 +203,7 @@
     **F. Cambiar contraseña**
 
     **Responsabilidades:** Permite a los usuarios cambiar su contraseña actual por una nueva.
+    
     **Interaccion:**  Con el módulo de prestamos o alquiler.
     
     **G. Historial del usuario**
