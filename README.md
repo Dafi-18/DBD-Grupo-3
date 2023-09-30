@@ -171,6 +171,7 @@
 ## 3. Modulos
 - Seguridad
   - Responsabilidades: Gestionar todo inicio de sesión, registro y recuperación de contraseñas de la pagina asi mismo de la seguridad de la integración de las cuentas, y el acceso a los campos respectivo de cada usuario y contraseña.
+    
     A. Registro
     Responsabilidades:
     Interacción:
