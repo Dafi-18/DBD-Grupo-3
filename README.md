@@ -32,7 +32,7 @@
 
 ### 1.3 Diagrama de Procesos
 
-![Alt texasdt](image.png)
+![Alt texasdt](alquiler.jpeg)
 ![Alt texasdt](prestamo.jpeg)
 ### 1.4 Descripcion del tema
 
