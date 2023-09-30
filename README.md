@@ -173,18 +173,22 @@
   - Responsabilidades: Gestionar todo inicio de sesión, registro y recuperación de contraseñas de la pagina asi mismo de la seguridad de la integración de las cuentas, y el acceso a los campos respectivo de cada usuario y contraseña.
     
     **A. Registro**
+    
     **Responsabilidades:** Permite que los usuarios de la facultad creen una cuenta personal en el sistema. Su función principal es recopilar la información necesaria para crear una cuenta de usuario, como los nombres, apellidos, codigo UNI, correo institucional, contraseña.   
-    **Interacción:** Con el módulo prestamos o alquiler, encuuestas.
+    **Interacción:** Con el módulo prestamos o alquiler, encuestas.
     
     **B. Login**
+    
     **Responsabilidades:** Permite que los usuarios ingresen a su cuenta personal proporcionando sus credenciales de autenticación, en este caso su correo institucional y su contraseña.
     **Interaccion:** Con el módulo de prestamos o alquiler, encuestas.
     
     **C. Recuperar cuenta**
+    
     **Responsabilidades:** Proporciona a los usuarios una forma de restablecer el acceso a su cuenta personal en caso de que hayan olvidado su contraseña o enfrenten problemas para iniciar sesión.
     **Interaccion:** Con el modulo de prestamos o alquiler.
     
     **D. Reestablecer contraseña**
+    
     **Responsabilidades:** Permite a los usuarios cambiar su contraseña actual por una nueva en caso de olvido.
     **Interaccion:** Con el módulo de prestamos o alquiler.
     
