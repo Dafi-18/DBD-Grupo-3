@@ -173,22 +173,40 @@
   - Responsabilidades: Gestionar todo inicio de sesión, registro y recuperación de contraseñas de la pagina asi mismo de la seguridad de la integración de las cuentas, y el acceso a los campos respectivo de cada usuario y contraseña.
     
     A. Registro
+
+    **Responsabilidades:** Permite que los usuarios de la facultad creen una cuenta personal en el sistema. Su función principal es recopilar la información necesaria para crear una cuenta de usuario, como los nombres, apellidos, codigo UNI, correo institucional, contraseña.
     
-    Responsabilidades:
-    
-    Interacción:
+    **Interacción:** Con el módulo prestamos o alquiler, encuuestas.
     
     B. Login
+  
+    **Responsabilidades:** Permite que los usuarios ingresen a su cuenta personal proporcionando sus credenciales de autenticación, en este caso su correo institucional y su contraseña.
+    **Interaccion:** Con el módulo de prestamos o alquiler, encuestas.
     
     C. Recuperar cuenta
+
+    **Responsabilidades:** Proporciona a los usuarios una forma de restablecer el acceso a su cuenta personal en caso de que hayan olvidado su contraseña o enfrenten problemas para iniciar sesión. 
+    **Interaccion:** Con el modulo de prestamos o alquiler.
     
     D. Reestablecer contraseña
+
+    **Responsabilidades:** Permite a los usuarios cambiar su contraseña actual por una nueva en caso de olvido. 
+    **Interaccion:** Con el módulo de prestamos o alquiler.
     
     E. Perfil del usuario
+
+    **Responsabilidades:** Permite a los usuarios gestionar y actualizar la información relacionada con su perfil personal en la plataforma.
+    **Interaccion:** Con el módulo de prestamos o alquiler.
     
     F. Cambiar contraseña
+
+    **Responsabilidades:** Permite a los usuarios cambiar su contraseña actual por una nueva.
+    **Interaccion:**  Con el módulo de prestamos o alquiler.
     
     G. Historial del usuario
+
+    **Responsabilidades:** Muestra a los usuarios un registro detallado de los prestamos, alquileres o reservas que han realizado dentro de la plataforma a lo largo del tiempo. Esta funcionalidad proporciona a los usuarios un resumen histórico de su actividad y les permite realizar un seguimiento de sus interacciones pasadas. 
+    **Interaccion:** Con el módulo de prestamos o alquiler.
     
 -   Encuestas
     - Responsabilidades: Gestionar las preguntas que se pondran para hacer un cuestionario a los alumnos, para reacuadar información a travez de preguntas concisas, en base a alternativa  y a partir de la información recolectada poder hacer cuadros estadisticos, mostrando las tendencias de respuesta.
