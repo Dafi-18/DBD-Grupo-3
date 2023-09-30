@@ -166,8 +166,36 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 **Caso de uso N°7: Visualizador de historial**
 - El usuario registrado debe poder acceder a un historial de sus actividades, incluyendo prestamos pasados, reservas anteriores y noticias visualziadas.
 
+| Objetivo | <p align="left"> Permitir que los usuarios registrados accedan a un historial de sus actividades en la aplicación, incluyendo préstamos pasados, reservas anteriores y compras realizadas </p> | 
+|:--------------:|--------------|
+| Descripción |  Visualización del historial del usuario | 
+| Actor primario   | Alumno FIIS | 
+|Actor secundario| - |
+|Precondiciones | El usuario debe haber iniciado sesión en la aplicación |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El usuario accede a su perfil |
+| 2 | El usuario accede a la sección de historial de actividades |
+| 3 | El sistema permite al usuario filtrar por fechas el historial de sus actividades |
+| 4	| El sistema muestra una lista de actividades pasadas, incluyendo préstamos, reservas y compras especificando el tipo de servicio, la fecha , el costo y el estado actual |
+| 5	| El caso termina  |
+
 **Caso de uso N°8: Visualizar paginas "Acerca de nosotros"**
 - La pagina debe tener una seccion "Acerca de Nosotros" que proprocione información sobre el CEIIS, la junta directiva y la misión del CEIIS.
+
+| Objetivo | <p align="left"> Permitir que los usuarios accedan y visualicen la página "Acerca de Nosotros", la cual proporciona información sobre el CEIIS, su junta directiva y su misión </p> | 
+|:--------------:|--------------|
+| Descripción |  Visualización de informacion relevante del CEIIS | 
+| Actor primario   | Alumno FIIS | 
+|Actor secundario| - |
+|Precondiciones | - |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El usuario inicia sesión en la aplicación o accede a la aplicación como visitante |
+| 2 | El usuario navega a la sección de la página principal del sitio web |
+| 3 | El usuario busca y selecciona la opción "Acerca de Nosotros" en el menú de navegación o en la página principal |
+| 4	| El sistema carga la página "Acerca de Nosotros" y muestra la información relacionada con el CEIIS |
+| 5	| El usuario tiene la opción de regresar a la página principal de la aplicación o continuar explorando otros contenidos |
+| 6 | El caso termina |
+
 
 **Caso de uso N°9: Visualizar reputacion de usuario**
 
