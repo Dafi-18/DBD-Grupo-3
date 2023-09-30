@@ -13,11 +13,18 @@
 
 **Pagina de facebook:** [Facebook CEIIS](https://www.facebook.com/ceiis.oficial)
 ### 1.2 Procesos internos de la empresa
+
 1.2.1 Proceso de alquiler
+
+El proceso actual de alquiler comienza cuando un estudiante consulta la disponibilidad del juego (ping pong, futbito de mesa, etc), el encargado del CEIIS revisará su registro de alquiler y comunicará al estudiante si el juego se encuentra reservado o no. En caso de que el juego esté disponible, el encargado del CEIIS le solicita su carnet al estudiante, a continuación realiza el cobro del costo del juego, una vez realizado el pago se hace entrega de los accesorios del juego. El estudiante recibe los accesorios, al terminar el tiempo del alquiler (1 hora) el estudiante se acerca al CEIIS para hacer la devolución de los accesorios al encargado del CEIIS, se realiza la devolución del carnet de estudiante y el proceso termina.
 
 1.2.2 Proceso de préstamo
 
-1.2.3 Proceso de reserva de lozas
+Actualmente el proceso de préstamos empieza
+
+1.2.3 Proceso de venta
+
+1.2.4 Proceso de reserva de lozas
     
    
 
