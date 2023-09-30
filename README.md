@@ -44,7 +44,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
 **- Objetivo:** Mejorar la experiencia de los estudiantes de la FIIS, a la vez de optimizar la gestion de los recursos del CEIIS y asi mismo aumentar la eficiencia del personal aministrativo del centro de estudiantes de la FIIS.
 
-- Objetivo: 
+
 ## 2. Requerimientos
 
 ### 2.1 Requerimientos funcionales
