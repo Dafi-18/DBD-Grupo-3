@@ -29,7 +29,7 @@ Actualmente el proceso de préstamos empieza cuando solicita en préstamo un obj
    
 
 ### 1.3 Diagrama de Procesos
-
+![Alt texasdt](alquiler.jpeg)
 
 ![Alt texasdt](reserva.jpeg)
 ### 1.4 Descripcion del tema
