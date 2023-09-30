@@ -14,7 +14,9 @@
 **Pagina de facebook:** [Facebook CEIIS](https://www.facebook.com/ceiis.oficial)
 ### 1.2 Procesos internos de la empresa
 1.2.1 Proceso de alquiler
+
 1.2.2 Proceso de préstamo
+
 1.2.3 Proceso de reserva de lozas
     
    
