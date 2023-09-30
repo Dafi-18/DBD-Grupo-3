@@ -180,7 +180,6 @@
     **B. Login**
     
     **Responsabilidades:** Permite que los usuarios ingresen a su cuenta personal proporcionando sus credenciales de autenticación, en este caso su correo institucional y su contraseña.
-    
     **Interaccion:** Con el módulo de prestamos o alquiler, encuestas.
     
     **C. Recuperar cuenta**
