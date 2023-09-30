@@ -134,10 +134,10 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 1 | El alumno accede a la página de inicio de sesión de la aplicación. |
 | 2	| El alumno ingresa su correo y su contraseña |
 | 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
-| 7 | El alumno ingresa a la opcion de servicios|
-| 8 | El sistema muestra la pantalla de servicios |
-| 9 | Una vez que la contraseña se ha restablecido con éxito, el usuario puede volver a intentar iniciar sesión. |
-| 10 | El caso termina |
+| 4 | El alumno ingresa a la opcion de servicios|
+| 5 | El sistema muestra la pantalla de servicios |
+| 6 | Una vez que la contraseña se ha restablecido con éxito, el usuario puede volver a intentar iniciar sesión. |
+| 7 | El caso termina |
 
 **Caso de uso N°5: Prestamos de objetos y materiales**
 - El usuario registrado debe poder ver un catalogo de objetos diisponibles para prestamo.
@@ -145,6 +145,21 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 - El sistema debe mostrar una confirmación del prestamo.
 - El sistema debe mostrar cuando un objeto no está disponible por falta de stock.
 - Debe existir un registro de prestamos y devoluciones.
+
+| Objetivo | <p align="left">Permitir que los usuarios registrados puedan solicitar y realizar préstamos de objetos y materiales disponibles en el CEIIS</p> | 
+|:--------------:|--------------|
+| Descripción |  Proceso de préstamo de objetos y materiales, incluyendo la visualización del catálogo, la solicitud de préstamo, la confirmación del préstamo, la gestión de objetos no disponibles y el registro de préstamos y devoluciones. | 
+| Actor primario   | Alumno FIIS | 
+|Actor secundario| - |
+|Precondiciones | El usuario debe haber iniciado sesión en la aplicación. |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El usuario acceda a la sección de prestamos en la aplicación |
+| 2	| El sistema muestra una lista de objetos y materiales disponibles para préstamo  |
+| 3	| El usuario selecciona el objeto que desea solicitar para préstamo |
+| 4 | El sistema muestra las opciones de confirmar o cancelar el prestamo  |
+| 5 | El usuario confirma la solicitud de préstamo |
+| 6 |  El sistema registra la solicitud y muestra una confirmación de préstamo |
+| 7 | El caso termina |
 
 **Caso de uso N°6: Observar disponibilidad en tiempo real**
 
