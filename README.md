@@ -128,15 +128,25 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | Descripción | Proceso para reservar una loza deportiva que este diponible en la FIIS  | 
 | Actor primario   | Alumno FIIS | 
 |Actor secundario| - |
-|Precondiciones | El usuario debe estar registrado en la aplicación y la loza debe de estar desocupada |
+|Precondiciones | El usuario debe estar registrado en la aplicación y debe estar apto para realizar reservas(buena reputación) |
 | Paso | <p align="center"> Acción </p> |
 | 1 | El alumno accede a la página de inicio de sesión de la aplicación. |
 | 2	| El alumno ingresa su correo y su contraseña |
 | 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
 | 4 | El alumno ingresa a la opcion de servicios|
 | 5 | El sistema muestra la pantalla de servicios |
-| 6 | Una vez que la contraseña se ha restablecido con éxito, el usuario puede volver a intentar iniciar sesión |
-| 7 | El caso termina |
+| 6 | El alumno ingresa a la opción de reservas |
+| 7 | El sistema muestra las opciones de reserva|
+| 8 | El alumno presiona el boton de reservar de la opción que desea|
+| 9 | El sistema presenta la pantalla de reservas|
+| 10 | El alumno escoge la hora de inicio y las horas que desea reservar |
+| 11 | El alumno presiona el botón de confirmar reserva |
+| 12 | El sistema verifica que las horas esten disponibles y que la hora de reserva no excedan de 2 |
+| 13 | El sistema muestra la confirmación de la reserva |
+| 14 | El sistema actualiza el calendario de la pantalla de reservas |
+| 15 | El sistema actualiza las reservas del alumno en su perfil |
+| 16 | El sistema actualiza el historial general de servicios |
+| 17 | El caso termina |
 
 **Caso de uso N°5: Prestamos de objetos y materiales**
 - El usuario registrado debe poder ver un catalogo de objetos diisponibles para prestamo.
