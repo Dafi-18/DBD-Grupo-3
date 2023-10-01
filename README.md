@@ -207,7 +207,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
 **Caso de uso N°9: Visualizar reputacion de usuario**
 
-**Caso de uso N°10: Encuestas a usuarios**
+**Caso de uso N°10: Creación de encuestas**
 - Los administradores deben tener la capacidad de crear encuenstas dirigidas a los ususarios.
 - El usuario debe poder responder a encuestas y proporcionar retroalimentacion sobre la calidad de los servicias y expreciencia del usuario.
 - Debe haber un sistema de analisis para resumir los resultados de las encuestas.
@@ -217,17 +217,18 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | Descripción | Proceso completo de encuestas a usuarios | 
 | Actor primario   | Administrador | 
 |Actor secundario| Alumno FIIS |
-|Precondiciones | Los administradores deben haber iniciado sesión |
+|Precondiciones | El administrador debe estar registrado en la aplicación|
 | Paso | <p align="center"> Acción </p> |
-| 1 | El administrador inicia sesión en la aplicación  |
-| 2 | El administrador accede a la sección Encuestas |
-| 3 | El sistema permite al administrador crear una nueva encuesta especificando preguntas y opciones de respuesta |
-| 4	| El administrador establece la fecha de inicio y finalización de la encuesta |
-| 5	| El sistema guarda la encuesta y la pública para que los usuarios puedan responder |
-| 6 | El caso termina |
+| 1 | El administrador accede a la página de inicio de sesión de la aplicación. |
+| 2	| El administrador ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
+| 4 | El administrador accede a la sección Encuestas |
+| 5 | El sistema permite al administrador crear una nueva encuesta especificando preguntas y opciones de respuesta |
+| 6	| El administrador establece la fecha de inicio y finalización de la encuesta |
+| 7	| El sistema guarda la encuesta y la pública para que los usuarios puedan responder |
+| 8 | El caso termina |
 
-**Caso de uso N°11: Visualizar estadisticas**
-
+**Caso de uso N°10: Encuestas a usuarios**
 | Objetivo | <p align="left"> Permite a los usuarios responder a las encuestas y proporcionar sugerencias </p> | 
 |:--------------:|--------------|
 | Descripción | Registro de las respuestas brindadas por los usuarios | 
@@ -235,15 +236,49 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 |Actor secundario| - |
 |Precondiciones | Los usuarios registrados deben haber iniciado sesión |
 | Paso | <p align="center"> Acción </p> |
-| 1 | El usuario accede a la sección de "Encuestas" |
-| 2 | El usuario selecciona la encuesta del apartado "Encuestas pendientes" y responde a las preguntas proporcionando retroalimentación |
-| 3 | El sistema registra sus respuestas |
-| 4 | El usuario podrá ver todas sus encuestas respondidas en el apartado "Encuestas Realizadas" |
-| 5 | El caso termina |
+| 1 | El alumno accede a la página de inicio de sesión de la aplicación. |
+| 2	| El alumno ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
+|  | El usuario accede a la sección de "Encuestas" |
+|  | El usuario selecciona la encuesta del apartado "Encuestas pendientes" y responde a las preguntas proporcionando retroalimentación |
+|  | El sistema registra sus respuestas |
+|  | El usuario podrá ver todas sus encuestas respondidas en el apartado "Encuestas Realizadas" |
+|  | El caso termina |
+
+
+**Caso de uso N°11: Visualizar estadisticas**
+
+| Objetivo | <p align="left">  Permitir a los administradores acceder y visualizar estadísticas relacionadas con las actividades y el uso de recursos en la aplicación. </p> | 
+|:--------------:|--------------|
+| Descripción | Proceso mediante el cual los administradores pueden acceder a estadísticas y datos relevantes para evaluar el rendimiento y la utilización de los recursos en la aplicación. | 
+| Actor primario | Administrador | 
+|Actor secundario| - |
+|Precondiciones | El administrador debe estar registrado en la aplicación |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El administrador accede a la página de inicio de sesión de la aplicación. |
+| 2	| El administrador ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
+| 4 | El administrador ingresa a la seccion de estadisticas |
+| 5 | El administrador puede seleccionar una fecha específico para las ver estadísticas |
+| 6 | El sistema muestra una variedad de estadísticas, como la cantidad de préstamos realizados, la ocupación de las lozas deportivas, la cantidad de ventas realizadas, etc |
+| 7 | El caso termina |
   
 **Caso de uso N°12: Control de horario de lozas deportivas**
 
+| Objetivo | <p align="left">  </p> | 
+|:--------------:|--------------|
+| Descripción |  | 
+| Actor primario | Administrador | 
+|Actor secundario| - |
+|Precondiciones |  |
+| Paso | <p align="center"> Acción </p> |
+| 1 |  |
+| 2 |  |
+| 3 |  |
+| 4 |  |
+| 5 |  |
 **Caso de uso N°13: Actualización de noticias**
+
 ### 2.2 Requerimientos de atributos
 - Seguridad
 - Usabilidad
