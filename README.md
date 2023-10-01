@@ -440,22 +440,21 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 - Responsabilidades: Gestionar las preguntas que se pondran para hacer un cuestionario a los alumnos, para reacuadar información a travez de preguntas concisas, en base a alternativa  y a partir de la información recolectada poder hacer cuadros estadisticos, mostrando las tendencias de respuesta.
 - Interaccion: Con el módulo de seguridad.
 
-**A. Administrador encuesta**  
+  **A. Administrador encuesta**  
     
-**Responsabilidades:** Permite gestionar y administrar todas las encuestas en la plataforma. Crear editar y elimnar las encestas, además de asignar los permisos para que los usuarios puedan acceder a la encuesta. 
+    **Responsabilidades:** Permite gestionar y administrar todas las encuestas en la plataforma. Crear editar y elimnar las encestas, además de asignar los permisos para que los usuarios puedan acceder a la encuesta. 
 
-**B. Administrador crear encuesta**
+  **B. Administrador crear encuesta**
 
-**Responsabilidades:** Permite al administrador definir los detalles de la encuesta, diseñar las preguntas, opciones de respuestas y lógica de encuesta. 
+    **Responsabilidades:** Permite al administrador definir los detalles de la encuesta, diseñar las preguntas, opciones de respuestas y lógica de encuesta. 
 
+  **C. Administrador respuestas y estadisticas encuestas**
 
-**C. Administrador respuestas y estadisticas encuestas**
+    **Responsabilidades:** Permite acceder y analizar las respuestas de las encuestas y proporcionar información estadistica para la toma de decisiones.
 
-**Responsabilidades:** Permite acceder y analizar las respuestas de las encuestas y proporcionar información estadistica para la toma de decisiones.
-
-**D. Usuario encuesta**
+  **D. Usuario encuesta**
     
-**Responsabilidades:** Permite al usuario participar en las encuestas creadas por los aministradores.
+    **Responsabilidades:** Permite al usuario participar en las encuestas creadas por los aministradores.
 
     
 **-  Estadisticas:**
@@ -465,6 +464,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 - Interacción: Con el módulo de finanzas, logística.
   
 **A. Panel de estadísticas**
+
 **Responsabilidades:** Permite a los administradores tener un conteo sobre sus productos o artículos más vendidos, más demandados en cuanto a préstamos y alquileres por semana. Además se dispone de algunos gráficos para que los administradores puedan analizar y tomar decisiones en base a ellas.
     
 **-  Finanzas**
