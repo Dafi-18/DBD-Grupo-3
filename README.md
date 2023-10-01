@@ -161,13 +161,23 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 |Actor secundario| - |
 |Precondiciones | El usuario debe haber iniciado sesión en la aplicación. |
 | Paso | <p align="center"> Acción </p> |
-| 1 | El usuario acceda a la sección de prestamos en la aplicación |
-| 2	| El sistema muestra una lista de objetos y materiales disponibles para préstamo  |
-| 3	| El usuario selecciona el objeto que desea solicitar para préstamo |
-| 4 | El sistema muestra las opciones de confirmar o cancelar el prestamo  |
-| 5 | El usuario confirma la solicitud de préstamo |
-| 6 |  El sistema registra la solicitud y muestra una confirmación de préstamo |
-| 7 | El caso termina |
+| 1 | El alumno accede a la página de inicio de sesión de la aplicación. |
+| 2	| El alumno ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
+| 4 | El alumno ingresa a la opcion de servicios|
+| 5 | El sistema muestra la pantalla de servicios |
+| 6 | El alumno ingresa a la opción de préstamos |
+| 7 | El sistema muestra las opciones de reserva|
+| 8 | El alumno presiona el boton "prestar" de la opción que desea|
+| 9 | El sistema presenta la pantalla de prestamos |
+| 10 | El alumno escoge la hora de inicio en la que desea el préstamo |
+| 11 | El alumno presiona el botón de confirmar préstamo |
+| 12 | El sistema verifica que la hora este disponible |
+| 13 | El sistema muestra la confirmación del préstamo |
+| 14 | El sistema actualiza el calendario de la pantalla de prestamos |
+| 15 | El sistema actualiza los préstamos del alumno en su perfil |
+| 16 | El sistema actualiza el historial general de servicios |
+| 17 | El caso termina |
 
 **Caso de uso N°6: Observar disponibilidad en tiempo real**
 
@@ -181,11 +191,15 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 |Actor secundario| - |
 |Precondiciones | El usuario debe haber iniciado sesión en la aplicación |
 | Paso | <p align="center"> Acción </p> |
-| 1 | El usuario accede a su perfil |
-| 2 | El usuario accede a la sección de historial de actividades |
-| 3 | El sistema permite al usuario filtrar por fechas el historial de sus actividades |
-| 4	| El sistema muestra una lista de actividades pasadas, incluyendo préstamos, reservas y compras especificando el tipo de servicio, la fecha , el costo y el estado actual |
-| 5	| El caso termina  |
+| 1 | El alumno accede a la página de inicio de sesión de la aplicación. |
+| 2	| El alumno ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
+| 4 | El usuario accede a su perfil |
+| 5 | El usuario accede a la sección de historial de actividades |
+| 6 | El sistema permite al usuario filtrar por fechas el historial de sus actividades |
+| 7 | El usuario elige la fecha que desea visualizar |
+| 8 | El sistema muestra la lista de actividades pasadas, incluyendo préstamos, reservas y compras especificando el tipo de servicio, la fecha , el costo y el estado actual |
+| 9	| El caso termina  |
 
 **Caso de uso N°8: Visualizar paginas "Acerca de nosotros"**
 - La pagina debe tener una seccion "Acerca de Nosotros" que proprocione información sobre el CEIIS, la junta directiva y la misión del CEIIS.
@@ -198,8 +212,9 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 |Precondiciones | - |
 | Paso | <p align="center"> Acción </p> |
 | 1 | El usuario inicia sesión en la aplicación o accede a la aplicación como visitante |
-| 2 | El usuario navega a la sección de la página principal del sitio web |
-| 3 | El usuario busca y selecciona la opción "Acerca de Nosotros" en el menú de navegación o en la página principal |
+| 2 | El usuario va a la sección de la página principal de la aplicación |
+| 3 | El sistema muestra la pagina de inicio de la aplicación |
+| 3 | El usuario selecciona la opción "Acerca de Nosotros" en el menú de navegación o en la página principal |
 | 4	| El sistema carga la página "Acerca de Nosotros" y muestra la información relacionada con el CEIIS |
 | 5	| El usuario tiene la opción de regresar a la página principal de la aplicación o continuar explorando otros contenidos |
 | 6 | El caso termina |
@@ -239,11 +254,12 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 1 | El alumno accede a la página de inicio de sesión de la aplicación. |
 | 2	| El alumno ingresa su correo y su contraseña |
 | 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
-|  | El usuario accede a la sección de "Encuestas" |
-|  | El usuario selecciona la encuesta del apartado "Encuestas pendientes" y responde a las preguntas proporcionando retroalimentación |
-|  | El sistema registra sus respuestas |
-|  | El usuario podrá ver todas sus encuestas respondidas en el apartado "Encuestas Realizadas" |
-|  | El caso termina |
+| 4 | El usuario accede a la sección de "Encuestas" |
+| 5 | El sistema muestra las encuestas pendientes y la opcion de ver las encuestas respondidas anteriormente |
+| 6 | El usuario selecciona la encuesta del apartado "Encuestas pendientes" y responde a las preguntas proporcionando retroalimentación |
+| 7 | El sistema registra sus respuestas |
+| 8 | El usuario podrá ver todas sus encuestas respondidas en el apartado "Encuestas Realizadas" |
+| 9 | El caso termina |
 
 
 **Caso de uso N°11: Visualizar estadisticas**
