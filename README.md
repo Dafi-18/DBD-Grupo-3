@@ -394,18 +394,6 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
 **Caso de uso N°14: Control de horario de lozas deportivas**
 
-| Objetivo | <p align="left">  </p> | 
-|:--------------:|--------------|
-| Descripción |  | 
-| Actor primario | Administrador | 
-|Actor secundario| - |
-|Precondiciones |  |
-| Paso | <p align="center"> Acción </p> |
-| 1 |  |
-| 2 |  |
-| 3 |  |
-| 4 |  |
-| 5 |  |
 **Caso de uso N°14: Quitar articulo de inventario de ventas**
 | Objetivo | <p align="left"> Deshacerse de los articulos que ya no se encuentran disponibles para vender  </p> | 
 | Descripción | Proceso en el cual los administradores quitan los articulos que ya no estan disponibles a través de su perfil de administradores | 
