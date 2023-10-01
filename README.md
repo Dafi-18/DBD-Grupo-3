@@ -125,7 +125,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
   
 | Objetivo    | Mostrar al estudiante las noticias más recientes que suceden en la FIIS |
-| ------------- | ------------- |
+| :-------------: | ------------- |
 | Descripción  | Visualización actualizada de las últimas noticias que hay en la FIIS  |
 | Actor primario  | Alumno FIIS  |
 | Actores secundarios  | -  |
@@ -395,7 +395,9 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 **Caso de uso N°14: Control de horario de lozas deportivas**
 
 **Caso de uso N°14: Quitar articulo de inventario de ventas**
+
 | Objetivo | <p align="left"> Deshacerse de los articulos que ya no se encuentran disponibles para vender  </p> | 
+|:--------------:|--------------|
 | Descripción | Proceso en el cual los administradores quitan los articulos que ya no estan disponibles a través de su perfil de administradores | 
 | Actor primario | Administrador | 
 |Actor secundario| - |
