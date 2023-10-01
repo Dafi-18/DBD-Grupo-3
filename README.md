@@ -169,13 +169,9 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 6 | El alumno ingresa a la opción de préstamos |
 | 7 | El sistema muestra las opciones de reserva|
 | 8 | El alumno presiona el boton "prestar" de la opción que desea|
-| 9 | El sistema presenta la pantalla de prestamos |
-| 10 | El alumno escoge la hora de inicio en la que desea el préstamo |
-| 11 | El alumno presiona el botón de confirmar préstamo |
-| 12 | El sistema verifica que la hora este disponible |
-| 13 | El sistema muestra la confirmación del préstamo |
-| 14 | El sistema actualiza el calendario de la pantalla de prestamos |
-| 15 | El sistema actualiza los préstamos del alumno en su perfil |
+| 10 | El sistema verifica que el recurso este disponibe |
+| 11 | El sistema muestra la ventana de prestamo exitoso |
+| 15 | El sistema actualiza los prestamos del alumno en su perfil |
 | 16 | El sistema actualiza el historial general de servicios |
 | 17 | El caso termina |
 
@@ -183,7 +179,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
 | Objetivo | <p align="left">Permitir que los usuarios registrados puedan comprar objetos que vende en el CEIIS</p> | 
 |:--------------:|--------------|
-| Descripción |  Proceso de préstamo de objetos y materiales, incluyendo la visualización del catálogo, la solicitud de préstamo, la confirmación del préstamo, la gestión de objetos no disponibles y el registro de préstamos y devoluciones. | 
+| Descripción |  Proceso de compra de objetos que estan disponibles en el CEIIS. | 
 | Actor primario   | Alumno FIIS | 
 |Actor secundario| - |
 |Precondiciones | El usuario debe haber iniciado sesión en la aplicación. |
@@ -193,21 +189,17 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
 | 4 | El alumno ingresa a la opcion de servicios|
 | 5 | El sistema muestra la pantalla de servicios |
-| 6 | El alumno ingresa a la opción de préstamos |
-| 7 | El sistema muestra las opciones de reserva|
-| 8 | El alumno presiona el boton "prestar" de la opción que desea|
-| 9 | El sistema presenta la pantalla de prestamos |
-| 10 | El alumno escoge la hora de inicio en la que desea el préstamo |
-| 11 | El alumno presiona el botón de confirmar préstamo |
-| 12 | El sistema verifica que la hora este disponible |
-| 13 | El sistema muestra la confirmación del préstamo |
-| 14 | El sistema actualiza el calendario de la pantalla de prestamos |
-| 15 | El sistema actualiza los préstamos del alumno en su perfil |
+| 6 | El alumno ingresa a la opción de ventas |
+| 7 | El sistema muestra las opciones de venta|
+| 8 | El alumno presiona el boton "comprar" de la opción que desea|
+| 10 | El sistema verifica que el recurso este disponibe |
+| 11 | El sistema muestra la ventana de compra exitosa |
+| 15 | El sistema actualiza las compras del alumno en su perfil |
 | 16 | El sistema actualiza el historial general de servicios |
 | 17 | El caso termina |
 
 
-**Caso de uso N°6: Observar disponibilidad en tiempo real**
+
 
 **Caso de uso N°7: Visualizador de historial**
 - El usuario registrado debe poder acceder a un historial de sus actividades, incluyendo prestamos pasados, reservas anteriores y noticias visualziadas.
@@ -248,6 +240,8 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 4	| El sistema carga la página "Acerca de Nosotros" y muestra la información relacionada con el CEIIS |
 | 5	| El usuario tiene la opción de regresar a la página principal de la aplicación o continuar explorando otros contenidos |
 | 6 | El caso termina |
+
+**Caso de uso N°6: Observar disponibilidad en tiempo real**
 
 
 **Caso de uso N°9: Visualizar reputacion de usuario**
