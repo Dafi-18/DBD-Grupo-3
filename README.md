@@ -24,6 +24,8 @@ Actualmente el proceso de préstamos empieza cuando solicita en préstamo un obj
 
 1.2.3 Proceso de venta
 
+El proceso de venta actualmente inicia cuando el estudiante consulta si hay existencia del producto que desea comprar, el administrador revisa la existencia, en caso de que si haya le indica el precio al estudiando para que realice el pago, una vez realizado el pago el administrador hace entrega del objeto vendido y registra la venta en su cuaderno de ventas.
+
 1.2.4 Proceso de reserva de lozas
 
 El proceso de reserva de las lozas deportivas empieza cuando el estudiante consulta la disponibilidad de las lozas, ya sea de forma presencial o mediante un excel compartido por el administrador del CEIIS. Para realizar la reserva de la loza, de máximo 2 horas por hora, el administrador solicita el DNI y el carnet universitario del estudiante, después de que el estudiante entregó los documentos solicitados el administrador registra la reserva y le entrega al estudiante una ficha de reserva para respaldar al estudiante en caso de que otra persona ocupe la loza deportiva en las horas de su reserva.
