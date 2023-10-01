@@ -294,6 +294,29 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 4 |  |
 | 5 |  |
 **Caso de uso N°13: Actualización de noticias**
+- Los administradores deben actualizar las noticias periodicamente
+- Los administradores podrán agregar, editar y eliminar noticias.
+- Las actualizaciones de noticias deben ser claras y concisas. La información debe presentarse de manera comprensible.
+
+| Objetivo | <p align="left"> Permitir que los administradores tengan un mejor manejo en las publicaciones de las noticias, para el mejor entendimiento de los alumnos </p> | 
+|:--------------:|--------------|
+| Descripción | Permitir a los administradores puedan agregar, modificar o aliminar noticias | 
+| Actor primario   | Administrador | 
+|Actor secundario| Alumno FIIS |
+|Precondiciones | Los administradores deben haber iniciado sesión |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El administrador inicia sesión en la aplicación  |
+| 2 | El administrador accede a la sección Hom Page |
+| 3 | El administrador se dirige al seccion de noticias |
+| 4	| El administrador presiona el boton de ver noticias |
+| 5	| El administrador agregará las noticias con la imagen y su descripcion |
+| 6 | Después de terminar la acción el sistema peridrá la confirmacion de lo que se agregó |
+| 7 | El admintrador tendrá la opción de editar la noticia |
+| 8 | Después de terminar la acción el sistema peridrá la confirmacion de lo que se editó|
+| 9 | El admintrador tendrá la opción de eliminar la noticia |
+| 10 | Después de terminar la acción el sistema peridrá la confirmacion de lo que se quiere aliminar|
+| 11 | El sstema después de las acciones anteriores se publicará la noticia |
+| 12 | Eñ caso termina |
 
 ### 2.2 Requerimientos de atributos
 - Seguridad
