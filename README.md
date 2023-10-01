@@ -329,6 +329,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 **Caso de uso N°12: Visualizar finanzas**
 - EL administrador podrá observar una relación de cuantos alquileres realizados, y de los recuros vendidos y/o prestados.
 - Se podrá visualizar del direno recudado por cada actividad.
+
 | Objetivo | <p align="left">  Permitir a los administradores acceder y visualizar las finanzas relacionadas con la venta, prestamos y alquileres, con su diagrama. </p> | 
 |:--------------:|--------------|
 | Descripción | Proceso mediante el cual los administradores pueden acceder a las finanzas y datos relevantes para evaluar la utlización de los recursos. | 
