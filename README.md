@@ -391,6 +391,26 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
 
 **Caso de uso N°16: Control de horario de lozas deportivas**
+| Objetivo | <p align="left"> Gestionar los hoararios de las lozas deportivas </p> | 
+|:--------------:|--------------|
+| Descripción | Proceso en el cual los administradores cambian la disponibilidad de los horarios dependiendo de la hora y día| 
+| Actor primario | Administrador | 
+|Actor secundario| - |
+|Precondiciones | El administrador debe haber iniciado sesión |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El administrador accede a la página de inicio de sesión de la aplicación. |
+| 2	| El administrador ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
+| 4	| El administrador presiona sobre el icono de perfil |
+| 5	| El sistema muestra la pantalla del perfil del administrador |
+| 6	| El administrador presiona sobre el boton reservas/alquiler |
+| 7	| El sistema muestra la ventana de vista de alquiler |
+| 8	| El administrador presiona sobre el boton editar |
+| 9	| El sistema coloca en cada casilla del horario un boton de cambio |
+| 10 | El administrador presiona el boton de cambio sobre los horarios que desea modificar |
+| 11 | El sistema cambia los colores de los casilleros|
+| 12	| El sistema cambia los horarios disponibles en la ventana horarios de reserva |
+| 13	| El caso termina |
 
 **Caso de uso N°17: Quitar articulo de inventario de ventas**
 
