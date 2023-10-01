@@ -223,6 +223,25 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
 
 **Caso de uso N°9: Visualizar reputacion de usuario**
+- El sistema mostrará la relación de pretamos y alquileres, con ello su reputación.
+- El usario o adminstrador podrá visualizar su reputación.
+
+| Objetivo | <p align="left"> Permitir a los usuarios acceder y observar su reputación, lo cual podrá observar si tiene algina demora en algún prestamo </p> | 
+|:--------------:|--------------|
+| Descripción | Visualizar la repuatación de los usuarios | 
+| Actor primario   | Alumons FIIS | 
+|Actor secundario| - |
+|Precondiciones | Los usarios registrados deben haber iniciado sesion |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El usuario inicia sesión em la aplicación  |
+| 2 | El ususario ingresa su correo y contreseña |
+| 3 | El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
+| 4 | El sistema nos mostrará la relación de los prestamos realizados |
+| 5 | EL usuario selecciona en "ver todo" |
+| 6 | El sistema le mostrará la relacion al completo de los prestamos realizados, con ello verificar su reputación|
+| 7 | El usario podra observar su reputación con un simbolo con su respectiva descripción, si tiene buena reputación, decente reputacion y mala reputación |
+| 8| El caso termina |
+
 
 **Caso de uso N°10: Creación de encuestas**
 - Los administradores deben tener la capacidad de crear encuenstas dirigidas a los ususarios.
