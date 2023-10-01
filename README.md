@@ -195,11 +195,13 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 2	| El alumno ingresa su correo y su contraseña |
 | 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
 | 4 | El usuario accede a su perfil |
-| 5 | El usuario accede a la sección de historial de actividades |
-| 6 | El sistema permite al usuario filtrar por fechas el historial de sus actividades |
-| 7 | El usuario elige la fecha que desea visualizar |
-| 8 | El sistema muestra la lista de actividades pasadas, incluyendo préstamos, reservas y compras especificando el tipo de servicio, la fecha , el costo y el estado actual |
-| 9	| El caso termina  |
+| 5 | El sistema muestra el perfil del usuario |
+| 6 | El usuario accede a la sección de historial de actividades |
+| 7 | El sistema muestra en pantalla la seccion de historial de actividades |
+| 8 | El sistema permite al usuario filtrar por fechas el historial de sus actividades |
+| 9 | El usuario elige la fecha que desea visualizar |
+| 10 | El sistema muestra la lista de actividades pasadas, incluyendo préstamos, reservas y compras especificando el tipo de servicio, la fecha , el costo y el estado actual |
+| 11 | El caso termina  |
 
 **Caso de uso N°8: Visualizar paginas "Acerca de nosotros"**
 - La pagina debe tener una seccion "Acerca de Nosotros" que proprocione información sobre el CEIIS, la junta directiva y la misión del CEIIS.
@@ -238,10 +240,11 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 2	| El administrador ingresa su correo y su contraseña |
 | 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
 | 4 | El administrador accede a la sección Encuestas |
-| 5 | El sistema permite al administrador crear una nueva encuesta especificando preguntas y opciones de respuesta |
-| 6	| El administrador establece la fecha de inicio y finalización de la encuesta |
-| 7	| El sistema guarda la encuesta y la pública para que los usuarios puedan responder |
-| 8 | El caso termina |
+| 5 | El sistema muestra la sección de crear encuestas | 
+| 6 | El sistema permite al administrador crear una nueva encuesta especificando preguntas y opciones de respuesta |
+| 7	| El administrador establece la fecha de inicio y finalización de la encuesta |
+| 8	| El sistema guarda la encuesta y la pública para que los usuarios puedan responder |
+| 9 | El caso termina |
 
 **Caso de uso N°10: Encuestas a usuarios**
 | Objetivo | <p align="left"> Permite a los usuarios responder a las encuestas y proporcionar sugerencias </p> | 
@@ -254,12 +257,13 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 1 | El alumno accede a la página de inicio de sesión de la aplicación. |
 | 2	| El alumno ingresa su correo y su contraseña |
 | 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
-| 4 | El usuario accede a la sección de "Encuestas" |
-| 5 | El sistema muestra las encuestas pendientes y la opcion de ver las encuestas respondidas anteriormente |
-| 6 | El usuario selecciona la encuesta del apartado "Encuestas pendientes" y responde a las preguntas proporcionando retroalimentación |
-| 7 | El sistema registra sus respuestas |
-| 8 | El usuario podrá ver todas sus encuestas respondidas en el apartado "Encuestas Realizadas" |
-| 9 | El caso termina |
+| 4 | El usuario selecciona la sección de "Encuestas" |
+| 5 | El sistema muestra en pantalla la seccion "Encuestas" |
+| 6 | El sistema muestra las encuestas pendientes y la opcion de ver las encuestas respondidas anteriormente |
+| 7 | El usuario selecciona la encuesta del apartado "Encuestas pendientes" y responde a las preguntas proporcionando retroalimentación |
+| 8 | El sistema registra sus respuestas |
+| 9 | El usuario podrá ver todas sus encuestas respondidas en el apartado "Encuestas Realizadas" |
+| 10 | El caso termina |
 
 
 **Caso de uso N°11: Visualizar estadisticas**
@@ -275,7 +279,8 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 2	| El administrador ingresa su correo y su contraseña |
 | 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
 | 4 | El administrador ingresa a la seccion de estadisticas |
-| 5 | El administrador puede seleccionar una fecha específico para las ver estadísticas |
+| 5 | El sistema muestra la sección de estadisticas y permite seleccionar una fecha especifica para ver las estadisticas |
+| 6 | El administrador selecciona una fecha específica para las ver estadísticas |
 | 6 | El sistema muestra una variedad de estadísticas, como la cantidad de préstamos realizados, la ocupación de las lozas deportivas, la cantidad de ventas realizadas, etc |
 | 7 | El caso termina |
   
@@ -307,7 +312,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 |Precondiciones | Los administradores deben haber iniciado sesión |
 | Paso | <p align="center"> Acción </p> |
 | 1 | El administrador inicia sesión en la aplicación  |
-| 2 | El administrador accede a la sección Hom Page |
+| 2 | El administrador accede a la sección Home Page |
 | 3 | El administrador se dirige al seccion de noticias |
 | 4	| El administrador presiona el boton de ver noticias |
 | 5	| El administrador agregará las noticias con la imagen y su descripcion |
