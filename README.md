@@ -264,10 +264,8 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 5	| El usuario tiene la opción de regresar a la página principal de la aplicación o continuar explorando otros contenidos |
 | 6 | El caso termina |
 
-**Caso de uso N°6: Observar disponibilidad en tiempo real**
 
-
-**Caso de uso N°9: Visualizar reputacion de usuario**
+**Caso de uso N°10: Visualizar reputacion de usuario**
 - El sistema mostrará la relación de pretamos y alquileres, con ello su reputación.
 - El usario o adminstrador podrá visualizar su reputación.
 
@@ -288,7 +286,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 8| El caso termina |
 
 
-**Caso de uso N°10: Creación de encuestas**
+**Caso de uso N°11: Creación de encuestas**
 - Los administradores deben tener la capacidad de crear encuenstas dirigidas a los ususarios.
 - El usuario debe poder responder a encuestas y proporcionar retroalimentacion sobre la calidad de los servicias y expreciencia del usuario.
 - Debe haber un sistema de analisis para resumir los resultados de las encuestas.
@@ -310,7 +308,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 8	| El sistema guarda la encuesta y la pública para que los usuarios puedan responder |
 | 9 | El caso termina |
 
-**Caso de uso N°10: Encuestas a usuarios**
+**Caso de uso N°12: Encuestas a usuarios**
 | Objetivo | <p align="left"> Permite a los usuarios responder a las encuestas y proporcionar sugerencias </p> | 
 |:--------------:|--------------|
 | Descripción | Registro de las respuestas brindadas por los usuarios | 
@@ -330,7 +328,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 10 | El caso termina |
 
 
-**Caso de uso N°11: Visualizar estadisticas**
+**Caso de uso N°13: Visualizar estadisticas**
 
 | Objetivo | <p align="left">  Permitir a los administradores acceder y visualizar estadísticas relacionadas con las actividades y el uso de recursos en la aplicación. </p> | 
 |:--------------:|--------------|
@@ -349,7 +347,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 7 | El caso termina |
 
 
-**Caso de uso N°12: Visualizar finanzas**
+**Caso de uso N°14: Visualizar finanzas**
 - EL administrador podrá observar una relación de cuantos alquileres realizados, y de los recuros vendidos y/o prestados.
 - Se podrá visualizar del direno recudado por cada actividad.
 
@@ -372,7 +370,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 9 | El caso termina |
 
 
-**Caso de uso N°13: Visualizar Respuestas y Estadísticas**
+**Caso de uso N°15: Visualizar Respuestas y Estadísticas**
 - EL administrador podrá observar la relación de las respuestas por pregunta.
 - Se mostrará un grafico de barras para que sea de facil entendimiento.
 
@@ -392,9 +390,9 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 7 | El caso termina |
 
 
-**Caso de uso N°14: Control de horario de lozas deportivas**
+**Caso de uso N°16: Control de horario de lozas deportivas**
 
-**Caso de uso N°14: Quitar articulo de inventario de ventas**
+**Caso de uso N°17: Quitar articulo de inventario de ventas**
 
 | Objetivo | <p align="left"> Deshacerse de los articulos que ya no se encuentran disponibles para vender  </p> | 
 |:--------------:|--------------|
@@ -417,7 +415,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 12	| El sistema quita el articulo de la ventana de ventas |
 | 13	| El caso termina |
 
-**Caso de uso N°14: Agregar articulo de inventario de ventas**
+**Caso de uso N°18: Agregar articulo de inventario de ventas**
 | Objetivo | <p align="left"> Agregar articulos nuevos para poder vender  </p> | 
 |:--------------:|--------------|
 | Descripción | Proceso en el cual los administradores agregan articulos nuevos a través de su perfil de administradores | 
@@ -440,7 +438,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 13	| El sistema agrega el articulo a la ventana de ventas |
 | 13	| El caso termina |
 
-**Caso de uso N°14: Editar articulo de inventario de ventas**
+**Caso de uso N°19: Editar articulo de inventario de ventas**
 | Objetivo | <p align="left"> Editar los articulos disponibles para vender  </p> | 
 |:--------------:|--------------|
 | Descripción | Proceso en el cual los administradores editan el total de stock de los artículos en venta a través de su perfil de administradores | 
@@ -461,7 +459,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 11	| El sistema modifica el stock |
 | 12	| El caso termina |
 
-**Caso de uso N°14: Quitar articulo de inventario de prestamos**
+**Caso de uso N°20: Quitar articulo de inventario de prestamos**
 | Objetivo | <p align="left"> Deshacerse de los articulos que ya no se encuentran disponibles para prestar  </p> | 
 |:--------------:|--------------|
 | Descripción | Proceso en el cual los administradores quitan los articulos que ya no estan disponibles a través de su perfil de administradores | 
@@ -483,7 +481,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 12	| El sistema quita el articulo de la ventana de prestamos |
 | 13	| El caso termina |
 
-**Caso de uso N°14: Agregar articulo de inventario de préstamos**
+**Caso de uso N°21: Agregar articulo de inventario de préstamos**
 | Objetivo | <p align="left"> Agregar articulos nuevos para poder prestar  </p> | 
 |:--------------:|--------------|
 | Descripción | Proceso en el cual los administradores agregan articulos nuevos a través de su perfil de administradores | 
@@ -506,7 +504,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 13	| El sistema agrega el articulo a la ventana de prestamos |
 | 13	| El caso termina |
 
-**Caso de uso N°14: Editar articulo de inventario de préstamos**
+**Caso de uso N°22: Editar articulo de inventario de préstamos**
 | Objetivo | <p align="left"> Editar los articulos disponibles para prestar  </p> | 
 |:--------------:|--------------|
 | Descripción | Proceso en el cual los administradores editan el total de stock de los artículos prestables a través de su perfil de administradores | 
@@ -527,7 +525,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 11	| El sistema modifica el stock |
 | 12	| El caso termina |
 
-**Caso de uso N°15: Actualización de noticias**
+**Caso de uso N°23: Actualización de noticias**
 - Los administradores deben actualizar las noticias periodicamente
 - Los administradores podrán agregar, editar y eliminar noticias.
 - Las actualizaciones de noticias deben ser claras y concisas. La información debe presentarse de manera comprensible.
