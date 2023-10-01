@@ -55,24 +55,21 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 - El sistema debe verificar en la base de datos la validez de la información registrada por el usuario.
 - El sistema debe enviar un correo de confirmación despues del registro.
 
-  
 | Objetivo | <p align="left">Permitir que los usuarios se registren proporcionando información personal y validar su registro.</p> | 
 |:--------------:|--------------|
 | Descripción | Proceso de registro de usuarios en la aplicación, incluyendo la verificación de la información proporcionada y el envío de un correo de confirmación.  | 
 | Actor primario   | Alumno FIIS  | 
 |Actor secundario| - |
-|Precondiciones | - |
+|Precondiciones | El correo institucional no tiene que estar vinculada a una cuenta ya existente |
 | Paso | <p align="center"> Acción </p> |
 | 1 | El usuario accede a la página de registro de la aplicación |
-| 2	| El usuario proporciona información personal, incluyendo nombre, correo institucional, código universitario, contraseña y datos de contacto. |
-| 3	| El sistema verifica la validez de la información proporcionada, incluyendo la comprobación del formato del correo electrónico y la fortaleza de la contraseña. |
-| 4	| El sistema registra al usuario en la base de datos. |
-| 5	| El sistema genera un correo electrónico de confirmación y lo envía a la dirección proporcionada por el usuario. |
-| 6 | El usuario recibe el correo de confirmación y sigue las instrucciones para activar su cuenta. |
-| 7 | El usuario hace clic en el enlace de confirmación en el correo electrónico. |
-| 8 | El sistema verifica el enlace y, si es válido, activa la cuenta del usuario. |
-| 9 | El usuario recibe una notificación de éxito y puede comenzar a utilizar la aplicación con su cuenta activa. |
-| 10 | El caso termina |
+| 2 | El sistema muestra en pantalla los campos que el usuario debe ingresar para poder registrarse |
+| 3	| El usuario ingresa sus nombres, apellidos, correo institucional, código universitario y contraseña |
+| 4 | El usuario selecciona "Crear cuenta" |
+| 5	| El sistema verifica la validez de la información proporcionada |
+| 6	| El sistema registra al usuario en la base de datos |
+| 7	| El sistema confirma de la creación de la cuenta mostrandola en pantalla |
+| 8 | El caso termina |
   
 **Caso de uso N°2: Login de usuario**
 - El usuario registrado podrá iniciar secion con su correo institucional y contraseña.
@@ -83,44 +80,38 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
 | Objetivo | <p align="left">Permitir que los usuarios registrados inicien sesión en la aplicación y accedan a sus perfiles. </p> | 
 |:--------------:|--------------|
-| Descripción | Proceso de registro de usuarios en la aplicación, incluyendo la verificación de la información proporcionada y el envío de un correo de confirmación.  | 
+| Descripción |   | 
 | Actor primario   | Alumno FIIS o Administrador | 
 |Actor secundario| - |
 |Precondiciones | El usuario debe estar registrado en la aplicación. |
 | Paso | <p align="center"> Acción </p> |
 | 1 | El usuario accede a la página de inicio de sesión de la aplicación. |
-| 2	| El usuario proporciona su correo institucional y contraseña en los campos de usuario correspondientes. |
-| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
-| 4	| El sistema redirige al usuario a su perfil con las funcionalidades correspondientes a su rol. |
-| 5	| Si las credenciales son incorrectas, el sistema ofrece la opción de "Recuperar Contraseña".|
-| 6 | El usuario puede hacer clic en "Recuperar Contraseña" para iniciar el proceso de recuperación. |
-| 7 | El sistema envía un correo electrónico al usuario con instrucciones para restablecer su contraseña. |
-| 8 | El usuario sigue las instrucciones del correo electrónico y crea una nueva contraseña. |
-| 9 | Una vez que la contraseña se ha restablecido con éxito, el usuario puede volver a intentar iniciar sesión. |
-| 10 | El caso termina |
+| 2 | El sistema muestra en pantalla los campos que el usuario debe llenar para poder iniciar sesión junto con la opcion "Recuerdame" | 
+| 3	| El usuario proporciona su correo institucional y contraseña en los campos de usuario correspondientes y selecciona "Iniciar sesión" |
+| 4	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
+| 5	| El sistema redirige al usuario a su perfil con las funcionalidades correspondientes a su rol |
+| 6 | El caso termina |
 
-**Caso de uso N°3: Cambio de contraseña**
-| Objetivo | <p align="left">Permitir que los usuarios registrados puedan cambiar su contraseña anterior </p> | 
+**Caso de uso N°3: Olvido de contraseña**
+
+| Objetivo | <p align="left"> Permitir que los usuarios registrados puedan iniciar sesión en caso de que hayan olvidado su contraseña. </p> | 
 |:--------------:|--------------|
-| Descripción | Proceso en el cual los usuarios cambian su contraseña anterior, colocaran su contraseña anterior y colocaran una nueva | 
+| Descripción | Proceso de recuperacíon de la cuenta en caso de olvidar su contraseña | 
 | Actor primario   | Alumno FIIS o Administrador | 
 |Actor secundario| - |
 |Precondiciones | El usuario debe estar registrado en la aplicación. |
 | Paso | <p align="center"> Acción </p> |
 | 1 | El usuario accede a la página de inicio de sesión de la aplicación. |
-| 2	| El usuario proporciona su correo institucional y contraseña en los campos de usuario correspondientes. |
-| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
-| 4	| El sistema redirige al usuario a su perfil con las funcionalidades correspondientes a su rol. |
-| 5	| El usuario presiona sobre el icono del perfil|
-| 6 | El sistema muestra la pantalla del perfil del usuario |
-| 7 | El usuario presiona sobre el botón configuración |
-| 8 | El usuario ingresa su contraseña anterior y después coloca una nueva contraseña y lo confirma|
-| 9 | El usuario presiona sobre el boton confirmar contraseña |
-| 10 | El sistema verifica que la contraseña anterior coincida con la primera contraseña |
-| 11 | El sistema verifica que la nueva contraseña sea diferente de la anterior|
-| 12 | El caso termina |
+| 2 | El usuario selecciona la opción "Recuperar Contraseña" para iniciar el proceso de recuperación. |
+| 3 | El sistema envía un correo de confirmación al usuario |
+| 4 | El usuario realiza la confirmación desde su correo |
+| 5 | El sistema muestra en pantalla los campos que el usuario debe llenar para reestablecer su contraseña |
+| 6 | El usuario llena los campos y selecciona "Reestablecer tu contraseña" |
+| 7 | El sistema actualiza los cambios generados por el usuario |
+| 8 | El sistema muestra en pantalla el perfil del usuario |
+| 9 | El caso termina |
 
-**Caso de uso N°3: Visualizador de noticias**
+**Caso de uso N°4: Visualizador de noticias**
 - La pagina mostrará noticias relevantes, como eventos deportivos organizados por el CEIIS, ecentos culturales y actividades del CEIIS. 
 - El sistema debe hacer posible filtrar por fecha, categoria o palabra clave.
 - Los administradores deben tener la capacidad de agregar, editar y eliminar noticias.
@@ -140,7 +131,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 5  | El sistema muestra las noticias más recientes  |
 | 6  | El caso termina  |
 
-**Caso de uso N°4: Reserva de lozas deportivas** 
+**Caso de uso N°5: Reserva de lozas deportivas** 
 - El sistema debe permitir que los usuarios registrados puedan ver la disponibilidad de las lozas deportivas en tiempo real. 
 - El usuario debe poder seleccionar la fecha y hora deseada para la reserva.
 - El sistema debe mostrar la disponibilidad de lozas y perimtir a los usuarios reservas una loza especifica.
@@ -172,7 +163,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 16 | El sistema actualiza el historial general de servicios |
 | 17 | El caso termina |
 
-**Caso de uso N°5: Prestamos de objetos y materiales**
+**Caso de uso N°6: Prestamos de objetos y materiales**
 - El usuario registrado debe poder ver un catalogo de objetos diisponibles para prestamo.
 - El sistema debe permitir al usuario solicitar prestamos de objetos seleccionando el articulo desea y proporcionando detalles del prestamo, como la duracion del prestamo.
 - El sistema debe mostrar una confirmación del prestamo.
@@ -200,7 +191,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 16 | El sistema actualiza el historial general de servicios |
 | 17 | El caso termina |
 
-**Caso de uso N°6: Realizar compra de objetos**
+**Caso de uso N°7: Realizar compra de objetos**
 
 | Objetivo | <p align="left">Permitir que los usuarios registrados puedan comprar objetos que vende en el CEIIS</p> | 
 |:--------------:|--------------|
@@ -226,7 +217,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
 
 
-**Caso de uso N°7: Visualizador de historial**
+**Caso de uso N°8: Visualizador de historial**
 - El usuario registrado debe poder acceder a un historial de sus actividades, incluyendo prestamos pasados, reservas anteriores y noticias visualziadas.
 
 | Objetivo | <p align="left"> Permitir que los usuarios registrados accedan a un historial de sus actividades en la aplicación, incluyendo préstamos pasados, reservas anteriores y compras realizadas </p> | 
@@ -248,7 +239,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 10 | El sistema muestra la lista de actividades pasadas, incluyendo préstamos, reservas y compras especificando el tipo de servicio, la fecha , el costo y el estado actual |
 | 11 | El caso termina  |
 
-**Caso de uso N°8: Visualizar paginas "Acerca de nosotros"**
+**Caso de uso N°9: Visualizar paginas "Acerca de nosotros"**
 - La pagina debe tener una seccion "Acerca de Nosotros" que proprocione información sobre el CEIIS, la junta directiva y la misión del CEIIS.
 
 | Objetivo | <p align="left"> Permitir que los usuarios accedan y visualicen la página "Acerca de Nosotros", la cual proporciona información sobre el CEIIS, su junta directiva y su misión </p> | 
