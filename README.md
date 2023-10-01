@@ -192,11 +192,16 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 6 | El alumno ingresa a la opción de préstamos |
 | 7 | El sistema muestra las opciones de reserva|
 | 8 | El alumno presiona el boton "prestar" de la opción que desea|
-| 10 | El sistema verifica que el recurso este disponibe |
-| 11 | El sistema muestra la ventana de prestamo exitoso |
-| 15 | El sistema actualiza los prestamos del alumno en su perfil |
-| 16 | El sistema actualiza el historial general de servicios |
-| 17 | El caso termina |
+| 9 | El sistema verifica que el recurso este disponibe |
+| 10 | El sistema muestra la ventana de confimración de préstamo |
+| 11 | El sistema verifica que el recurso este disponibe |
+| 12 | El sistema muestra la ventana de  exitosa |
+| 11 | El alumno presiona sobre el boton confirmar |
+| 12 | El sistema muestra la ventana de préstamo confirmado |
+| 13 | El sistema actualiza el historial general de servicios |
+| 14 | El alumno presiona el boton de inicio|
+| 15 | El caso termina |
+
 
 **Caso de uso N°7: Realizar compra de objetos**
 
@@ -215,10 +220,14 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 6 | El alumno ingresa a la opción de ventas |
 | 7 | El sistema muestra las opciones de venta|
 | 8 | El alumno presiona el boton "comprar" de la opción que desea|
-| 10 | El sistema verifica que el recurso este disponibe |
-| 11 | El sistema muestra la ventana de compra exitosa |
-| 15 | El sistema actualiza las compras del alumno en su perfil |
-| 16 | El sistema actualiza el historial general de servicios |
+| 9 | El sistema verifica que el recurso este disponibe |
+| 10 | El sistema muestra la ventana de confirmación de compra |
+| 11 | El sistema verifica que el recurso este disponibe |
+| 12 | El sistema muestra la ventana de compra exitosa |
+| 13 | El alumno presiona sobre el boton confirmar |
+| 14 | El sistema muestra la ventana de compra confirmada |
+| 15 | El sistema actualiza el historial general de servicios |
+| 16 | El alumno presiona el boton de inicio|
 | 17 | El caso termina |
 
 
