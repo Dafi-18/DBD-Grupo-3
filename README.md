@@ -179,6 +179,34 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 16 | El sistema actualiza el historial general de servicios |
 | 17 | El caso termina |
 
+**Caso de uso N°6: Realizar compra de objetos**
+
+| Objetivo | <p align="left">Permitir que los usuarios registrados puedan comprar objetos que vende en el CEIIS</p> | 
+|:--------------:|--------------|
+| Descripción |  Proceso de préstamo de objetos y materiales, incluyendo la visualización del catálogo, la solicitud de préstamo, la confirmación del préstamo, la gestión de objetos no disponibles y el registro de préstamos y devoluciones. | 
+| Actor primario   | Alumno FIIS | 
+|Actor secundario| - |
+|Precondiciones | El usuario debe haber iniciado sesión en la aplicación. |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El alumno accede a la página de inicio de sesión de la aplicación. |
+| 2	| El alumno ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
+| 4 | El alumno ingresa a la opcion de servicios|
+| 5 | El sistema muestra la pantalla de servicios |
+| 6 | El alumno ingresa a la opción de préstamos |
+| 7 | El sistema muestra las opciones de reserva|
+| 8 | El alumno presiona el boton "prestar" de la opción que desea|
+| 9 | El sistema presenta la pantalla de prestamos |
+| 10 | El alumno escoge la hora de inicio en la que desea el préstamo |
+| 11 | El alumno presiona el botón de confirmar préstamo |
+| 12 | El sistema verifica que la hora este disponible |
+| 13 | El sistema muestra la confirmación del préstamo |
+| 14 | El sistema actualiza el calendario de la pantalla de prestamos |
+| 15 | El sistema actualiza los préstamos del alumno en su perfil |
+| 16 | El sistema actualiza el historial general de servicios |
+| 17 | El caso termina |
+
+
 **Caso de uso N°6: Observar disponibilidad en tiempo real**
 
 **Caso de uso N°7: Visualizador de historial**
