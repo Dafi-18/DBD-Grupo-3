@@ -255,7 +255,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 |Actor secundario| - |
 |Precondiciones | Los usarios registrados deben haber iniciado sesion |
 | Paso | <p align="center"> Acción </p> |
-| 1 | El usuario inicia sesión em la aplicación  |
+| 1 | El usuario inicia sesión en la aplicación  |
 | 2 | El ususario ingresa su correo y contreseña |
 | 3 | El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
 | 4 | El sistema nos mostrará la relación de los prestamos realizados |
