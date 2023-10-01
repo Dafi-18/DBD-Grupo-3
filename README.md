@@ -657,18 +657,19 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
 - Interacción: Con el módulo de finanzas, logística.
   
-**A. Panel de estadísticas**
+  **A. Panel de estadísticas**
 
-**Responsabilidades:** Permite a los administradores tener un conteo sobre sus productos o artículos más vendidos, más demandados en cuanto a préstamos y alquileres por semana. Además se dispone de algunos gráficos para que los administradores puedan analizar y tomar decisiones en base a ellas.
+  **Responsabilidades:** Permite a los administradores tener un conteo sobre sus productos o artículos más vendidos, más demandados en cuanto a préstamos y alquileres por semana. Además se dispone de algunos gráficos para que los administradores puedan analizar y tomar decisiones en base a ellas.
     
 **-  Finanzas**
+
 - Responsabilidades: Registrar y gestionar por parte de los administradores los datos de manera eficiente de las ganancias por ventas, préstamos y alquileres. Seguimiento del presupuesto asignado y disponible, actualizar de manera automatica el dinero. Generación de informes para auditorias.
 
 - Interacción: Con el módulo de Seguridad, Logística, Estadísticas, Préstamos o Alquiler.
 
-**A. Panel de finanzas**
+  **A. Panel de finanzas**
 
-**Responsabilidades:** Permite tener un registro de todas las transacciones realizadas por los usuarios respecto a ventas, alquileres y préstamos; así como un conteo de los ingresos generados por dichas transacciones y el balance general.
+  **Responsabilidades:** Permite tener un registro de todas las transacciones realizadas por los usuarios respecto a ventas, alquileres y préstamos; así como un conteo de los ingresos generados por dichas transacciones y el balance general.
 
 **-  Ventas, Préstamos y Alquileres**
 
@@ -678,9 +679,57 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
 **Para las ventas**
 
-**A. Sell page**
+  **A. Sell page**
+  
+  **Responsabilidades:** Permite al usuario ordenar la compra de un artículo ofrecido por el CEIIS. Todo pago se realiza presencialmente en la oficina del CEIIS.
 
-**Responsabilidades:** Permite al usuario
+  **B. Confirmación de compra**
+  
+  **Responsabilidades:** Permite al usuario confirmar o cancelar la reserva de la compra del artículo.
+  
+   **C. Vista de compra confirmada**
+  
+  **Responsabilidades:** Muestra al usuario que su orden de compra fue procesada con éxito y le indique que se acerque al CEIIS para pagar y recoger el producto.
+  
+   **D. Vista de compra fallida**
+  
+  **Responsabilidades:** Muestra al usuario que su orden de compra ha fallado, ya porque ese producto no está disponible u otros motivos.
+
+**Para las reservas**
+
+**A. Reserva page**
+  
+  **Responsabilidades:** Permite al usuario poder reservar las lozas deportivas, las mesas de ping pong y la mesa de fulbito. Algunos tienen costo de reserva, otras son gratuitas. Todo pago se realiza presencialmente en la oficina del CEIIS.
+
+  **B. Horarios de reserva**
+  
+  **Responsabilidades:** Permite al usuario realizar la reserva, tanto de lozas deportivas como de mesas de ping pong o mesa de fulbito, en cierto día y a cierta hora, así como su disponibilidad. Se debe inficar la hora de inicio y elegir la cantidad de horas que se desee reservar (máximo 2 horas por código).
+  
+  **C. Reserva confirmada**
+  
+  **Responsabilidades:** Muestra al usuario que su reserva ha sido exitosa.
+  
+  **D. Reserva fallida**
+  
+  **Responsabilidades:** Muestra al usuario que ha ocurrido un error con su reserva ya sea porque no está disponible u otros motivos.
+
+**Para los préstamos**
+
+  **A. Préstamos page**
+  
+  **Responsabilidades:** Muestra la variedad de productos que pueden ser prestados a los usuario. Además permite al usuario solicitar un préstamo de estos productos. Todos los productos pueden ser prestados como máximo hasta las 10:00 pm de lunes a viernes y hasta las 8:00 pm los sábados. No se permite que los usuarios se lleven los productos prestados a sus hogares. 
+
+  **B. Confirmación de préstamo**
+  
+  **Responsabilidades:** Permite al usuario confirmar o cancelar la solicitud de préstamo de un artículo que ofrece el CEIIS.
+  
+  **C. Vista de préstamo confirmado**
+  
+  **Responsabilidades:** Muestra al usuario que su solicitud de préstamo ha sido exitosa y debe acercarse al CEIIS para recoger el artículo.
+  
+  **D. Vista de préstamo fallida**
+  
+  **Responsabilidades:** Muestra al usuario que ha ocurrido un error con su solicitud de préstamo y que debe volver a intentarlo.
     
 **-  Logistica:**
 
@@ -690,39 +739,49 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
   
 **Para el inventario de ventas**
 
-**A. Vista de inventario de ventas**
-
-**Responsabilidades:** Muestra todos los artículos en el inventario de ventas, su cantidad de stock disponible y su precio unitario. Además muestra la cantidad de artículos vendidos.
-
-**B. Agregar artículo al inventario de ventas**
-
-**Responsabilidades:** Permite al administrador agregar un nuevo artículo al stock de inventario de ventas, con su nombre de artículo, precio unitario del artíclo y la cantidad de stock disponible.
-
-**C. Editar artículo del inventario de ventas**
-
-**Responsabilidades:** Permite al administrador modificar el precio unitario y la cantidad de stock disponible del artículo en el inventario de ventas.
-
-**D. Quitar artículo del inventario de ventas**
-
-**Responsabilidades:** Permite al administrador quitar un artículo del inventario de ventas.
+  **A. Vista de inventario de ventas**
+  
+  **Responsabilidades:** Muestra todos los artículos en el inventario de ventas, su cantidad de stock disponible y su precio unitario. Además muestra la cantidad de artículos vendidos.
+  
+  **B. Agregar artículo al inventario de ventas**
+  
+  **Responsabilidades:** Permite al administrador agregar un nuevo artículo al stock de inventario de ventas, con su nombre de artículo, precio unitario del artíclo y la cantidad de stock disponible.
+  
+  **C. Editar artículo del inventario de ventas**
+  
+  **Responsabilidades:** Permite al administrador modificar el precio unitario y la cantidad de stock disponible del artículo en el inventario de ventas.
+  
+  **D. Quitar artículo del inventario de ventas**
+  
+  **Responsabilidades:** Permite al administrador quitar un artículo del inventario de ventas.
 
 **Para el inventario de préstamos**
 
-**A. Vista de inventario de préstamos**
+  **A. Vista de inventario de préstamos**
+  
+  **Responsabilidades:** Muestra todos los artículos en el inventario de préstamos y su cantidad de stock disponible. Además muestra la cantidad de artículos prestados.
 
-**Responsabilidades:** Muestra todos los artículos en el inventario de préstamos y su cantidad de stock disponible. Además muestra la cantidad de artículos prestados.
+  **B. Agregar artículo al inventario de préstamos**
+  
+  **Responsabilidades:** Permite al administrador agregar un nuevo artículo al stock de inventario de préstamos, con su nombre de artículo y la cantidad de stock disponible.
 
-**B. Agregar artículo al inventario de préstamos**
+  **C. Editar artículo del inventario de préstamos**
+  
+  **Responsabilidades:** Permite al administrador modificar la cantidad de stock disponible del artículo en el inventario de préstamos.
+  
+  **D. Quitar artículo del inventario de préstamos**
+  
+  **Responsabilidades:** Permite al administrador quitar un artículo del inventario de préstamos.
 
-**Responsabilidades:** Permite al administrador agregar un nuevo artículo al stock de inventario de préstamos, con su nombre de artículo y la cantidad de stock disponible.
+**Para el inventario de reservas**
 
-**C. Editar artículo del inventario de préstamos**
+  **A. Vista de alquiler de lozas**
 
-**Responsabilidades:** Permite al administrador modificar la cantidad de stock disponible del artículo en el inventario de préstamos.
+  **Responsabilidades:** Permite al administrador ver las disponibilidades y estado actual de las lozas. También la opción de cambiar la disponibilidad de los horarios.
 
-**D. Quitar artículo del inventario de préstamos**
+  **B. Editar disponibilidad de lozas**
 
-**Responsabilidades:** Permite al administrador quitar un artículo del inventario de préstamos.
+  **Responsabilidades:** Permite al administrador cambiar la disponibilidad de las lozas.
 
 
 ## [Figma](https://www.figma.com/file/600QmGXcDGzgKVtZu9jm7g/DBD-GRUPO3?type=design&node-id=38-6&mode=design&t=0TAzfWjCKlUIWavj-0)
@@ -775,7 +834,8 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 - Servicios(se visualiza prestamos y alquiler)
 - Contactanos
 - Prestamos (Usuario) (Administrador)
-- Alquiler 
+- Alquiler
+- Gestión de inventario de ventas, préstamos y alquileres
 - Historial de Usuario
 - Reputación
 - Estadisticas
