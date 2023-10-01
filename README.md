@@ -516,13 +516,16 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 13 | El caso termina |
 
 ### 2.2 Requerimientos de atributos
-- Seguridad
-- Usabilidad
-- Rendimiento
-- Automatizacion de procesos
-- Accesibilidad
-- Retroalimentación y Sugerencias de Usuarios
 
+- Seguridad: La página controlará el acceso solo de las personas que cuenten con una cuenta en el sistema, además distinguirá 2 tipos de usuarios para el sistema, los cuales tienen acceso a diferentes opciones dependiendo del tipo de usuario.
+  
+- Usabilidad : La usabilidad es esencial para que tanto los administradores como los alumnos interactúen facilmente con el sistema, y permita optimizar el proceso de obtención de información necesaria especialmente para los administradores.
+  
+- Rendimiento: Los recursos serán utilidados con eficacia para que el sistema pueda garantizar un correcto procesamiento de grandes cantidades de datos y generar información de manera rápida y eficiente.
+  
+- Automatizacion de procesos: El sistema permitirá automatizar procesos para los administradores, optimizando el uso de los recursos y mejorando la eficiencia operativa del CEIS.
+  
+- Escalabilidad: La página será capaz de soportar una gran cantidad de usuarios y operaciones.
 ## 3. Modulos
 **- Seguridad**
   - Responsabilidades: Gestionar todo inicio de sesión, registro y recuperación de contraseñas de la pagina asi mismo de la seguridad de la integración de las cuentas, y el acceso a los campos respectivo de cada usuario y contraseña.
