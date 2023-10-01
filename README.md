@@ -316,7 +316,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 9 | El admintrador tendrá la opción de eliminar la noticia |
 | 10 | Después de terminar la acción el sistema peridrá la confirmacion de lo que se quiere aliminar|
 | 11 | El sstema después de las acciones anteriores se publicará la noticia |
-| 12 | Eñ caso termina |
+| 12 | El caso termina |
 
 ### 2.2 Requerimientos de atributos
 - Seguridad
