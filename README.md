@@ -31,9 +31,16 @@ El proceso de venta actualmente inicia cuando el estudiante consulta si hay exis
 El proceso de reserva de las lozas deportivas empieza cuando el estudiante consulta la disponibilidad de las lozas, ya sea de forma presencial o mediante un excel compartido por el administrador del CEIIS. Para realizar la reserva de la loza, de máximo 2 horas por hora, el administrador solicita el DNI y el carnet universitario del estudiante, después de que el estudiante entregó los documentos solicitados el administrador registra la reserva y le entrega al estudiante una ficha de reserva para respaldar al estudiante en caso de que otra persona ocupe la loza deportiva en las horas de su reserva.
 
 ### 1.3 Diagrama de Procesos
+- Proceso de alquiler
 ![Alt texasdt](alquiler.jpeg)
+
+- Proceso de préstamo
 ![Alt texasdt](prestamo.jpeg)
+
+- Proceso de ventas
 ![Alt texasdt](ventas.jpeg)
+
+- Proceso de reserva
 ![Alt texasdt](reserva.jpeg)
 
 ### 1.4 Descripcion del tema
