@@ -293,6 +293,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 3 |  |
 | 4 |  |
 | 5 |  |
+
 **Caso de uso N°13: Actualización de noticias**
 - Los administradores deben actualizar las noticias periodicamente
 - Los administradores podrán agregar, editar y eliminar noticias.
