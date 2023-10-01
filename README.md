@@ -95,6 +95,27 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 9 | Una vez que la contraseña se ha restablecido con éxito, el usuario puede volver a intentar iniciar sesión. |
 | 10 | El caso termina |
 
+**Caso de uso N°3: Cambio de contraseña**
+| Objetivo | <p align="left">Permitir que los usuarios registrados puedan cambiar su contraseña anterior </p> | 
+|:--------------:|--------------|
+| Descripción | Proceso en el cual los usuarios cambian su contraseña anterior, colocaran su contraseña anterior y colocaran una nueva | 
+| Actor primario   | Alumno FIIS o Administrador | 
+|Actor secundario| - |
+|Precondiciones | El usuario debe estar registrado en la aplicación. |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El usuario accede a la página de inicio de sesión de la aplicación. |
+| 2	| El usuario proporciona su correo institucional y contraseña en los campos de usuario correspondientes. |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos. |
+| 4	| El sistema redirige al usuario a su perfil con las funcionalidades correspondientes a su rol. |
+| 5	| El usuario presiona sobre el icono del perfil|
+| 6 | El sistema muestra la pantalla del perfil del usuario |
+| 7 | El usuario presiona sobre el botón configuración |
+| 8 | El usuario ingresa su contraseña anterior y después coloca una nueva contraseña y lo confirma|
+| 9 | El usuario presiona sobre el boton confirmar contraseña |
+| 10 | El sistema verifica que la contraseña anterior coincida con la primera contraseña |
+| 11 | El sistema verifica que la nueva contraseña sea diferente de la anterior|
+| 12 | El caso termina |
+
 **Caso de uso N°3: Visualizador de noticias**
 - La pagina mostrará noticias relevantes, como eventos deportivos organizados por el CEIIS, ecentos culturales y actividades del CEIIS. 
 - El sistema debe hacer posible filtrar por fecha, categoria o palabra clave.
