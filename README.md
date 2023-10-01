@@ -399,6 +399,95 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 3 |  |
 | 4 |  |
 | 5 |  |
+**Caso de uso N°14: Quitar articulo de inventario de ventas**
+| Objetivo | <p align="left"> Deshacerse de los articulos que ya no se encuentran disponibles para vender  </p> | 
+|:--------------:|--------------|
+| Descripción | Proceso en el cual los administradores quitan los articulos que ya no estan disponibles a través de su perfil de administradores | 
+| Actor primario | Administrador | 
+|Actor secundario| - |
+|Precondiciones | El administrador debe haber iniciado sesión |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El administrador accede a la página de inicio de sesión de la aplicación. |
+| 2	| El administrador ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
+| 4	| El administrador presiona sobre el icono de perfil |
+| 5	| El sistema muestra la pantalla del perfil del administrador |
+| 6	| El administrador presiona sobre el boton ventas |
+| 7	| El sistema muestra la ventana de inventario de ventas |
+| 8	| El administrador presiona sobre el boton quitar artículo |
+| 9	| El sistema coloca en cada articulo un icono de una papelera |
+| 10 | El administrador presiona el boton de la papelera del articulo que desea eliminar |
+| 11 | El sistema quita el articulo|
+| 12	| El sistema quita el articulo de la ventana de ventas |
+| 13	| El caso termina |
+
+**Caso de uso N°14: Agregar articulo de inventario de ventas**
+| Objetivo | <p align="left"> Agregar articulos nuevos para poder vender  </p> | 
+|:--------------:|--------------|
+| Descripción | Proceso en el cual los administradores agregan articulos nuevos a través de su perfil de administradores | 
+| Actor primario | Administrador | 
+|Actor secundario| - |
+|Precondiciones | El administrador debe haber iniciado sesión |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El administrador accede a la página de inicio de sesión de la aplicación. |
+| 2	| El administrador ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
+| 4	| El administrador presiona sobre el icono de perfil |
+| 5	| El sistema muestra la pantalla del perfil del administrador |
+| 6	| El administrador presiona sobre el boton ventas |
+| 7	| El sistema muestra la ventana de inventario de ventas |
+| 8	| El administrador presiona sobre el boton agregar artículos |
+| 9	| El sistema agrega una nueva casilla |
+| 10 | El administrador ingresa el nombre, el precio y el stock del articulo |
+| 11 | El administrador presiona el check para confirmar|
+| 12	| El sistema agrega el articulo |
+| 13	| El sistema agrega el articulo a la ventana de ventas |
+| 13	| El caso termina |
+
+**Caso de uso N°14: Quitar articulo de inventario de prestamos**
+| Objetivo | <p align="left"> Deshacerse de los articulos que ya no se encuentran disponibles para prestar  </p> | 
+|:--------------:|--------------|
+| Descripción | Proceso en el cual los administradores quitan los articulos que ya no estan disponibles a través de su perfil de administradores | 
+| Actor primario | Administrador | 
+|Actor secundario| - |
+|Precondiciones | El administrador debe haber iniciado sesión  |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El administrador accede a la página de inicio de sesión de la aplicación. |
+| 2	| El administrador ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
+| 4	| El administrador presiona sobre el icono de perfil |
+| 5	| El sistema muestra la pantalla del perfil del administrador |
+| 6	| El administrador presiona sobre el boton préstamos |
+| 7	| El sistema muestra la ventana de inventario de préstamos |
+| 8	| El administrador presiona sobre el boton quitar artículo |
+| 9	| El sistema coloca en cada articulo un icono de una papelera |
+| 10 | El administrador presiona el boton de la papelera del articulo que desea eliminar |
+| 11 | El sistema quita el articulo|
+| 12	| El sistema quita el articulo de la ventana de prestamos |
+| 13	| El caso termina |
+
+**Caso de uso N°14: Agregar articulo de inventario de préstamos**
+| Objetivo | <p align="left"> Agregar articulos nuevos para poder prestar  </p> | 
+|:--------------:|--------------|
+| Descripción | Proceso en el cual los administradores agregan articulos nuevos a través de su perfil de administradores | 
+| Actor primario | Administrador | 
+|Actor secundario| - |
+|Precondiciones | El administrador debe haber iniciado sesión |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El administrador accede a la página de inicio de sesión de la aplicación. |
+| 2	| El administrador ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
+| 4	| El administrador presiona sobre el icono de perfil |
+| 5	| El sistema muestra la pantalla del perfil del administrador |
+| 6	| El administrador presiona sobre el boton prestamos|
+| 7	| El sistema muestra la ventana de inventario de préstamos |
+| 8	| El administrador presiona sobre el boton agregar artículos |
+| 9	| El sistema agrega una nueva casilla |
+| 10 | El administrador ingresa el nombre y el stock del articulo |
+| 11 | El administrador presiona el check para confirmar|
+| 12	| El sistema agrega el articulo |
+| 13	| El sistema agrega el articulo a la ventana de prestamos |
+| 13	| El caso termina |
 
 **Caso de uso N°15: Actualización de noticias**
 - Los administradores deben actualizar las noticias periodicamente
