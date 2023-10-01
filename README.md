@@ -35,6 +35,7 @@ El proceso de reserva de las lozas deportivas empieza cuando el estudiante consu
 ![Alt texasdt](prestamo.jpeg)
 ![Alt texasdt](ventas.jpeg)
 ![Alt texasdt](reserva.jpeg)
+
 ### 1.4 Descripcion del tema
 
 Nuestro proyecto para este curso se enfoca en el desarrollo de un software para el Centro de estudiantes de la FIIS que permita optimizar y automatizar los procesos de préstamos, alquileres de objetos o juegos de mesa y reservas de las lozas deportivas de nuestra facultad. Este sistema proporcionará una plataforma eficiente para que los estudiantes de la facultad podamos acceder a estos recrsos de manera sencilla, mejoran la disponibilidad y facilitando la coordinación de actividades dentro de la comunidad FIIS.
