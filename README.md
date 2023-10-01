@@ -341,14 +341,35 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 2	| El administrador ingresa su correo y su contraseña |
 | 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
 | 4 | El administrador ingresa a la seccion de Finanzas |
-| 5 | El sistema muestra la sección de estadísticas y permite seleccionar una fecha específica para ver las finanzas |
+| 5 | El sistema muestra la sección de Finanzas y permite seleccionar una fecha específica para ver las finanzas |
 | 6 | El administrador selecciona una fecha específica para ver la relación de los alquileres realizados, y de los recuros vendidos y/o prestados |
 | 6 | El sistema muestra un historial por cada servicio alquilado, vendido y prestado |
 | 7 | El sistema nos muestra, si es alquiler nos muestra si ya esta finalizodo o no, en caso de préstamo si esta devuelto o no. |
 | 8 | El sustema nos muestra cuanto se recuadó en ventas, alquileres, préstamos y totalidad de los recaudado |
 | 9 | El caso termina |
 
-**Caso de uso N°13: Control de horario de lozas deportivas**
+
+**Caso de uso N°13: Visualizar Respuestas y Estadísticas**
+- EL administrador podrá observar la relación de las respuestas por pregunta.
+- Se mostrará un grafico de barras para que sea de facil entendimiento.
+
+| Objetivo | <p align="left">  Permitir a los administradores acceder y visualizar las respuestas marcadas, para observar la mayor demanda, con su diagrama. </p> | 
+|:--------------:|--------------|
+| Descripción | Proceso mediante el cual los administradores pueden acceder a las respuestas, y saber que producto esta en mayor demanda. | 
+| Actor primario | Administrador | 
+|Actor secundario| - |
+|Precondiciones | El administrador debe estar registrado en la aplicación |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El administrador accede a la página de inicio de sesión de la aplicación. |
+| 2	| El administrador ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
+| 4 | El administrador ingresa a la seccion de Estadisticas |
+| 5 | El sistema muestra la sección de estadísticas y permite visualizar la relacion de las repuestas, donde hay mas demanda de cada pregunta |
+| 6 | Se visualizará un diagram de barras para que sea mas amigable la presentación |
+| 7 | El caso termina |
+
+
+**Caso de uso N°14: Control de horario de lozas deportivas**
 
 | Objetivo | <p align="left">  </p> | 
 |:--------------:|--------------|
@@ -363,7 +384,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 4 |  |
 | 5 |  |
 
-**Caso de uso N°14: Actualización de noticias**
+**Caso de uso N°15: Actualización de noticias**
 - Los administradores deben actualizar las noticias periodicamente
 - Los administradores podrán agregar, editar y eliminar noticias.
 - Las actualizaciones de noticias deben ser claras y concisas. La información debe presentarse de manera comprensible.
