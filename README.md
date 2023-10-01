@@ -401,7 +401,6 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 5 |  |
 **Caso de uso N°14: Quitar articulo de inventario de ventas**
 | Objetivo | <p align="left"> Deshacerse de los articulos que ya no se encuentran disponibles para vender  </p> | 
-|:--------------:|--------------|
 | Descripción | Proceso en el cual los administradores quitan los articulos que ya no estan disponibles a través de su perfil de administradores | 
 | Actor primario | Administrador | 
 |Actor secundario| - |
@@ -443,6 +442,27 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 12	| El sistema agrega el articulo |
 | 13	| El sistema agrega el articulo a la ventana de ventas |
 | 13	| El caso termina |
+
+**Caso de uso N°14: Editar articulo de inventario de ventas**
+| Objetivo | <p align="left"> Editar los articulos disponibles para vender  </p> | 
+|:--------------:|--------------|
+| Descripción | Proceso en el cual los administradores editan el total de stock de los artículos en venta a través de su perfil de administradores | 
+| Actor primario | Administrador | 
+|Actor secundario| - |
+|Precondiciones | El administrador debe haber iniciado sesión |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El administrador accede a la página de inicio de sesión de la aplicación. |
+| 2	| El administrador ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
+| 4	| El administrador presiona sobre el icono de perfil |
+| 5	| El sistema muestra la pantalla del perfil del administrador |
+| 6	| El administrador presiona sobre el boton ventas |
+| 7	| El sistema muestra la ventana de inventario de ventas |
+| 8	| El administrador presiona sobre el boton editar|
+| 9	| El administrador modifica el stock del articulo |
+| 10 | El administrador presiona el check para confirmar|
+| 11	| El sistema modifica el stock |
+| 12	| El caso termina |
 
 **Caso de uso N°14: Quitar articulo de inventario de prestamos**
 | Objetivo | <p align="left"> Deshacerse de los articulos que ya no se encuentran disponibles para prestar  </p> | 
@@ -488,6 +508,27 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 12	| El sistema agrega el articulo |
 | 13	| El sistema agrega el articulo a la ventana de prestamos |
 | 13	| El caso termina |
+
+**Caso de uso N°14: Editar articulo de inventario de préstamos**
+| Objetivo | <p align="left"> Editar los articulos disponibles para prestar  </p> | 
+|:--------------:|--------------|
+| Descripción | Proceso en el cual los administradores editan el total de stock de los artículos prestables a través de su perfil de administradores | 
+| Actor primario | Administrador | 
+|Actor secundario| - |
+|Precondiciones | El administrador debe haber iniciado sesión |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El administrador accede a la página de inicio de sesión de la aplicación. |
+| 2	| El administrador ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
+| 4	| El administrador presiona sobre el icono de perfil |
+| 5	| El sistema muestra la pantalla del perfil del administrador |
+| 6	| El administrador presiona sobre el boton préstamos |
+| 7	| El sistema muestra la ventana de inventario de préstamos |
+| 8	| El administrador presiona sobre el boton editar|
+| 9	| El administrador modifica el stock del articulo |
+| 10 | El administrador presiona el check para confirmar|
+| 11	| El sistema modifica el stock |
+| 12	| El caso termina |
 
 **Caso de uso N°15: Actualización de noticias**
 - Los administradores deben actualizar las noticias periodicamente
