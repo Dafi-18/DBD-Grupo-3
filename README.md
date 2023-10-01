@@ -33,8 +33,7 @@ El proceso de reserva de las lozas deportivas empieza cuando el estudiante consu
 ### 1.3 Diagrama de Procesos
 ![Alt texasdt](alquiler.jpeg)
 ![Alt texasdt](prestamo.jpeg)
-![Alt texasdt](venta.jpeg)
-![Alt texasdt](reserva.jpeg)
+
 
 ### 1.4 Descripcion del tema
 
