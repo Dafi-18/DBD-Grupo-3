@@ -25,8 +25,8 @@ Actualmente el proceso de préstamos empieza cuando solicita en préstamo un obj
 1.2.3 Proceso de venta
 
 1.2.4 Proceso de reserva de lozas
-    
-   
+
+El proceso de reserva de las lozas deportivas empieza cuando el estudiante consulta la disponibilidad de las lozas, ya sea de forma presencial o mediante un excel compartido por el administrador del CEIIS. Para realizar la reserva de la loza, de máximo 2 horas por hora, el administrador solicita el DNI y el carnet universitario del estudiante, después de que el estudiante entregó los documentos solicitados el administrador registra la reserva y le entrega al estudiante una ficha de reserva para respaldar al estudiante en caso de que otra persona ocupe la loza deportiva en las horas de su reserva.
 
 ### 1.3 Diagrama de Procesos
 ![Alt texasdt](alquiler.jpeg)
@@ -407,25 +407,18 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
     
     Permite que los usuarios de la facultad creen una cuenta personal en el sistema. Su función principal es recopilar la información necesaria para crear una cuenta de usuario, como los nombres, apellidos, codigo UNI, correo institucional, contraseña.   
     
-    
     **B. Login**
     
     **Responsabilidades:** Permite que los usuarios ingresen a su cuenta personal proporcionando sus credenciales de autenticación, en este caso su correo institucional y su contraseña.
-    
-  
-    
+
     **C. Recuperar cuenta**
     
     **Responsabilidades:** Proporciona a los usuarios una forma de restablecer el acceso a su cuenta personal en caso de que hayan olvidado su contraseña o enfrenten problemas para iniciar sesión.
-    
-    
-    
+
     **D. Reestablecer contraseña**
     
     **Responsabilidades:** Permite a los usuarios cambiar su contraseña actual por una nueva en caso de olvido.
-    
 
-    
     **E. Perfil del usuario**
 
     **Responsabilidades:** Permite a los usuarios gestionar y actualizar la información relacionada con su perfil personal en la plataforma.
@@ -435,42 +428,35 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
     **Responsabilidades:** Permite a los usuarios cambiar su contraseña actual por una nueva.
     
-    *
-    
     **G. Historial del usuario**
 
     **Responsabilidades:** Muestra a los usuarios un registro detallado de los prestamos, alquileres o reservas que han realizado dentro de la plataforma a lo largo del tiempo. Esta funcionalidad proporciona a los usuarios un resumen histórico de su actividad y les permite realizar un seguimiento de sus interacciones pasadas. 
-  
 
     **H. Perfil del administrador**
+    
     
 **-   Encuestas**
 
 - Responsabilidades: Gestionar las preguntas que se pondran para hacer un cuestionario a los alumnos, para reacuadar información a travez de preguntas concisas, en base a alternativa  y a partir de la información recolectada poder hacer cuadros estadisticos, mostrando las tendencias de respuesta.
-    
+- Interaccion: Con el módulo de seguridad.
+
 **A. Administrador encuesta**  
     
 **Responsabilidades:** Permite gestionar y administrar todas las encuestas en la plataforma. Crear editar y elimnar las encestas, además de asignar los permisos para que los usuarios puedan acceder a la encuesta. 
-
-**Interaccion:** Con el módulo de seguridad.
 
 **B. Administrador crear encuesta**
 
 **Responsabilidades:** Permite al administrador definir los detalles de la encuesta, diseñar las preguntas, opciones de respuestas y lógica de encuesta. 
 
-**Interaccion:** Con el módulo de seguridad.
 
 **C. Administrador respuestas y estadisticas encuestas**
 
 **Responsabilidades:** Permite acceder y analizar las respuestas de las encuestas y proporcionar información estadistica para la toma de decisiones.
 
-**Interaccion:** Con el módulo de seguridad.
-
 **D. Usuario encuesta**
     
 **Responsabilidades:** Permite al usuario participar en las encuestas creadas por los aministradores.
 
-**Interaccion:** Con el módulo de seguridad.
     
 **-  Estadisticas:**
 
