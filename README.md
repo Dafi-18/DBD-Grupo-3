@@ -828,7 +828,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
 
 ## 5. Modelado Conceptual
-![Alt text](<CEIIS .png>)
+![Alt text](CEIIS.png)
 
 [Link con el .ERDPLUS](https://unipe-my.sharepoint.com/:u:/g/personal/diego_andia_f_uni_pe/EayJrIx8kktNtEz_Jt1zU9UBWwiJICrZ-eHoCB80qL8Ytg?e=wnkQUU)
 
