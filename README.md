@@ -731,24 +731,9 @@ La motivación para realizar este rtabajo se basa en el deseo de desarrollar un 
   
   **Responsabilidades:** Muestra al usuario que su orden de compra ha fallado, ya porque ese producto no está disponible u otros motivos.
   
-
-**Para los prestamos y reservas**
-
-  **A. Vista de Deudas Activas**
-
-  **Responsabilidades:** Muestra al administrador las deudas pendientes clasificando por código de alumno, en el cual podra ver las deudas pendientes del alumno que quiera cancelar.
-
-  **B. Vista de confirmación de medio de pago**
-
-  **Responsabilidades:** Muestra al administrador las opciones de pago que el alumno puede cancelar, ya sea por pago en efectivo o por yape
-
-  **C. Vista de confirmación de pago**
-
-  **Responsabilidades:** Muestra al administrador que el alumno ha cancelado su deuda y que esa deuda ya no se encuentra en la lista de deudas pendientes.
-
 **Para las reservas**
 
-**A. Reserva page**
+  **A. Reserva page**
   
   **Responsabilidades:** Permite al usuario poder reservar las lozas deportivas, las mesas de ping pong y la mesa de fulbito. Algunos tienen costo de reserva, otras son gratuitas. Todo pago se realiza presencialmente en la oficina del CEIIS.
 
@@ -781,6 +766,20 @@ La motivación para realizar este rtabajo se basa en el deseo de desarrollar un 
   **D. Vista de préstamo fallida**
   
   **Responsabilidades:** Muestra al usuario que ha ocurrido un error con su solicitud de préstamo y que debe volver a intentarlo.
+
+**Para los prestamos y reservas**
+
+  **A. Vista de Deudas Activas**
+
+  **Responsabilidades:** Muestra al administrador las deudas pendientes clasificando por código de alumno, en el cual podra ver las deudas pendientes del alumno que quiera cancelar.
+
+  **B. Vista de confirmación de medio de pago**
+
+  **Responsabilidades:** Muestra al administrador las opciones de pago que el alumno puede cancelar, ya sea por pago en efectivo o por yape
+
+  **C. Vista de confirmación de pago**
+
+  **Responsabilidades:** Muestra al administrador que el alumno ha cancelado su deuda y que esa deuda ya no se encuentra en la lista de deudas pendientes.
     
 **-  Logistica:**
 
