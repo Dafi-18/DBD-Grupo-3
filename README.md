@@ -665,7 +665,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
     
     **A. Registro**
     
-    Permite que los usuarios de la facultad creen una cuenta personal en el sistema. Su función principal es recopilar la información necesaria para crear una cuenta de usuario, como los nombres, apellidos, codigo UNI, correo institucional, contraseña.   
+    **Responsabilidades:** Permite que los usuarios de la facultad creen una cuenta personal en el sistema. Su función principal es recopilar la información necesaria para crear una cuenta de usuario, como los nombres, apellidos, codigo UNI, correo institucional, contraseña.
     
     **B. Login**
     
