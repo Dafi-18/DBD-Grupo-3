@@ -231,7 +231,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 4 | El alumno ingresa a la opcion de servicios|
 | 5 | El sistema muestra la pantalla de servicios |
 | 6 | El alumno ingresa a la opción de préstamos |
-| 7 | El sistema muestra las opciones de reserva|
+| 7 | El sistema muestra las opciones de préstamo |
 | 8 | El alumno presiona el boton "prestar" de la opción que desea|
 | 9 | El sistema verifica que el recurso este disponibe |
 | 10 | El sistema muestra la ventana de confirmación de préstamo |
