@@ -159,7 +159,7 @@ La motivación para realizar este rtabajo se basa en el deseo de desarrollar un 
 | Descripción  | Visualización actualizada de las últimas noticias que hay en la FIIS  |
 | Actor primario  | Alumno FIIS  |
 | Actores secundarios  | -  |
-| Precondiciones  | Content Cell  |
+| Precondiciones  | El usuario debe estar registrado en la aplicación.  |
 | Paso  | Acción |
 | 1  | El usuario accede a la página de inicio de sesión de la aplicación.  |
 | 2  | El alumno ingresa su correo y su contraseña  |
@@ -277,7 +277,7 @@ La motivación para realizar este rtabajo se basa en el deseo de desarrollar un 
 | Descripción |  Visualización de informacion relevante del CEIIS | 
 | Actor primario   | Alumno FIIS | 
 |Actor secundario| - |
-|Precondiciones | - |
+|Precondiciones | El usuario debe estar registrado en la aplicación. |
 | Paso | <p align="center"> Acción </p> |
 | 1 | El usuario inicia sesión en la aplicación o accede a la aplicación como visitante |
 | 2 | El usuario va a la sección de la página principal de la aplicación |
