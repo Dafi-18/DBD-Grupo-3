@@ -1,4 +1,12 @@
-#Video Individual
-Jo Huang Tony 
+# Video Individual
+
+Jo Huang Tony   
+
 20210089B
-https://youtu.be/gJKBbAI4jh0
+
+[Video](https://youtu.be/gJKBbAI4jh0)
+
+
+
+
+
