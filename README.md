@@ -846,6 +846,9 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
   **Responsabilidades:** Permite al administrador cambiar la disponibilidad de las lozas.
 
+  ### 3.2 Diagrama de paquetes UML
+  
+
 
 ## [Figma](https://www.figma.com/file/600QmGXcDGzgKVtZu9jm7g/DBD-GRUPO3?type=design&node-id=38-6&mode=design&t=0TAzfWjCKlUIWavj-0)
 
