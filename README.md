@@ -730,6 +730,21 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
    **D. Vista de compra fallida**
   
   **Responsabilidades:** Muestra al usuario que su orden de compra ha fallado, ya porque ese producto no está disponible u otros motivos.
+  
+
+**Para los prestamos y reservas**
+
+  **A. Vista de Deudas Activas**
+
+  **Responsabilidades:** Muestra al administrador las deudas pendientes clasificando por código de alumno, en el cual podra ver las deudas pendientes del alumno que quiera cancelar.
+
+  **B. Vista de confirmación de medio de pago**
+
+  **Responsabilidades:** Muestra al administrador las opciones de pago que el alumno puede cancelar, ya sea por pago en efectivo o por yape
+
+  **C. Vista de confirmación de pago**
+
+  **Responsabilidades:** Muestra al administrador que el alumno ha cancelado su deuda y que esa deuda ya no se encuentra en la lista de deudas pendientes.
 
 **Para las reservas**
 
