@@ -49,7 +49,7 @@ Nuestro proyecto para este curso se enfoca en el desarrollo de un software para 
 
 ### 1.5 Motivación del trabajo
 
-La motivación para realizar este trabajo se basa en el deseo de desarrollar un software que mejora la experiencia de los estudiantes de la facultad, a la misma vez de ayudar al CEIIS a automatizar y optimizar sus procesos, para un mejor aprovechamiento de los recursos que ofrece y beneficiar directamente a los estudiantes al hacer que estos recursos y servicios sean más accesibles y eficientes,
+La motivación para realizar este rtabajo se basa en el deseo de desarrollar un software que mejore la experiencia de los estudiantes de la FIIS, asi como la experiencia de administrador, con el fin de ayudar al CEIIS a automatizar y optimizar sus procesos, para un mejor aprovechamiento de los recursos y asi poder brindar un mejor servicio a los estudiantes. Ya que nosotros como estudiantes pudimos ver que el sistema actualmente utilizado no es muy efectivo y es un poco precario
 
 **- Objetivo:** Mejorar la experiencia de los estudiantes de la FIIS, a la vez de optimizar la gestion de los recursos del CEIIS y asi mismo aumentar la eficiencia del personal aministrativo del centro de estudiantes de la FIIS.
 
