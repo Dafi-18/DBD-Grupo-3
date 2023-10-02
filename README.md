@@ -693,7 +693,8 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
     **Responsabilidades:** Muestra a los usuarios un registro detallado de los prestamos, alquileres o reservas que han realizado dentro de la plataforma a lo largo del tiempo. Esta funcionalidad proporciona a los usuarios un resumen histórico de su actividad y les permite realizar un seguimiento de sus interacciones pasadas. 
 
     **H. Perfil del administrador**
-    Permite a los administradores gestionar y actualizar la información relacionada con su perfil personal en la plataforma, además de ingresar a las vistas de finanzas, estadisticas, encuestas, préstamos, alquiler, reserva y ventas.
+    
+    **Responsabilidades:** Permite a los administradores gestionar y actualizar la información relacionada con su perfil personal en la plataforma, además de ingresar a las vistas de finanzas, estadisticas, encuestas, préstamos, alquiler, reserva y ventas.
     
 **-   Encuestas**
 
