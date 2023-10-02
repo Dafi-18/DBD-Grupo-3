@@ -690,7 +690,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
     **Responsabilidades:** Muestra a los usuarios un registro detallado de los prestamos, alquileres o reservas que han realizado dentro de la plataforma a lo largo del tiempo. Esta funcionalidad proporciona a los usuarios un resumen histórico de su actividad y les permite realizar un seguimiento de sus interacciones pasadas. 
 
     **H. Perfil del administrador**
-    
+    Permite a los administradores gestionar y actualizar la información relacionada con su perfil personal en la plataforma, además de ingresar a las vistas de finanzas, estadisticas, encuestas, préstamos, alquiler, reserva y ventas.
     
 **-   Encuestas**
 
@@ -848,7 +848,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
   ### 3.2 Diagrama de paquetes UML
   
-![Alt texasdt](prestamosUML.jpeg)
+![Alt texasdt](paquetesUML.jpeg)
 
 
 ## [Figma](https://www.figma.com/file/600QmGXcDGzgKVtZu9jm7g/DBD-GRUPO3?type=design&node-id=38-6&mode=design&t=0TAzfWjCKlUIWavj-0)
