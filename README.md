@@ -838,17 +838,23 @@ La motivación para realizar este rtabajo se basa en el deseo de desarrollar un 
 ![Alt texasdt](paquetesUML.jpeg)
 
 ## 4. Prototipo 
+
+Para ver el prototipo debe ingresar al siguiente enlace:
+
 [Figma](https://www.figma.com/file/600QmGXcDGzgKVtZu9jm7g/DBD-GRUPO3?type=design&node-id=38-6&mode=design&t=0TAzfWjCKlUIWavj-0)
 
 
 ## 5. Modelado Conceptual
+
+### 5.1 Diagrama Entidad-Relación
+
 ![Alt text](CEIIS.png)
 
 [Link con el .ERDPLUS](https://unipe-my.sharepoint.com/:u:/g/personal/diego_andia_f_uni_pe/EayJrIx8kktNtEz_Jt1zU9UBWwiJICrZ-eHoCB80qL8Ytg?e=wnkQUU)
 
-Regla de negocio:
-1. El usuario solo puede pedir un prestamo a la vez, por reglas cel CEIIS
+- Regla de negocio:
+1. El usuario solo puede pedir un prestamo a la vez, por reglas del CEIIS
 
-### 5.1 Diagrama Entidad-Relación
+
 
 
