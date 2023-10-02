@@ -823,7 +823,8 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
   
 ![Alt texasdt](paquetesUML.jpeg)
 
-## 4. Prototipo
+## 4. Prototipo 
+[Figma](https://www.figma.com/file/600QmGXcDGzgKVtZu9jm7g/DBD-GRUPO3?type=design&node-id=38-6&mode=design&t=0TAzfWjCKlUIWavj-0)
 
 
 ## 5. Modelado Conceptual
@@ -831,64 +832,9 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
 [Link con el .ERDPLUS](https://unipe-my.sharepoint.com/:u:/g/personal/diego_andia_f_uni_pe/EayJrIx8kktNtEz_Jt1zU9UBWwiJICrZ-eHoCB80qL8Ytg?e=wnkQUU)
 
+Regla de negocio:
+1. El usuario solo puede pedir un prestamo a la vez, por reglas cel CEIIS
+
 ### 5.1 Diagrama Entidad-Relación
-
-
-
-## [Figma](https://www.figma.com/file/600QmGXcDGzgKVtZu9jm7g/DBD-GRUPO3?type=design&node-id=38-6&mode=design&t=0TAzfWjCKlUIWavj-0)
-
-### Requerimientos Funcionales Usuario
-- Registro de Usuario
-- Login de Usuario
-- Visualizador de Noticias
-- Reserva de lozas deportivas
-- Prestamos de Obejtos y materiales
-- Observar disponibilidad en tiempo real
-- Visualizador de historial.
-- Visualizar paginas "contactanos" y "quienes somos"
-- Visualizar reputación
-
-### Requeriminentos Administrador
-- Logid de Administrador
-- Actualizar sección de noticias y eventos
-- Manejar la disponibilidad de reservas
-- Gestionar de obejetos y materiales
-- Gestionar las finanzas obtenidas por el alquiler
-- Visualizar el historial de usuarios
-- Visualizar la reputación de cada usuario
-- Estadisticas de prestamos y horario
-- Gestión de turnos en la oficina
-
-### Modulos por funcionalidad
-
-
-### Vistas usuario
-- Login-
-- Registro-
-- Recuperación de contraseña-
-- Acutalización de datos
-- Home-
-- Quienes somos?(acerca de)
-- Servicios(se visualiza prestamos y alquiler)
-- Contactanos(se visualiza correo y celular de contacto)
-- Prestamos (se visualizan los objetos, stock, costo)
-- Alquiler (se visualizan las lozas, disponibilidad de horarios, costo)
-- Historial de Usuario(sus prestamos)
-- Reputación
-### Vistas admin
-- Login-
-- Registro-
-- Recuperación de contraseña-
-- Acutalización de datos
-- Home
-- Quienes somos?(acerca de)
-- Servicios(se visualiza prestamos y alquiler)
-- Contactanos
-- Prestamos (Usuario) (Administrador)
-- Alquiler
-- Gestión de inventario de ventas, préstamos y alquileres
-- Historial de Usuario
-- Reputación
-- Estadisticas
 
 
