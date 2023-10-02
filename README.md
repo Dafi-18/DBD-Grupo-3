@@ -658,7 +658,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 **- Seguridad**
   - Responsabilidades: Gestionar todo inicio de sesión, registro y recuperación de contraseñas de la pagina asi mismo de la seguridad de la integración de las cuentas, y el acceso a los campos respectivo de cada usuario y contraseña.
     
-  - Interacción:Con el módulo prestamos o alquiler, encuestas.
+  - Interacción:Con el módulo prestamos o alquiler, encuestas, finanzas, estadistica y logistica.
     
     **A. Registro**
     
@@ -848,6 +848,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
   ### 3.2 Diagrama de paquetes UML
   
+![Alt texasdt](prestamosUML.jpeg)
 
 
 ## [Figma](https://www.figma.com/file/600QmGXcDGzgKVtZu9jm7g/DBD-GRUPO3?type=design&node-id=38-6&mode=design&t=0TAzfWjCKlUIWavj-0)
