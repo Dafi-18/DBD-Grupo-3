@@ -139,7 +139,24 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 11 | El sistema cambia la nueva contraseña  |
 | 12 | El caso termina  |
 
-
+**Caso de uso N°5: Editar contacto**
+| Objetivo | <p align="left"> Permitir que los usuarios registrados puedan actualizar su información de contacto d</p> | 
+|:--------------:|--------------|
+| Descripción | Proceso en el cual se puede actualizar la información de contacto que incluyen el número de celular y correo| 
+| Actor primario   | Alumno FIIS o Administrador | 
+|Actor secundario| - |
+|Precondiciones | El usuario debe estar registrado en la aplicación. |
+| 1  | El usuario accede a la página de inicio de sesión de la aplicación.  |
+| 2  | El alumno ingresa su correo y su contraseña  |
+| 3  | El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos.  |
+| 4  | El alumno hace clic sobre el icono del perfil  |
+| 5  | El sistema muestra el perfil del alumno |
+| 6  | El alumno presiona sobre el botón de editar |
+| 7  | El sistema muestra la ventana de editar de contacto  |
+| 8  | El alumno ingresa su celular y correo  |
+| 9  | El sistema verifica el celular y correo sean válidos |
+| 10  | El sistema actualiza los nuevos datos  |
+| 12 | El caso termina  |
 
 
 **Caso de uso N°4: Visualizador de noticias**
