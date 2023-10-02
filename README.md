@@ -853,6 +853,14 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
   
 ![Alt texasdt](paquetesUML.jpeg)
 
+## 4. Prototipo
+
+
+## 5. Modelado Conceptual
+
+### 5.1 Diagrama Entidad-Relación
+
+
 
 ## [Figma](https://www.figma.com/file/600QmGXcDGzgKVtZu9jm7g/DBD-GRUPO3?type=design&node-id=38-6&mode=design&t=0TAzfWjCKlUIWavj-0)
 
