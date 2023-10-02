@@ -617,6 +617,32 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 12 | Se pdrá regresar a la página principal  con el botón de servicios |
 | 13 | El caso termina |
 
+**Caso de uso N°23: Confirmar deudas**
+- Los administradores deben actualizar las noticias periodicamente
+- Los administradores podrán agregar, editar y eliminar noticias.
+- Las actualizaciones de noticias deben ser claras y concisas. La información debe presentarse de manera comprensible.
+
+| Objetivo | <p align="left"> Permitir que los administradores confirmen si un alumno cancelo una deuda </p> | 
+|:--------------:|--------------|
+| Descripción | Permitir a los administradores puedan agregar, modificar o aliminar noticias | 
+| Actor primario   | Administrador | 
+|Actor secundario| Alumno FIIS |
+|Precondiciones | Los administradores deben haber iniciado sesión |
+| Paso | <p align="center"> Acción </p> |
+| 1 | El administrador accede a la página de inicio de sesión de la aplicación. |
+| 2	| El administrador ingresa su correo y su contraseña |
+| 3	| El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos |
+| 4	| El administrador presiona sobre el icono de perfil |
+| 5	| El sistema muestra la pantalla del perfil del administrador |
+| 6	| El administrador presiona sobre el boton deudas pendientes |
+| 7	| El sistema muestra la ventana de deudas pendientes|
+| 8	| El administrador presiona sobre el botón pagar del alumno que ha cancelado|
+| 9	| El sistema muestra la ventana de confirmación de pago |
+| 10 | El administrador escoge la opción por el cual el alumno pago|
+| 11	| El sistema muestra la ventana de confirmación de pago|
+| 12	| El alumno presiona sobre el boton de cerrar |
+| 11	| El sistema actualiza las deudas pendientes|
+| 12	| El caso termina|
 ### 2.2 Requerimientos de atributos
 
 - Seguridad: La página controlará el acceso solo de las personas que cuenten con una cuenta en el sistema, además distinguirá 2 tipos de usuarios para el sistema, los cuales tienen acceso a diferentes opciones dependiendo del tipo de usuario.
