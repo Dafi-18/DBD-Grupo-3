@@ -654,7 +654,10 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 - Automatizacion de procesos: El sistema permitirá automatizar procesos para los administradores, optimizando el uso de los recursos y mejorando la eficiencia operativa del CEIS.
   
 - Escalabilidad: La página será capaz de soportar una gran cantidad de usuarios y operaciones.
-## 3. Modulos
+## 3. Módulos
+
+### 3.1 Módulos por funcionalidad
+
 **- Seguridad**
   - Responsabilidades: Gestionar todo inicio de sesión, registro y recuperación de contraseñas de la pagina asi mismo de la seguridad de la integración de las cuentas, y el acceso a los campos respectivo de cada usuario y contraseña.
     
