@@ -159,7 +159,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 12 | El caso termina  |
 
 
-**Caso de uso N°4: Visualizador de noticias**
+**Caso de uso N°6: Visualizador de noticias**
 - La pagina mostrará noticias relevantes, como eventos deportivos organizados por el CEIIS, ecentos culturales y actividades del CEIIS. 
 - El sistema debe hacer posible filtrar por fecha, categoria o palabra clave.
 - Los administradores deben tener la capacidad de agregar, editar y eliminar noticias.
@@ -179,7 +179,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 5  | El sistema muestra las noticias más recientes  |
 | 6  | El caso termina  |
 
-**Caso de uso N°5: Reserva de lozas deportivas** 
+**Caso de uso N°7: Reserva de lozas deportivas** 
 - El sistema debe permitir que los usuarios registrados puedan ver la disponibilidad de las lozas deportivas en tiempo real. 
 - El usuario debe poder seleccionar la fecha y hora deseada para la reserva.
 - El sistema debe mostrar la disponibilidad de lozas y perimtir a los usuarios reservas una loza especifica.
@@ -211,7 +211,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 16 | El sistema actualiza el historial general de servicios |
 | 17 | El caso termina |
 
-**Caso de uso N°6: Prestamos de objetos y materiales**
+**Caso de uso N°8: Prestamos de objetos y materiales**
 - El usuario registrado debe poder ver un catalogo de objetos diisponibles para prestamo.
 - El sistema debe permitir al usuario solicitar prestamos de objetos seleccionando el articulo desea y proporcionando detalles del prestamo, como la duracion del prestamo.
 - El sistema debe mostrar una confirmación del prestamo.
@@ -242,7 +242,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 15 | El caso termina |
 
 
-**Caso de uso N°7: Realizar compra de objetos**
+**Caso de uso N°9: Realizar compra de objetos**
 
 | Objetivo | <p align="left">Permitir que los usuarios registrados puedan comprar objetos que vende en el CEIIS</p> | 
 |:--------------:|--------------|
@@ -270,7 +270,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 
 
 
-**Caso de uso N°8: Visualizador de historial**
+**Caso de uso N°10: Visualizador de historial**
 - El usuario registrado debe poder acceder a un historial de sus actividades, incluyendo prestamos pasados, reservas anteriores y noticias visualziadas.
 
 | Objetivo | <p align="left"> Permitir que los usuarios registrados accedan a un historial de sus actividades en la aplicación, incluyendo préstamos pasados, reservas anteriores y compras realizadas </p> | 
@@ -292,7 +292,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 10 | El sistema muestra la lista de actividades pasadas, incluyendo préstamos, reservas y compras especificando el tipo de servicio, la fecha , el costo y el estado actual |
 | 11 | El caso termina  |
 
-**Caso de uso N°9: Visualizar paginas "Acerca de nosotros"**
+**Caso de uso N°11: Visualizar paginas "Acerca de nosotros"**
 - La pagina debe tener una seccion "Acerca de Nosotros" que proprocione información sobre el CEIIS, la junta directiva y la misión del CEIIS.
 
 | Objetivo | <p align="left"> Permitir que los usuarios accedan y visualicen la página "Acerca de Nosotros", la cual proporciona información sobre el CEIIS, su junta directiva y su misión </p> | 
@@ -311,7 +311,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 6 | El caso termina |
 
 
-**Caso de uso N°10: Visualizar reputacion de usuario**
+**Caso de uso N°12: Visualizar reputacion de usuario**
 - El sistema mostrará la relación de pretamos y alquileres, con ello su reputación.
 - El usario o adminstrador podrá visualizar su reputación.
 
@@ -332,7 +332,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 8| El caso termina |
 
 
-**Caso de uso N°11: Creación de encuestas**
+**Caso de uso N°13: Creación de encuestas**
 - Los administradores deben tener la capacidad de crear encuenstas dirigidas a los ususarios.
 - El usuario debe poder responder a encuestas y proporcionar retroalimentacion sobre la calidad de los servicias y expreciencia del usuario.
 - Debe haber un sistema de analisis para resumir los resultados de las encuestas.
@@ -354,7 +354,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 8	| El sistema guarda la encuesta y la pública para que los usuarios puedan responder |
 | 9 | El caso termina |
 
-**Caso de uso N°12: Encuestas a usuarios**
+**Caso de uso N°14: Encuestas a usuarios**
 | Objetivo | <p align="left"> Permite a los usuarios responder a las encuestas y proporcionar sugerencias </p> | 
 |:--------------:|--------------|
 | Descripción | Registro de las respuestas brindadas por los usuarios | 
@@ -374,7 +374,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 10 | El caso termina |
 
 
-**Caso de uso N°13: Visualizar estadisticas**
+**Caso de uso N°15: Visualizar estadisticas**
 
 | Objetivo | <p align="left">  Permitir a los administradores acceder y visualizar estadísticas relacionadas con las actividades y el uso de recursos en la aplicación. </p> | 
 |:--------------:|--------------|
@@ -393,7 +393,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 7 | El caso termina |
 
 
-**Caso de uso N°14: Visualizar finanzas**
+**Caso de uso N°16: Visualizar finanzas**
 - EL administrador podrá observar una relación de cuantos alquileres realizados, y de los recuros vendidos y/o prestados.
 - Se podrá visualizar del direno recudado por cada actividad.
 
@@ -416,7 +416,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 9 | El caso termina |
 
 
-**Caso de uso N°15: Visualizar Respuestas y Estadísticas**
+**Caso de uso N°17: Visualizar Respuestas y Estadísticas**
 - EL administrador podrá observar la relación de las respuestas por pregunta.
 - Se mostrará un grafico de barras para que sea de facil entendimiento.
 
@@ -436,7 +436,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 7 | El caso termina |
 
 
-**Caso de uso N°16: Control de horario de lozas deportivas**
+**Caso de uso N°18: Control de horario de lozas deportivas**
 | Objetivo | <p align="left"> Gestionar los hoararios de las lozas deportivas </p> | 
 |:--------------:|--------------|
 | Descripción | Proceso en el cual los administradores cambian la disponibilidad de los horarios dependiendo de la hora y día| 
@@ -458,7 +458,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 12	| El sistema cambia los horarios disponibles en la ventana horarios de reserva |
 | 13	| El caso termina |
 
-**Caso de uso N°17: Quitar articulo de inventario de ventas**
+**Caso de uso N°19: Quitar articulo de inventario de ventas**
 
 | Objetivo | <p align="left"> Deshacerse de los articulos que ya no se encuentran disponibles para vender  </p> | 
 |:--------------:|--------------|
@@ -481,7 +481,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 12	| El sistema quita el articulo de la ventana de ventas |
 | 13	| El caso termina |
 
-**Caso de uso N°18: Agregar articulo de inventario de ventas**
+**Caso de uso N°20: Agregar articulo de inventario de ventas**
 | Objetivo | <p align="left"> Agregar articulos nuevos para poder vender  </p> | 
 |:--------------:|--------------|
 | Descripción | Proceso en el cual los administradores agregan articulos nuevos a través de su perfil de administradores | 
@@ -504,7 +504,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 13	| El sistema agrega el articulo a la ventana de ventas |
 | 13	| El caso termina |
 
-**Caso de uso N°19: Editar articulo de inventario de ventas**
+**Caso de uso N°21: Editar articulo de inventario de ventas**
 | Objetivo | <p align="left"> Editar los articulos disponibles para vender  </p> | 
 |:--------------:|--------------|
 | Descripción | Proceso en el cual los administradores editan el total de stock de los artículos en venta a través de su perfil de administradores | 
@@ -525,7 +525,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 11	| El sistema modifica el stock |
 | 12	| El caso termina |
 
-**Caso de uso N°20: Quitar articulo de inventario de prestamos**
+**Caso de uso N°22: Quitar articulo de inventario de prestamos**
 | Objetivo | <p align="left"> Deshacerse de los articulos que ya no se encuentran disponibles para prestar  </p> | 
 |:--------------:|--------------|
 | Descripción | Proceso en el cual los administradores quitan los articulos que ya no estan disponibles a través de su perfil de administradores | 
@@ -547,7 +547,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 12	| El sistema quita el articulo de la ventana de prestamos |
 | 13	| El caso termina |
 
-**Caso de uso N°21: Agregar articulo de inventario de préstamos**
+**Caso de uso N°23: Agregar articulo de inventario de préstamos**
 | Objetivo | <p align="left"> Agregar articulos nuevos para poder prestar  </p> | 
 |:--------------:|--------------|
 | Descripción | Proceso en el cual los administradores agregan articulos nuevos a través de su perfil de administradores | 
@@ -570,7 +570,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 13	| El sistema agrega el articulo a la ventana de prestamos |
 | 13	| El caso termina |
 
-**Caso de uso N°22: Editar articulo de inventario de préstamos**
+**Caso de uso N°24: Editar articulo de inventario de préstamos**
 | Objetivo | <p align="left"> Editar los articulos disponibles para prestar  </p> | 
 |:--------------:|--------------|
 | Descripción | Proceso en el cual los administradores editan el total de stock de los artículos prestables a través de su perfil de administradores | 
@@ -591,7 +591,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 11	| El sistema modifica el stock |
 | 12	| El caso termina |
 
-**Caso de uso N°23: Actualización de noticias**
+**Caso de uso N°25: Actualización de noticias**
 - Los administradores deben actualizar las noticias periodicamente
 - Los administradores podrán agregar, editar y eliminar noticias.
 - Las actualizaciones de noticias deben ser claras y concisas. La información debe presentarse de manera comprensible.
@@ -617,7 +617,7 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 12 | Se pdrá regresar a la página principal  con el botón de servicios |
 | 13 | El caso termina |
 
-**Caso de uso N°23: Confirmar deudas**
+**Caso de uso N°26: Confirmar deudas**
 - Los administradores deben actualizar las noticias periodicamente
 - Los administradores podrán agregar, editar y eliminar noticias.
 - Las actualizaciones de noticias deben ser claras y concisas. La información debe presentarse de manera comprensible.
