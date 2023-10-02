@@ -147,8 +147,9 @@ La motivación para realizar este rtabajo se basa en el deseo de desarrollar un 
 | 6  | El alumno presiona sobre el botón de editar |
 | 7  | El sistema muestra la ventana de editar de contacto  |
 | 8  | El alumno ingresa su celular y correo  |
-| 9  | El sistema verifica el celular y correo sean válidos |
-| 10  | El sistema actualiza los nuevos datos  |
+| 9 | El alumno presiona sobre el boton confirmar  |
+| 10  | El sistema verifica el celular y correo sean válidos |
+| 11  | El sistema actualiza los nuevos datos  |
 | 12 | El caso termina  |
 
 
