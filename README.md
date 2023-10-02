@@ -362,8 +362,8 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 4 | El administrador ingresa a la seccion de estadisticas |
 | 5 | El sistema muestra la sección de estadisticas y permite seleccionar una fecha especifica para ver las estadisticas |
 | 6 | El administrador selecciona una fecha específica para las ver estadísticas |
-| 6 | El sistema muestra una variedad de estadísticas, como la cantidad de préstamos realizados, la ocupación de las lozas deportivas, la cantidad de ventas realizadas, etc |
-| 7 | El caso termina |
+| 7 | El sistema muestra una variedad de estadísticas, como la cantidad de préstamos realizados, la ocupación de las lozas deportivas, la cantidad de ventas realizadas, etc |
+| 8 | El caso termina |
 
 
 **Caso de uso N°16: Visualizar finanzas**
