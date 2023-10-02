@@ -118,6 +118,30 @@ La motivación para realizar este trabajo se basa en el deseo de desarrollar un 
 | 8 | El sistema muestra en pantalla el perfil del usuario |
 | 9 | El caso termina |
 
+**Caso de uso N°4: Cambio de contraseña**
+
+| Objetivo | <p align="left"> Permitir que los usuarios registrados puedan realizar su cambio de contraseña </p> | 
+|:--------------:|--------------|
+| Descripción | Proceso en el cual se puede modificar la contraseña actual ingresando la contraseña anterior| 
+| Actor primario   | Alumno FIIS o Administrador | 
+|Actor secundario| - |
+|Precondiciones | El usuario debe estar registrado en la aplicación. |
+| 1  | El usuario accede a la página de inicio de sesión de la aplicación.  |
+| 2  | El alumno ingresa su correo y su contraseña  |
+| 3  | El sistema verifica las credenciales del usuario para asegurarse de que sean válidas y coincidan en la base de datos.  |
+| 4  | El alumno hace clic sobre el icono del perfil  |
+| 5  | El sistema muestra el perfil del alumno |
+| 6  | El alumno presiona sobre el botón de configuración |
+| 7  | El alumno ingresa su contraseña actual y luego ingresa una contraseña nueva para después confirmarla  |
+| 8  | El alumno presiona sobre el botón de cambiar contraseña  |
+| 9  | El sistema verifica que la primera contraseña coincida con la contraseña anterior |
+| 10  | El sistema verifica que la nueva contraseña no sea igual que el anterior  |
+| 11 | El sistema cambia la nueva contraseña  |
+| 12 | El caso termina  |
+
+
+
+
 **Caso de uso N°4: Visualizador de noticias**
 - La pagina mostrará noticias relevantes, como eventos deportivos organizados por el CEIIS, ecentos culturales y actividades del CEIIS. 
 - El sistema debe hacer posible filtrar por fecha, categoria o palabra clave.
