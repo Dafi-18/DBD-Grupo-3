@@ -1,4 +1,4 @@
-![image](https://github.com/Dafi-18/DBD-Grupo-3/assets/81938463/586bf045-714d-4871-ba4b-e31123c03efe)# DBD-Grupo-3
+# DBD-Grupo-3
 # "Implementación de software para el CEIIS"
 
 ## 1. Descripción de la Empresa, del Proceso de Negocio Elegido y Motivación
