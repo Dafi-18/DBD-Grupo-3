@@ -1,4 +1,4 @@
-# DBD-Grupo-3
+![image](https://github.com/Dafi-18/DBD-Grupo-3/assets/81938463/586bf045-714d-4871-ba4b-e31123c03efe)# DBD-Grupo-3
 # "Implementación de software para el CEIIS"
 
 ## 1. Descripción de la Empresa, del Proceso de Negocio Elegido y Motivación
@@ -33,6 +33,25 @@ El proceso de reserva de las lozas deportivas empieza cuando el estudiante consu
 ### 1.3 Diagrama de Procesos
 - Proceso de alquiler
 ![Alt texasdt](alquiler.jpeg)
+
+| Código | Nombre de la actividad | Descripción | Responsable de la actividad |
+| --- | --- | --- | --- |
+| 1 | Consultar disponibilidad | El alumno pregunta en la recepción de CEIIS la disponibilidad de lo que desea alquilar| Alumno |
+| 2 | Revisar disponibilidad | El administrador de CEIIS revisa la disponibilidad de lo que el alumno desea alquilar| Administrador CEIIS |
+| 3 |  Comunicar disponibilidad al alumno | El administrador de CEIIS comunica al alumno la disponibilidad de lo que desea alquilar| Administrador CEIIS |
+| 4 | Solicitar carnet de estudiante | Para realizar el alquiler el administrador del CEIIS debe solicitar al alumno que entregue su carner de estudiante | Administrador CEIIS |
+| 5 | Realizar cobro de alquiler | El administrador del CEIIS debe cobrarle al alumno el costo del objeto que va a alquilar| Administrador CEIIS |
+| 6 | Realiizar pago de alquiler | El alumno debe realizar el pago para continuar con el proceso de alquiler | Alumno |
+| 7 | Registrar el alquiler | El administrador CEIIS debe registrar los datos del alquiler en su registro fisico | Administrador CEIIS |
+| 8 | Entregar objeto en alquiler | El administrador CEIIS hace entrega del objeto prestado al alumno y le comunica el tiempo de duración del alquiler | Administrador CEIIS |
+| 9 | Recepcionar objeto en alquiler | El alumno recibe el objeto que ha alquilado | Alumno |
+| 10 | Devolver el objeto en alquiler | El alumno devuelve el objeto que alquiló al terminar el tiempo de alquiler o antes de que culmine el tiempo de alquiler | Alumno |
+| 11 | Recepcionar el objeto alquilado | El administrador CEIIS recibe el objeto alquilado y verifica que esté en las condiciones que fueron entregadas al momento del alquiler | Administrador CEIIS |
+| 12 | Devolver el carnet universitario al alumno | El administrador CEIIS le devuelve al alumno su carnet universitario | Alumno |
+| 13 | Consultar una posible reserva | En caso el objeto que el alumno desea alquilar no esté disponible el administrador CEIIS le consulta al alumno si desea reservar el objeto en un horario posterior | Administrador CEIIS |
+| 14 | Consultar Hora para reserva | En caso el alumno desea reservar el administrador CEIIS le consulta al alumno la hora para la reserva | Administrador CEIIS |
+| 15 | Reserva | El administrador CEIIS registra la reserva del alumno | Administrador CEIIS |
+
 
 - Proceso de préstamo
 ![Alt texasdt](prestamo.jpeg)
