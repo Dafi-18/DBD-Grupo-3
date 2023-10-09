@@ -56,11 +56,49 @@ El proceso de reserva de las lozas deportivas empieza cuando el estudiante consu
 - Proceso de préstamo
 ![Alt texasdt](prestamo.jpeg)
 
+| Código | Nombre de la actividad | Descripción | Responsable de la actividad |
+| --- | --- | --- | --- |
+| 1 | Solicitar un objeto en préstamo | El alumno solicita un objeto en préstamo en la recepción del CEIIS | Alumno |
+| 2 | Verificar disponibilidad del objeto | El administrador de CEIIS verifica la disponibilidad del objeto que el alumno solicita en préstamo | Administrador CEIIS |
+| 3 | Solicitar carnet universitario o DNI al alumno | El administrador le solicita al alumno su carnet universitario o en su defecto su DNI para que se quede como garantía | Administrador CEIIS |
+| 4 | Entregar carnet universitario o DNI | El alumno le entrega su carnet universitario o DNI al administrador CEIIS para dejarlo como garantía del préstamo | Alumno |
+| 5 | Registrar el préstamo | El administrador CEIIS registra el préstamo en su registro físico | Administrador CEIIS |
+| 6 | Entregar objeto en préstamo | El administrador CEIIS le entrega al alumno el objeto en préstamo | Administrador CEIIS |
+| 7 | Recibir objeto en préstamo | El alumno recibe el objeto que pidió prestado | Alumno |
+| 8 | Devolver objeto prestado | El alumno devuelve el objeto prestado | Alumno |
+| 9 | Recepcionar objeto prestado | El administrador CEIIS recepciona el objeto y verifica que se encuentre en las condiciones que fueron entregadas al alumno |  |
+| 10 | Devolver el carnet universitario al alumno | El administrador CEIIS le devuelve al alumno su carnet universitario | Administrador CEIIS |
+
+
 - Proceso de ventas
 ![Alt texasdt](ventas.jpeg)
 
+| Código | Nombre de la actividad | Descripción | Responsable de la actividad |
+| --- | --- | --- | --- |
+| 1 | Consultar existencia del objeto que desea comprar | El alumno consulta en la recepción del CEIIS si tienen el objeto que desea comprar | Alumno |
+| 2 | Revisar existencias del objeto | El administrador CEIIS revisa la existencia de forma visual | Administrador CEIIS |
+| 3 | Indicar el precio del objeto | El administrador CEIIS le comunica al alumno el precio del objeto | Administrador CEIIS |
+| 4 | Realizar el pago | El alumno realiza el pago por el objeto | Alumno |
+| 5 | Entregar el objeto vendido | El administrador CEIIS le entrega el objeto de la venta | Administrador CEIIS |
+| 6 | Recibir el objeto | El alumno recibe el objeto que ha comprado | Alumno |
+| 7 | Registrar la venta | El administrador CEIIS registra la venta en una hoja de Excel | Administrador CEIIS |
+
+
 - Proceso de reserva
 ![Alt texasdt](reserva.jpeg)
+
+| Código | Nombre de la actividad | Descripción | Responsable de la actividad |
+| --- | --- | --- | --- |
+| 1 | Consultar disponibilidad de la loza | El alumno consulta la disponibilidad de las lozas mediante una hoja de excel o presencialmente | Alumno |
+| 2 | Mostrar disponibilidad | La hoja de excel le permite al alumno ver la disponibilidad de las lozas deportivas en tiempo real | Excel |
+| 3 | Acudir al CEIIS | Para reservar la loza deportiva el alumno debe acudir al CEIIS y realizar la reserva presencialmente | Alumno |
+| 4 | Revisar disponibilidad | El administrador CEIIS revisa la disponibilidad de las lozas despues en la hoja de excel | Administrador CEIIS |
+| 5 | Comunicar disponibilidad al alumno | El administrador CEIIS comunica al alumno la disponibilidad de las lozas | Administrador CEIIS |
+| 6 | Solicitar reservar la loza | El alumno solicita reservar una o más lozas en un horario especifico | Alumno |
+| 7 | Pedir carnet y DNI al alumno | El administrador CEIIS le solicita al alumno que haga la entrega de su carnet universitario y su DNI para generar una ficha de reserva de la loza | Administrador CEIIS |
+| 8 | Entregar carnet y DNI | El alumno hace entrega de su carnet universitario y de su DNI al adminitrador CEIIS | Alumno |
+| 9 | Registar reserva | El administrador CEIIS registra la reserva en la hoja de excel | Administrador CEIIS |
+| 10 | Entregar ficha de reserva de la loza | El administrador CEIIS hace la entrega de uan ficha de reserva al alumno para que lo tenga como respaldo en caso lo necesite | Administrador CEIIS |
 
 ### 1.4 Descripcion del tema
 
@@ -639,9 +677,7 @@ La motivación para realizar este rtabajo se basa en el deseo de desarrollar un 
 - Usabilidad : La usabilidad es esencial para que tanto los administradores como los alumnos interactúen facilmente con el sistema, y permita optimizar el proceso de obtención de información necesaria especialmente para los administradores.
   
 - Rendimiento: Los recursos serán utilidados con eficacia para que el sistema pueda garantizar un correcto procesamiento de grandes cantidades de datos y generar información de manera rápida y eficiente.
-  
-- Automatizacion de procesos: El sistema permitirá automatizar procesos para los administradores, optimizando el uso de los recursos y mejorando la eficiencia operativa del CEIS.
-  
+    
 - Escalabilidad: La página será capaz de soportar una gran cantidad de usuarios y operaciones.
 ## 3. Módulos
 
