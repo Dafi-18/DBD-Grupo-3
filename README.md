@@ -904,7 +904,7 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 
 ### 5.1 Diagrama Entidad-Relación
 
-![Alt text](CEIIS.png)
+![Alt text](<Modelo Conceptual corregido.jpg>)
 
 [Link con el .ERDPLUS](https://unipe-my.sharepoint.com/:u:/g/personal/diego_andia_f_uni_pe/EayJrIx8kktNtEz_Jt1zU9UBWwiJICrZ-eHoCB80qL8Ytg?e=wnkQUU)
 
