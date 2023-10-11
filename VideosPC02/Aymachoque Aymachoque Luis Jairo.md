@@ -2,4 +2,4 @@
 Aymachoque Aymachoque Luis Jairo 
 20191144G
 
-[Video Individual]()
+[Video Individual](https://youtu.be/jB89zgnxhmA?feature=shared)
