@@ -906,6 +906,11 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 
 ![Alt text](<Modelo Conceptual final.jpg>)
 
+## 6. Modelo Lógico
+
+### 6.1 Modelo Relacional
+![Alt text](<Modelo Lógico.png>)
+
 [Link con el .ERDPLUS](https://unipe-my.sharepoint.com/:u:/g/personal/diego_andia_f_uni_pe/EayJrIx8kktNtEz_Jt1zU9UBWwiJICrZ-eHoCB80qL8Ytg?e=wnkQUU)
 
 - Regla de negocio:
