@@ -2,4 +2,4 @@
   Carhuas Romero Jhon Jesus
   20200298H
   
-  [Video Individual]()
+  [Video Individual](https://youtu.be/gXNQ3KGOAFs)
