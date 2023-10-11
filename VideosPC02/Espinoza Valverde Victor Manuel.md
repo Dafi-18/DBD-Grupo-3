@@ -2,4 +2,4 @@
 Espinoza Valverde Victor Manuel
 20192505C
 
-[Video Individual]()
+[Video Individual](https://youtu.be/eCpet0HHHhc)
