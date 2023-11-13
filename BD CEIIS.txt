@@ -143,3 +143,40 @@ create table Pregunta(
 		Id_administrador varchar(8) references Administrador(Id_administrador),
 		Tipo_pregunta varchar(15)
 );
+
+
+-- -- Inserta datos en la tabla persona
+INSERT INTO Persona (Dni, Primer_nombre, Segundo_nombre, Primer_apellido, Segundo_apellido, Correo, Celular) VALUES
+('75512214', 'Gunther', 'Nowell', 'Agneau', 'Tasseler', 'gunther.nowell@gmail.com', '810231922'),
+('92032111', 'Pasquale', 'Dulciana', 'Piechnik', 'Couves', 'pasquale.dulciana@hotmail.com', '271101211'),
+('12124287', 'Ernestine', 'Lynna', 'Leroux', 'Carefull', 'ernestine.leroux@gmail.com', '764687841'),
+('15967527', 'Joline', 'Venita', 'Currin', 'MacClenan', 'joline.currin@hotmail.com', '68281536'),
+('46872746', 'Esteban', 'Ula', 'Arnal', 'Veitch', 'esteban.arnal@gmail.com', '386893250'),
+('50249379', 'Walden', 'Joshuah', 'Butler-Bowdon', 'Breach', 'walden.butler@gmail.com', '516270597'),
+('12452535', 'Orville', 'Danna', 'Clemmett', 'Davet', 'orville.clemmett@hotmail.com', '218413524'),
+('93122098', 'Anne-marie', 'Sebastien', 'Cartwright', 'Charters', 'anne-marie.cartwright@gmail.com', '815922727'),
+('67522177', 'Ancell', 'Gerda', 'Leroux', 'Sisnett', 'ancell.leroux@hotmail.com', '336238426'),
+('29855394', 'Herb', 'Barnebas', 'Gonning', 'Gouldstraw', 'herb.gonning@gmail.com', '519130341'),
+('81684988', 'Chloris', 'Aristotle', 'Bertelmot', 'Harvison', 'chloris.bertelmot@hotmail.com', '735492486'),
+('67623604', 'Annaliese', 'Mikkel', 'Kiebes', 'Wickstead', 'annaliese.kiebes@gmail.com', '681628501'),
+('11779020', 'Ardelle', 'Portie', 'Bamfield', 'Smalman', 'ardelle.bamfield@hotmail.com', '972491006'),
+('26879857', 'Rudolph', 'Ulrike', 'Docksey', 'Benadette', 'rudolph.docksey@gmail.com', '835166494'),
+('90633110', 'Bette', 'Dennison', 'Reedy', 'Siemianowicz', 'bette.reedy@hotmail.com', '538940523');
+
+-- -- insertar datos de tabla usuario
+INSERT INTO usuario (Id_usuario, DNI, Cod_uni, Correo_uni, Contrasena) VALUES
+('1', '75512214', '50785498K', 'gunther.agneau.t@uni.pe', 'iG2/koYU0TX'),
+('2', '92032111', '27311522Y', 'pasquale.piechnik.c@uni.pe', 'eP3,?tse_s'),
+('3', '12124287', '14914779E', 'ernestine.leroux.c@uni.pe', 'xO7}=gc)'),
+('4', '15967527', '32333207E', 'joline.currin.m@uni.pe', 'lR9|3Op/z.y5qOP'),
+('5', '46872746', '59711093L', 'esteban.arnal.v@uni.pe', 'fE9\\ccqXmq'),
+('6', '50249379', '28442685J', 'walden.butler-bowdon.b@uni.pe', 'bM1&,Fe3\'),
+('7', '12452535', '90523126I', 'orville.clemmett.d@uni.pe', 'qY5&90J9+Z.2DH61'),
+('8', '93122098', '60459791O', 'anne-marie.cartwright.c@uni.pe', 'tP7++=U3JgJQ@'),
+('9', '67522177', '69845460L', 'ancell.leroux.l@uni.pe', 'iK0>)<1>po{k)'),
+('10', '29855394', '53195372K', 'herb.gonning.b@uni.pe', 'dR6t%r\o}*j'),
+('11', '81684988', '47744821T', 'chloris.bertelmot.h@uni.pe', 'zE4$w$1vq'),
+('12', '67623604', '84584606V', 'annaliese.kiebes.w@uni.pe', 'xH8\Mq|#fNxT9'),
+('13', 11779020, '84294264E', 'ardelle.bamfield.s@uni.pe', 'kJ6~q\p/S_'),
+('14', 26879857, '68509634F', 'rudolph.docksey.b@uni.pe', 'cQ3<C6i!~Gc#'),
+('15', 90633110, '97465614A', 'bette.reedy.r@uni.pe', 'zO1${N(Hzr');
