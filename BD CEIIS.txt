@@ -26,7 +26,7 @@ create table Persona(
 
 create table Usuario( 
 		Id_usuario varchar(8) PRIMARY KEY,
-		Cni varchar(8) references Persona(Dni),
+		Dni varchar(8) references Persona(Dni),
 		Cod_uni varchar(9) unique,
 		Correo_uni varchar(50) unique,  
  		Contrasena varchar(30)
