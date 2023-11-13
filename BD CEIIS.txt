@@ -6,57 +6,64 @@ DROP TABLE IF EXISTS Venta CASCADE;
 DROP TABLE IF EXISTS Detalle_venta CASCADE;
 DROP TABLE IF EXISTS Prestamo CASCADE;
 DROP TABLE IF EXISTS Alquiler CASCADE;
+DROP TABLE IF EXISTS Calendario CASCADE;
+DROP TABLE IF EXISTS Estadistica_venta CASCADE;
+DROP TABLE IF EXISTS Estadistica_prestamo CASCADE;
+DROP TABLE IF EXISTS Estadistica_alquiler CASCADE;
+DROP TABLE IF EXISTS Noticia CASCADE;
+DROP TABLE IF EXISTS Encuesta CASCADE;
+DROP TABLE IF EXISTS Pregunta CASCADE;
 
 create table Persona( 
-		dni varchar(8) PRIMARY KEY,
-		correo varchar(50), 
-		primer_nombre varchar(30), 
-		segundo_nombre varchar(30), 
-		primer_apellido varchar(30), 
-		segundo_apellido varchar(30), 
-		celular varchar(9) 
+		Dni varchar(8) PRIMARY KEY,
+		Primer_nombre varchar(30), 
+		Segundo_nombre varchar(30), 
+		Primer_apellido varchar(30), 
+		Segundo_apellido varchar(30), 
+		Correo varchar(50), 
+		Celular varchar(9) 
 );
 
 create table Usuario( 
 		Id_usuario varchar(8) PRIMARY KEY,
-		dni varchar(8) references Persona(dni),
-		cod_uni varchar(9) unique,
-		correo_uni varchar(50) unique,  
- 		contrasena varchar(30)
+		Cni varchar(8) references Persona(Dni),
+		Cod_uni varchar(9) unique,
+		Correo_uni varchar(50) unique,  
+ 		Contrasena varchar(30)
 );
 
 create table Administrador( 
 		Id_administrador varchar(8) PRIMARY KEY,
-		dni varchar(8) references Persona(dni),
-		cargo varchar(50),  
- 		contrasena varchar(30)
+		Dni varchar(8) references Persona(Dni),
+		Cargo varchar(30),  
+ 		Contrasena varchar(30)
 );
 
 create table Articulo(
 		Id_articulo varchar(8) PRIMARY KEY,
-		nombre_articulo varchar(25),
-		tipo_articulo varchar(25),
+		Nombre_articulo varchar(25),
+		Tipo_articulo varchar(25),
 		Cantidad numeric(2),
 		Descripcion varchar(50),
 		Precio_unitario numeric(3,2),
  		Disponibilidad varchar(20)
 );
 
-create table Detalle_venta( 
-		Id_detalle_venta varchar(8) PRIMARY KEY,  
-		Id_articulo varchar(8) references Articulo(Id_articulo),
-		Medio_pago varchar(25),
-		Cantidad numeric(2),
- 		Subtotal numeric(4,2)
-);
-
 create table Venta( 
 		Id_venta varchar(8) PRIMARY KEY,
 		Id_usuario varchar(8) references Usuario(Id_usuario),
-		Id_detalle_venta varchar(8) references Detalle_venta(Id_detalle_venta),  
+ 		Fecha_venta date,
  		Monto_final numeric(4,2),
- 		Estado_pago varchar(1),
- 		Fecha_venta date
+ 		Estado_pago varchar(10)
+);
+
+create table Detalle_venta( 
+		Id_venta varchar(8) references Venta(Id_venta),  
+		Id_articulo varchar(8) references Articulo(Id_articulo),
+		Medio_pago varchar(25),
+		Cantidad numeric(2),
+ 		Subtotal numeric(4,2),
+ 		PRIMARY KEY(Id_venta, Id_articulo)
 );
 
 create table Alquiler(
@@ -64,9 +71,10 @@ create table Alquiler(
 		Id_usuario varchar(8) references Usuario(Id_usuario),
 		Id_articulo varchar(8) references Articulo(Id_articulo),
 		Fecha_alquiler date,
-		Hora_inicio_alquiler time,
+		Hora_inicio time,
+		Hora_fin time,
 		Medio_pago varchar(20),
-		Monto numeric(3,2),
+		Monto numeric(2,2),
  		Estado_alquiler varchar(15)
 );
 
@@ -76,7 +84,62 @@ create table Prestamo(
 		Id_articulo varchar(8) references Articulo(Id_articulo),
 		Fecha_prestamo date,
 		Hora_prestamo time,
- 		Estado_prestamo varchar(15),
  		Fecha_devolucion date,
- 		Hora_devolucion time
+ 		Hora_devolucion time,
+ 		Estado_prestamo varchar(15)
+);
+
+create table Calendario(
+		Id_calendario varchar(8) PRIMARY KEY,
+		Fecha date,
+		Hora time
+);
+
+create table Estadistica_venta( 
+		Id_venta varchar(8) references Venta(Id_venta),  
+		Id_calendario varchar(8) references Calendario(Id_calendario),
+		Conteo numeric(2),
+ 		Ingreso_total numeric(4,2),
+ 		PRIMARY KEY(Id_venta, Id_calendario)
+);
+
+create table Estadistica_prestamo(
+		Id_prestamo varchar(8) references Prestamo(Id_prestamo),
+		Id_calendario varchar(8) references Calendario(Id_calendario),
+		Conteo_por_articulo numeric(4),
+		primary key(Id_prestamo, Id_calendario)
+);
+
+create table Estadistica_alquiler( 
+		Id_alquiler varchar(8) references Alquiler(Id_alquiler),  
+		Id_calendario varchar(8) references Calendario(Id_calendario),
+		Conteo numeric(4),
+ 		Total_ingreso numeric(4,2),
+ 		PRIMARY KEY(Id_alquiler, Id_calendario)
+);
+
+create table Noticia( 
+		Id_noticia varchar(8) primary key,  
+		Id_administrador varchar(8) references Administrador(Id_administrador),
+		Fecha date,
+		Titulo varchar(30),
+		Descripcion varchar(75)
+);
+
+create table Encuesta( 
+		Id_encuesta varchar(8) primary key,  
+		Id_administrador varchar(8) references Administrador(Id_administrador),
+		Fecha_apertura date,
+		Fecha_cierre date,
+		Cantidad_preguntas numeric(2),
+		Cantidad_respuestas numeric(2),
+		Tipo_respuesta varchar(15),
+		Estado_encuesta varchar(10)
+);
+
+create table Pregunta( 
+		Id_pregunta varchar(8) primary key,  
+		Id_encuesta varchar(8) references Encuesta(Id_encuesta),
+		Id_administrador varchar(8) references Administrador(Id_administrador),
+		Tipo_pregunta varchar(15)
 );
