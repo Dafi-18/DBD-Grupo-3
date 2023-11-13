@@ -1,0 +1,82 @@
+DROP TABLE IF EXISTS Persona CASCADE;
+DROP TABLE IF EXISTS Usuario CASCADE;
+DROP TABLE IF EXISTS Administrador CASCADE;
+DROP TABLE IF EXISTS Articulo CASCADE;
+DROP TABLE IF EXISTS Venta CASCADE;
+DROP TABLE IF EXISTS Detalle_venta CASCADE;
+DROP TABLE IF EXISTS Prestamo CASCADE;
+DROP TABLE IF EXISTS Alquiler CASCADE;
+
+create table Persona( 
+		dni varchar(8) PRIMARY KEY,
+		correo varchar(50), 
+		primer_nombre varchar(30), 
+		segundo_nombre varchar(30), 
+		primer_apellido varchar(30), 
+		segundo_apellido varchar(30), 
+		celular varchar(9) 
+);
+
+create table Usuario( 
+		Id_usuario varchar(8) PRIMARY KEY,
+		dni varchar(8) references Persona(dni),
+		cod_uni varchar(9) unique,
+		correo_uni varchar(50) unique,  
+ 		contrasena varchar(30)
+);
+
+create table Administrador( 
+		Id_administrador varchar(8) PRIMARY KEY,
+		dni varchar(8) references Persona(dni),
+		cargo varchar(50),  
+ 		contrasena varchar(30)
+);
+
+create table Articulo(
+		Id_articulo varchar(8) PRIMARY KEY,
+		nombre_articulo varchar(25),
+		tipo_articulo varchar(25),
+		Cantidad numeric(2),
+		Descripcion varchar(50),
+		Precio_unitario numeric(3,2),
+ 		Disponibilidad varchar(20)
+);
+
+create table Detalle_venta( 
+		Id_detalle_venta varchar(8) PRIMARY KEY,  
+		Id_articulo varchar(8) references Articulo(Id_articulo),
+		Medio_pago varchar(25),
+		Cantidad numeric(2),
+ 		Subtotal numeric(4,2)
+);
+
+create table Venta( 
+		Id_venta varchar(8) PRIMARY KEY,
+		Id_usuario varchar(8) references Usuario(Id_usuario),
+		Id_detalle_venta varchar(8) references Detalle_venta(Id_detalle_venta),  
+ 		Monto_final numeric(4,2),
+ 		Estado_pago varchar(1),
+ 		Fecha_venta date
+);
+
+create table Alquiler(
+		Id_alquiler varchar(8) PRIMARY KEY,
+		Id_usuario varchar(8) references Usuario(Id_usuario),
+		Id_articulo varchar(8) references Articulo(Id_articulo),
+		Fecha_alquiler date,
+		Hora_inicio_alquiler time,
+		Medio_pago varchar(20),
+		Monto numeric(3,2),
+ 		Estado_alquiler varchar(15)
+);
+
+create table Prestamo(
+		Id_prestamo varchar(8) PRIMARY KEY,
+		Id_usuario varchar(8) references Usuario(Id_usuario),
+		Id_articulo varchar(8) references Articulo(Id_articulo),
+		Fecha_prestamo date,
+		Hora_prestamo time,
+ 		Estado_prestamo varchar(15),
+ 		Fecha_devolucion date,
+ 		Hora_devolucion time
+);
