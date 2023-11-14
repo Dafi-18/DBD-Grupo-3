@@ -122,8 +122,8 @@ create table Noticia(
 		Id_noticia varchar(8) primary key,  
 		Id_administrador varchar(8) references Administrador(Id_administrador),
 		Fecha date,
-		Titulo varchar(30),
-		Descripcion varchar(200)
+		Titulo varchar(100),
+		Descripcion varchar(275)
 );
 
 create table Encuesta( 
@@ -146,7 +146,6 @@ create table Pregunta(
 );
 
 
--- -- Inserta datos en la tabla persona
 INSERT INTO Persona (Dni, Primer_nombre, Segundo_nombre, Primer_apellido, Segundo_apellido, Correo, Celular) VALUES
 ('75512214', 'Gunther', 'Nowell', 'Agneau', 'Tasseler', 'gunther.nowell@gmail.com', '810231922'),
 ('92032111', 'Pasquale', 'Dulciana', 'Piechnik', 'Couves', 'pasquale.dulciana@hotmail.com', '271101211'),
@@ -163,16 +162,7 @@ INSERT INTO Persona (Dni, Primer_nombre, Segundo_nombre, Primer_apellido, Segund
 ('11779020', 'Ardelle', 'Portie', 'Bamfield', 'Smalman', 'ardelle.bamfield@hotmail.com', '972491006'),
 ('26879857', 'Rudolph', 'Ulrike', 'Docksey', 'Benadette', 'rudolph.docksey@gmail.com', '835166494'),
 ('90633110', 'Bette', 'Dennison', 'Reedy', 'Siemianowicz', 'bette.reedy@hotmail.com', '538940523');
-('75512214', 'Jose', 'Carlos', 'Pereira', 'Gomez', 'jose.pereira@hotmail.com', '912345678'),
-('92032111', 'Mariana', 'Isabel', 'Gonza', 'Lopez', 'mariana.gonza@gmail.com', '923456789'),
-('12124287', 'Carlos', 'Manuel', 'Ramirez', 'Sanchez', 'carlos.ramirez@hotmail.com', '934567890'),
-('15967527', 'Ana', 'Luisa', 'Martinez', 'Rodriguez', 'ana.martinez@gmail.com', '945678901'),
-('46872746', 'Pedro', 'Javier', 'Torres', 'Hernandez', 'pedro.torres@hotmail.com', '956789012'),
-('50249379', 'Sofia', 'Carmen', 'Lopez', 'Diaz', 'sofia.lopez@gmail.com', '967890123'),
-('12452535', 'Juan', 'Carlos', 'Perez', 'Gomez', 'juan.perez@hotmail.com', '987654321'),
-('93122098', 'Maria', 'Isabel', 'Gonzalez', 'Lopez', 'maria.gonzalez@gmail.com', '876543210'),
-('67522177', 'Carla', 'Manel', 'Poma', 'Sanchez', 'carla.poma@hotmail.com', '765432109'),
-('29855394', 'Anastasia', 'Luisa', 'Martinez', 'Rodriguez', 'anastasia.martinez@gmail.com', '654321098').
+
 
 -- -- insertar datos de tabla usuario
 INSERT INTO usuario (Id_usuario, DNI, Cod_uni, Correo_uni, Contrasena) VALUES
@@ -188,9 +178,9 @@ INSERT INTO usuario (Id_usuario, DNI, Cod_uni, Correo_uni, Contrasena) VALUES
 ('10', '29855394', '53195372K', 'herb.gonning.b@uni.pe', 'dR6t%r\o}*j'),
 ('11', '81684988', '47744821T', 'chloris.bertelmot.h@uni.pe', 'zE4$w$1vq'),
 ('12', '67623604', '84584606V', 'annaliese.kiebes.w@uni.pe', 'xH8\Mq|#fNxT9'),
-('13', 11779020, '84294264E', 'ardelle.bamfield.s@uni.pe', 'kJ6~q\p/S_'),
-('14', 26879857, '68509634F', 'rudolph.docksey.b@uni.pe', 'cQ3<C6i!~Gc#'),
-('15', 90633110, '97465614A', 'bette.reedy.r@uni.pe', 'zO1${N(Hzr');
+('13', '11779020', '84294264E', 'ardelle.bamfield.s@uni.pe', 'kJ6~q\p/S_'),
+('14', '26879857', '68509634F', 'rudolph.docksey.b@uni.pe', 'cQ3<C6i!~Gc#'),
+('15', '90633110', '97465614A', 'bette.reedy.r@uni.pe', 'zO1${N(Hzr');
 
 -- Insertar datos en la tabla Administrador
 INSERT INTO Administrador (Id_administrador, Dni, Cargo, Contrasena) VALUES 
@@ -205,45 +195,23 @@ INSERT INTO Administrador (Id_administrador, Dni, Cargo, Contrasena) VALUES
 ('ADM009', '67522177', 'Supervisor Técnico', 'securepwd789'),
 ('ADM010', '29855394', 'Consultor', 'adminadmin123');
 
-
-
-
-
 -- -- insertar datos de tabla articulo
 INSERT INTO Articulo(Id_articulo, Nombre_articulo, Tipo_articulo, Cantidad, Descripcion, Precio_unitario, Disponibilidad) VALUES
-('ART001', 'folder manila', 'venta', 40, 'Hay de diferentes colores', 1.5, 'disponible'),
-('ART002', 'lapicero', 'venta', 50, 'Duran un ciclo', 3, 'disponible'),
-('ART003', 'borrador', 'venta', 30, 'Hay de diferentes tamaños', 1, 'disponible'),
-('ART004', 'liquidpaper', 'venta', 30, 'Secado rápido', 3, 'disponible'),
-
-('ART005', 'Cascos blancos', 'prestamo', 45, 'Para protección', null, 'disponible'),
-('ART006', 'ajedrez', 'prestamo', 10, 'Piezas completas', null, 'disponible'),
-('ART007', 'guitarras', 'prestamo', 10, 'Limpio y en excelentes condiciones', null, 'disponible'),
-('ART008', 'pelotas', 'prestamo', 20, 'En excelentes condiciones', null, 'disponible'),
-('ART009', 'escalímetros', 'prestamo', 30, 'En excelentes condiciones', null, 'disponible'),
-('ART010', 'pistoletes', 'prestamo', 20, 'En excelentes condiciones', null, 'disponible'),
-('ART011', 'juegos de reglas', 'prestamo', 10, 'En excelentes condiciones', null, 'disponible'),
-('ART012', 'calculadora', 'prestamo', 50, 'En excelentes condiciones', null, 'disponible'),
-('ART013', 'bata', 'prestamo', 20, 'Limpio, muy bien conservado', null, 'disponible'),
-
-('ART014', 'Mesa de fulbito', 'reservas y alquileres', 2, 'Acción fluida de los jugadores', 2.5, 'disponible'),
-('ART015', 'Mesa de ping pong', 'reservas y alquileres', 2, 'Superficie uniforme, rebote consistente', 2, 'no disponible'),
-('ART016', 'Loza1', 'reservas y alquileres', 1, 'Uso para fútbol, básquet y vóley', 5, 'disponible'),
-('ART017', 'Loza2', 'reservas y alquileres', 1, 'Uso para fútbol, básquet y vóley', 5, 'no disponible');
-
--- Insertar datos en la tabla Venta
-INSERT INTO Venta (Id_venta, Id_usuario, Fecha_venta, Monto_final, Estado_pago) VALUES
-('VEN1', 1, '2023-11-15', 1.5, 'Pagado'),
-('VEN2', 2, '2023-12-20', 3, 'Pagado'),
-('VEN3', 3, '2023-11-25', 1, 'Pendiente'),
-('VEN4', 4, '2023-12-30', 2.5, 'Pagado'),
-('VEN5', 5, '2023-11-05', 3, 'Pendiente'),
-('VEN6', 1, '2023-12-10', 6, 'Pagado'),
-('VEN7', 2, '2023-11-15', 4, 'Pagado'),
-('VEN8', 3, '2023-12-20', 5, 'Pendiente'),
-('VEN9', 4, '2023-11-25', 8, 'Pagado'),
-('VEN10', 5, '2023-12-01', 7, 'Pendiente');
-
+	('ART74238', 'lapiz', 'venta', '1', 'Contiene goma de borrar, diferentes colores', '1.5', 'disponible'),
+	('ART52713', 'lapicero', 'venta', '2', 'Hay de diferentes colores', '3', 'disponible'),
+	('ART78634', 'borrador', 'venta', '1', 'hay de diferentes tipos', '1', 'disponible'),
+	('ART13526', 'regla', 'venta', '2', 'tenemos de 10cm, 20cm, 30cm', '2.5', 'disponible'),
+	('ART38621', 'plumon', 'venta', '2', 'Se tienen de diferentes colores', '3', 'disponible'),
+	('ART18723', 'Cascos bloncos', 'prestamo', '2', 'para proteccion', null, 'disponible'),
+	('ART98123', 'ajedrez', 'prestamo', '1', 'piezas completas', null, 'disponible'),
+	('ART38172', 'guitarras', 'prestamo', '1', 'Limpio y en excelentes condicones', null, 'disponible'),
+	('ART64271', 'calculadora', 'prestamo', '1', 'En excelentes condiciones', null, 'disponible'),
+	('ART93128', 'bata', 'prestamo', '1', 'Limpio, muy bien conservado', null, 'disponible'),
+	('ART38723', 'balón de futbol', 'reservas y alquileres', '2', 'En excelentes condiciones', '3', 'disponible'),
+	('ART43791', 'Mesa de fulbito', 'reservas y alquileres', '2', 'acción fluida de los jugadores', '2.5', 'disponible'),
+	('ART98213', 'Mesa de ping pong', 'reservas y alquileres', '2', 'superficie uniforme, rebote consistente', '2', 'no disponible'),
+	('ART18738', 'Loza1', 'reservas y alquileres', '1', 'uso para futbol, basquet y voley', '5', 'disponible'),
+	('ART12378', 'Loza2', 'reservas y alquileres', '1', 'uso para futbol, basquet y voley', '5', 'no disponible');
 
 
 -- Insertar datos en la tabla Alquiler
@@ -271,6 +239,90 @@ INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora
 ('PRE3', '2', 'ART38172', '2023-11-20', '14:15:00', '2023-11-21', '15:30:00', 'Devuelto'),
 ('PRE4', '4', 'ART64271', '2023-11-25', '16:45:00', null, null, 'No devuelto'),
 ('PRE5', '1', 'ART93128', '2023-11-30', '19:00:00', null, null, 'No devuelto');
+
+-- Insertar datos en la tabla Venta
+INSERT INTO Venta (Id_venta, Id_usuario, Fecha_venta, Monto_final, Estado_pago) VALUES
+('VEN1', 1, '2023-11-15', 1.5, 'Pagado'),
+('VEN2', 2, '2023-12-20', 3, 'Pagado'),
+('VEN3', 3, '2023-11-25', 1, 'Pendiente'),
+('VEN4', 4, '2023-12-30', 2.5, 'Pagado'),
+('VEN5', 5, '2023-11-05', 3, 'Pendiente'),
+('VEN6', 1, '2023-12-10', 6, 'Pagado'),
+('VEN7', 2, '2023-11-15', 4, 'Pagado'),
+('VEN8', 3, '2023-12-20', 5, 'Pendiente'),
+('VEN9', 4, '2023-11-25', 8, 'Pagado'),
+('VEN10', 5, '2023-12-01', 7, 'Pendiente');
+
+-- Insertar datos en la tabla Encuesta
+INSERT INTO Encuesta (Id_encuesta, Id_administrador, Fecha_apertura, Fecha_cierre, Cantidad_preguntas, Cantidad_respuestas, Estado_encuesta) VALUES
+('ENC001', 'ADM005', '2023-10-13', '2023-10-20', 9, 30, 'inactivo'),
+('ENC002', 'ADM002', '2023-10-14', '2023-10-21', 9, 25, 'inactivo'),
+('ENC003', 'ADM003', '2023-10-15', '2023-10-22', 9, 40, 'inactivo'),
+('ENC004', 'ADM004', '2023-10-16', '2023-10-23', 9, 35, 'inactivo'),
+('ENC005', 'ADM006', '2023-11-14', '2023-11-24', 9, 20, 'activo'),
+('ENC006', 'ADM006', '2023-11-15', '2023-11-25', 9, 0, 'activo'),
+('ENC007', 'ADM007', '2023-11-16', '2023-11-26', 9, 0, 'inactivo'),
+('ENC008', 'ADM005', '2023-11-17', '2023-11-27', 9, 0, 'inactivo'),
+('ENC009', 'ADM010', '2023-11-18', '2023-11-28', 9, 0, 'inactivo'),
+('ENC010', 'ADM010', '2023-11-22', '2023-11-29', 9, 0, 'inactivo');
+
+
+-- Insertar datos en la tabla Pregunta
+INSERT INTO Pregunta (Id_pregunta, Id_encuesta, Id_administrador, Tipo_respuesta) VALUES
+('PRE001', 'ENC001', 'ADM005', 'opcion multiple'),
+('PRE002', 'ENC001', 'ADM005', 'una sola opcion'),
+('PRE003', 'ENC001', 'ADM005', 'opcion multiple'),
+('PRE004', 'ENC001', 'ADM005', 'una sola opcion'),
+('PRE005', 'ENC001', 'ADM005', 'opcion multiple'),
+('PRE006', 'ENC001', 'ADM005', 'una sola opcion'),
+('PRE007', 'ENC001', 'ADM005', 'opcion multiple'),
+('PRE008', 'ENC001', 'ADM005', 'una sola opcion'),
+('PRE009', 'ENC001', 'ADM004', 'opcion multiple'),
+('PRE010', 'ENC001', 'ADM005', 'una sola opcion'),
+('PRE001', 'ENC002', 'ADM004', 'opcion multiple'),
+('PRE002', 'ENC002', 'ADM004', 'una sola opcion'),
+('PRE003', 'ENC002', 'ADM004', 'opcion multiple'),
+('PRE004', 'ENC002', 'ADM004', 'una sola opcion'),
+('PRE005', 'ENC002', 'ADM004', 'opcion multiple'),
+('PRE006', 'ENC002', 'ADM004', 'una sola opcion'),
+('PRE007', 'ENC002', 'ADM004', 'opcion multiple'),
+('PRE008', 'ENC002', 'ADM004', 'una sola opcion'),
+('PRE009', 'ENC002', 'ADM004', 'opcion multiple'),
+('PRE010', 'ENC002', 'ADM004', 'una sola opcion'),
+('PRE001', 'ENC003', 'ADM006', 'opcion multiple'),
+('PRE002', 'ENC003', 'ADM006', 'una sola opcion'),
+('PRE003', 'ENC003', 'ADM006', 'opcion multiple'),
+('PRE004', 'ENC003', 'ADM006', 'una sola opcion'),
+('PRE005', 'ENC003', 'ADM006', 'opcion multiple'),
+('PRE006', 'ENC003', 'ADM006', 'una sola opcion'),
+('PRE007', 'ENC003', 'ADM006', 'opcion multiple'),
+('PRE008', 'ENC003', 'ADM006', 'una sola opcion'),
+('PRE009', 'ENC003', 'ADM006', 'opcion multiple'),
+('PRE010', 'ENC003', 'ADM006', 'una sola opcion');
+
+-- Insertar datos en la tabla Pregunta
+INSERT INTO Pregunta (Id_pregunta, Id_encuesta, Id_administrador, Tipo_respuesta) VALUES
+('PRE001', 'ENC004', 'ADM004', 'opcion multiple'),
+('PRE002', 'ENC004', 'ADM004', 'una sola opcion'),
+('PRE003', 'ENC004', 'ADM004', 'opcion multiple'),
+('PRE004', 'ENC004', 'ADM004', 'una sola opcion'),
+('PRE005', 'ENC004', 'ADM004', 'opcion multiple'),
+('PRE006', 'ENC004', 'ADM004', 'una sola opcion'),
+('PRE007', 'ENC004', 'ADM004', 'opcion multiple'),
+('PRE008', 'ENC004', 'ADM004', 'una sola opcion'),
+('PRE009', 'ENC004', 'ADM004', 'opcion multiple'),
+('PRE010', 'ENC004', 'ADM004', 'una sola opcion'),
+('PRE001', 'ENC005', 'ADM004', 'opcion multiple'),
+('PRE002', 'ENC005', 'ADM006', 'una sola opcion'),
+('PRE003', 'ENC005', 'ADM006', 'opcion multiple'),
+('PRE004', 'ENC005', 'ADM006', 'una sola opcion'),
+('PRE005', 'ENC005', 'ADM006', 'opcion multiple'),
+('PRE006', 'ENC005', 'ADM006', 'una sola opcion'),
+('PRE007', 'ENC005', 'ADM006', 'opcion multiple'),
+('PRE008', 'ENC005', 'ADM006', 'una sola opcion'),
+('PRE009', 'ENC005', 'ADM006', 'opcion multiple'),
+('PRE010', 'ENC005', 'ADM006', 'una sola opcion');
+
 
 -- Insertar datos en la tabla Calendario
 INSERT INTO Calendario (Id_calendario, Fecha, Hora) VALUES
@@ -306,69 +358,4 @@ INSERT INTO Noticia(Id_noticia, Id_administrador, Fecha, Titulo, Descripcion) VA
 ('NOT12', 'ADM003', '2023-12-03', 'Programa de voluntariado comunitario', 'La FIIS lanza un programa de voluntariado comunitario para estudiantes interesados en contribuir al bienestar de la sociedad.'),
 ('NOT13', 'ADM004', '2023-12-04', 'Concurso de Innovación Tecnológica', 'Participa en el Concurso de Innovación Tecnológica organizado por la FIIS, donde los estudiantes presentarán sus proyectos más innovadores.'),
 ('NOT14', 'ADM005', '2023-12-05', 'Seminario sobre Ciencia de Datos', 'La FIIS organiza un seminario sobre Ciencia de Datos, abordando las últimas tendencias y aplicaciones en esta área emocionante.');
-
-
--- Insertar datos en la tabla Encuesta
-INSERT INTO Encuesta (Id_encuesta, Id_administrador, Fecha_apertura, Fecha_cierre, Cantidad_preguntas, Cantidad_respuestas, Estado_encuesta) VALUES
-('ENC001', 'ADM005', '2023-10-13', '2023-10-20', 9, 30, 'inactivo'),
-('ENC002', 'ADM002', '2023-10-14', '2023-10-21', 9, 25, 'inactivo'),
-('ENC003', 'ADM003', '2023-10-15', '2023-10-22', 9, 40, 'inactivo'),
-('ENC004', 'ADM004', '2023-10-16', '2023-10-23', 9, 35, 'inactivo'),
-('ENC005', 'ADM006', '2023-11-14', '2023-11-24', 9, 20, 'activo'),
-('ENC006', 'ADM006', '2023-11-15', '2023-11-25', 9, 0, 'activo'),
-('ENC007', 'ADM007', '2023-11-16', '2023-11-26', 9, 0, 'inactivo'),
-('ENC008', 'ADM005', '2023-11-17', '2023-11-27', 9, 0, 'inactivo'),
-('ENC009', 'ADM010', '2023-11-18', '2023-11-28', 9, 0, 'inactivo'),
-('ENC010', 'ADM010', '2023-11-22', '2023-11-29', 9, 0, 'inactivo');
-
--- Insertar datos en la tabla Pregunta
-INSERT INTO Pregunta (Id_pregunta, Id_encuesta, Id_administrador, Tipo_respuesta) VALUES
-('PRE001', 'ENC001', 'ADM005', 'opcion multiple'),
-('PRE002', 'ENC001', 'ADM005', 'una sola opcion'),
-('PRE003', 'ENC001', 'ADM005', 'opcion multiple'),
-('PRE004', 'ENC001', 'ADM005', 'una sola opcion'),
-('PRE005', 'ENC001', 'ADM005', 'opcion multiple'),
-('PRE006', 'ENC001', 'ADM005', 'una sola opcion'),
-('PRE007', 'ENC001', 'ADM005', 'opcion multiple'),
-('PRE008', 'ENC001', 'ADM005', 'una sola opcion'),
-('PRE009', 'ENC001', 'ADM004', 'opcion multiple'),
-('PRE001', 'ENC002', 'ADM004', 'opcion multiple'),
-('PRE002', 'ENC002', 'ADM004', 'una sola opcion'),
-('PRE003', 'ENC002', 'ADM004', 'opcion multiple'),
-('PRE004', 'ENC002', 'ADM004', 'una sola opcion'),
-('PRE005', 'ENC002', 'ADM004', 'opcion multiple'),
-('PRE006', 'ENC002', 'ADM004', 'una sola opcion'),
-('PRE007', 'ENC002', 'ADM004', 'opcion multiple'),
-('PRE008', 'ENC002', 'ADM004', 'una sola opcion'),
-('PRE009', 'ENC002', 'ADM004', 'opcion multiple'),
-('PRE001', 'ENC003', 'ADM006', 'opcion multiple'),
-('PRE002', 'ENC003', 'ADM006', 'una sola opcion'),
-('PRE003', 'ENC003', 'ADM006', 'opcion multiple'),
-('PRE004', 'ENC003', 'ADM006', 'una sola opcion'),
-('PRE005', 'ENC003', 'ADM006', 'opcion multiple'),
-('PRE006', 'ENC003', 'ADM006', 'una sola opcion'),
-('PRE007', 'ENC003', 'ADM006', 'opcion multiple'),
-('PRE008', 'ENC003', 'ADM006', 'una sola opcion'),
-('PRE009', 'ENC003', 'ADM006', 'opcion multiple'),
-('PRE001', 'ENC004', 'ADM004', 'opcion multiple'),
-('PRE002', 'ENC004', 'ADM004', 'una sola opcion'),
-('PRE003', 'ENC004', 'ADM004', 'opcion multiple'),
-('PRE004', 'ENC004', 'ADM004', 'una sola opcion'),
-('PRE005', 'ENC004', 'ADM004', 'opcion multiple'),
-('PRE006', 'ENC004', 'ADM004', 'una sola opcion'),
-('PRE007', 'ENC004', 'ADM004', 'opcion multiple'),
-('PRE008', 'ENC004', 'ADM004', 'una sola opcion'),
-('PRE009', 'ENC004', 'ADM004', 'opcion multiple'),
-('PRE010', 'ENC004', 'ADM004', 'una sola opcion');
-('PRE001', 'ENC005', 'ADM004', 'opcion multiple'),
-('PRE002', 'ENC005', 'ADM006', 'una sola opcion'),
-('PRE003', 'ENC005', 'ADM006', 'opcion multiple'),
-('PRE004', 'ENC005', 'ADM006', 'una sola opcion'),
-('PRE005', 'ENC005', 'ADM006', 'opcion multiple'),
-('PRE006', 'ENC005', 'ADM006', 'una sola opcion'),
-('PRE007', 'ENC005', 'ADM006', 'opcion multiple'),
-('PRE008', 'ENC005', 'ADM006', 'una sola opcion'),
-('PRE009', 'ENC005', 'ADM006', 'opcion multiple'),
-('PRE010', 'ENC005', 'ADM006', 'una sola opcion');
-
 
