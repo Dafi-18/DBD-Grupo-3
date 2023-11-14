@@ -181,6 +181,18 @@ INSERT INTO usuario (Id_usuario, DNI, Cod_uni, Correo_uni, Contrasena) VALUES
 ('14', 26879857, '68509634F', 'rudolph.docksey.b@uni.pe', 'cQ3<C6i!~Gc#'),
 ('15', 90633110, '97465614A', 'bette.reedy.r@uni.pe', 'zO1${N(Hzr');
 
+-- Insertar datos en la tabla Administrador
+INSERT INTO Administrador (Id_administrador, Dni, Cargo, Contrasena) VALUES 
+('ADM001', '75512214', 'Presidente', 'contraseña123'),
+('ADM002', '92032111', 'Vicepresidente', 'adminpass'),
+('ADM003', '12124287', 'Coordinador de deportes', 'securepwd'),
+('ADM004', '15967527', 'Coordinador RRPP', 'admin123'),
+('ADM005', '46872746', 'Coordinador financiero', 'password456'),
+('ADM006', '50249379', 'Segundo vicepresidente', 'securepass321'),
+('ADM007', '12452535', 'Coordinador de publicidad', 'adminadmin'),
+('ADM008', '93122098', 'Especialista en Sistemas', 'adminpass567'),
+('ADM009', '67522177', 'Supervisor Técnico', 'securepwd789'),
+('ADM010', '29855394', 'Consultor', 'adminadmin123');
 
 
 
