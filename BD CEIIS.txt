@@ -123,7 +123,7 @@ create table Noticia(
 		Id_administrador varchar(8) references Administrador(Id_administrador),
 		Fecha date,
 		Titulo varchar(30),
-		Descripcion varchar(75)
+		Descripcion varchar(200)
 );
 
 create table Encuesta( 
