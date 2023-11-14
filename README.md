@@ -909,9 +909,9 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 ## 6. Modelo Lógico
 
 ### 6.1 Modelo Relacional
-![Alt text](<Modelo Lógico.png>)
+![Alt text](<Modelo Lógico 13-11-23.png>)
 
-[Link con el .ERDPLUS](https://unipe-my.sharepoint.com/:u:/g/personal/diego_andia_f_uni_pe/EayJrIx8kktNtEz_Jt1zU9UBWwiJICrZ-eHoCB80qL8Ytg?e=wnkQUU)
+[Link con el .ERDPLUS](https://unipe-my.sharepoint.com/:u:/g/personal/diego_andia_f_uni_pe/EZmhzm2YHD9Cn9x_iqn-C6EBxkzHmZo131svy1R9vI7Y0g?e=cEA5uM)
 
 - Regla de negocio:
 1. El usuario solo puede pedir un prestamo a la vez, por reglas del CEIIS
