@@ -226,6 +226,10 @@ INSERT INTO Articulo(Id_articulo, Nombre_articulo, Tipo_articulo, Cantidad, Desc
 	('ART18738', 'Loza1', 'reservas y alquileres', '1', 'uso para futbol, basquet y voley', '5', 'disponible'),
 	('ART12378', 'Loza2', 'reservas y alquileres', '1', 'uso para futbol, basquet y voley', '5', 'no disponible');
 
+-- Insertar datos en la tabla Venta
+INSERT INTO Venta (Id_venta, Id_usuario, Fecha_venta, Monto_final, Estado_pago) VALUES
+
+
 
 -- Insertar datos en la tabla Alquiler
 INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES
@@ -251,7 +255,9 @@ INSERT INTO Prestamos (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hor
 ('PRE2', '2', 'ART98123', '2023-11-15', '11:45:00', null, null, 'No devuelto'),
 ('PRE3', '3', 'ART38172', '2023-11-20', '14:15:00', '2023-11-21', '15:30:00', 'Devuelto'),
 ('PRE4', '4', 'ART64271', '2023-11-25', '16:45:00', null, null, 'No devuelto'),
-('PRE5', '5', 'ART93128', '2023-11-30', '19:00:00', null, null, 'No devuelto')
+('PRE5', '5', 'ART93128', '2023-11-30', '19:00:00', null, null, 'No devuelto');
+
+
 
 
 -- Insertar datos en la tabla Encuesta
