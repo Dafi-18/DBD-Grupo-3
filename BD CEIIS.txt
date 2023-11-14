@@ -74,7 +74,7 @@ create table Alquiler(
 		Hora_inicio time,
 		Hora_fin time,
 		Medio_pago varchar(20),
-		Monto numeric(2,2),
+		Monto numeric(3,2),
  		Estado_alquiler varchar(15)
 );
 
@@ -133,7 +133,6 @@ create table Encuesta(
 		Fecha_cierre date,
 		Cantidad_preguntas numeric(2),
 		Cantidad_respuestas numeric(2),
-		Tipo_respuesta varchar(15),
 		Estado_encuesta varchar(10)
 );
 
@@ -141,7 +140,8 @@ create table Pregunta(
 		Id_pregunta varchar(8) primary key,  
 		Id_encuesta varchar(8) references Encuesta(Id_encuesta),
 		Id_administrador varchar(8) references Administrador(Id_administrador),
-		Tipo_pregunta varchar(15)
+		Tipo_respuesta varchar(15)
+	
 );
 
 
@@ -229,18 +229,33 @@ INSERT INTO Articulo(Id_articulo, Nombre_articulo, Tipo_articulo, Cantidad, Desc
 
 -- Insertar datos en la tabla Alquiler
 INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES
-('ALQ1', '1', 'ART74238', '2023-11-13', '08:00:00', '10:00:00', 'Efectivo', 1.00, 'Activo'),
-('ALQ2', '2', 'ART52713', '2023-11-13', '10:30:00', '12:30:00', 'Yape', 1.00, 'Activo'),
-('ALQ3', '3', 'ART78634', '2023-11-13', '13:00:00', '15:00:00', 'Efectivo', 1.20, 'Inactivo'),
-('ALQ4', '4', 'ART13526', '2023-11-14', '09:00:00', '11:00:00', 'Efectivo', 1.00, 'Activo'),
-('ALQ5', '5', 'ART38621', '2023-11-14', '11:30:00', '13:30:00', 'Yape', 1.20, 'Activo'),
-('ALQ6', '6', 'ART18723', '2023-11-14', '14:00:00', '16:00:00', 'Efectivo',1.20, 'Activo'),
-('ALQ7', '7', 'ART98123', '2023-11-15', '08:00:00', '10:00:00', 'Yape', .00, 'Inactivo'),
-('ALQ8', '8', 'ART38172', '2023-11-15', '10:30:00', '12:30:00', 'Yape', 2.00, 'Activo'),
-('ALQ9', '9', 'ART64271', '2023-11-15', '13:00:00', '15:00:00', 'Yape', 2.40, 'Inactivo'),
-('ALQ10', '10', 'ART93128', '2023-11-16', '09:00:00', '11:00:00', 'Yape', 3.00, 'Activo'),
-('ALQ11', '11', 'ART38723', '2023-11-16', '11:30:00', '13:30:00', 'Efectivo', 6.00, 'Activo'),
-('ALQ12', '12', 'ART43791', '2023-11-16', '14:00:00', '16:00:00', 'Yape', 1.00, 'Activo'),
-('ALQ13', '13', 'ART98213', '2023-11-17', '08:00:00', '10:00:00', 'Efectivo', 5.00, 'Activo'),
-('ALQ14', '14', 'ART18738', '2023-11-17', '10:30:00', '12:30:00', 'Efectivo', 3.00, 'Inactivo'),
-('ALQ15', '15', 'ART12378', '2023-11-17', '13:00:00', '15:00:00', 'Yape', 2.00, 'Activo');
+('ALQ1', '1', 'ART38723', '2023-11-13', '08:00:00', '10:00:00', 'Efectivo', 0.00, 'Activo'),
+('ALQ2', '2', 'ART12378', '2023-11-13', '10:30:00', '12:30:00', 'Yape', 0.00, 'Activo'),
+('ALQ3', '3', 'ART43791', '2023-11-13', '13:00:00', '15:00:00', 'Efectivo', 1.20, 'Inactivo'),
+('ALQ4', '4', 'ART12378', '2023-11-14', '09:00:00', '11:00:00', 'Efectivo', 0.00, 'Activo'),
+('ALQ5', '5', 'ART43791', '2023-11-14', '11:30:00', '13:30:00', 'Yape', 1.20, 'Activo'),
+('ALQ6', '6', 'ART98213', '2023-11-14', '14:00:00', '16:00:00', 'Efectivo',1.20, 'Activo'),
+('ALQ7', '7', 'ART18738', '2023-11-15', '08:00:00', '10:00:00', 'Yape', 0.00, 'Inactivo'),
+('ALQ8', '8', 'ART98213', '2023-11-15', '10:30:00', '12:30:00', 'Yape', 2.40, 'Activo'),
+('ALQ9', '9', 'ART18738', '2023-11-15', '13:00:00', '15:00:00', 'Yape',0.00, 'Inactivo'),
+('ALQ10', '10', 'ART43791', '2023-11-16', '09:00:00', '11:00:00', 'Yape', 1.20, 'Activo'),
+('ALQ11', '11', 'ART38723', '2023-11-16', '11:30:00', '13:30:00', 'Efectivo', 0.00, 'Activo'),
+('ALQ12', '12', 'ART43791', '2023-11-16', '14:00:00', '16:00:00', 'Yape', 1.20, 'Activo'),
+('ALQ13', '13', 'ART98213', '2023-11-17', '08:00:00', '10:00:00', 'Efectivo', 1.20, 'Activo'),
+('ALQ14', '14', 'ART18738', '2023-11-17', '10:30:00', '12:30:00', 'Efectivo', 0.00, 'Inactivo'),
+('ALQ15', '15', 'ART12378', '2023-11-17', '13:00:00', '15:00:00', 'Yape', 0.00, 'Activo');
+
+-- Insertar datos en la tabla Encuesta
+INSERT INTO Encuesta (Id_encuesta, Id_administrador, Fecha_apertura, Fecha_cierre, Cantidad_preguntas, Cantidad_respuestas, Estado_encuesta) VALUES
+('ENC001', 'ADM005', '2023-10-13', '2023-10-20', 9, 30, 'inactivo'),
+('ENC002', 'ADM002', '2023-10-14', '2023-10-21', 9, 25, 'inactivo'),
+('ENC003', 'ADM003', '2023-10-15', '2023-10-22', 9, 40, 'inactivo'),
+('ENC004', 'ADM004', '2023-10-16', '2023-10-23', 9, 35, 'inactivo'),
+('ENC005', 'ADM006', '2023-11-14', '2023-11-24', 9, 20, 'activo'),
+('ENC006', 'ADM006', '2023-11-15', '2023-11-25', 9, 0, 'activo'),
+('ENC007', 'ADM007', '2023-11-16', '2023-11-26', 9, 0, 'inactivo'),
+('ENC008', 'ADM005', '2023-11-17', '2023-11-27', 9, 0, 'inactivo'),
+('ENC009', 'ADM010', '2023-11-18', '2023-11-28', 9, 0, 'inactivo'),
+('ENC010', 'ADM010', '2023-11-22', '2023-11-29', 9, 0, 'inactivo');
+
+
