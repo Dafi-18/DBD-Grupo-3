@@ -248,29 +248,29 @@ INSERT INTO Venta (Id_venta, Id_usuario, Fecha_venta, Monto_final, Estado_pago) 
 
 -- Insertar datos en la tabla Alquiler
 INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES
-('ALQ001', '1', 'ART014', '2023-11-15', '14:00:00', '16:00:00', 'Efectivo', 2.5, 'Inactivo'),
-('ALQ002', '2', 'ART015', '2023-11-16', '15:30:00', '17:30:00', 'Yape', 2, 'Inactivo'),
-('ALQ003', '3', 'ART016', '2023-11-17', '16:45:00', '18:45:00', 'Efectivo', 5, 'Inactivo'),
-('ALQ004', '4', 'ART017', '2023-11-18', '18:00:00', '20:00:00', 'Yape', 5, 'Inactivo'),
-('ALQ005', '1', 'ART014', '2023-11-19', '14:30:00', '16:30:00', 'Efectivo', 2.5, 'Inactivo'),
-('ALQ006', '2', 'ART015', '2023-11-20', '16:00:00', '18:00:00', 'Yape', 2, 'Inactivo'),
-('ALQ007', '4', 'ART016', '2023-11-21', '17:15:00', '19:15:00', 'Efectivo', 5, 'Inactivo'),
-('ALQ008', '3', 'ART017', '2023-11-22', '19:30:00', '21:30:00', 'Yape', 5, 'Inactivo'),
-('ALQ009', '2', 'ART014', '2023-11-23', '15:00:00', '17:00:00', 'Efectivo', 2.5, 'Inactivo'),
-('ALQ010', '1', 'ART015', '2023-11-24', '17:30:00', '19:30:00', 'Yape', 2, 'Inactivo'),
-('ALQ011', '2', 'ART016', '2023-11-25', '18:45:00', '20:45:00', 'Efectivo', 5, 'Inactivo'),
-('ALQ012', '3', 'ART017', '2023-11-26', '20:00:00', '22:00:00', 'Yape', 5, 'Inactivo'),
-('ALQ013', '4', 'ART014', '2023-11-27', '15:30:00', '17:30:00', 'Efectivo', 2.5, 'Inactivo'),
-('ALQ014', '1', 'ART015', '2023-11-28', '17:00:00', '19:00:00', 'Yape', 2, 'Inactivo'),
-('ALQ015', '2', 'ART016', '2023-11-29', '18:15:00', '20:15:00', 'Efectivo', 5, 'Inactivo');
+('ALQ1', '1', 'ART38723', '2023-11-13', '08:00:00', '10:00:00', 'Efectivo', 0.00, 'Devuelto'),
+('ALQ2', '2', 'ART12378', '2023-11-13', '10:30:00', '12:30:00', 'Yape', 0.00, 'Devuelto'),
+('ALQ3', '3', 'ART43791', '2023-11-13', '13:00:00', '15:00:00', 'Efectivo', 1.20, 'Devuelto'),
+('ALQ4', '4', 'ART12378', '2023-11-14', '09:00:00', '11:00:00', 'Efectivo', 0.00, 'Devuelto'),
+('ALQ5', '6', 'ART43791', '2023-11-14', '11:30:00', '13:30:00', 'Yape', 1.20, 'Devuelto'),
+('ALQ6', '1', 'ART98213', '2023-11-14', '14:00:00', '16:00:00', 'Efectivo',1.20, 'Pendiente'),
+('ALQ7', '7', 'ART18738', '2023-11-15', '08:00:00', '10:00:00', 'Yape', 0.00, 'Devuelto'),
+('ALQ8', '8', 'ART98213', '2023-11-15', '10:30:00', '12:30:00', 'Yape', 2.40, 'Pendiente'),
+('ALQ9', '6', 'ART18738', '2023-11-15', '13:00:00', '15:00:00', 'Yape',0.00, 'Devuelto'),
+('ALQ10', '10', 'ART43791', '2023-11-16', '09:00:00', '11:00:00', 'Yape', 1.20, 'Devuelto'),
+('ALQ11', '1', 'ART38723', '2023-11-16', '11:30:00', '13:30:00', 'Efectivo', 0.00, 'Devuelto'),
+('ALQ12', '12', 'ART43791', '2023-11-16', '14:00:00', '16:00:00', 'Yape', 1.20, 'Devuelto'),
+('ALQ13', '1', 'ART98213', '2023-11-17', '08:00:00', '10:00:00', 'Efectivo', 1.20, 'Devuelto'),
+('ALQ14', '8', 'ART18738', '2023-11-17', '10:30:00', '12:30:00', 'Efectivo', 0.00, 'Devuelto'),
+('ALQ15', '10', 'ART12378', '2023-11-17', '13:00:00', '15:00:00', 'Yape', 0.00, 'Pendiente');
 
 -- Insertar datos en la tabla Prestamos
-INSERT INTO Prestamos (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES
+INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES
 ('PRE1', '1', 'ART18723', '2023-11-10', '09:30:00', '2023-11-10', '10:30:00', 'Devuelto'),
 ('PRE2', '2', 'ART98123', '2023-11-15', '11:45:00', null, null, 'No devuelto'),
-('PRE3', '3', 'ART38172', '2023-11-20', '14:15:00', '2023-11-21', '15:30:00', 'Devuelto'),
+('PRE3', '2', 'ART38172', '2023-11-20', '14:15:00', '2023-11-21', '15:30:00', 'Devuelto'),
 ('PRE4', '4', 'ART64271', '2023-11-25', '16:45:00', null, null, 'No devuelto'),
-('PRE5', '5', 'ART93128', '2023-11-30', '19:00:00', null, null, 'No devuelto');
+('PRE5', '1', 'ART93128', '2023-11-30', '19:00:00', null, null, 'No devuelto');
 
 -- Insertar datos en la tabla Calendario
 INSERT INTO Calendario (Id_calendario, Fecha, Hora) VALUES
