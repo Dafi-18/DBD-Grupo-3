@@ -228,6 +228,16 @@ INSERT INTO Articulo(Id_articulo, Nombre_articulo, Tipo_articulo, Cantidad, Desc
 
 -- Insertar datos en la tabla Venta
 INSERT INTO Venta (Id_venta, Id_usuario, Fecha_venta, Monto_final, Estado_pago) VALUES
+('VEN1', 1, '2023-11-15', 1.5, 'Pagado'),
+('VEN2', 2, '2023-12-20', 3, 'Pagado'),
+('VEN3', 3, '2023-11-25', 1, 'Pendiente'),
+('VEN4', 4, '2023-12-30', 2.5, 'Pagado'),
+('VEN5', 5, '2023-11-05', 3, 'Pendiente'),
+('VEN6', 1, '2023-12-10', 6, 'Pagado'),
+('VEN7', 2, '2023-11-15', 4, 'Pagado'),
+('VEN8', 3, '2023-12-20', 5, 'Pendiente'),
+('VEN9', 4, '2023-11-25', 8, 'Pagado'),
+('VEN10', 5, '2023-12-01', 7, 'Pendiente');
 
 
 
