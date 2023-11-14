@@ -909,7 +909,7 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 ## 6. Modelo Lógico
 
 ### 6.1 Modelo Relacional
-![Alt text](<Modelo Lógico 13-11-23.png>)
+![Alt text](<logico_correciones.png>)
 
 [Link con el .ERDPLUS](https://unipe-my.sharepoint.com/:u:/g/personal/diego_andia_f_uni_pe/EZmhzm2YHD9Cn9x_iqn-C6EBxkzHmZo131svy1R9vI7Y0g?e=cEA5uM)
 
