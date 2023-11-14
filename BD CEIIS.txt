@@ -137,10 +137,11 @@ create table Encuesta(
 );
 
 create table Pregunta( 
-		Id_pregunta varchar(8) primary key,  
+		Id_pregunta varchar(8) ,  
 		Id_encuesta varchar(8) references Encuesta(Id_encuesta),
 		Id_administrador varchar(8) references Administrador(Id_administrador),
-		Tipo_respuesta varchar(15)
+		Tipo_respuesta varchar(15),
+		PRIMARY KEY (Id_encuesta, Id_pregunta)
 	
 );
 
@@ -300,5 +301,35 @@ INSERT INTO Encuesta (Id_encuesta, Id_administrador, Fecha_apertura, Fecha_cierr
 ('ENC008', 'ADM005', '2023-11-17', '2023-11-27', 9, 0, 'inactivo'),
 ('ENC009', 'ADM010', '2023-11-18', '2023-11-28', 9, 0, 'inactivo'),
 ('ENC010', 'ADM010', '2023-11-22', '2023-11-29', 9, 0, 'inactivo');
+
+-- Insertar datos en la tabla Pregunta
+INSERT INTO Pregunta (Id_pregunta, Id_encuesta, Id_administrador, Tipo_respuesta) VALUES
+('PRE001', 'ENC001', 'ADM005', 'opcion multiple'),
+('PRE002', 'ENC001', 'ADM005', 'una sola opcion'),
+('PRE003', 'ENC001', 'ADM005', 'opcion multiple'),
+('PRE004', 'ENC001', 'ADM005', 'una sola opcion'),
+('PRE005', 'ENC001', 'ADM005', 'opcion multiple'),
+('PRE006', 'ENC001', 'ADM005', 'una sola opcion'),
+('PRE007', 'ENC001', 'ADM005', 'opcion multiple'),
+('PRE008', 'ENC001', 'ADM005', 'una sola opcion'),
+('PRE009', 'ENC001', 'ADM004', 'opcion multiple'),
+('PRE001', 'ENC002', 'ADM004', 'opcion multiple'),
+('PRE002', 'ENC002', 'ADM004', 'una sola opcion'),
+('PRE003', 'ENC002', 'ADM004', 'opcion multiple'),
+('PRE004', 'ENC002', 'ADM004', 'una sola opcion'),
+('PRE005', 'ENC002', 'ADM004', 'opcion multiple'),
+('PRE006', 'ENC002', 'ADM004', 'una sola opcion'),
+('PRE007', 'ENC002', 'ADM004', 'opcion multiple'),
+('PRE008', 'ENC002', 'ADM004', 'una sola opcion'),
+('PRE009', 'ENC002', 'ADM004', 'opcion multiple'),
+('PRE001', 'ENC003', 'ADM006', 'opcion multiple'),
+('PRE002', 'ENC003', 'ADM006', 'una sola opcion'),
+('PRE003', 'ENC003', 'ADM006', 'opcion multiple'),
+('PRE004', 'ENC003', 'ADM006', 'una sola opcion'),
+('PRE005', 'ENC003', 'ADM006', 'opcion multiple'),
+('PRE006', 'ENC003', 'ADM006', 'una sola opcion'),
+('PRE007', 'ENC003', 'ADM006', 'opcion multiple'),
+('PRE008', 'ENC003', 'ADM006', 'una sola opcion'),
+('PRE009', 'ENC003', 'ADM006', 'opcion multiple'),
 
 
