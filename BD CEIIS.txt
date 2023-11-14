@@ -346,5 +346,25 @@ INSERT INTO Pregunta (Id_pregunta, Id_encuesta, Id_administrador, Tipo_respuesta
 ('PRE007', 'ENC003', 'ADM006', 'opcion multiple'),
 ('PRE008', 'ENC003', 'ADM006', 'una sola opcion'),
 ('PRE009', 'ENC003', 'ADM006', 'opcion multiple'),
+('PRE001', 'ENC004', 'ADM004', 'opcion multiple'),
+('PRE002', 'ENC004', 'ADM004', 'una sola opcion'),
+('PRE003', 'ENC004', 'ADM004', 'opcion multiple'),
+('PRE004', 'ENC004', 'ADM004', 'una sola opcion'),
+('PRE005', 'ENC004', 'ADM004', 'opcion multiple'),
+('PRE006', 'ENC004', 'ADM004', 'una sola opcion'),
+('PRE007', 'ENC004', 'ADM004', 'opcion multiple'),
+('PRE008', 'ENC004', 'ADM004', 'una sola opcion'),
+('PRE009', 'ENC004', 'ADM004', 'opcion multiple'),
+('PRE010', 'ENC004', 'ADM004', 'una sola opcion');
+('PRE001', 'ENC005', 'ADM004', 'opcion multiple'),
+('PRE002', 'ENC005', 'ADM006', 'una sola opcion'),
+('PRE003', 'ENC005', 'ADM006', 'opcion multiple'),
+('PRE004', 'ENC005', 'ADM006', 'una sola opcion'),
+('PRE005', 'ENC005', 'ADM006', 'opcion multiple'),
+('PRE006', 'ENC005', 'ADM006', 'una sola opcion'),
+('PRE007', 'ENC005', 'ADM006', 'opcion multiple'),
+('PRE008', 'ENC005', 'ADM006', 'una sola opcion'),
+('PRE009', 'ENC005', 'ADM006', 'opcion multiple'),
+('PRE010', 'ENC005', 'ADM006', 'una sola opcion');
 
 
