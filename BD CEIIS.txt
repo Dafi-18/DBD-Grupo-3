@@ -162,6 +162,16 @@ INSERT INTO Persona (Dni, Primer_nombre, Segundo_nombre, Primer_apellido, Segund
 ('11779020', 'Ardelle', 'Portie', 'Bamfield', 'Smalman', 'ardelle.bamfield@hotmail.com', '972491006'),
 ('26879857', 'Rudolph', 'Ulrike', 'Docksey', 'Benadette', 'rudolph.docksey@gmail.com', '835166494'),
 ('90633110', 'Bette', 'Dennison', 'Reedy', 'Siemianowicz', 'bette.reedy@hotmail.com', '538940523');
+('75512214', 'Jose', 'Carlos', 'Pereira', 'Gomez', 'jose.pereira@hotmail.com', '912345678'),
+('92032111', 'Mariana', 'Isabel', 'Gonza', 'Lopez', 'mariana.gonza@gmail.com', '923456789'),
+('12124287', 'Carlos', 'Manuel', 'Ramirez', 'Sanchez', 'carlos.ramirez@hotmail.com', '934567890'),
+('15967527', 'Ana', 'Luisa', 'Martinez', 'Rodriguez', 'ana.martinez@gmail.com', '945678901'),
+('46872746', 'Pedro', 'Javier', 'Torres', 'Hernandez', 'pedro.torres@hotmail.com', '956789012'),
+('50249379', 'Sofia', 'Carmen', 'Lopez', 'Diaz', 'sofia.lopez@gmail.com', '967890123'),
+('12452535', 'Juan', 'Carlos', 'Perez', 'Gomez', 'juan.perez@hotmail.com', '987654321'),
+('93122098', 'Maria', 'Isabel', 'Gonzalez', 'Lopez', 'maria.gonzalez@gmail.com', '876543210'),
+('67522177', 'Carla', 'Manel', 'Poma', 'Sanchez', 'carla.poma@hotmail.com', '765432109'),
+('29855394', 'Anastasia', 'Luisa', 'Martinez', 'Rodriguez', 'anastasia.martinez@gmail.com', '654321098').
 
 -- -- insertar datos de tabla usuario
 INSERT INTO usuario (Id_usuario, DNI, Cod_uni, Correo_uni, Contrasena) VALUES
