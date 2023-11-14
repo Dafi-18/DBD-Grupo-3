@@ -286,7 +286,22 @@ INSERT INTO Calendario (Id_calendario, Fecha, Hora) VALUES
 ('CAL14', '2023-12-04', '13:15:00'),
 ('CAL15', '2023-12-05', '15:30:00');
 
-
+-- Insertar datos en la tabla Noticia
+INSERT INTO Noticia(Id_noticia, Id_administrador, Fecha, Titulo, Descripcion) VALUES
+('NOT01', 'ADM001', '2023-11-01', 'Nuevos programas académicos', 'La facultad FIIS presenta nuevos programas académicos para el próximo año, brindando más opciones a los estudiantes.'),
+('NOT02', 'ADM002', '2023-11-02', 'Investigación destacada', 'La Facultad ha logrado un reconocimiento internacional por su destacada investigación en energías renovables.'),
+('NOT03', 'ADM003', '2023-11-03', 'Eventos culturales en la facultad', 'Descubre la rica oferta cultural de la Facultad con una variedad de eventos programados para el próximo mes.'),
+('NOT04', 'ADM004', '2023-11-04', 'Proyecto de sostenibilidad', 'La Facultad lidera un nuevo proyecto de sostenibilidad para reducir la huella ecológica en el campus universitario.'),
+('NOT05', 'ADM005', '2023-11-05', 'Logros deportivos', 'Los equipos deportivos de la Facultad han alcanzado importantes logros en los últimos torneos interuniversitarios.'),
+('NOT06', 'ADM001', '2023-11-06', 'Innovación en la FIIS', 'La FIIS ha implementado nuevas iniciativas de innovación y emprendimiento para preparar a los estudiantes para el mundo empresarial.'),
+('NOT07', 'ADM002', '2023-11-07', 'Celebración del Día de la Ciencia', 'Únete a nosotros para celebrar el Día de la Ciencia en la Facultad de Ciencias, con charlas, demostraciones y actividades interactivas.'),
+('NOT08', 'ADM003', '2023-11-08', 'Logros destacados en la FIIS', 'Los estudiantes de la FIIS han obtenido logros destacados en investigaciones médicas y participación comunitaria.'),
+('NOT09', 'ADM004', '2023-11-09', 'Programa de intercambio estudiantil', 'La FIIS abre inscripciones para su programa de intercambio estudiantil, ofreciendo a los estudiantes la oportunidad de vivir experiencias internacionales únicas.'),
+('NOT10', 'ADM001', '2023-12-01', 'Inauguración de nuevos laboratorios', 'La Facultad inaugura modernos laboratorios equipados con tecnología de punta para fortalecer la investigación científica.'),
+('NOT11', 'ADM002', '2023-12-02', 'Festival de Arte Contemporáneo', 'Explora la creatividad en la FIIS con el Festival de Arte Contemporáneo, exhibiendo obras de estudiantes y artistas invitados.'),
+('NOT12', 'ADM003', '2023-12-03', 'Programa de voluntariado comunitario', 'La FIIS lanza un programa de voluntariado comunitario para estudiantes interesados en contribuir al bienestar de la sociedad.'),
+('NOT13', 'ADM004', '2023-12-04', 'Concurso de Innovación Tecnológica', 'Participa en el Concurso de Innovación Tecnológica organizado por la FIIS, donde los estudiantes presentarán sus proyectos más innovadores.'),
+('NOT14', 'ADM005', '2023-12-05', 'Seminario sobre Ciencia de Datos', 'La FIIS organiza un seminario sobre Ciencia de Datos, abordando las últimas tendencias y aplicaciones en esta área emocionante.');
 
 
 -- Insertar datos en la tabla Encuesta
