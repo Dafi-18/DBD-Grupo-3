@@ -245,6 +245,15 @@ INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora
 ('ALQ14', '14', 'ART18738', '2023-11-17', '10:30:00', '12:30:00', 'Efectivo', 0.00, 'Inactivo'),
 ('ALQ15', '15', 'ART12378', '2023-11-17', '13:00:00', '15:00:00', 'Yape', 0.00, 'Activo');
 
+-- Insertar datos en la tabla Prestamos
+INSERT INTO Prestamos (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES
+('PRE1', '1', 'ART18723', '2023-11-10', '09:30:00', '2023-11-10', '10:30:00', 'Devuelto'),
+('PRE2', '2', 'ART98123', '2023-11-15', '11:45:00', null, null, 'No devuelto'),
+('PRE3', '3', 'ART38172', '2023-11-20', '14:15:00', '2023-11-21', '15:30:00', 'Devuelto'),
+('PRE4', '4', 'ART64271', '2023-11-25', '16:45:00', null, null, 'No devuelto'),
+('PRE5', '5', 'ART93128', '2023-11-30', '19:00:00', null, null, 'No devuelto')
+
+
 -- Insertar datos en la tabla Encuesta
 INSERT INTO Encuesta (Id_encuesta, Id_administrador, Fecha_apertura, Fecha_cierre, Cantidad_preguntas, Cantidad_respuestas, Estado_encuesta) VALUES
 ('ENC001', 'ADM005', '2023-10-13', '2023-10-20', 9, 30, 'inactivo'),
