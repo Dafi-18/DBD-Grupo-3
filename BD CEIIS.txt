@@ -333,11 +333,3 @@ INSERT INTO Noticia(Id_noticia, Id_administrador, Fecha, Titulo, Descripcion) VA
 ('NOT12', 'ADM003', '2023-12-03', 'Programa de voluntariado comunitario', 'La FIIS lanza un programa de voluntariado comunitario para estudiantes interesados en contribuir al bienestar de la sociedad.'),
 ('NOT13', 'ADM004', '2023-12-04', 'Concurso de Innovación Tecnológica', 'Participa en el Concurso de Innovación Tecnológica organizado por la FIIS, donde los estudiantes presentarán sus proyectos más innovadores.'),
 ('NOT14', 'ADM005', '2023-12-05', 'Seminario sobre Ciencia de Datos', 'La FIIS organiza un seminario sobre Ciencia de Datos, abordando las últimas tendencias y aplicaciones en esta área emocionante.');
-
--- Insertar datos en la tabla Estadistica_prestamo **(PORFAVOR REVISAR)**
-INSERT INTO Estadistica_prestamo (Id_prestamo, Id_calendario, Conteo_por_articulo) VALUES
-('PRE1', 'CAL01', 1),
-('PRE1', 'CAL03', 1),
-('PRE2', 'CAL06', 1),
-('PRE3', 'CAL10', 1),
-('PRE3', 'CAL14', 1);
