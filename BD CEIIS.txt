@@ -87,9 +87,10 @@ create table Prestamo(
 );
 
 create table Calendario(
-		Id_calendario varchar(8) PRIMARY KEY,
+		Id_hora numeric(2),
 		Fecha date,
-		Hora time
+		Estado varchar(10),
+		primary key(Id_hora, Fecha)
 );
 
 create table Noticia( 
@@ -287,10 +288,7 @@ INSERT INTO Pregunta (Id_pregunta, Id_encuesta, Id_administrador, Tipo_respuesta
 ('PRE007', 'ENC003', 'ADM006', 'opcion multiple'),
 ('PRE008', 'ENC003', 'ADM006', 'una sola opcion'),
 ('PRE009', 'ENC003', 'ADM006', 'opcion multiple'),
-('PRE010', 'ENC003', 'ADM006', 'una sola opcion');
-
--- Insertar datos en la tabla Pregunta
-INSERT INTO Pregunta (Id_pregunta, Id_encuesta, Id_administrador, Tipo_respuesta) VALUES
+('PRE010', 'ENC003', 'ADM006', 'una sola opcion'),
 ('PRE001', 'ENC004', 'ADM004', 'opcion multiple'),
 ('PRE002', 'ENC004', 'ADM004', 'una sola opcion'),
 ('PRE003', 'ENC004', 'ADM004', 'opcion multiple'),
@@ -312,24 +310,50 @@ INSERT INTO Pregunta (Id_pregunta, Id_encuesta, Id_administrador, Tipo_respuesta
 ('PRE009', 'ENC005', 'ADM006', 'opcion multiple'),
 ('PRE010', 'ENC005', 'ADM006', 'una sola opcion');
 
-
 -- Insertar datos en la tabla Calendario
-INSERT INTO Calendario (Id_calendario, Fecha, Hora) VALUES
-('CAL01', '2023-11-01', '08:00:00'),
-('CAL02', '2023-11-02', '09:30:00'),
-('CAL03', '2023-11-03', '11:00:00'),
-('CAL04', '2023-11-04', '13:15:00'),
-('CAL05', '2023-11-05', '15:30:00'),
-('CAL06', '2023-11-06', '17:45:00'),
-('CAL07', '2023-11-07', '19:00:00'),
-('CAL08', '2023-11-08', '20:15:00'),
-('CAL09', '2023-11-09', '21:30:00'),
-('CAL10', '2023-11-10', '22:00:00'),
-('CAL11', '2023-12-01', '08:00:00'),
-('CAL12', '2023-12-02', '09:30:00'),
-('CAL13', '2023-12-03', '11:00:00'),
-('CAL14', '2023-12-04', '13:15:00'),
-('CAL15', '2023-12-05', '15:30:00');
+INSERT INTO Calendario (Id_hora, Fecha, Estado) VALUES
+(1, '2023-11-01', 'Ocupado'),
+(2, '2023-11-01', 'Ocupado'),
+(3, '2023-11-01', 'Ocupado'),
+(4, '2023-11-01', 'Ocupado'),
+(5, '2023-11-01', 'Ocupado'),
+(6, '2023-11-01', 'Ocupado'),
+(7, '2023-11-01', 'Disponible'),
+(8, '2023-11-01', 'Disponible'),
+(9, '2023-11-01', 'Disponible'),
+(10, '2023-11-01', 'Ocupado'),
+(11, '2023-11-01', 'Ocupado'),
+(12, '2023-11-01', 'Ocupado'),
+(13, '2023-11-01', 'Disponible'),
+(14, '2023-11-01', 'Disponible'),
+(1, '2023-11-02', 'Disponible'),
+(2, '2023-11-02', 'Disponible'),
+(3, '2023-11-02', 'Disponible'),
+(4, '2023-11-02', 'Disponible'),
+(5, '2023-11-02', 'Disponible'),
+(6, '2023-11-02', 'Disponible'),
+(7, '2023-11-02', 'Disponible'),
+(8, '2023-11-02', 'Disponible'),
+(9, '2023-11-02', 'Disponible'),
+(10, '2023-11-02', 'Disponible'),
+(11, '2023-11-02', 'Disponible'),
+(12, '2023-11-02', 'Disponible'),
+(13, '2023-11-02', 'Disponible'),
+(14, '2023-11-02', 'Disponible'),
+(1, '2023-11-03', 'Disponible'),
+(2, '2023-11-03', 'Disponible'),
+(3, '2023-11-03', 'Disponible'),
+(4, '2023-11-03', 'Disponible'),
+(5, '2023-11-03', 'Disponible'),
+(6, '2023-11-03', 'Disponible'),
+(7, '2023-11-03', 'Disponible'),
+(8, '2023-11-03', 'Disponible'),
+(9, '2023-11-03', 'Disponible'),
+(10, '2023-11-03', 'Disponible'),
+(11, '2023-11-03', 'Disponible'),
+(12, '2023-11-03', 'Disponible'),
+(13, '2023-11-03', 'Disponible'),
+(14, '2023-11-03', 'Disponible');
 
 -- Insertar datos en la tabla Noticia
 INSERT INTO Noticia(Id_noticia, Id_administrador, Fecha, Titulo, Descripcion) VALUES
