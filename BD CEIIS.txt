@@ -216,42 +216,43 @@ INSERT INTO Articulo(Id_articulo, Nombre_articulo, Tipo_articulo, Cantidad, Desc
 
 -- Insertar datos en la tabla Alquiler
 INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES
-('ALQ1', '1', 'ART38723', '2023-11-13', '08:00:00', '10:00:00', 'Efectivo', 0.00, 'Devuelto'),
-('ALQ2', '2', 'ART12378', '2023-11-13', '10:30:00', '12:30:00', 'Yape', 0.00, 'Devuelto'),
-('ALQ3', '3', 'ART43791', '2023-11-13', '13:00:00', '15:00:00', 'Efectivo', 1.20, 'Devuelto'),
-('ALQ4', '4', 'ART12378', '2023-11-14', '09:00:00', '11:00:00', 'Efectivo', 0.00, 'Devuelto'),
-('ALQ5', '6', 'ART43791', '2023-11-14', '11:30:00', '13:30:00', 'Yape', 1.20, 'Devuelto'),
-('ALQ6', '1', 'ART98213', '2023-11-14', '14:00:00', '16:00:00', 'Efectivo',1.20, 'Pendiente'),
-('ALQ7', '7', 'ART18738', '2023-11-15', '08:00:00', '10:00:00', 'Yape', 0.00, 'Devuelto'),
-('ALQ8', '8', 'ART98213', '2023-11-15', '10:30:00', '12:30:00', 'Yape', 2.40, 'Pendiente'),
-('ALQ9', '6', 'ART18738', '2023-11-15', '13:00:00', '15:00:00', 'Yape',0.00, 'Devuelto'),
-('ALQ10', '10', 'ART43791', '2023-11-16', '09:00:00', '11:00:00', 'Yape', 1.20, 'Devuelto'),
-('ALQ11', '1', 'ART38723', '2023-11-16', '11:30:00', '13:30:00', 'Efectivo', 0.00, 'Devuelto'),
-('ALQ12', '12', 'ART43791', '2023-11-16', '14:00:00', '16:00:00', 'Yape', 1.20, 'Devuelto'),
-('ALQ13', '1', 'ART98213', '2023-11-17', '08:00:00', '10:00:00', 'Efectivo', 1.20, 'Devuelto'),
-('ALQ14', '8', 'ART18738', '2023-11-17', '10:30:00', '12:30:00', 'Efectivo', 0.00, 'Devuelto'),
-('ALQ15', '10', 'ART12378', '2023-11-17', '13:00:00', '15:00:00', 'Yape', 0.00, 'Pendiente');
+('ALQ1', '1', 'ART38723', '2023-11-01', '08:00:00', '10:00:00', 'Efectivo', 0.00, 'Devuelto'),
+('ALQ2', '2', 'ART12378', '2023-11-'03', '10:30:00', '12:30:00', 'Yape', 0.00, 'Devuelto'),
+('ALQ3', '3', 'ART43791', '2023-11-03', '13:00:00', '15:00:00', 'Efectivo', 1.20, 'Devuelto'),
+('ALQ4', '4', 'ART12378', '2023-11-04', '09:00:00', '11:00:00', 'Efectivo', 0.00, 'Devuelto'),
+('ALQ5', '6', 'ART43791', '2023-11-04', '11:30:00', '13:30:00', 'Yape', 1.20, 'Devuelto'),
+('ALQ6', '1', 'ART98213', '2023-11-04', '14:00:00', '16:00:00', 'Efectivo',1.20, 'Pendiente'),
+('ALQ7', '7', 'ART18738', '2023-11-05', '08:00:00', '10:00:00', 'Yape', 0.00, 'Devuelto'),
+('ALQ8', '8', 'ART98213', '2023-11-05', '10:30:00', '12:30:00', 'Yape', 2.40, 'Pendiente'),
+('ALQ9', '6', 'ART18738', '2023-11-05', '13:00:00', '15:00:00', 'Yape',0.00, 'Devuelto'),
+('ALQ10', '10', 'ART43791', '2023-11-08', '09:00:00', '11:00:00', 'Yape', 1.20, 'Devuelto'),
+('ALQ11', '1', 'ART38723', '2023-11-09', '11:30:00', '13:30:00', 'Efectivo', 0.00, 'Devuelto'),
+('ALQ12', '12', 'ART43791', '2023-11-09', '14:00:00', '16:00:00', 'Yape', 1.20, 'Devuelto'),
+('ALQ13', '1', 'ART98213', '2023-11-10', '08:00:00', '10:00:00', 'Efectivo', 1.20, 'Devuelto'),
+('ALQ14', '8', 'ART18738', '2023-12-01', '10:30:00', '12:30:00', 'Efectivo', 0.00, 'Devuelto'),
+('ALQ15', '10', 'ART12378', '2023-12-'20', '13:00:00', '15:00:00', 'Yape', 0.00, 'Pendiente');
+
 
 -- Insertar datos en la tabla Prestamos
 INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES
-('PRE1', '1', 'ART18723', '2023-11-10', '09:30:00', '2023-11-10', '10:30:00', 'Devuelto'),
-('PRE2', '2', 'ART98123', '2023-11-15', '11:45:00', null, null, 'No devuelto'),
-('PRE3', '2', 'ART38172', '2023-11-20', '14:15:00', '2023-11-21', '15:30:00', 'Devuelto'),
-('PRE4', '4', 'ART64271', '2023-11-25', '16:45:00', null, null, 'No devuelto'),
-('PRE5', '1', 'ART93128', '2023-11-30', '19:00:00', null, null, 'No devuelto');
+('PRE1', '1', 'ART18723', '2023-11-01', '09:30:00', '2023-11-10', '10:30:00', 'Devuelto'),
+('PRE2', '2', 'ART98123', '2023-11-03', '11:45:00', null, null, 'No devuelto'),
+('PRE3', '2', 'ART38172', '2023-11-06', '14:15:00', '2023-11-21', '15:30:00', 'Devuelto'),
+('PRE4', '4', 'ART64271', '2023-11-10', '16:45:00', null, null, 'No devuelto'),
+('PRE5', '1', 'ART93128', '2023-12-04', '19:00:00', null, null, 'No devuelto');
 
 -- Insertar datos en la tabla Venta
 INSERT INTO Venta (Id_venta, Id_usuario, Fecha_venta, Monto_final, Estado_pago) VALUES
-('VEN1', 1, '2023-11-15', 1.5, 'Pagado'),
-('VEN2', 2, '2023-12-20', 3, 'Pagado'),
-('VEN3', 3, '2023-11-25', 1, 'Pendiente'),
-('VEN4', 4, '2023-12-30', 2.5, 'Pagado'),
-('VEN5', 5, '2023-11-05', 3, 'Pendiente'),
-('VEN6', 1, '2023-12-10', 6, 'Pagado'),
-('VEN7', 2, '2023-11-15', 4, 'Pagado'),
-('VEN8', 3, '2023-12-20', 5, 'Pendiente'),
-('VEN9', 4, '2023-11-25', 8, 'Pagado'),
-('VEN10', 5, '2023-12-01', 7, 'Pendiente');
+('VEN1', 1, '2023-11-01', 1.5, 'Pagado'),
+('VEN2', 2, '2023-12-02', 3, 'Pagado'),
+('VEN3', 3, '2023-11-05', 1, 'Pendiente'),
+('VEN4', 4, '2023-12-06', 2.5, 'Pagado'),
+('VEN5', 5, '2023-11-08', 3, 'Pendiente'),
+('VEN6', 1, '2023-11-10', 6, 'Pagado'),
+('VEN7', 2, '2023-12-02', 4, 'Pagado'),
+('VEN8', 3, '2023-12-03', 5, 'Pendiente'),
+('VEN9', 4, '2023-11-04', 8, 'Pagado'),
+('VEN10', 5, '2023-12-05', 7, 'Pendiente');
 
 -- Insertar datos en la tabla Encuesta
 INSERT INTO Encuesta (Id_encuesta, Id_administrador, Fecha_apertura, Fecha_cierre, Cantidad_preguntas, Cantidad_respuestas, Estado_encuesta) VALUES
@@ -359,3 +360,10 @@ INSERT INTO Noticia(Id_noticia, Id_administrador, Fecha, Titulo, Descripcion) VA
 ('NOT13', 'ADM004', '2023-12-04', 'Concurso de Innovación Tecnológica', 'Participa en el Concurso de Innovación Tecnológica organizado por la FIIS, donde los estudiantes presentarán sus proyectos más innovadores.'),
 ('NOT14', 'ADM005', '2023-12-05', 'Seminario sobre Ciencia de Datos', 'La FIIS organiza un seminario sobre Ciencia de Datos, abordando las últimas tendencias y aplicaciones en esta área emocionante.');
 
+-- Insertar datos en la tabla Estadistica_prestamo **(PORFAVOR REVISAR)**
+INSERT INTO Estadistica_prestamo (Id_prestamo, Id_calendario, Conteo_por_articulo) VALUES
+('PRE1', 'CAL01', 1),
+('PRE1', 'CAL03', 1),
+('PRE2', 'CAL06', 1),
+('PRE3', 'CAL10', 1),
+('PRE3', 'CAL14', 1);
