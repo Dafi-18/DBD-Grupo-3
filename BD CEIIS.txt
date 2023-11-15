@@ -171,21 +171,21 @@ INSERT INTO Administrador (Id_administrador, Dni, Cargo, Contrasena) VALUES
 
 -- -- insertar datos de tabla articulo
 INSERT INTO Articulo(Id_articulo, Nombre_articulo, Tipo_articulo, Cantidad, Descripcion, Precio_unitario, Disponibilidad) VALUES
-	('ART74238', 'lapiz', 'venta', '1', 'Contiene goma de borrar, diferentes colores', '1.5', 'disponible'),
-	('ART52713', 'lapicero', 'venta', '2', 'Hay de diferentes colores', '3', 'disponible'),
-	('ART78634', 'borrador', 'venta', '1', 'hay de diferentes tipos', '1', 'disponible'),
-	('ART13526', 'regla', 'venta', '2', 'tenemos de 10cm, 20cm, 30cm', '2.5', 'disponible'),
-	('ART38621', 'plumon', 'venta', '2', 'Se tienen de diferentes colores', '3', 'disponible'),
-	('ART18723', 'Cascos bloncos', 'prestamo', '2', 'para proteccion', null, 'disponible'),
-	('ART98123', 'ajedrez', 'prestamo', '1', 'piezas completas', null, 'disponible'),
-	('ART38172', 'guitarras', 'prestamo', '1', 'Limpio y en excelentes condicones', null, 'disponible'),
-	('ART64271', 'calculadora', 'prestamo', '1', 'En excelentes condiciones', null, 'disponible'),
-	('ART93128', 'bata', 'prestamo', '1', 'Limpio, muy bien conservado', null, 'disponible'),
-	('ART38723', 'balón de futbol', 'reservas y alquileres', '2', 'En excelentes condiciones', '3', 'disponible'),
-	('ART43791', 'Mesa de fulbito', 'reservas y alquileres', '2', 'acción fluida de los jugadores', '2.5', 'disponible'),
-	('ART98213', 'Mesa de ping pong', 'reservas y alquileres', '2', 'superficie uniforme, rebote consistente', '2', 'no disponible'),
-	('ART18738', 'Loza1', 'reservas y alquileres', '1', 'uso para futbol, basquet y voley', '5', 'disponible'),
-	('ART12378', 'Loza2', 'reservas y alquileres', '1', 'uso para futbol, basquet y voley', '5', 'no disponible');
+	('ART74238', 'lapiz', 'venta', 1, 'Contiene goma de borrar, diferentes colores', 1.50, 'disponible'),
+	('ART52713', 'lapicero', 'venta', 2, 'Hay de diferentes colores', 3.00, 'disponible'),
+	('ART78634', 'borrador', 'venta', 1, 'hay de diferentes tipos', 1.00, 'disponible'),
+	('ART13526', 'regla', 'venta', 2, 'tenemos de 10cm, 20cm, 30cm', 2.50, 'disponible'),
+	('ART38621', 'plumon', 'venta', 2, 'Se tienen de diferentes colores', 3.00, 'disponible'),
+	('ART18723', 'Cascos bloncos', 'prestamo', 2, 'para proteccion', null, 'disponible'),
+	('ART98123', 'ajedrez', 'prestamo', 1, 'piezas completas', null, 'disponible'),
+	('ART38172', 'guitarras', 'prestamo', 1, 'Limpio y en excelentes condicones', null, 'disponible'),
+	('ART64271', 'calculadora', 'prestamo', 1, 'En excelentes condiciones', null, 'disponible'),
+	('ART93128', 'bata', 'prestamo', 1, 'Limpio, muy bien conservado', null, 'disponible'),
+	('ART38723', 'balón de futbol', 'reservas y alquileres', 2, 'En excelentes condiciones', 3.00, 'disponible'),
+	('ART43791', 'Mesa de fulbito', 'reservas y alquileres', 2, 'acción fluida de los jugadores', 2.50, 'disponible'),
+	('ART98213', 'Mesa de ping pong', 'reservas y alquileres', 2, 'superficie uniforme, rebote consistente', 2.00, 'no disponible'),
+	('ART18738', 'Loza1', 'reservas y alquileres', 1, 'uso para futbol, basquet y voley', 5.00, 'disponible'),
+	('ART12378', 'Loza2', 'reservas y alquileres', 1, 'uso para futbol, basquet y voley', 5.00, 'no disponible');
 
 
 -- Insertar datos en la tabla Alquiler
