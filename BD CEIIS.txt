@@ -6,10 +6,6 @@ DROP TABLE IF EXISTS Venta CASCADE;
 DROP TABLE IF EXISTS Detalle_venta CASCADE;
 DROP TABLE IF EXISTS Prestamo CASCADE;
 DROP TABLE IF EXISTS Alquiler CASCADE;
-DROP TABLE IF EXISTS Calendario CASCADE;
-DROP TABLE IF EXISTS Estadistica_venta CASCADE;
-DROP TABLE IF EXISTS Estadistica_prestamo CASCADE;
-DROP TABLE IF EXISTS Estadistica_alquiler CASCADE;
 DROP TABLE IF EXISTS Noticia CASCADE;
 DROP TABLE IF EXISTS Encuesta CASCADE;
 DROP TABLE IF EXISTS Pregunta CASCADE;
@@ -87,35 +83,6 @@ create table Prestamo(
  		Fecha_devolucion date,
  		Hora_devolucion time,
  		Estado_prestamo varchar(15)
-);
-
-create table Calendario(
-		Id_calendario varchar(8) PRIMARY KEY,
-		Fecha date,
-		Hora time
-);
-
-create table Estadistica_venta( 
-		Id_venta varchar(8) references Venta(Id_venta),  
-		Id_calendario varchar(8) references Calendario(Id_calendario),
-		Conteo numeric(2),
- 		Ingreso_total numeric(4,2),
- 		PRIMARY KEY(Id_venta, Id_calendario)
-);
-
-create table Estadistica_prestamo(
-		Id_prestamo varchar(8) references Prestamo(Id_prestamo),
-		Id_calendario varchar(8) references Calendario(Id_calendario),
-		Conteo_por_articulo numeric(4),
-		primary key(Id_prestamo, Id_calendario)
-);
-
-create table Estadistica_alquiler( 
-		Id_alquiler varchar(8) references Alquiler(Id_alquiler),  
-		Id_calendario varchar(8) references Calendario(Id_calendario),
-		Conteo numeric(4),
- 		Total_ingreso numeric(4,2),
- 		PRIMARY KEY(Id_alquiler, Id_calendario)
 );
 
 create table Noticia( 
