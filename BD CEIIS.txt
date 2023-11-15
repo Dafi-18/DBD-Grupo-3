@@ -228,6 +228,20 @@ INSERT INTO Venta (Id_venta, Id_usuario, Fecha_venta, Monto_final, Estado_pago) 
 ('VEN9', 4, '2023-11-04', 8, 'Pagado'),
 ('VEN10', 5, '2023-12-05', 7, 'Pendiente');
 
+-- Insertar datos en la tabla Detalle_venta
+INSERT INTO Detalle_venta(Id_venta, Id_articulo, Medio_pago, Cantidad, Subtotal) VALUES
+('VEN1', 'ART74238', 'Yape', 2, 3.00),
+('VEN1', 'ART52713', 'Yape', 1, 3.00),
+('VEN2', 'ART78634', 'Efectivo', 3, 3.00),
+('VEN2', 'ART13526', 'Efectivo', 2, 5.00),
+('VEN2', 'ART74238', 'Efectivo', 3, 4.50),
+('VEN3', 'ART38621', 'Yape', 1, 3.00),
+('VEN3', 'ART18723', 'Yape', 2, 6.00),
+('VEN4', 'ART98123', 'Efectivo', 1, 1.00),
+('VEN4', 'ART38172', 'Efectivo', 2, 4.00),
+('VEN5', 'ART64271', 'Yape', 1, 2.00),
+('VEN6', 'ART93128', 'Yape', 2, 10.00);
+
 -- Insertar datos en la tabla Encuesta
 INSERT INTO Encuesta (Id_encuesta, Id_administrador, Fecha_apertura, Fecha_cierre, Cantidad_preguntas, Cantidad_respuestas, Estado_encuesta) VALUES
 ('ENC001', 'ADM005', '2023-10-13', '2023-10-20', 9, 30, 'inactivo'),
