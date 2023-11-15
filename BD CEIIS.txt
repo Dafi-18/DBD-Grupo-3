@@ -6,6 +6,7 @@ DROP TABLE IF EXISTS Venta CASCADE;
 DROP TABLE IF EXISTS Detalle_venta CASCADE;
 DROP TABLE IF EXISTS Prestamo CASCADE;
 DROP TABLE IF EXISTS Alquiler CASCADE;
+DROP TABLE IF EXISTS Calendario CASCADE;
 DROP TABLE IF EXISTS Noticia CASCADE;
 DROP TABLE IF EXISTS Encuesta CASCADE;
 DROP TABLE IF EXISTS Pregunta CASCADE;
@@ -83,6 +84,12 @@ create table Prestamo(
  		Fecha_devolucion date,
  		Hora_devolucion time,
  		Estado_prestamo varchar(15)
+);
+
+create table Calendario(
+		Id_calendario varchar(8) PRIMARY KEY,
+		Fecha date,
+		Hora time
 );
 
 create table Noticia( 
