@@ -275,3 +275,253 @@ INSERT INTO Noticia((Id_noticia, Id_administrador, Fecha, Titulo, Descripcion) V
 DELETE FROM Noticia WHERE Id_noticia='NOT15';
 
 
+-- Finanzas
+-- Total de Alquileres del mes 
+  
+SELECT COUNT(*) AS Cantidad_Alquileres
+FROM alquiler
+WHERE EXTRACT(MONTH FROM Fecha_alquiler) = EXTRACT(MONTH FROM CURRENT_DATE)
+	AND EXTRACT(YEAR FROM Fecha_alquiler) = EXTRACT(YEAR FROM CURRENT_DATE);
+
+-- Total de Venta del mes
+SELECT COUNT (*) AS Cantidad_venta
+From venta
+WHERE EXTRACT(MONTH FROM fecha_venta) = EXTRACT(MONTH FROM CURRENT_DATE)
+	AND EXTRACT(YEAR FROM fecha_venta) = EXTRACT(YEAR FROM CURRENT_DATE);
+
+-- Total de prestamos del mes
+SELECT COUNT (*) AS Cantidad_prestamos
+FROM prestamo
+WHERE EXTRACT(MONTH FROM fecha_prestamo) = EXTRACT(MONTH FROM CURRENT_DATE)
+	AND EXTRACT(YEAR FROM fecha_prestamo) = EXTRACT (YEAR FROM CURRENT_DATE);
+
+-- Total recaudado de alquileres
+SELECT SUM(monto) AS Cantidad_Total_Monto_Recaudado_Alquiler
+FROM alquiler
+WHERE EXTRACT(MONTH FROM Fecha_alquiler) = EXTRACT(MONTH FROM CURRENT_DATE);
+
+
+-- Total recaudado de ventas
+SELECT SUM(monto_final) AS Cantidad_Total_Monto_Recaudado_Venta
+FROM venta
+WHERE EXTRACT(MONTH FROM fecha_venta) = EXTRACT(MONTH FROM CURRENT_DATE);
+
+-- Total de transacciones del MES
+SELECT COUNT(*) AS Total
+FROM (
+    SELECT 'Alquiler'
+    FROM Alquiler
+    WHERE EXTRACT(MONTH FROM Fecha_alquiler) = EXTRACT(MONTH FROM CURRENT_DATE)
+      AND EXTRACT(YEAR FROM Fecha_alquiler) = EXTRACT(YEAR FROM CURRENT_DATE)
+    UNION ALL
+    SELECT 'Prestamo'
+    FROM Prestamo
+    WHERE EXTRACT(MONTH FROM Fecha_prestamo) = EXTRACT(MONTH FROM CURRENT_DATE)
+      AND EXTRACT(YEAR FROM Fecha_prestamo) = EXTRACT(YEAR FROM CURRENT_DATE)
+    UNION ALL
+    SELECT 'Venta'
+    FROM Venta
+    WHERE EXTRACT(MONTH FROM Fecha_venta) = EXTRACT(MONTH FROM CURRENT_DATE)
+      AND EXTRACT(YEAR FROM Fecha_venta) = EXTRACT(YEAR FROM CURRENT_DATE)
+) AS transacciones_semana;
+
+-- Cual es el articulo más alquilado
+SELECT a.Nombre_articulo
+FROM alquiler al
+JOIN articulo a ON al.Id_articulo = a.Id_articulo
+WHERE EXTRACT(MONTH FROM al.Fecha_alquiler) = EXTRACT(MONTH FROM CURRENT_DATE)
+    AND EXTRACT(YEAR FROM al.Fecha_alquiler) = EXTRACT(YEAR FROM CURRENT_DATE)
+GROUP BY a.Nombre_articulo
+ORDER BY COUNT(*) DESC
+LIMIT 1;
+
+SELECT COUNT(*) AS Cantidad_Alquileres
+FROM alquiler AS al
+JOIN articulo a ON al.Id_articulo = a.Id_articulo
+WHERE EXTRACT(MONTH FROM al.Fecha_alquiler) = EXTRACT(MONTH FROM CURRENT_DATE)
+    AND EXTRACT(YEAR FROM al.Fecha_alquiler) = EXTRACT(YEAR FROM CURRENT_DATE)
+GROUP BY a.Nombre_articulo
+ORDER BY COUNT(*) DESC
+LIMIT 1;
+
+-- Cual es el articulo menos alquilado
+
+SELECT a.Nombre_articulo
+FROM alquiler al
+JOIN articulo a ON al.Id_articulo = a.Id_articulo
+WHERE EXTRACT(MONTH FROM al.Fecha_alquiler) = EXTRACT(MONTH FROM CURRENT_DATE)
+    AND EXTRACT(YEAR FROM al.Fecha_alquiler) = EXTRACT(YEAR FROM CURRENT_DATE)
+GROUP BY a.Nombre_articulo
+ORDER BY COUNT(*) ASC
+LIMIT 1;
+
+SELECT COUNT(*) AS Cantidad_Alquileres
+FROM alquiler AS al
+JOIN articulo a ON al.Id_articulo = a.Id_articulo
+WHERE EXTRACT(MONTH FROM al.Fecha_alquiler) = EXTRACT(MONTH FROM CURRENT_DATE)
+    AND EXTRACT(YEAR FROM al.Fecha_alquiler) = EXTRACT(YEAR FROM CURRENT_DATE)
+GROUP BY a.Nombre_articulo
+ORDER BY COUNT(*) ASC
+LIMIT 1;
+
+-- Cual es el articulo más prestado
+SELECT a.Nombre_articulo
+FROM prestamo p
+JOIN articulo a ON p.Id_articulo = a.Id_articulo
+WHERE EXTRACT(MONTH FROM p.Fecha_prestamo) = EXTRACT(MONTH FROM CURRENT_DATE)
+    AND EXTRACT(YEAR FROM p.Fecha_prestamo) = EXTRACT(YEAR FROM CURRENT_DATE)
+GROUP BY a.Nombre_articulo
+ORDER BY COUNT(*) DESC
+LIMIT 1;
+
+SELECT COUNT(*) AS Cantidad_Prestamos
+FROM prestamo AS p
+JOIN articulo a ON p.Id_articulo = a.Id_articulo
+WHERE EXTRACT(MONTH FROM p.Fecha_prestamo) = EXTRACT(MONTH FROM CURRENT_DATE)
+    AND EXTRACT(YEAR FROM p.Fecha_prestamo) = EXTRACT(YEAR FROM CURRENT_DATE)
+GROUP BY a.Nombre_articulo
+ORDER BY COUNT(*) DESC
+LIMIT 1;
+
+-- Cual es el articulo menos prestado 
+SELECT a.Nombre_articulo
+FROM prestamo p
+JOIN articulo a ON p.Id_articulo = a.Id_articulo
+WHERE EXTRACT(MONTH FROM p.Fecha_prestamo) = EXTRACT(MONTH FROM CURRENT_DATE)
+    AND EXTRACT(YEAR FROM p.Fecha_prestamo) = EXTRACT(YEAR FROM CURRENT_DATE)
+GROUP BY a.Nombre_articulo
+ORDER BY COUNT(*) ASC
+LIMIT 1;
+
+SELECT COUNT(*) AS Cantidad_Prestamos
+FROM prestamo AS p
+JOIN articulo a ON p.Id_articulo = a.Id_articulo
+WHERE EXTRACT(MONTH FROM p.Fecha_prestamo) = EXTRACT(MONTH FROM CURRENT_DATE)
+    AND EXTRACT(YEAR FROM p.Fecha_prestamo) = EXTRACT(YEAR FROM CURRENT_DATE)
+GROUP BY a.Nombre_articulo
+ORDER BY COUNT(*) ASC
+LIMIT 1;
+
+-- Cual es el articulo más vendido
+SELECT a.Nombre_articulo AS Articulo_Mas_Vendido
+FROM articulo a
+JOIN (
+    SELECT d.Id_articulo, SUM(d.Cantidad) AS Total_Vendido
+    FROM detalle_venta d
+    GROUP BY d.Id_articulo
+    ORDER BY Total_Vendido DESC
+    LIMIT 1
+) subquery ON a.Id_articulo = subquery.Id_articulo;
+
+-- Cantidad de unidades vendidas por artículo más
+SELECT  SUM(d.Cantidad) AS Total_Unidades_Vendidas
+FROM articulo a
+JOIN detalle_venta d ON a.Id_articulo = d.Id_articulo
+GROUP BY a.Nombre_articulo
+ORDER BY Total_Unidades_Vendidas DESC
+LIMIT 1;
+
+-- Cual es el articulo menos vendido
+SELECT a.Nombre_articulo AS Articulo_Mas_Vendido
+FROM articulo a
+JOIN (
+    SELECT d.Id_articulo, SUM(d.Cantidad) AS Total_Vendido
+    FROM detalle_venta d
+    GROUP BY d.Id_articulo
+    ORDER BY Total_Vendido ASC
+    LIMIT 1
+) subquery ON a.Id_articulo = subquery.Id_articulo;
+-- Cantidad de unidades vendidas por artículo menos vendido
+SELECT  SUM(d.Cantidad) AS Total_Unidades_Vendidas
+FROM articulo a
+JOIN detalle_venta d ON a.Id_articulo = d.Id_articulo
+GROUP BY a.Nombre_articulo
+ORDER BY Total_Unidades_Vendidas DESC
+LIMIT 1;
+
+
+-- FINANZAS
+-- FINANZAS
+
+-- Total de transacciones del MES
+SELECT COUNT(*) AS Total
+FROM (
+    SELECT 'Alquiler'
+    FROM Alquiler
+    WHERE EXTRACT(MONTH FROM Fecha_alquiler) = EXTRACT(MONTH FROM CURRENT_DATE)
+      AND EXTRACT(YEAR FROM Fecha_alquiler) = EXTRACT(YEAR FROM CURRENT_DATE)
+    UNION ALL
+    SELECT 'Prestamo'
+    FROM Prestamo
+    WHERE EXTRACT(MONTH FROM Fecha_prestamo) = EXTRACT(MONTH FROM CURRENT_DATE)
+      AND EXTRACT(YEAR FROM Fecha_prestamo) = EXTRACT(YEAR FROM CURRENT_DATE)
+    UNION ALL
+    SELECT 'Venta'
+    FROM Venta
+    WHERE EXTRACT(MONTH FROM Fecha_venta) = EXTRACT(MONTH FROM CURRENT_DATE)
+      AND EXTRACT(YEAR FROM Fecha_venta) = EXTRACT(YEAR FROM CURRENT_DATE)
+) AS transacciones_semana;
+
+-- Total recaudado de alquiler al mes
+SELECT SUM(monto) AS Cantidad_Total_Monto_Recaudado_Alquiler
+FROM alquiler
+WHERE EXTRACT(MONTH FROM Fecha_alquiler) = EXTRACT(MONTH FROM CURRENT_DATE);
+
+-- total recaudado de ventas al mes
+SELECT SUM(monto_final) AS Cantidad_Total_Monto_Recaudado_Venta
+FROM venta
+WHERE EXTRACT(MONTH FROM fecha_venta) = EXTRACT(MONTH FROM CURRENT_DATE);
+
+
+-- Total recaudado al mes por alquileres y ventas
+SELECT
+    COALESCE(SUM(monto) + SUM(monto_final), 0) AS Monto_Total_General
+FROM (
+    SELECT
+        monto,
+        0 AS monto_final
+    FROM Alquiler
+    WHERE EXTRACT(MONTH FROM CURRENT_DATE) = EXTRACT(MONTH FROM fecha_alquiler)
+
+    UNION ALL
+
+    SELECT
+        0 AS monto,
+        monto_final
+    FROM Venta
+    WHERE EXTRACT(MONTH FROM CURRENT_DATE) = EXTRACT(MONTH FROM fecha_venta)
+) AS CombinedData;
+
+
+-- Historial de ventas alquileres 
+-- REPORTE PARA EL ADMINISTRADOR
+
+-- Consulta para alquileres
+SELECT  
+    Ar.Nombre_articulo AS Nombre_producto,
+    Ar.Tipo_articulo AS Tipo_servicio,
+    A.Fecha_alquiler AS Fecha_operacion,
+    A.Monto,
+    A.Estado_alquiler AS Estado_operacion,
+    A.Medio_pago
+FROM
+    Alquiler A
+INNER JOIN
+    Articulo Ar ON A.Id_articulo = Ar.Id_articulo
+	
+UNION
+
+-- Consulta para ventas
+SELECT
+    A.Nombre_articulo AS Nombre_producto,
+    A.Tipo_articulo AS Tipo_servicio,
+    V.Fecha_venta AS Fecha_operacion,
+    A.Precio_unitario AS Monto,
+    V.Estado_pago AS Estado_operacion,
+    DV.Medio_pago
+FROM
+    Detalle_venta DV
+INNER JOIN
+    Venta V ON DV.Id_venta = V.Id_venta
+INNER JOIN
+    Articulo A ON DV.Id_articulo = A.Id_articulo;
