@@ -1,3 +1,21 @@
+--Mostrar Alquileres
+SELECT Nombre_articulo, Precio_unitario, Descripcion
+FROM Articulo
+WHERE Tipo_articulo = 'prestamo';
+ 
+--Mostrar Ventas 
+SELECT Nombre_articulo, Precio_unitario, Descripcion
+FROM Articulo
+WHERE Tipo_articulo = 'venta';
+ 
+--Mostrar Prestamos 
+SELECT Nombre_articulo, Precio_unitario, Descripcion
+FROM Articulo
+WHERE Tipo_articulo = 'reservas y alquileres';
+
+
+
+
 -- Control de inventario
 -- Para ventas
 
@@ -41,3 +59,31 @@ UPDATE calendario SET estado = CASE WHEN estado = 'Ocupado' THEN 'Disponible'
 		   							WHEN estado = 'Disponible' THEN 'Ocupado'
 							   END 
 WHERE id_hora = '11' AND Fecha = '2023-11-01';
+
+
+
+
+
+
+
+--Mostrar Noticias
+SELECT Fecha, Titulo, Descripcion
+FROM Noticia;
+
+----ADMIN
+--Actualizar noticia
+UPDATE Noticia
+SET Fecha = '2023-12-27',
+    Titulo = 'Voluntariado navideno',
+    Descripcion = 'Los alumnos de las FIIS iran a zonas reconditas del Rimac para entregar canastas a pobladores',
+WHERE Id_noticia = 'NOT12';	
+
+-- Agregar una nueva noticia
+
+INSERT INTO Noticia((Id_noticia, Id_administrador, Fecha, Titulo, Descripcion) VALUES
+(('NOT15', 'ADM004', '2023-12-22', 'Semana navidena', 'La FIIS organizará una chocloatada para los estudiantes');)
+
+-- Quitar noticia
+DELETE FROM Noticia WHERE Id_noticia='NOT15';
+
+
