@@ -7,6 +7,21 @@
 | Codigo interfaz |  I-001 |
 | Imagen interfaz  |
 
+![Alt texasdt](Registro.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón Registrar:** Se agregará un nuevo registro a la tabla persona y tabla usuario |
+|INSERT INTO persona (DNI,primer_nombre, primer_apellido, segundo_apellido, Num_celular) VALUES (<2>, <3>, <4>, <5>);|
+
+
+
+| Código requerimiento | R-002 |
+| --- | --- |
+| Codigo interfaz |  I-002 |
+| Imagen interfaz  |
+
 ![Alt texasdt](Loginpage.png)
 
 | Sentencias SQL |
