@@ -177,7 +177,7 @@
 | Codigo interfaz |  I-001 |
 | Imagen interfaz  |
 
-![Alt texasdt](Vistas del inventario de ventas y préstamos y calendario de alquileres y reservas/Quitar artículo del inventario de ventas.png)
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Quitar_artículo_del_inventario_de_ventas.png)
 
 | Sentencias SQL |
 | --- |
