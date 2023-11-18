@@ -24,6 +24,9 @@ SELECT sum(dv.cantidad) FROM detalle_venta dv
 INNER JOIN venta v 
 ON dv.id_venta = v.id_venta AND dv.id_articulo = 'ART74238' AND v.fecha_venta = '2023-12-02';
 
+-- Para ver el stock de venta
+SELECT Id_articulo, nombre_articulo, precio_unitario, cantidad FROM Articulo WHERE tipo_articulo = 'venta';
+
 -- Agregar un nuevo articulo
 INSERT INTO Articulo(Id_articulo, Nombre_articulo, Tipo_articulo, Cantidad, Descripcion, Precio_unitario, Disponibilidad) VALUES
 ('ART12389', 'Cartuchera', 'venta', 5, 'uso para guardar tus utiles escolares', 5.00, 'disponible');
@@ -38,6 +41,9 @@ DELETE FROM articulo WHERE id_articulo = 'ART74238';
 
 -- Para ver la cantidad de prestamos activos de calculadoras de una cierta fecha (Esto funciona para cualquier articulo)
 SELECT COUNT(*) FROM prestamo WHERE Estado_prestamo = 'No devuelto' AND Fecha_prestamo = '2023-11-03';
+
+-- Para ver el stock de préstamos
+SELECT Id_articulo, nombre_articulo, precio_unitario, cantidad FROM Articulo WHERE tipo_articulo = 'prestamo';
 
 -- Agregar un nuevo articulo
 INSERT INTO Articulo(Id_articulo, Nombre_articulo, Tipo_articulo, Cantidad, Descripcion, Precio_unitario, Disponibilidad) VALUES
@@ -56,8 +62,8 @@ SELECT * FROM calendario ORDER BY fecha, id_hora;
 
 -- Cambiar la disponibilidad de cierto día y hora del calendario (En este caso se quiere modificar del día 01/11/23 de 6:00pm - 7:00pm)
 UPDATE calendario SET estado = CASE WHEN estado = 'Ocupado' THEN 'Disponible'
-		   							WHEN estado = 'Disponible' THEN 'Ocupado'
-							   END 
+				    WHEN estado = 'Disponible' THEN 'Ocupado'
+				END 
 WHERE id_hora = '11' AND Fecha = '2023-11-01';
 
 
