@@ -84,10 +84,8 @@
 | Sentencias SQL |
 | --- |
 | Eventos |
-| **1. Cargar pagina: Se mostraran los reservas y alquileres **  |
-|SELECT Nombre_articulo, Precio_unitario
-FROM Articulo
-WHERE Tipo_articulo = 'reservas y alquileres'; |
+| **1. Cargar página:** Se mostraran los reservas y alquileres   |
+|**SELECT Nombre_articulo, Precio_unitario FROM Articulo WHERE Tipo_articulo = 'reservas y alquileres';** |
 
 ## n1
 | Código requerimiento | R-00 |
@@ -100,10 +98,8 @@ WHERE Tipo_articulo = 'reservas y alquileres'; |
 | Sentencias SQL |
 | --- |
 | Eventos |
-| **1. Cargar pagina: Se mostraran los productos para venta **  |
-|SELECT Nombre_articulo, Precio_unitario
-FROM Articulo
-WHERE Tipo_articulo = 'reservas y alquileres'; |
+| **1. Cargar página:** Se mostraran los productos para venta  |
+|**SELECT Nombre_articulo, Precio_unitario FROM Articulo WHERE Tipo_articulo = 'reservas y alquileres';** |
 
 ## n2
 | Código requerimiento | R-00 |
@@ -116,7 +112,5 @@ WHERE Tipo_articulo = 'reservas y alquileres'; |
 | Sentencias SQL |
 | --- |
 | Eventos |
-| **1. Cargar pagina: Se mostraran los productos para prestamo **  |
-|SELECT Nombre_articulo
-FROM Articulo
-WHERE Tipo_articulo = 'prestamo'; |
+| **1. Cargar página:** Se mostraran los productos para prestamo   |
+|**SELECT Nombre_articulo FROM Articulo WHERE Tipo_articulo = 'prestamo';**|
