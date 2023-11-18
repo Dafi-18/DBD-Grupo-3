@@ -144,7 +144,7 @@
 | **1. Cargar página:** Se mostrarán los artículos y las cantidades que se han vendido en dicho día |
 |**SELECT SUM(dv.cantidad) FROM detalle_venta dv INNER JOIN venta v ON dv.id_venta = v.id_venta AND dv.id_articulo = <ID_ARTICULO> AND v.fecha_venta = <FECHA>;**|
 | **2. Cargar página:** Se mostrarán todos los artículos, su precio unitario y el stock restante para la venta |
-|**SELECT Id_articulo, nombre_articulo, precio_unitario, cantidad FROM Articulo;**|
+|**SELECT Id_articulo, nombre_articulo, precio_unitario, cantidad FROM Articulo WHERE tipo_articulo = 'venta';**|
 
 | Código requerimiento | R-021 |
 | --- | --- |
@@ -184,3 +184,84 @@
 | Eventos |
 | **1. Botón de papelera:** Se elimina dicho artículo del inventario de ventas |
 |**DELETE FROM Articulo WHERE Id_articulo = <ID_ARTICULO>;**|
+
+
+| Código requerimiento | R-022-024 |
+| --- | --- |
+| Codigo interfaz |  I-001 |
+| Imagen interfaz  |
+
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Vista_de_inventario_de_préstamos.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Cargar página:** Se mostrarán los artículos y las cantidades que se han prestado en dicho día |
+|**SELECT COUNT(*) FROM Prestamo WHERE Estado_prestamo = 'No devuelto' AND Fecha_prestamo = <FECHA_PRESTAMO>;**|
+| **2. Cargar página:** Se mostrarán todos los artículos y el stock restante para el préstamo |
+|**SELECT Id_articulo, nombre_articulo, cantidad FROM Articulo WHERE tipo_articulo = 'prestamo';**|
+
+| Código requerimiento | R-024 |
+| --- | --- |
+| Codigo interfaz |  I-001 |
+| Imagen interfaz  |
+
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Editar_artículo_del_inventario_de_préstamos.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón Check:** Se modificará la cantidad en stock de un artículo en el inventario de préstamos |
+|**UPDATE Articulo SET cantidad = <CANTIDAD> WHERE Id_articulo = <ID_ARTICULO>;**|
+
+| Código requerimiento | R-023 |
+| --- | --- |
+| Codigo interfaz |  I-001 |
+| Imagen interfaz  |
+
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Agregar_artículo_al_inventario_de_préstamos.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón Check:** Se modificará la cantidad en stock de un artículo en el inventario de préstamos |
+|**INSERT INTO Articulo(Id_articulo, Nombre_articulo, Tipo_articulo, Cantidad, Descripcion, Precio_unitario, Disponibilidad) VALUES (<1>, <2>, <3>, <4>, <5>, null, <7>);**|
+
+| Código requerimiento | R-022 |
+| --- | --- |
+| Codigo interfaz |  I-001 |
+| Imagen interfaz  |
+
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Quitar_artículo_del_inventario_de_préstamos.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón de papelera:** Se elimina dicho artículo del inventario de préstamos |
+|**DELETE FROM Articulo WHERE Id_articulo = <ID_ARTICULO>;**|
+
+| Código requerimiento | R-018 |
+| --- | --- |
+| Codigo interfaz |  I-001 |
+| Imagen interfaz  |
+
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Vista_de_alquiler_de_losas.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Cargar página:** Se mostrarán los horarios de las losas durante la semana |
+|**SELECT * FROM Calendario ORDER BY <FECHA>, <ID_HORA>;**|
+
+| Código requerimiento | R-018 |
+| --- | --- |
+| Codigo interfaz |  I-002 |
+| Imagen interfaz  |
+
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Editar_disponibilidad_de_losas.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón Aceptar:** Cambiar la disponibilidad de cierto día y hora del horario de la semana (Pueden ser varios cambios en diferentes días en simultáneo)  |
+|**UPDATE calendario SET estado = CASE WHEN estado = 'Ocupado' THEN 'Disponible' WHEN estado = 'Disponible' THEN 'Ocupado' END WHERE id_hora = <ID_HORA> AND Fecha = <FECHA>;**|
