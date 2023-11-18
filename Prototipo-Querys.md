@@ -31,7 +31,6 @@
 | **1. Botón Iniciar Sesión:** El usuario ingresa a su cuenta |
 |**SELECT Id_usuario, Cod_uni FROM Usuario WHERE Correo_uni = <1> AND Contrasena = <2>;**|
 
-
 ## 3
 | Código requerimiento | R-00 |
 | --- | --- |
@@ -45,3 +44,31 @@
 | Eventos |
 | **1. Botón Restaurar contraseña:**  |
 |**SELECT Id_usuario, Correo_uni FROM Usuario WHERE Correo_uni = <1>;**|
+
+## 4
+| Código requerimiento | R-00 |
+| --- | --- |
+| Codigo interfaz |  I-00 |
+| Imagen interfaz  |
+
+![Alt texasdt](Recuperarcontraseña.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón Restablecer tu contraseña:**  |
+| |
+
+## 5
+| Código requerimiento | R-00 |
+| --- | --- |
+| Codigo interfaz |  I-00 |
+| Imagen interfaz  |
+
+![Alt texasdt](PerfilUsuario.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Cargar pagina:**  |
+| |
