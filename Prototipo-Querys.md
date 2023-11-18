@@ -130,3 +130,57 @@
 | Eventos |
 | **1. Cargar página:** Se mostraran los productos para prestamo   |
 |**SELECT Nombre_articulo FROM Articulo WHERE Tipo_articulo = 'prestamo';**|
+
+| Código requerimiento | R-019-021 |
+| --- | --- |
+| Codigo interfaz |  I-001 |
+| Imagen interfaz  |
+
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Vista_de_inventario_de_ventas.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Cargar página:** Se mostrarán los artículos y las cantidades que se han vendido en dicho día |
+|**SELECT SUM(dv.cantidad) FROM detalle_venta dv INNER JOIN venta v ON dv.id_venta = v.id_venta AND dv.id_articulo = <ID_ARTICULO> AND v.fecha_venta = <FECHA>;**|
+| **2. Cargar página:** Se mostrarán todos los artículos, su precio unitario y el stock restante para la venta |
+|**SELECT Id_articulo, nombre_articulo, precio_unitario, cantidad FROM Articulo;**|
+
+| Código requerimiento | R-021 |
+| --- | --- |
+| Codigo interfaz |  I-001 |
+| Imagen interfaz  |
+
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Editar_artículo_del_inventario_de_ventas.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón Check:** Se modifica el precio y/o stock de un artículo |
+|**UPDATE Articulo SET cantidad = <CANTIDAD> , precio_unitario = <PRECIO> WHERE Id_articulo = <ID_ARTICULO>;**|
+
+| Código requerimiento | R-020 |
+| --- | --- |
+| Codigo interfaz |  I-001 |
+| Imagen interfaz  |
+
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Agregar_artículo_al_inventario_de_ventas.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón Check:** Se agrega un nuevo artículo al inventario de ventas |
+|**INSERT INTO Articulo(Id_articulo, Nombre_articulo, Tipo_articulo, Cantidad, Descripcion, Precio_unitario, Disponibilidad) VALUES (<1>, <2>, <3>, <4>, <5>, <6>, <7>);**|
+
+| Código requerimiento | R-019 |
+| --- | --- |
+| Codigo interfaz |  I-001 |
+| Imagen interfaz  |
+
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Quitar_artículo_del_inventario_de_ventas.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón de papelera:** Se elimina dicho artículo del inventario de ventas |
+|**DELETE FROM Articulo WHERE Id_articulo = <ID_ARTICULO>;**|
