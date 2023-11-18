@@ -73,13 +73,29 @@
 | **1. Cargar pagina:**  |
 | |
 
+## N
+| Código requerimiento | R-00 |
+| --- | --- |
+| Codigo interfaz |  I-00 |
+| Imagen interfaz  |
+
+![Alt texasdt](Preguntas.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Cargar pagina: Se llenará la fecha de las encuestas a mostrar**  |
+| **SELECT Id_encuesta FROM Encuesta E WHERE E.Fecha_apertura = '<1>'**;|
+| **2. Cargar pagina: Muestra las encuestas activas**  |
+|	**SELECT Id_encuesta FROM Encuesta E WHERE E.Estado_encuesta = 'activo'; <2>  **|
+
 ## n
 | Código requerimiento | R-00 |
 | --- | --- |
 | Codigo interfaz |  I-00 |
 | Imagen interfaz  |
 
-![Alt texasdt]()
+![Alt texasdt](reservasyalquileres.png)
 
 | Sentencias SQL |
 | --- |
@@ -93,7 +109,7 @@
 | Codigo interfaz |  I-00 |
 | Imagen interfaz  |
 
-![Alt texasdt]()
+![Alt texasdt](productos_ventas.png)
 
 | Sentencias SQL |
 | --- |
@@ -107,7 +123,7 @@
 | Codigo interfaz |  I-00 |
 | Imagen interfaz  |
 
-![Alt texasdt]()
+![Alt texasdt](productos_prestamos.png)
 
 | Sentencias SQL |
 | --- |
