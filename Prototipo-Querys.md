@@ -14,8 +14,8 @@
 | --- |
 | Eventos |
 | **1. Botón Registrar:** Se agregará un nuevo registro a la tabla persona y tabla usuario |
-|**INSERT INTO Persona (DNI,primer_nombre, primer_apellido, segundo_apellido, Num_celular) VALUES (<2>, <3>, <4>, <5>);**|
-|**INSERT INTO Usuario (correo_institucional, cod_uni, contraseña_usuario, DNI) VALUES (<1>, <6>, <7> , (SELECT DNI FROM persona WHERE DNI = <2>);**|
+|**INSERT INTO Persona (Dni,primer_nombre, primer_apellido, segundo_apellido, Celular) VALUES (<2>, <3>, <4>, <5>);**|
+|**INSERT INTO Usuario (Correo_uni, cod_uni, Contrasena, Dni) VALUES (<1>, <6>, <7> , (SELECT Dni FROM persona WHERE Dni = <2>);**|
 
 ## 2
 | Código requerimiento | R-002 |
@@ -29,4 +29,19 @@
 | --- |
 | Eventos |
 | **1. Botón Iniciar Sesión:** El usuario ingresa a su cuenta |
-|**SELECT id_usuario, correo_institucional FROM usuario WHERE correo_institucional = <1> AND contraseña_usuario = <2>;**|
+|**SELECT Id_usuario, Cod_uni FROM Usuario WHERE Correo_uni = <1> AND Contrasena = <2>;**|
+
+
+## 3
+| Código requerimiento | R-00 |
+| --- | --- |
+| Codigo interfaz |  I-00 |
+| Imagen interfaz  |
+
+![Alt texasdt](Recuperarcuenta.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón Restaurar contraseña:**  |
+|**SELECT Id_usuario, Correo_uni FROM Usuario WHERE Correo_uni = <1>;**|
