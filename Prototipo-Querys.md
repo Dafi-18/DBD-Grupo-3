@@ -95,7 +95,7 @@
 | Codigo interfaz |  I-00 |
 | Imagen interfaz  |
 
-![Alt texasdt](Configuraciondeperfilusuario.png)
+![Alt texasdt](PerfilAdministrador.png)
 
 | Sentencias SQL |
 | --- |
