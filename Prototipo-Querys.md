@@ -682,6 +682,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 # Funcionalidad Primaria Elegida (por módulo)
 
 ### 1.Modulo de seguridad
+**Flujo de actividades**
 1. El usuario ingresa a su cuenta personal proporcionando su correo y su contraseña y se dirige a perfil.
    
 ![Alt texasdt](Loginpage.png)
@@ -694,3 +695,13 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 
 ![Alt texasdt](Historialdelusuario.png)
 
+**Justificacion**
+Esta actividad es elegida la funcionalidad principal porque permite que el usuario puede visualizar un historial de los servicios que ha utilizado, además de poder ver el estado (pendiente, devuelto) de los servicios de alquiler que ha realizado. 
+Esto proporciona al usuario una visión clara y detallada de los servicios que han utilizado, evaluar su propia actividad y detectar algún uso no reconocido de los servicios. 
+El filtro de fecha ofrece a los usuarios la posibilidad de acceder fácilmente a informes detallados sobre su actividad contribuye a una experiencia de usuario mejorada. Los usuarios se benefician al tener un control más claro sobre su propia información y actividad.
+Los requerimientos e interfaces elegidos fueron:
+| Requerimiento | Interfaz |
+| --- | --- |
+| R-002 |  I-002 |
+| R-005 |  I-005 |
+| R-005 |  I-006 |
