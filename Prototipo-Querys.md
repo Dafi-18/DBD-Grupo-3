@@ -1358,6 +1358,7 @@ En esta funcionalidad se requiere información de la tabla Administrador, Articu
 	);
 
 Requiere de las siguientes consultas
+
 **CANTIDAD VENDIDA DE UN ARTÍCULO**
 
 	SELECT SUM(dv.cantidad) FROM detalle_venta dv INNER JOIN venta v ON dv.id_venta = v.id_venta AND dv.id_articulo = <ID_ARTICULO> AND v.fecha_venta = <FECHA>;
