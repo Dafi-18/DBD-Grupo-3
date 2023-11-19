@@ -622,9 +622,9 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 
 
 ## 25
-| Código requerimiento | R-006 |
+| Código requerimiento | R-025 |
 | --- | --- |
-| Codigo interfaz |  I-00 |
+| Codigo interfaz |  I-25 |
 | Imagen interfaz  |
 
 ![Alt texasdt](Vistas_Noticias/Mostrar_Noticias.png)
@@ -637,9 +637,9 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 
 
 ## 26
-| Código requerimiento | R-025 |
+| Código requerimiento | R-026 |
 | --- | --- |
-| Codigo interfaz |  I-00 |
+| Codigo interfaz |  I-26 |
 | Imagen interfaz  |
 
 ![Alt texasdt](Vistas_Noticias/Agregar_Noticias.png)
@@ -651,9 +651,9 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 |**INSERT INTO Noticia (Id_notica, Id_administrador, Fecha, Titulo, Descripcion) VALUES (<Id_noticia>, <Id_administrador>, < fecha >, < titulo >, < desccripcion >);**|
 
 ## 27
-| Código requerimiento | R-025 |
+| Código requerimiento | R-027 |
 | --- | --- |
-| Codigo interfaz |  I-00 |
+| Codigo interfaz |  I-27 |
 | Imagen interfaz  |
 
 ![Alt texasdt](Vistas_Noticias/Actualizar_Noticias.png)
@@ -665,9 +665,9 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 |**UPDATE Noticia SET Fecha = < fecha > , < titulo > , <Descripción> WHERE Id_noticia = <Id_noticia>;**|
 
 ## 28
-| Código requerimiento | R-025 |
+| Código requerimiento | R-028 |
 | --- | --- |
-| Codigo interfaz |  I-00 |
+| Codigo interfaz |  I-28 |
 | Imagen interfaz  |
 
 ![Alt texasdt](Vistas_Noticias/Quitar_Noticias.png)
