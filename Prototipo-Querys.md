@@ -663,3 +663,17 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | Eventos |
 | **1. Botón Confirmar:** Se cambiaran lo que desee de la noticia, ya sea fecha, titulo, descripcion  |
 |**UPDATE Noticia SET Fecha = <FECHA> , <TITULO> , <Descripción> WHERE Id_noticia = <Id_noticia>;**|
+
+## 28
+| Código requerimiento | R-025 |
+| --- | --- |
+| Codigo interfaz |  I-00 |
+| Imagen interfaz  |
+
+![Alt texasdt](Vistas_Noticias/Quitar_Noticias.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón Confirmar:** Se eliminara la noticia que ya pasó el evento o la informacion colocada  |
+|**DELETE FROM Noticia WHERE Id_notica = <ID_NOTICIA>**|
