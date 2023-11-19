@@ -288,7 +288,7 @@
 | Codigo interfaz |  I-005 |
 | Imagen interfaz  |
 
-![Alt texasdt](PerfilAdm.png) 
+![Alt texasdt](PerfilAdministrador.png) 
 
 | Sentencias SQL |
 | --- |
