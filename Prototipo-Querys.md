@@ -696,6 +696,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 ![Alt texasdt](Historialdelusuario.png)
 
 **Justificacion**
+
 Esta actividad es elegida la funcionalidad principal porque permite que el usuario puede visualizar un historial de los servicios que ha utilizado, además de poder ver el estado (pendiente, devuelto) de los servicios de alquiler que ha realizado. 
 Esto proporciona al usuario una visión clara y detallada de los servicios que han utilizado, evaluar su propia actividad y detectar algún uso no reconocido de los servicios. 
 El filtro de fecha ofrece a los usuarios la posibilidad de acceder fácilmente a informes detallados sobre su actividad contribuye a una experiencia de usuario mejorada. Los usuarios se benefician al tener un control más claro sobre su propia información y actividad.
@@ -705,3 +706,248 @@ Los requerimientos e interfaces elegidos fueron:
 | R-002 |  I-002 |
 | R-005 |  I-005 |
 | R-005 |  I-006 |
+
+En esta funcionalidad se requiere información de la tabla Usuario, Alquiler, Venta, DetalleVenta y Prestamo.
+
+Las consultas que se pueden realizar son:
+
+**Creacion de las tablas**
+
+	create table Usuario( 
+			Id_usuario varchar(8) PRIMARY KEY,
+			Dni varchar(8) references Persona(Dni),
+			Cod_uni varchar(9) unique,
+			Correo_uni varchar(50) unique,  
+	 		Contrasena varchar(30)
+	);
+	create table Articulo(
+			Id_articulo varchar(8) PRIMARY KEY,
+			Nombre_articulo varchar(25),
+			Tipo_articulo varchar(25),
+			Cantidad numeric(2),
+			Descripcion varchar(50),
+			Precio_unitario numeric(3,2),
+	 		Disponibilidad varchar(20)
+	);
+	
+	create table Venta( 
+			Id_venta varchar(8) PRIMARY KEY,
+			Id_usuario varchar(8) references Usuario(Id_usuario),
+	 		Fecha_venta date,
+	 		Monto_final numeric(4,2),
+	 		Estado_pago varchar(10)
+	);
+	
+	create table Detalle_venta( 
+			Id_venta varchar(8) references Venta(Id_venta),  
+			Id_articulo varchar(8) references Articulo(Id_articulo),
+			Medio_pago varchar(25),
+			Cantidad numeric(2),
+	 		Subtotal numeric(4,2),
+	 		PRIMARY KEY(Id_venta, Id_articulo)
+	);
+	
+	create table Alquiler(
+			Id_alquiler varchar(8) PRIMARY KEY,
+			Id_usuario varchar(8) references Usuario(Id_usuario),
+			Id_articulo varchar(8) references Articulo(Id_articulo),
+			Fecha_alquiler date,
+			Hora_inicio time,
+			Hora_fin time,
+			Medio_pago varchar(20),
+			Monto numeric(3,2),
+	 		Estado_alquiler varchar(15)
+	);
+	
+	create table Prestamo(
+			Id_prestamo varchar(8) PRIMARY KEY,
+			Id_usuario varchar(8) references Usuario(Id_usuario),
+			Id_articulo varchar(8) references Articulo(Id_articulo),
+			Fecha_prestamo date,
+			Hora_prestamo time,
+	 		Fecha_devolucion date,
+	 		Hora_devolucion time,
+	 		Estado_prestamo varchar(15)
+	);
+
+**Consultas**
+
+	SELECT  
+	    Ar.Nombre_articulo AS Nombre_producto,
+	    Ar.Tipo_articulo AS Tipo_servicio,
+	    A.Fecha_alquiler AS Fecha_operacion,
+	    A.Hora_inicio,
+	    A.Hora_fin,
+		NULL AS Fecha_devolucion,
+		A.Monto,
+	    A.Estado_alquiler AS Estado_operacion
+	FROM
+	    Alquiler A
+	INNER JOIN
+		 Usuario U ON A.Id_usuario = U.Id_usuario
+	INNER JOIN
+	    Articulo Ar ON A.Id_articulo = Ar.Id_articulo
+	WHERE
+	    U.Id_usuario = '1'
+		
+		
+	UNION
+	
+		
+	SELECT
+	    Ar.Nombre_articulo AS Nombre_producto,
+	    Ar.Tipo_articulo AS Tipo_servicio,
+	    P.Fecha_prestamo AS Fecha_operacion,
+	    P.Hora_prestamo AS Hora_inicio, 
+		P.Hora_devolucion  As Hora_fin,
+	    P.Fecha_devolucion, 
+		NULL AS Monto,
+	    P.Estado_prestamo AS Estado_operacion
+	FROM
+	    Prestamo P
+	INNER JOIN
+	    Usuario U ON P.Id_usuario = U.Id_usuario
+	INNER JOIN
+	    Articulo Ar ON P.Id_articulo = Ar.Id_articulo
+	WHERE
+	    U.Id_usuario = '1'
+		
+		
+	UNION
+	
+	SELECT
+	    A.Nombre_articulo AS Nombre_producto,
+	    A.Tipo_articulo AS Tipo_servicio,
+	    V.Fecha_venta AS Fecha_operacion,
+		NULL AS Hora_inicio,
+		NULL AS Hora_fin,
+		NULL AS Fecha_devolucion,
+	    A.Precio_unitario AS Monto,
+	    V.Estado_pago AS Estado_operacion
+	FROM
+	    Detalle_venta DV
+	INNER JOIN
+	    Venta V ON DV.Id_venta = V.Id_venta
+	INNER JOIN
+	    Articulo A ON DV.Id_articulo = A.Id_articulo
+	INNER JOIN
+	    Usuario U ON V.Id_usuario = U.Id_usuario
+	WHERE
+	    U.Id_usuario = '1';
+	
+**CONTAR CANTIDAD DE PRESTAMOS DEL USUARIO**
+
+	SELECT
+	    COUNT(P.Id_prestamo) AS Cantidad_prestamos
+	FROM
+	    Prestamo P
+	INNER JOIN
+	    Usuario U ON P.Id_usuario = U.Id_usuario
+	WHERE
+	    U.Id_usuario = '1';
+		
+**CONTAR CANTIDAD DE VENTAS DEL USUARIO**
+
+	SELECT
+	    COUNT(V.Id_venta) AS Cantidad_ventas
+	FROM
+	    Venta V
+	INNER JOIN
+	    Usuario U ON V.Id_usuario = U.Id_usuario
+	WHERE
+	    U.Id_usuario = '1';
+		
+	-- CONTAR CANTIDAD DE ALQUILER DEL USUARIO
+	SELECT
+	    COUNT(A.Id_alquiler) AS Cantidad_ventas
+	FROM
+	    Alquiler A
+	INNER JOIN
+	    Usuario U ON A.Id_usuario = U.Id_usuario
+	WHERE
+	    U.Id_usuario = '1';	
+
+**TOTAL DE SERVICIOS UTILIZADOS POR EL USUARIO**
+
+	SELECT
+	    U.Id_usuario,
+	    U.DNI,
+	    (
+	        -- Subconsulta para contar registros de préstamos
+	        COALESCE((SELECT COUNT(*) FROM Prestamo P WHERE P.Id_usuario = U.Id_usuario), 0) +
+	        -- Subconsulta para contar registros de ventas
+	        COALESCE((SELECT COUNT(*) FROM Venta V WHERE V.Id_usuario = U.Id_usuario), 0) +
+	        -- Subconsulta para contar registros de alquileres
+	        COALESCE((SELECT COUNT(*) FROM Alquiler A WHERE A.Id_usuario = U.Id_usuario), 0)
+	    ) AS Total_registros
+	FROM
+	    Usuario U
+	WHERE
+	    U.Id_usuario = '1';	
+     
+**Busqueda por fecha**
+
+	SELECT  
+	    Ar.Nombre_articulo AS Nombre_producto,
+	    Ar.Tipo_articulo AS Tipo_servicio,
+	    A.Fecha_alquiler AS Fecha_operacion,
+	    A.Hora_inicio,
+	    A.Hora_fin,
+		NULL AS Fecha_devolucion,
+		A.Monto,
+	    A.Estado_alquiler AS Estado_operacion
+	FROM
+	    Alquiler A
+	INNER JOIN
+		 Usuario U ON A.Id_usuario = U.Id_usuario
+	INNER JOIN
+	    Articulo Ar ON A.Id_articulo = Ar.Id_articulo
+	WHERE
+	    U.Id_usuario = '1'
+	    AND A.Fecha_alquiler = '2023-11-13'
+		
+	UNION
+	
+	SELECT
+	    Ar.Nombre_articulo AS Nombre_producto,
+	    Ar.Tipo_articulo AS Tipo_servicio,
+	    P.Fecha_prestamo AS Fecha_operacion,
+	    P.Hora_prestamo AS Hora_inicio, 
+		P.Hora_devolucion  As Hora_fin,
+	    P.Fecha_devolucion, 
+		NULL AS Monto,
+	    P.Estado_prestamo AS Estado_operacion
+	FROM
+	    Prestamo P
+	INNER JOIN
+	    Usuario U ON P.Id_usuario = U.Id_usuario
+	INNER JOIN
+	    Articulo Ar ON P.Id_articulo = Ar.Id_articulo
+	WHERE
+	    U.Id_usuario = '1'
+	    AND P.Fecha_prestamo = '2023-11-13'
+		
+	UNION
+	
+	SELECT
+	    A.Nombre_articulo AS Nombre_producto,
+	    A.Tipo_articulo AS Tipo_servicio,
+	    V.Fecha_venta AS Fecha_operacion,
+		NULL AS Hora_inicio,
+		NULL AS Hora_fin,
+		NULL AS Fecha_devolucion,
+	    A.Precio_unitario AS Monto,
+	    V.Estado_pago AS Estado_operacion
+	FROM
+	    Detalle_venta DV
+	INNER JOIN
+	    Venta V ON DV.Id_venta = V.Id_venta
+	INNER JOIN
+	    Articulo A ON DV.Id_articulo = A.Id_articulo
+	INNER JOIN
+	    Usuario U ON V.Id_usuario = U.Id_usuario
+	WHERE
+	    U.Id_usuario = '1'
+	    AND V.Fecha_venta = '2023-11-13';
+
+
