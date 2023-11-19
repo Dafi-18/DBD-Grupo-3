@@ -1221,3 +1221,32 @@ En esta funcionalidad se requiere información de la tabla Articulo, Alquiler, V
 1. Una vez el administrador, haya ingresado a su cuenta, podra ir a la sección de estadísticas, en la cual podra ver por venta, préstamo y alquiler. el Monto total de cada uno, la cantidad y nombre de la mayor cantidad de cada transacción y la cantidad y nombre de la menor cantidad de cada transacción. Tambien podrá visualizar el total de monto recaudado por alquiler y venta, y por ultimo un total de servicios brindados de la semana.
 
 En esta funcionalidad se requiere información de la tabla Articulo, Alquiler, Venta, DetalleVenta y Prestamo.
+
+### 4.Modulo de encuestas
+**Flujo de actividades**
+1. El administrador después de haber ingresado a su perfil, escogerá la sección encuestas, ahi tendra la opción de añadir una nueva encuesta.
+![Alt texasdt](preguntas/preguntas2.png)
+2. El administrador tendra la opción de escribir las preguntas, quitar preguntas, añadir título y escoger el tipo de pregunta.
+![Alt texasdt](preguntas/preguntas3.png)
+
+Esta funcionalidad requiere información de las tablas encuesta y pregunta.
+
+	create table Encuesta( 
+		Id_encuesta varchar(8) primary key,  
+		Id_administrador varchar(8) references Administrador(Id_administrador),
+		Fecha_apertura date,
+		Fecha_cierre date,
+		Cantidad_preguntas numeric(2),
+		Cantidad_respuestas numeric(2),
+		Estado_encuesta varchar(10)
+	);
+
+	create table Pregunta(
+		Id_pregunta varchar(8) ,  
+		Id_encuesta varchar(8) references Encuesta(Id_encuesta),
+		Id_administrador varchar(8) references Administrador(Id_administrador),
+		Tipo_respuesta varchar(15),
+		PRIMARY KEY (Id_encuesta, Id_pregunta)
+  	);
+
+
