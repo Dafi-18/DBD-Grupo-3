@@ -677,3 +677,20 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | Eventos |
 | **1. Botón Confirmar:** Se eliminara la noticia que ya pasó el evento o la informacion colocada  |
 |**DELETE FROM Noticia WHERE Id_notica = <ID_NOTICIA>**|
+
+
+# Funcionalidad Primaria Elegida (por módulo)
+
+### 1.Modulo de seguridad
+1. El usuario ingresa a su cuenta personal proporcionando su correo y su contraseña y se dirige a perfil.
+   
+![Alt texasdt](Loginpage.png)
+
+2. Una vez en su perfil el usuario visualiza un reporte de los últimos servicios que ha utilizado del CEIIS, y conteos de estos. Se muestra un conteo de cada tipo de servicio por separado y un conteo general de los servicios utilizados.
+
+![Alt texasdt](Loginpage.png)
+
+3. El usuario tiene la opción de presionar “Ver todo” para dirigirse y tener un reporte completo de todos los servicios que ha utilizado, este reporte puede filtrase por fecha.
+
+![Alt texasdt](Historialdelusuario.png)
+
