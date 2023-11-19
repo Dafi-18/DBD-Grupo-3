@@ -601,4 +601,4 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | --- |
 | Eventos |
 | **1. Botón Confirmar:** Se agregarán la fecha, titulo y la descripcion de la noticia |
-|**UPDATE calendario SET estado = CASE WHEN estado = 'Ocupado' THEN 'Disponible' WHEN estado = 'Disponible' THEN 'Ocupado' END WHERE id_hora = <ID_HORA> AND Fecha = <FECHA>;**|
+|**INSERT INTO Noticia (Id_notica, Id_administrador, Fecha, Titulo, Descripcion) VALUES (<Id_noticia>, <Id_administrador>,<Fecha>, <Titulo>, <Descripcion>);**|
