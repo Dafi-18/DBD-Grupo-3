@@ -585,5 +585,5 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | Sentencias SQL |
 | --- |
 | Eventos |
-| **1. Botón Registrar:** Se mostrará el contenido de la noticia |
+| **1. Botón Noticia:** Se mostrará el contenido de la noticia |
 |**SELECT Fecha, Titulo, Descricion FROM Noticia;**|
