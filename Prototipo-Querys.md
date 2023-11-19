@@ -488,7 +488,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | --- |
 | Eventos |
 | **1. Cargar página:** Se mostrarán los artículos y las cantidades que se han vendido en dicho día |
-|**SELECT SUM(dv.cantidad) FROM detalle_venta dv INNER JOIN venta v ON dv.id_venta = v.id_venta AND dv.id_articulo = <ID_ARTICULO> AND v.fecha_venta = <FECHA>;**|
+|**SELECT SUM(dv.cantidad) FROM detalle_venta dv INNER JOIN venta v ON dv.id_venta = v.id_venta AND dv.id_articulo = <ID_ARTICULO> AND v.fecha_venta = <FECHA> ;**|
 | **2. Cargar página:** Se mostrarán todos los artículos, su precio unitario y el stock restante para la venta |
 |**SELECT Id_articulo, nombre_articulo, precio_unitario, cantidad FROM Articulo WHERE tipo_articulo = 'venta';**|
 
