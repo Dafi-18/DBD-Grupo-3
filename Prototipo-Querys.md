@@ -601,4 +601,4 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | --- |
 | Eventos |
 | **1. Botón Confirmar:** Se agregarán la fecha, titulo y la descripcion de la noticia |
-|**INSERT INTO Noticia (Id_noticia, Id_administrador, Fecha, Titulo, Descricion) VALUES (<Id_noticia>, <Id_administrador>, <Fecha>, <Titulo>, <Descricion>)**|
+|**INSERT INTO Noticia (Id_noticia, Id_administrador, Fecha, Titulo, Descricion) VALUES (<Id_noticia>, <Id_administrador>, <Fecha>,<Titulo>, <Descricion>);**|
