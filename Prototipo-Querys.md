@@ -380,7 +380,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 	        COALESCE((SELECT COUNT(*) FROM Alquiler A ), 0)
 	    ) AS Total_registros ;	
 
-## N
+## 9
 | Código requerimiento | R-00 |
 | --- | --- |
 | Codigo interfaz |  I-00 |
@@ -396,7 +396,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **2. Cargar pagina:** Muestra las encuestas activas  |
 |**SELECT Id_encuesta FROM Encuesta E WHERE E.Estado_encuesta = 'activo'; <2>**|
 
-## N2
+## 10
 | Código requerimiento | R-00 |
 | --- | --- |
 | Codigo interfaz |  I-00 |
@@ -415,7 +415,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 |**UPDATE Encuesta SET Fecha_apertura = '2023-12-13', Fecha_cierre = '2023-12-23', Cantidad_preguntas = '9', Cantidad_respuestas = '9', Estado_encuesta = 'inactivo' WHERE Id_encuesta = 'ENC002'; <3>** |
 
 
-## N3
+## 11
 | Código requerimiento | R-00 |
 | --- | --- |
 | Codigo interfaz |  I-00 |
@@ -434,7 +434,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 |**DELETE FROM Pregunta WHERE Id_encuesta = 'id_de_tu_encuesta' AND Id_pregunta = 'id_de_tu_pregunta';<3>  **|
 
 
-## n
+## 12
 | Código requerimiento | R-00 |
 | --- | --- |
 | Codigo interfaz |  I-00 |
@@ -448,7 +448,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **1. Cargar página:** Se mostraran los reservas y alquileres   |
 |**SELECT Nombre_articulo, Precio_unitario FROM Articulo WHERE Tipo_articulo = 'reservas y alquileres';** |
 
-## n1
+## 13
 | Código requerimiento | R-00 |
 | --- | --- |
 | Codigo interfaz |  I-00 |
@@ -462,7 +462,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **1. Cargar página:** Se mostraran los productos para venta  |
 |**SELECT Nombre_articulo, Precio_unitario FROM Articulo WHERE Tipo_articulo = 'reservas y alquileres';** |
 
-## n2
+## 14
 | Código requerimiento | R-00 |
 | --- | --- |
 | Codigo interfaz |  I-00 |
@@ -476,6 +476,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **1. Cargar página:** Se mostraran los productos para prestamo   |
 |**SELECT Nombre_articulo FROM Articulo WHERE Tipo_articulo = 'prestamo';**|
 
+## 15
 | Código requerimiento | R-019-021 |
 | --- | --- |
 | Codigo interfaz |  I-001 |
@@ -491,6 +492,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **2. Cargar página:** Se mostrarán todos los artículos, su precio unitario y el stock restante para la venta |
 |**SELECT Id_articulo, nombre_articulo, precio_unitario, cantidad FROM Articulo WHERE tipo_articulo = 'venta';**|
 
+## 16
 | Código requerimiento | R-021 |
 | --- | --- |
 | Codigo interfaz |  I-001 |
@@ -504,6 +506,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **1. Botón Check:** Se modifica el precio y/o stock de un artículo |
 |**UPDATE Articulo SET cantidad = <CANTIDAD> , precio_unitario = <PRECIO> WHERE Id_articulo = <ID_ARTICULO>;**|
 
+## 17
 | Código requerimiento | R-020 |
 | --- | --- |
 | Codigo interfaz |  I-001 |
@@ -517,6 +520,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **1. Botón Check:** Se agrega un nuevo artículo al inventario de ventas |
 |**INSERT INTO Articulo(Id_articulo, Nombre_articulo, Tipo_articulo, Cantidad, Descripcion, Precio_unitario, Disponibilidad) VALUES (<1>, <2>, <3>, <4>, <5>, <6>, <7>);**|
 
+## 18
 | Código requerimiento | R-019 |
 | --- | --- |
 | Codigo interfaz |  I-001 |
@@ -530,7 +534,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **1. Botón de papelera:** Se elimina dicho artículo del inventario de ventas |
 |**DELETE FROM Articulo WHERE Id_articulo = <ID_ARTICULO>;**|
 
-
+## 19
 | Código requerimiento | R-022-024 |
 | --- | --- |
 | Codigo interfaz |  I-001 |
@@ -546,6 +550,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **2. Cargar página:** Se mostrarán todos los artículos y el stock restante para el préstamo |
 |**SELECT Id_articulo, nombre_articulo, cantidad FROM Articulo WHERE tipo_articulo = 'prestamo';**|
 
+## 20
 | Código requerimiento | R-024 |
 | --- | --- |
 | Codigo interfaz |  I-001 |
@@ -559,6 +564,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **1. Botón Check:** Se modificará la cantidad en stock de un artículo en el inventario de préstamos |
 |**UPDATE Articulo SET cantidad = <CANTIDAD> WHERE Id_articulo = <ID_ARTICULO>;**|
 
+## 21
 | Código requerimiento | R-023 |
 | --- | --- |
 | Codigo interfaz |  I-001 |
@@ -572,6 +578,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **1. Botón Check:** Se modificará la cantidad en stock de un artículo en el inventario de préstamos |
 |**INSERT INTO Articulo(Id_articulo, Nombre_articulo, Tipo_articulo, Cantidad, Descripcion, Precio_unitario, Disponibilidad) VALUES (<1>, <2>, <3>, <4>, <5>, null, <7>);**|
 
+## 22
 | Código requerimiento | R-022 |
 | --- | --- |
 | Codigo interfaz |  I-001 |
@@ -585,6 +592,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **1. Botón de papelera:** Se elimina dicho artículo del inventario de préstamos |
 |**DELETE FROM Articulo WHERE Id_articulo = <ID_ARTICULO>;**|
 
+## 23
 | Código requerimiento | R-018 |
 | --- | --- |
 | Codigo interfaz |  I-001 |
@@ -598,6 +606,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **1. Cargar página:** Se mostrarán los horarios de las losas durante la semana |
 |**SELECT * FROM Calendario ORDER BY <FECHA>, <ID_HORA>;**|
 
+## 24
 | Código requerimiento | R-018 |
 | --- | --- |
 | Codigo interfaz |  I-002 |
@@ -612,7 +621,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 |**UPDATE calendario SET estado = CASE WHEN estado = 'Ocupado' THEN 'Disponible' WHEN estado = 'Disponible' THEN 'Ocupado' END WHERE id_hora = <ID_HORA> AND Fecha = <FECHA>;**|
 
 
-## nn
+## 25
 | Código requerimiento | R-006 |
 | --- | --- |
 | Codigo interfaz |  I-00 |
@@ -627,7 +636,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 |**SELECT Fecha, Titulo, Descricion FROM Noticia;**|
 
 
-## nn1
+## 26
 | Código requerimiento | R-025 |
 | --- | --- |
 | Codigo interfaz |  I-00 |
@@ -641,7 +650,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **1. Botón Confirmar:** Se agregarán la fecha, titulo y la descripcion de la noticia |
 |**INSERT INTO Noticia (Id_notica, Id_administrador, Fecha, Titulo, Descripcion) VALUES (<Id_noticia>, <Id_administrador>, <FECHA>, <TITULO>, <DESCRIPCION>);**|
 
-## nn2
+## 27
 | Código requerimiento | R-025 |
 | --- | --- |
 | Codigo interfaz |  I-00 |
