@@ -1204,4 +1204,20 @@ Las consultas que se pueden realizar son:
 	    U.Id_usuario = '1'
 	    AND V.Fecha_venta = '2023-11-13';
 
+### 2. Finanzas
+**Flujo de actividades**	
 
+![Alt texasdt](vistas_finanzas_estadisticas/finanzas.png)
+
+1. Una vez el administrador, haya ingresado a su cuenta, podra entrar a la sección  de finanzas en la cual podra visualizar las transacciones hehcas al mes y cuanto fue lo recuadado en ese mes y año. Tiene un boton que se visualiza en la imagen <1> el cual es el filtro de fecha que dependiendo el mes y año se podra visualizar la información de total de servicios de mes, y por cada prestamo, el historial total de ventas/ alquileres, si fue pagado en fectivo o en yape y el estado, en caso de alquiler es si fue devuelto o no, y en caso de venta si fue pagado o no. Donde tambien se podra visualizar el total del mes, y el total de cada servicio.
+
+En esta funcionalidad se requiere información de la tabla Articulo, Alquiler, Venta, DetalleVenta y Prestamo.
+
+### 3. Estadísticas
+**Flujo de actividades**	
+
+![Alt texasdt](vistas_finanzas_estadisticas/estadisticas.png)
+
+1. Una vez el administrador, haya ingresado a su cuenta, podra ir a la sección de estadísticas, en la cual podra ver por venta, préstamo y alquiler. el Monto total de cada uno, la cantidad y nombre de la mayor cantidad de cada transacción y la cantidad y nombre de la menor cantidad de cada transacción. Tambien podrá visualizar el total de monto recaudado por alquiler y venta, y por ultimo un total de servicios brindados de la semana.
+
+En esta funcionalidad se requiere información de la tabla Articulo, Alquiler, Venta, DetalleVenta y Prestamo.
