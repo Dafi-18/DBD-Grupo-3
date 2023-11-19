@@ -648,7 +648,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | --- |
 | Eventos |
 | **1. Botón Confirmar:** Se agregarán la fecha, titulo y la descripcion de la noticia |
-|**INSERT INTO Noticia (Id_notica, Id_administrador, Fecha, Titulo, Descripcion) VALUES (<Id_noticia>, <Id_administrador>, <FECHA>, <TITULO>, <DESCRIPCION>);**|
+|**INSERT INTO Noticia (Id_notica, Id_administrador, Fecha, Titulo, Descripcion) VALUES (<Id_noticia>, <Id_administrador>, < fecha >, < titulo >, < desccripcion >);**|
 
 ## 27
 | Código requerimiento | R-025 |
