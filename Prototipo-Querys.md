@@ -572,3 +572,18 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | Eventos |
 | **1. Botón Aceptar:** Cambiar la disponibilidad de cierto día y hora del horario de la semana (Pueden ser varios cambios en diferentes días en simultáneo)  |
 |**UPDATE calendario SET estado = CASE WHEN estado = 'Ocupado' THEN 'Disponible' WHEN estado = 'Disponible' THEN 'Ocupado' END WHERE id_hora = <ID_HORA> AND Fecha = <FECHA>;**|
+
+
+## nn
+| Código requerimiento | R-00 |
+| --- | --- |
+| Codigo interfaz |  I-00 |
+| Imagen interfaz  |
+
+![Alt texasdt](Vistas_Noticias/Mostrar_Noticias.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón Registrar:** Se mostrará el contenido de la noticia |
+|**SELECT Fecha, Titulo, Descricion FROM Noticia;**|
