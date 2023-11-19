@@ -2,4 +2,4 @@
 Huaman Manayay Linda Lizet
 20210304K
 
-[Video Individual]()
+[Video Individual](https://youtu.be/NhhT2F9SHQM)
