@@ -402,7 +402,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | Codigo interfaz |  I-00 |
 | Imagen interfaz  |
 
-![Alt texasdt](Preguntas.png)
+![Alt texasdt](preguntas/preguntas2.png)
 
 | Sentencias SQL |
 | --- |
@@ -421,7 +421,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | Codigo interfaz |  I-00 |
 | Imagen interfaz  |
 
-![Alt texasdt](Preguntas.png)
+![Alt texasdt](preguntas/preguntas3.png)
 
 | Sentencias SQL |
 | --- |
