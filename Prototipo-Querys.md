@@ -689,7 +689,29 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | Sentencias SQL |
 | --- |
 | Eventos |
-| **1. Botón de fecha:** Se carga la pagina mostrnado la información, la fecha del mes soliticado, mostrando tanto las ventas, prestámos y alquileres, desde el número de ventas, préstamos y alquleres, mostrnado asi mismo la mayor cantidad asi como el de menor cantidad, sacando un cuadro estadisticos y asi mismo, mostrando lo recaudado|
+| **1. Botón de fecha:** Se carga la pagina mostrnado la información, la fecha del mes soliticado, mostrando tanto las ventas, prestámos y alquileres, desde el número de ventas, préstamos y alquleres, mostrnado asi mismo la mayor cantidad asi como el de menor cantidad, sacando un cuadro estadisticos y asi mismo, mostrando lo recaudado, siendo (1 mes que se quiere conocer y 1.1 año en el que se quiere conocer)|
+
+|**Numero total de alquileres al mes**|
+
+	SELECT COUNT(*) AS Cantidad_Alquileres
+		FROM alquiler
+	WHERE EXTRACT(MONTH FROM Fecha_alquiler) = 1
+	AND EXTRACT(YEAR FROM Fecha_alquiler) = 1.1;
+
+|**Numero total de ventas**|
+
+	SELECT COUNT (*) AS Cantidad_venta
+	From venta
+	WHERE EXTRACT(MONTH FROM fecha_venta) = 1
+	AND EXTRACT(YEAR FROM fecha_venta) = 1.1;
+
+|**Numero total de prestamos**|
+
+	SELECT COUNT (*) AS Cantidad_prestamos
+	FROM prestamo
+	WHERE EXTRACT(MONTH FROM fecha_prestamo) = 1
+	AND EXTRACT(YEAR FROM fecha_prestamo) = 1.1;
+
 # Funcionalidad Primaria Elegida (por módulo)
 
 ### 1.Modulo de seguridad
