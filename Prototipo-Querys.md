@@ -695,22 +695,243 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 
 	SELECT COUNT(*) AS Cantidad_Alquileres
 		FROM alquiler
-	WHERE EXTRACT(MONTH FROM Fecha_alquiler) = 1
-	AND EXTRACT(YEAR FROM Fecha_alquiler) = 1.1;
+	WHERE EXTRACT(MONTH FROM Fecha_alquiler) = <1>
+	AND EXTRACT(YEAR FROM Fecha_alquiler) = <1.1>;
 
 |**Numero total de ventas**|
 
 	SELECT COUNT (*) AS Cantidad_venta
 	From venta
-	WHERE EXTRACT(MONTH FROM fecha_venta) = 1
-	AND EXTRACT(YEAR FROM fecha_venta) = 1.1;
+	WHERE EXTRACT(MONTH FROM fecha_venta) = <1>
+	AND EXTRACT(YEAR FROM fecha_venta) = <1.1>;
 
 |**Numero total de prestamos**|
 
 	SELECT COUNT (*) AS Cantidad_prestamos
 	FROM prestamo
-	WHERE EXTRACT(MONTH FROM fecha_prestamo) = 1
-	AND EXTRACT(YEAR FROM fecha_prestamo) = 1.1;
+	WHERE EXTRACT(MONTH FROM fecha_prestamo) = <1>
+	AND EXTRACT(YEAR FROM fecha_prestamo) = <1.1>;
+
+|**Total recaudado de ventas y alquileres**|
+
+	SELECT SUM(monto) AS Cantidad_Total_Monto_Recaudado_Alquiler
+	FROM alquiler
+	WHERE EXTRACT(MONTH FROM Fecha_alquiler) = <1>;
+
+	SELECT SUM(monto_final) AS Cantidad_Total_Monto_Recaudado_Venta
+	FROM venta
+	WHERE EXTRACT(MONTH FROM fecha_venta) = <1.1>;
+
+|**Total recaudado de ventas y alquileres**|
+
+	SELECT COUNT(*) AS Total
+	FROM (
+    SELECT 'Alquiler'
+    FROM Alquiler
+    WHERE EXTRACT(MONTH FROM Fecha_alquiler) = <1>
+      AND EXTRACT(YEAR FROM Fecha_alquiler) = <1.1>
+    UNION ALL
+    SELECT 'Prestamo'
+    FROM Prestamo
+    WHERE EXTRACT(MONTH FROM Fecha_prestamo) = <1>
+      AND EXTRACT(YEAR FROM Fecha_prestamo) = <1.1>
+    UNION ALL
+    SELECT 'Venta'
+    FROM Venta
+    WHERE EXTRACT(MONTH FROM Fecha_venta) = <1>
+      AND EXTRACT(YEAR FROM Fecha_venta) = <1.1>
+	) AS transacciones_semana;
+
+|**Cual es el árticulo más y menos alquilado**|
+
+	SELECT a.Nombre_articulo
+	FROM alquiler al
+	JOIN articulo a ON al.Id_articulo = a.Id_articulo
+	WHERE EXTRACT(MONTH FROM al.Fecha_alquiler) = <1>
+		AND EXTRACT(YEAR FROM al.Fecha_alquiler) = <1.1>
+	GROUP BY a.Nombre_articulo
+	ORDER BY COUNT(*) DESC
+	LIMIT 1;
+
+	SELECT COUNT(*) AS Cantidad_Alquileres
+	FROM alquiler AS al
+	JOIN articulo a ON al.Id_articulo = a.Id_articulo
+	WHERE EXTRACT(MONTH FROM al.Fecha_alquiler) = <1>
+		AND EXTRACT(YEAR FROM al.Fecha_alquiler) = <1.1>
+	GROUP BY a.Nombre_articulo
+	ORDER BY COUNT(*) DESC
+	LIMIT 1;
+
+	SELECT a.Nombre_articulo
+	FROM alquiler al
+	JOIN articulo a ON al.Id_articulo = a.Id_articulo
+	WHERE EXTRACT(MONTH FROM al.Fecha_alquiler) = <1>
+		AND EXTRACT(YEAR FROM al.Fecha_alquiler) = <1.1>
+	GROUP BY a.Nombre_articulo
+	ORDER BY COUNT(*) ASC
+	LIMIT 1;
+
+	SELECT COUNT(*) AS Cantidad_Alquileres
+	FROM alquiler AS al
+	JOIN articulo a ON al.Id_articulo = a.Id_articulo
+	WHERE EXTRACT(MONTH FROM al.Fecha_alquiler) = <1>
+		AND EXTRACT(YEAR FROM al.Fecha_alquiler) = <1.1>
+	GROUP BY a.Nombre_articulo
+	ORDER BY COUNT(*) ASC
+	LIMIT 1;
+
+|**Cual es el articulo más y menos prestado**|
+
+	SELECT a.Nombre_articulo
+	FROM prestamo p
+	JOIN articulo a ON p.Id_articulo = a.Id_articulo
+	WHERE EXTRACT(MONTH FROM p.Fecha_prestamo) = <1>
+		AND EXTRACT(YEAR FROM p.Fecha_prestamo) = <1.1>
+	GROUP BY a.Nombre_articulo
+	ORDER BY COUNT(*) DESC
+	LIMIT 1;
+
+	SELECT COUNT(*) AS Cantidad_Prestamos
+	FROM prestamo AS p
+	JOIN articulo a ON p.Id_articulo = a.Id_articulo
+	WHERE EXTRACT(MONTH FROM p.Fecha_prestamo) = <1>
+		AND EXTRACT(YEAR FROM p.Fecha_prestamo) = <1.1>
+	GROUP BY a.Nombre_articulo
+	ORDER BY COUNT(*) DESC
+	LIMIT 1;
+
+	SELECT a.Nombre_articulo
+	FROM prestamo p
+	JOIN articulo a ON p.Id_articulo = a.Id_articulo
+	WHERE EXTRACT(MONTH FROM p.Fecha_prestamo) = <1>
+		AND EXTRACT(YEAR FROM p.Fecha_prestamo) = <1.1>
+	GROUP BY a.Nombre_articulo
+	ORDER BY COUNT(*) ASC
+	LIMIT 1;
+
+	SELECT COUNT(*) AS Cantidad_Prestamos
+	FROM prestamo AS p
+	JOIN articulo a ON p.Id_articulo = a.Id_articulo
+	WHERE EXTRACT(MONTH FROM p.Fecha_prestamo) = <1>
+		AND EXTRACT(YEAR FROM p.Fecha_prestamo) = <1.1>
+	GROUP BY a.Nombre_articulo
+	ORDER BY COUNT(*) ASC
+	LIMIT 1;
+
+|**Cual es el articulo más y menos vendido**|
+
+	SELECT a.Nombre_articulo AS Articulo_Mas_Vendido
+	FROM articulo a
+	JOIN (
+		SELECT d.Id_articulo, SUM(d.Cantidad) AS Total_Vendido
+		FROM detalle_venta d
+		GROUP BY d.Id_articulo
+		ORDER BY Total_Vendido DESC
+		LIMIT 1
+	) subquery ON a.Id_articulo = subquery.Id_articulo;
+
+	SELECT  SUM(d.Cantidad) AS Total_Unidades_Vendidas
+	FROM articulo a
+	JOIN detalle_venta d ON a.Id_articulo = d.Id_articulo
+	GROUP BY a.Nombre_articulo
+	ORDER BY Total_Unidades_Vendidas DESC
+	LIMIT 1;
+
+## 30
+| Código requerimiento | R-030 |
+| --- | --- |
+| Codigo interfaz |  I-30 |
+| Imagen interfaz  |
+
+![Alt texasdt](vistas_finanzas_estadisticas/finanzas.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón de fecha:** Se carga la pagina mostrnado la información, la fecha del mes soliticado, mostrando tanto las ventas, prestámos y alquileres, desde el número de ventas, préstamos y alquleres, mostrnado asi mismo la mayor cantidad asi como el de menor cantidad, sacando un cuadro estadisticos y asi mismo, mostrando lo recaudado, siendo (1 mes que se quiere conocer y 1.1 año en el que se quiere conocer)|
+
+|**Total de Transacciones del mes**|
+
+	SELECT COUNT(*) AS Total
+	FROM (
+    SELECT 'Alquiler'
+    FROM Alquiler
+    WHERE EXTRACT(MONTH FROM Fecha_alquiler) = <1>
+      AND EXTRACT(YEAR FROM Fecha_alquiler) = <1.1>
+    UNION ALL
+    SELECT 'Prestamo'
+    FROM Prestamo
+    WHERE EXTRACT(MONTH FROM Fecha_prestamo) = <1>
+      AND EXTRACT(YEAR FROM Fecha_prestamo) = <1.1>
+    UNION ALL
+    SELECT 'Venta'
+    FROM Venta
+    WHERE EXTRACT(MONTH FROM Fecha_venta) = <1>
+      AND EXTRACT(YEAR FROM Fecha_venta) = <1.1>
+	) AS transacciones_semana;
+
+|**Total recaudado de alquiler al mes**|
+
+	SELECT SUM(monto) AS Cantidad_Total_Monto_Recaudado_Alquiler
+	FROM alquiler
+	WHERE EXTRACT(MONTH FROM Fecha_alquiler) = <1>;
+
+|**Total recaudado de alquiler al mes**|
+
+	SELECT SUM(monto_final) AS Cantidad_Total_Monto_Recaudado_Venta
+	FROM venta
+	WHERE EXTRACT(MONTH FROM fecha_venta) = <1>;
+
+|**Total recaudado al mes por alquiler y venta**|
+
+	SELECT
+    COALESCE(SUM(monto) + SUM(monto_final), 0) AS Monto_Total_General
+	FROM (
+    SELECT
+        monto,
+        0 AS monto_final
+    FROM Alquiler
+    WHERE EXTRACT(MONTH FROM CURRENT_DATE) = <1>
+
+    UNION ALL
+
+    SELECT
+        0 AS monto,
+        monto_final
+    FROM Venta
+    WHERE EXTRACT(MONTH FROM CURRENT_DATE) = <1>
+	) AS CombinedData;
+
+|**Historial de ventas y alquileres**|
+
+	SELECT  
+    Ar.Nombre_articulo AS Nombre_producto,
+    Ar.Tipo_articulo AS Tipo_servicio,
+    A.Fecha_alquiler AS Fecha_operacion,
+    A.Monto,
+    A.Estado_alquiler AS Estado_operacion,
+    A.Medio_pago
+	FROM
+		Alquiler A
+	INNER JOIN
+		Articulo Ar ON A.Id_articulo = Ar.Id_articulo
+		
+	UNION
+
+	-- Consulta para ventas
+	SELECT
+		A.Nombre_articulo AS Nombre_producto,
+		A.Tipo_articulo AS Tipo_servicio,
+		V.Fecha_venta AS Fecha_operacion,
+		A.Precio_unitario AS Monto,
+		V.Estado_pago AS Estado_operacion,
+		DV.Medio_pago
+	FROM
+		Detalle_venta DV
+	INNER JOIN
+		Venta V ON DV.Id_venta = V.Id_venta
+	INNER JOIN
+    Articulo A ON DV.Id_articulo = A.Id_articulo;
 
 # Funcionalidad Primaria Elegida (por módulo)
 
