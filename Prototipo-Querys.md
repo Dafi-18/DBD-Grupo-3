@@ -391,10 +391,48 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | Sentencias SQL |
 | --- |
 | Eventos |
-| **1. Cargar pagina: Se llenará la fecha de las encuestas a mostrar**  |
+| **1. Cargar pagina:** Se llenará la fecha de las encuestas a mostrar  |
 | **SELECT Id_encuesta FROM Encuesta E WHERE E.Fecha_apertura = '<1>'**;|
-| **2. Cargar pagina: Muestra las encuestas activas**  |
-|	**SELECT Id_encuesta FROM Encuesta E WHERE E.Estado_encuesta = 'activo'; <2>  **|
+| **2. Cargar pagina:** Muestra las encuestas activas  |
+|**SELECT Id_encuesta FROM Encuesta E WHERE E.Estado_encuesta = 'activo'; <2>**|
+
+## N2
+| Código requerimiento | R-00 |
+| --- | --- |
+| Codigo interfaz |  I-00 |
+| Imagen interfaz  |
+
+![Alt texasdt](Preguntas.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón cruz:** Se añadirá una nueva encuesta|
+| **INSERT INTO Encuesta (Id_encuesta, Id_administrador, Fecha_apertura, Fecha_cierre, Cantidad_preguntas, Cantidad_respuestas, Estado_encuesta) VALUES ('ENC0011', 'ADM005', '2024-01-13', '2024-01-20', 9, 30, 'inactivo');'<1>'**|
+| **2. Cargar pagina:** Muestra las encuestas realizadas**  |
+|**SELECT COUNT(E.Id_encuesta) AS "Encuestas Realizadas" FROM Encuesta E; <2>**|
+| **3. Botón editar encuesta: Se edita una encuesta activa** |
+|**UPDATE Encuesta SET Fecha_apertura = '2023-12-13', Fecha_cierre = '2023-12-23', Cantidad_preguntas = '9', Cantidad_respuestas = '9', Estado_encuesta = 'inactivo' WHERE Id_encuesta = 'ENC002'; <3>** |
+
+
+## N3
+| Código requerimiento | R-00 |
+| --- | --- |
+| Codigo interfaz |  I-00 |
+| Imagen interfaz  |
+
+![Alt texasdt](Preguntas.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+|**1. Cargar pagina:** Se llenará la pregunta asociada a una encuesta  |
+|**INSERT INTO Pregunta (Id_pregunta, Id_encuesta, Id_administrador, Descripción, Tipo_respuesta) VALUES ('PRE0011', 'ENC004', 'ADM004','¿En qué ciclo relativo se encuentra?', 'opcion multiple'); <1>**| 
+|**2. Cargar pagina:** Se escogerá el tipo de pregunta |
+|**UPDATE Pregunta SET Tipo_respuesta = 'opcion multiple' WHERE Id_encuesta = 'ENC004' AND Id_pregunta = 'PRE006';<2>  **|
+|**2. Botón papelera:** Se borrará la pregunta|
+|**DELETE FROM Pregunta WHERE Id_encuesta = 'id_de_tu_encuesta' AND Id_pregunta = 'id_de_tu_pregunta';<3>  **|
+
 
 ## n
 | Código requerimiento | R-00 |
