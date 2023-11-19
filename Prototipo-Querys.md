@@ -1357,3 +1357,29 @@ En esta funcionalidad se requiere información de la tabla Administrador, Articu
 	 		Estado_prestamo varchar(15)
 	);
 
+Requiere de las siguientes consultas
+**CANTIDAD TOTAL DE ENCUESTAS EN LA PAGINA**
+
+	SELECT
+		COUNT(E.Id_encuesta) AS "Encuestas Realizadas";
+	FROM
+		Encuesta E;
+**AÑADIR ENCUESTA**
+
+	INSERT INTO Encuesta (Id_encuesta, Id_administrador, Fecha_apertura, Fecha_cierre, Cantidad_preguntas, Cantidad_respuestas, Estado_encuesta) VALUES ('ENC0011', 'ADM005', '2024-01-13', '2024-01-20', 9, 30, 'inactivo');
+
+**BORRAR PREGUNTA**
+
+	DELETE FROM Pregunta
+	WHERE Id_encuesta = 'id_de_tu_encuesta' AND Id_pregunta = 'id_de_tu_pregunta';
+
+**ACTUALIZAR PREGUNTA**
+
+	UPDATE Pregunta
+	SET Tipo_respuesta = 'opcion multiple'
+	WHERE Id_encuesta = 'ENC004' AND Id_pregunta = 'PRE006';
+
+**AÑADIR PREGUNTA**
+
+	INSERT INTO Pregunta (Id_pregunta, Id_encuesta, Id_administrador, Tipo_respuesta) VALUES
+	('PRE0011', 'ENC004', 'ADM004', 'opcion multiple');
