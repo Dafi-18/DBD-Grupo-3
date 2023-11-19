@@ -1379,4 +1379,5 @@ Requiere de las siguientes consultas
 	DELETE FROM Articulo WHERE Id_articulo = <ID_ARTICULO>;
  
 **CAMBIAR DISPONIBILIDAD DE LAS LOSAS**
+
 	UPDATE calendario SET estado = CASE WHEN estado = 'Ocupado' THEN 'Disponible' WHEN estado = 'Disponible' THEN 'Ocupado' END WHERE id_hora = <ID_HORA> AND Fecha = <FECHA>;
