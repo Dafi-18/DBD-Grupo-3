@@ -575,7 +575,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 
 
 ## nn
-| Código requerimiento | R-00 |
+| Código requerimiento | R-006 |
 | --- | --- |
 | Codigo interfaz |  I-00 |
 | Imagen interfaz  |
@@ -587,3 +587,18 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | Eventos |
 | **1. Botón Noticia:** Se mostrará el contenido de la noticia |
 |**SELECT Fecha, Titulo, Descricion FROM Noticia;**|
+
+
+## nn1
+| Código requerimiento | R-025 |
+| --- | --- |
+| Codigo interfaz |  I-00 |
+| Imagen interfaz  |
+
+![Alt texasdt](Vistas_Noticias/Agregar_Noticias.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón Confirmar:** Se agregarán la fecha, titulo y la descripcion de la noticia |
+|**INSERT INTO Noticia (Id_noticia, Id_administrador, Fecha, Titulo, Descricion) VALUES (<Id_noticia>, <Id_administrador>, <Fecha>, <Titulo>, <Descricion>)**|
