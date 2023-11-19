@@ -270,7 +270,7 @@
 | Codigo interfaz |  I-005 |
 | Imagen interfaz  |
 
-![Alt texasdt](Configuraciondeperfilusuario.png) 
+![Alt texasdt](ConfiguraciondePerfilUsuario.png) 
 
 | Sentencias SQL |
 | --- |
