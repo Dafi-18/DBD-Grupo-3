@@ -1275,5 +1275,85 @@ Requiere de las siguientes consultas
 	INSERT INTO Pregunta (Id_pregunta, Id_encuesta, Id_administrador, Tipo_respuesta) VALUES
 	('PRE0011', 'ENC004', 'ADM004', 'opcion multiple');
 
+ ### 5.Modulo de Inventario
+**Flujo de actividades**
+1. El administrador ingresa a su cuenta.
+![Alt texasdt](Loginpage.png)
+
+2. El administrador después de haber ingresado a su cuenta, escogerá la sección inventario, ahi podrá observar el inventario de ventas.
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Vista_de_inventario_de_ventas.png)
+
+3. El administrador le da clic a la pestaña de préstamos para ver el inventario de artículos que se pueden prestar
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Vista_de_inventario_de_préstamos.png)
+
+5. El administrador le da clic a la pestaña de alquileres y reservas para ver el horario y la disponibilidad de las losas deportivas
+![Alt texasdt](Vistas_del_inventario_de_ventas_y_préstamos_y_calendario_de_alquileres_y_reservas/Vista_de_alquiler_de_losas.png)
+
+**Justificacion**
+El inventario de ventas, préstamos y los horarios alquileres y reservas son muy importantes para tener un control sobre los artículos que se tienen para evitar cualquier incidente y para tener orden el sus respectivos procesos.
+En este flujo se le suman las actividades para poder agregar un nuevo artículo al stock, editar los artículos del stock y cambiar la disponibilidad de los horarios de las losas deportivas.
+En este flujo no se puede considerar solo a uno de las transacciones (venta, préstamo o alquiler) puesto que los tres son importantes.
+
+Los requerimientos e interfaces elegidos fueron:
+| Requerimiento | Interfaz |
+| --- | --- |
+| R-019-021 |  I-001 |
+| R-022-024 |  I-001 |
+| R-018 |  I-001 |
+
+En esta funcionalidad se requiere información de la tabla Administrador, Articulo, Calendario, Venta, Detalle_Venta y Prestamo.
+
+**Creacion de las tablas**
+
+	create table Administrador( 
+		Id_administrador varchar(8) PRIMARY KEY,
+		Dni varchar(8) references Persona(Dni),
+		Cargo varchar(30),  
+ 		Contrasena varchar(30)
+	);
  
+	create table Articulo(
+				Id_articulo varchar(8) PRIMARY KEY,
+				Nombre_articulo varchar(25),
+				Tipo_articulo varchar(25),
+				Cantidad numeric(2),
+				Descripcion varchar(50),
+				Precio_unitario numeric(3,2),
+		 		Disponibilidad varchar(20)
+	);
+	
+	create table Venta( 
+			Id_venta varchar(8) PRIMARY KEY,
+			Id_usuario varchar(8) references Usuario(Id_usuario),
+	 		Fecha_venta date,
+	 		Monto_final numeric(4,2),
+	 		Estado_pago varchar(10)
+	);
+	
+	create table Detalle_venta( 
+			Id_venta varchar(8) references Venta(Id_venta),  
+			Id_articulo varchar(8) references Articulo(Id_articulo),
+			Medio_pago varchar(25),
+			Cantidad numeric(2),
+	 		Subtotal numeric(4,2),
+	 		PRIMARY KEY(Id_venta, Id_articulo)
+	);
+	
+	create table Calendario(
+			Id_hora numeric(2),
+			Fecha date,
+			Estado varchar(10),
+			primary key(Id_hora, Fecha)
+	);
+	
+	create table Prestamo(
+			Id_prestamo varchar(8) PRIMARY KEY,
+			Id_usuario varchar(8) references Usuario(Id_usuario),
+			Id_articulo varchar(8) references Articulo(Id_articulo),
+			Fecha_prestamo date,
+			Hora_prestamo time,
+	 		Fecha_devolucion date,
+	 		Hora_devolucion time,
+	 		Estado_prestamo varchar(15)
+	);
 
