@@ -188,9 +188,9 @@
 	    U.Id_usuario = '1';	 
 
 ## 6
-| Código requerimiento | R-00 |
+| Código requerimiento | R-005 |
 | --- | --- |
-| Codigo interfaz |  I-00 |
+| Codigo interfaz |  I-005 |
 | Imagen interfaz  |
 
 ![Alt texasdt](Historialdelusuario.png)
