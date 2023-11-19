@@ -70,8 +70,115 @@
 | Sentencias SQL |
 | --- |
 | Eventos |
-| **1. Cargar pagina:**  |
-| |
+| **1. Cargar pagina:** Se muestra un reporte de las tablas alquiler, ventas y prestamos en el perfil personal del usuario. Se muestra un conteo de los servicios realizados por el usuario y un conteo total de los servicio utilizados. Se extrae información de la tabla usuario y persona para que aparezca en el perfil de usuario. |
+
+| SELECT  
+    Ar.Nombre_articulo AS Nombre_producto,
+    Ar.Tipo_articulo AS Tipo_servicio,
+    A.Fecha_alquiler AS Fecha_operacion,
+    A.Hora_inicio,
+    A.Hora_fin,
+	NULL AS Fecha_devolucion,
+	A.Monto,
+    A.Estado_alquiler AS Estado_operacion
+FROM
+    Alquiler A
+INNER JOIN
+	 Usuario U ON A.Id_usuario = U.Id_usuario
+INNER JOIN
+    Articulo Ar ON A.Id_articulo = Ar.Id_articulo
+WHERE
+    U.Id_usuario = '1'
+
+UNION
+
+SELECT
+    Ar.Nombre_articulo AS Nombre_producto,
+    Ar.Tipo_articulo AS Tipo_servicio,
+    P.Fecha_prestamo AS Fecha_operacion,
+    P.Hora_prestamo AS Hora_inicio, 
+	P.Hora_devolucion  As Hora_fin,
+    P.Fecha_devolucion, 
+	NULL AS Monto,
+    P.Estado_prestamo AS Estado_operacion
+FROM
+    Prestamo P
+INNER JOIN
+    Usuario U ON P.Id_usuario = U.Id_usuario
+INNER JOIN
+    Articulo Ar ON P.Id_articulo = Ar.Id_articulo
+WHERE
+    U.Id_usuario = '1'
+	
+UNION
+
+SELECT
+    A.Nombre_articulo AS Nombre_producto,
+    A.Tipo_articulo AS Tipo_servicio,
+    V.Fecha_venta AS Fecha_operacion,
+	NULL AS Hora_inicio,
+	NULL AS Hora_fin,
+	NULL AS Fecha_devolucion,
+    A.Precio_unitario AS Monto,
+    V.Estado_pago AS Estado_operacion
+FROM
+    Detalle_venta DV
+INNER JOIN
+    Venta V ON DV.Id_venta = V.Id_venta
+INNER JOIN
+    Articulo A ON DV.Id_articulo = A.Id_articulo
+INNER JOIN
+    Usuario U ON V.Id_usuario = U.Id_usuario
+WHERE
+    U.Id_usuario = '1';
+
+
+**CONTAR CANTIDAD DE PRESTAMOS DEL USUARIO**
+SELECT
+    COUNT(P.Id_prestamo) AS Cantidad_prestamos
+FROM
+    Prestamo P
+INNER JOIN
+    Usuario U ON P.Id_usuario = U.Id_usuario
+WHERE
+    U.Id_usuario = '1';
+	
+**CONTAR CANTIDAD DE VENTAS DEL USUARIO**
+SELECT
+    COUNT(V.Id_venta) AS Cantidad_ventas
+FROM
+    Venta V
+INNER JOIN
+    Usuario U ON V.Id_usuario = U.Id_usuario
+WHERE
+    U.Id_usuario = '1';
+	
+**CONTAR CANTIDAD DE ALQUILER DEL USUARIO**
+SELECT
+    COUNT(A.Id_alquiler) AS Cantidad_ventas
+FROM
+    Alquiler A
+INNER JOIN
+    Usuario U ON A.Id_usuario = U.Id_usuario
+WHERE
+    U.Id_usuario = '1';	
+
+**TOTAL DE SERVICIOS UTILIZADOS POR EL USUARIO**
+SELECT
+    U.Id_usuario,
+    U.DNI,
+    (
+        -- Subconsulta para contar registros de préstamos
+        COALESCE((SELECT COUNT(*) FROM Prestamo P WHERE P.Id_usuario = U.Id_usuario), 0) +
+        -- Subconsulta para contar registros de ventas
+        COALESCE((SELECT COUNT(*) FROM Venta V WHERE V.Id_usuario = U.Id_usuario), 0) +
+        -- Subconsulta para contar registros de alquileres
+        COALESCE((SELECT COUNT(*) FROM Alquiler A WHERE A.Id_usuario = U.Id_usuario), 0)
+    ) AS Total_registros
+FROM
+    Usuario U
+WHERE
+    U.Id_usuario = '1';	 |
 
 ## 6
 | Código requerimiento | R-00 |
@@ -80,6 +187,75 @@
 | Imagen interfaz  |
 
 ![Alt texasdt](Historialdelusuario.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Cargar pagina:** Se muestra un reporte de las tablas alquiler, ventas y prestamos en el perfil personal del usuario, y se realiza una busqueda por fecha. |
+
+|SELECT  
+
+    Ar.Nombre_articulo AS Nombre_producto,
+    Ar.Tipo_articulo AS Tipo_servicio,
+    A.Fecha_alquiler AS Fecha_operacion,
+    A.Hora_inicio,
+    A.Hora_fin,
+	NULL AS Fecha_devolucion,
+	A.Monto,
+    A.Estado_alquiler AS Estado_operacion
+FROM
+    Alquiler A
+INNER JOIN
+	 Usuario U ON A.Id_usuario = U.Id_usuario
+INNER JOIN
+    Articulo Ar ON A.Id_articulo = Ar.Id_articulo
+WHERE
+    U.Id_usuario = '1'
+	 AND A.Fecha_alquiler = '2023-11-13'
+	
+UNION
+
+SELECT
+    Ar.Nombre_articulo AS Nombre_producto,
+    Ar.Tipo_articulo AS Tipo_servicio,
+    P.Fecha_prestamo AS Fecha_operacion,
+    P.Hora_prestamo AS Hora_inicio, 
+	P.Hora_devolucion  As Hora_fin,
+    P.Fecha_devolucion, 
+	NULL AS Monto,
+    P.Estado_prestamo AS Estado_operacion
+FROM
+    Prestamo P
+INNER JOIN
+    Usuario U ON P.Id_usuario = U.Id_usuario
+INNER JOIN
+    Articulo Ar ON P.Id_articulo = Ar.Id_articulo
+WHERE
+    U.Id_usuario = '1'
+	 AND P.Fecha_prestamo = '2023-11-13'
+	
+UNION
+
+SELECT
+    A.Nombre_articulo AS Nombre_producto,
+    A.Tipo_articulo AS Tipo_servicio,
+    V.Fecha_venta AS Fecha_operacion,
+	NULL AS Hora_inicio,
+	NULL AS Hora_fin,
+	NULL AS Fecha_devolucion,
+    A.Precio_unitario AS Monto,
+    V.Estado_pago AS Estado_operacion
+FROM
+    Detalle_venta DV
+INNER JOIN
+    Venta V ON DV.Id_venta = V.Id_venta
+INNER JOIN
+    Articulo A ON DV.Id_articulo = A.Id_articulo
+INNER JOIN
+    Usuario U ON V.Id_usuario = U.Id_usuario
+WHERE
+    U.Id_usuario = '1'
+	AND V.Fecha_venta = '2023-11-13';|
 
 ## 7
 | Código requerimiento | R-00 |
