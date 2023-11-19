@@ -678,7 +678,18 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | **1. Botón Confirmar:** Se eliminara la noticia que ya pasó el evento o la informacion colocada  |
 |**DELETE FROM Noticia WHERE Id_notica = <ID_NOTICIA>**|
 
+## 29
+| Código requerimiento | R-029 |
+| --- | --- |
+| Codigo interfaz |  I-29 |
+| Imagen interfaz  |
 
+![Alt texasdt](vistas_finanzas_estadisticas/estadisticas.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón de fecha:** Se carga la pagina mostrnado la información, la fecha del mes soliticado, mostrando tanto las ventas, prestámos y alquileres, desde el número de ventas, préstamos y alquleres, mostrnado asi mismo la mayor cantidad asi como el de menor cantidad, sacando un cuadro estadisticos y asi mismo, mostrando lo recaudado|
 # Funcionalidad Primaria Elegida (por módulo)
 
 ### 1.Modulo de seguridad
