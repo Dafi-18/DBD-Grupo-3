@@ -294,7 +294,7 @@
 | --- |
 | Eventos |
 | **1. Cargar Pagina:** Se muestra un reporte de las tablas alquiler, ventas y prestamos generales en el perfil del administrador. Se muestra un conteo de cada 
- tipo de servicios realizado por el Ceiis y un conteo total de los servicio prestados por mes. Se extrae información de la tabla usuario y persona para que aparezca en el perfil de usuario. |
+tipo de servicios realizado por el Ceiis y un conteo total de los servicio prestados por mes. Se extrae información de la tabla usuario y persona para que aparezca en el perfil de usuario. |
 
 	SELECT  
 	    Ar.Nombre_articulo AS Nombre_producto,
@@ -368,6 +368,17 @@
 	    COUNT(A.Id_alquiler) AS Cantidad_ventas
 	FROM
 	    Alquiler A;
+**Suma de registros totales DE LA PAGINA DEL CEIIS**
+
+	SELECT
+	    (
+	        -- Subconsulta para contar registros de préstamos
+	        COALESCE((SELECT COUNT(*) FROM Prestamo P ), 0) +
+	        -- Subconsulta para contar registros de ventas
+	        COALESCE((SELECT COUNT(*) FROM Venta V ), 0) +
+	        -- Subconsulta para contar registros de alquileres
+	        COALESCE((SELECT COUNT(*) FROM Alquiler A ), 0)
+	    ) AS Total_registros ;	
 
 ## N
 | Código requerimiento | R-00 |
