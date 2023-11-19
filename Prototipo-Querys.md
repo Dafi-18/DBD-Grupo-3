@@ -381,9 +381,9 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 	    ) AS Total_registros ;	
 
 ## 9
-| Código requerimiento | R-00 |
+| Código requerimiento | R-09 |
 | --- | --- |
-| Codigo interfaz |  I-00 |
+| Codigo interfaz |  I-09 |
 | Imagen interfaz  |
 
 ![Alt texasdt](Preguntas.png)
@@ -397,9 +397,9 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 |**SELECT Id_encuesta FROM Encuesta E WHERE E.Estado_encuesta = 'activo'; <2>**|
 
 ## 10
-| Código requerimiento | R-00 |
+| Código requerimiento | R-10 |
 | --- | --- |
-| Codigo interfaz |  I-00 |
+| Codigo interfaz |  I-10 |
 | Imagen interfaz  |
 
 ![Alt texasdt](preguntas/preguntas2.png)
@@ -416,9 +416,9 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 
 
 ## 11
-| Código requerimiento | R-00 |
+| Código requerimiento | R-11 |
 | --- | --- |
-| Codigo interfaz |  I-00 |
+| Codigo interfaz |  I-11 |
 | Imagen interfaz  |
 
 ![Alt texasdt](preguntas/preguntas3.png)
@@ -435,9 +435,9 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 
 
 ## 12
-| Código requerimiento | R-00 |
+| Código requerimiento | R-12 |
 | --- | --- |
-| Codigo interfaz |  I-00 |
+| Codigo interfaz |  I-12 |
 | Imagen interfaz  |
 
 ![Alt texasdt](reservasyalquileres.png)
@@ -449,9 +449,9 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 |**SELECT Nombre_articulo, Precio_unitario FROM Articulo WHERE Tipo_articulo = 'reservas y alquileres';** |
 
 ## 13
-| Código requerimiento | R-00 |
+| Código requerimiento | R-13 |
 | --- | --- |
-| Codigo interfaz |  I-00 |
+| Codigo interfaz |  I-13 |
 | Imagen interfaz  |
 
 ![Alt texasdt](productos_ventas.png)
@@ -463,9 +463,9 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 |**SELECT Nombre_articulo, Precio_unitario FROM Articulo WHERE Tipo_articulo = 'reservas y alquileres';** |
 
 ## 14
-| Código requerimiento | R-00 |
+| Código requerimiento | R-14 |
 | --- | --- |
-| Codigo interfaz |  I-00 |
+| Codigo interfaz |  I-14 |
 | Imagen interfaz  |
 
 ![Alt texasdt](productos_prestamos.png)
