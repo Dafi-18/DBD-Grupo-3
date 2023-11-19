@@ -2,4 +2,4 @@
 Jo Huang, Tony
 20210089B
 
-[Video Individual]()
+[Video Individual](https://youtu.be/59YuRNRyvTk)
