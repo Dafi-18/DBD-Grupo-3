@@ -707,7 +707,7 @@ Los requerimientos e interfaces elegidos fueron:
 | R-005 |  I-005 |
 | R-005 |  I-006 |
 
-En esta funcionalidad se requiere información de la tabla Usuario, Alquiler, Venta, DetalleVenta y Prestamo.
+En esta funcionalidad se requiere información de la tabla Usuario, Articulo, Alquiler, Venta, DetalleVenta y Prestamo.
 
 Las consultas que se pueden realizar son:
 
