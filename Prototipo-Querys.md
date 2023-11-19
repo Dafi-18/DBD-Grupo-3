@@ -639,7 +639,18 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | --- |
 | Eventos |
 | **1. Botón Confirmar:** Se agregarán la fecha, titulo y la descripcion de la noticia |
-|**INSERT INTO Noticia (Id_notica, Id_administrador, Fecha, Titulo, Descripcion) VALUES (<Id_noticia>, <Id_administrador>, <Fecha>, 
-<Titulo>, <Descripcion>);**|
+|**INSERT INTO Noticia (Id_notica, Id_administrador, Fecha, Titulo, Descripcion) VALUES (<Id_noticia>, <Id_administrador>, <Fecha>, <Titulo>, <Descripcion>);**|
 
+## nn2
+| Código requerimiento | R-025 |
+| --- | --- |
+| Codigo interfaz |  I-00 |
+| Imagen interfaz  |
 
+![Alt texasdt](Vistas_Noticias/Actualizar_Noticias.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Botón Confirmar:** Se cambiaran lo que desee de la noticia, ya sea fecha, titulo, descripcion  |
+|**UPDATE Noticia SET Fecha = <Fecha>, <Titulo>, <Descripción> WHERE Id_noticia = <Id_noticia>;**|
