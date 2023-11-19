@@ -186,7 +186,59 @@ SELECT
 FROM
     Venta V;
 	
+-- REPORTES PARA EL PERFIL DEL ADMINISTRADOR
+
+SELECT  
+    Ar.Nombre_articulo AS Nombre_producto,
+    Ar.Tipo_articulo AS Tipo_servicio,
+    A.Fecha_alquiler AS Fecha_operacion,
+    A.Hora_inicio,
+    A.Hora_fin,
+	NULL AS Fecha_devolucion,
+	A.Monto,
+    A.Estado_alquiler AS Estado_operacion,
+	A.Medio_pago
+FROM
+    Alquiler A
+INNER JOIN
+    Articulo Ar ON A.Id_articulo = Ar.Id_articulo
+
+UNION
+
+SELECT
+    Ar.Nombre_articulo AS Nombre_producto,
+    Ar.Tipo_articulo AS Tipo_servicio,
+    P.Fecha_prestamo AS Fecha_operacion,
+    P.Hora_prestamo AS Hora_inicio, 
+	P.Hora_devolucion  As Hora_fin,
+    P.Fecha_devolucion, 
+	NULL AS Monto,
+    P.Estado_prestamo AS Estado_operacion,
+	NULL AS Medio_pago
+FROM
+    Prestamo P
+INNER JOIN
+    Articulo Ar ON P.Id_articulo = Ar.Id_articulo
 	
+UNION
+
+SELECT
+    A.Nombre_articulo AS Nombre_producto,
+    A.Tipo_articulo AS Tipo_servicio,
+    V.Fecha_venta AS Fecha_operacion,
+	NULL AS Hora_inicio,
+	NULL AS Hora_fin,
+	NULL AS Fecha_devolucion,
+    A.Precio_unitario AS Monto,
+    V.Estado_pago AS Estado_operacion,
+	DV.Medio_pago
+FROM
+    Detalle_venta DV
+INNER JOIN
+    Venta V ON DV.Id_venta = V.Id_venta
+INNER JOIN
+    Articulo A ON DV.Id_articulo = A.Id_articulo;
+
 -- CANTIDAD DE PRESTAMOS QUE SE REALIZÓ EN LA PAGINA
 SELECT
     COUNT(P.Id_prestamo) AS Cantidad_prestamos
@@ -198,6 +250,18 @@ SELECT
     COUNT(A.Id_alquiler) AS Cantidad_ventas
 FROM
     Alquiler A;
+
+-- Suma de registros totales DE LA PAGINA DEL CEIIS
+SELECT
+    (
+        -- Subconsulta para contar registros de préstamos
+        COALESCE((SELECT COUNT(*) FROM Prestamo P ), 0) +
+        -- Subconsulta para contar registros de ventas
+        COALESCE((SELECT COUNT(*) FROM Venta V ), 0) +
+        -- Subconsulta para contar registros de alquileres
+        COALESCE((SELECT COUNT(*) FROM Alquiler A ), 0)
+    ) AS Total_registros ;	
+
 -- SCRIPTS PARA LAS ENCUESTAS
 
 -- MOSTRAR ENCUESTA 
