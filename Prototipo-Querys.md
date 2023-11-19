@@ -73,6 +73,36 @@
 | **1. Cargar pagina:**  |
 | |
 
+## 6
+| Código requerimiento | R-00 |
+| --- | --- |
+| Codigo interfaz |  I-00 |
+| Imagen interfaz  |
+
+![Alt texasdt](Historialdelusuario.png)
+
+## 7
+| Código requerimiento | R-00 |
+| --- | --- |
+| Codigo interfaz |  I-00 |
+| Imagen interfaz  |
+
+![Alt texasdt](Configuraciondeperfilusuario.png)
+
+## 8
+| Código requerimiento | R-00 |
+| --- | --- |
+| Codigo interfaz |  I-00 |
+| Imagen interfaz  |
+
+![Alt texasdt](Configuraciondeperfilusuario.png)
+
+| Sentencias SQL |
+| --- |
+| Eventos |
+| **1. Cargar pagina:**  |
+| |
+
 ## N
 | Código requerimiento | R-00 |
 | --- | --- |
