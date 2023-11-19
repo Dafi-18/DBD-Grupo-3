@@ -653,4 +653,4 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | --- |
 | Eventos |
 | **1. Botón Confirmar:** Se cambiaran lo que desee de la noticia, ya sea fecha, titulo, descripcion  |
-|**UPDATE Noticia SET Fecha = <FECHA>, <TITULO>, <Descripción> WHERE Id_noticia = <Id_noticia>;**|
+|**UPDATE Noticia SET Fecha = <FECHA> , <TITULO> , <Descripción> WHERE Id_noticia = <Id_noticia>;**|
