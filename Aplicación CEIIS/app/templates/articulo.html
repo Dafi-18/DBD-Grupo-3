@@ -1,0 +1,12 @@
+{% extends "./layout.html" %}
+
+{% block title %}Articulos{% endblock %}
+
+{% block body %}
+<h1>{% for articulo in data.articulos %}
+        <ul>
+            <li>{{articulo}}</li>
+        </ul>
+    {% endfor %}
+</h1>
+{% endblock %}
