@@ -8,3 +8,5 @@ virtualenv -p python3 env
 
 Para instalar flask y el psycopg2 (conector a la base de datos):
 pip install Flask psycopg2-binary
+
+En la consola usen el comando "pip list" para ver la librería de frameworks que tienen instalado en su entorno
