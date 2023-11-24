@@ -1,0 +1,5 @@
+Deben tener instalado el flask y el psycopg2 (para la conexión con la base de datos)
+
+Abren una consola en su carpeta de trabajo y colocan el siguiente comando:
+
+pip install Flask psycopg2-binary
