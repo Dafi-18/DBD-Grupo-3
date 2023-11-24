@@ -1,5 +1,10 @@
-Deben tener instalado el flask y el psycopg2 (para la conexión con la base de datos)
+Deben tener instalado el flask y el psycopg2 (para la conexión con la base de datos). Además usar virtualenv para tener un entorno virtual de python
 
 Abren una consola en su carpeta de trabajo y colocan el siguiente comando:
 
+pip install --upgrade pip
+pip install virtualenv
+virtualenv -p python3 env
+
+Para instalar flask y el psycopg2 (conector a la base de datos):
 pip install Flask psycopg2-binary
