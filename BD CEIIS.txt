@@ -89,6 +89,8 @@ create table Prestamo(
 create table Calendario(
 		Id_hora numeric(2),
 		Fecha date,
+		Hora_inicio time,
+		Hora_fin time,
 		Estado varchar(10),
 		primary key(Id_hora, Fecha)
 );
@@ -310,50 +312,28 @@ INSERT INTO Pregunta (Id_pregunta, Id_encuesta, Id_administrador, Tipo_respuesta
 ('PRE009', 'ENC005', 'ADM006', 'opcion multiple'),
 ('PRE010', 'ENC005', 'ADM006', 'una sola opcion');
 
--- Insertar datos en la tabla Calendario
-INSERT INTO Calendario (Id_hora, Fecha, Estado) VALUES
-(1, '2023-11-01', 'Ocupado'),
-(2, '2023-11-01', 'Ocupado'),
-(3, '2023-11-01', 'Ocupado'),
-(4, '2023-11-01', 'Ocupado'),
-(5, '2023-11-01', 'Ocupado'),
-(6, '2023-11-01', 'Ocupado'),
-(7, '2023-11-01', 'Disponible'),
-(8, '2023-11-01', 'Disponible'),
-(9, '2023-11-01', 'Disponible'),
-(10, '2023-11-01', 'Ocupado'),
-(11, '2023-11-01', 'Ocupado'),
-(12, '2023-11-01', 'Ocupado'),
-(13, '2023-11-01', 'Disponible'),
-(14, '2023-11-01', 'Disponible'),
-(1, '2023-11-02', 'Disponible'),
-(2, '2023-11-02', 'Disponible'),
-(3, '2023-11-02', 'Disponible'),
-(4, '2023-11-02', 'Disponible'),
-(5, '2023-11-02', 'Disponible'),
-(6, '2023-11-02', 'Disponible'),
-(7, '2023-11-02', 'Disponible'),
-(8, '2023-11-02', 'Disponible'),
-(9, '2023-11-02', 'Disponible'),
-(10, '2023-11-02', 'Disponible'),
-(11, '2023-11-02', 'Disponible'),
-(12, '2023-11-02', 'Disponible'),
-(13, '2023-11-02', 'Disponible'),
-(14, '2023-11-02', 'Disponible'),
-(1, '2023-11-03', 'Disponible'),
-(2, '2023-11-03', 'Disponible'),
-(3, '2023-11-03', 'Disponible'),
-(4, '2023-11-03', 'Disponible'),
-(5, '2023-11-03', 'Disponible'),
-(6, '2023-11-03', 'Disponible'),
-(7, '2023-11-03', 'Disponible'),
-(8, '2023-11-03', 'Disponible'),
-(9, '2023-11-03', 'Disponible'),
-(10, '2023-11-03', 'Disponible'),
-(11, '2023-11-03', 'Disponible'),
-(12, '2023-11-03', 'Disponible'),
-(13, '2023-11-03', 'Disponible'),
-(14, '2023-11-03', 'Disponible');
+-- Procedimiento para generar los horarios de reservas de la semana
+CREATE OR REPLACE PROCEDURE Generar_Calendario()
+LANGUAGE PLPGSQL
+AS
+$$
+begin
+	for fecha in 0..6 loop
+		for id in 1..14 loop
+			insert into Calendario(Id_hora, Fecha, Hora_inicio, Hora_fin , Estado) values
+			(id, current_date+fecha, ('08:00:00'::time + (id - 1) * interval '1 hour')::time, ('08:00:00'::time + (id) * interval '1 hour')::time,'Disponible');
+		end loop;
+	end loop;
+END;
+$$
+
+-- Llamar al procedimiento Generar_calendario
+DO
+$$
+BEGIN
+	call Generar_Calendario();
+END;
+$$
 
 -- Insertar datos en la tabla Noticia
 INSERT INTO Noticia(Id_noticia, Id_administrador, Fecha, Titulo, Descripcion) VALUES
