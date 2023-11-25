@@ -57,6 +57,29 @@ DELETE FROM articulo WHERE id_articulo = 'ART12380';
 
 -- Para alquiler y reserva
 
+-- Procedimiento para generar los horarios de reservas de la semana
+CREATE OR REPLACE PROCEDURE Generar_Calendario()
+LANGUAGE PLPGSQL
+AS
+$$
+begin
+	for fecha in 0..6 loop
+		for id in 1..14 loop
+			insert into Calendario(Id_hora, Fecha, Hora_inicio, Hora_fin , Estado) values
+			(id, current_date+fecha, ('08:00:00'::time + (id - 1) * interval '1 hour')::time, ('08:00:00'::time + (id) * interval '1 hour')::time,'Disponible');
+		end loop;
+	end loop;
+END;
+$$
+
+-- Llamar al procedimiento Generar_calendario
+DO
+$$
+BEGIN
+	call Generar_Calendario();
+END;
+$$
+
 -- Para ver el calendario de la losa en la semana
 SELECT * FROM calendario ORDER BY fecha, id_hora;
 
