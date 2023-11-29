@@ -1086,7 +1086,7 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 
 ## 12. Versión Final de la Aplicación
 
-**Link del repositorio:**  [Pagina CEIIS]([https://www.facebook.com/ceiis.oficial](https://github.com/Dafi-18/Proyecto_DBD_Grupo3))
+**Link del repositorio:**  [Pagina CEIIS](https://github.com/Dafi-18/Proyecto_DBD_Grupo3)
 
 
 ## 13. Próximos Pasos
