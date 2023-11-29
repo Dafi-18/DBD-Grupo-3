@@ -1043,7 +1043,40 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 
 
 ## 10. PL/pgSQL – Proceso Batch
-
+        -- Procedimiento para generar los horarios de reservas de la semana
+        CREATE OR REPLACE PROCEDURE generate_calendario(fecha date)
+        LANGUAGE PLPGSQL
+        AS
+        $$
+        declare 
+        	fecha_actual date;
+        begin
+        	for aumento_fecha in 0..6 loop
+        		fecha_actual := fecha + aumento_fecha;
+        		if EXTRACT(dow from fecha_actual) not in (0) then
+        			if EXTRACT(dow from fecha_actual) not in (6) then
+        				for id in 1..14 loop
+        					insert into Calendario(Id_hora, Fecha, Hora_inicio, Hora_fin , Estado) values
+        					(id, fecha_actual, ('08:00:00'::time + (id - 1) * interval '1 hour')::time, ('08:00:00'::time + (id) * interval '1 hour')::time,'Disponible');
+        				end loop;
+        			else
+        				for id in 1..12 loop
+        					insert into Calendario(Id_hora, Fecha, Hora_inicio, Hora_fin , Estado) values
+        					(id, fecha_actual, ('08:00:00'::time + (id - 1) * interval '1 hour')::time, ('08:00:00'::time + (id) * interval '1 hour')::time,'Disponible');
+        				end loop;			
+        			end if;
+        		end if;
+        	end loop;
+        END;
+        $$
+        
+        -- Llamar al procedimiento Generar_calendario
+        DO
+        $$
+        BEGIN
+        	call generate_calendario(<FECHA>);
+        END;
+        $$
 
 ## 11.Actualizaciones a la Arquitectura de la Aplicación
 **- Estructura de la aplicación:** 
