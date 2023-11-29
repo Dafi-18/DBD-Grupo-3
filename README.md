@@ -916,6 +916,19 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 - Regla de negocio:
 1. El usuario solo puede pedir un prestamo a la vez, por reglas del CEIIS
 
+## 9. Índices y otros objetos de BD
 
 
+## 10. PL/pgSQL – Proceso Batch
 
+
+## 11.Actualizaciones a la Arquitectura de la Aplicación
+**- Estructura de la aplicación:** 
+
+**- Tecnología utilizada:** 
+
+## 12. Versión Final de la Aplicación
+
+Link del repositorio ProyectoDBD-grupo3
+
+## 13. Próximos Pasos
