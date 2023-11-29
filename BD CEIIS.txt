@@ -22,7 +22,7 @@ create table Persona(
 );
 
 create table Usuario( 
-		Id_usuario varchar(8) PRIMARY KEY,
+		Id_usuario SERIAL PRIMARY KEY,
 		Dni varchar(8) references Persona(Dni),
 		Cod_uni varchar(9) unique,
 		Correo_uni varchar(50) unique,  
@@ -142,22 +142,22 @@ INSERT INTO Persona (Dni, Primer_nombre, Segundo_nombre, Primer_apellido, Segund
 
 
 -- -- insertar datos de tabla usuario
-INSERT INTO usuario (Id_usuario, DNI, Cod_uni, Correo_uni, Contrasena) VALUES
-('1', '75512214', '50785498K', 'gunther.agneau.t@uni.pe', 'iG2/koYU0TX'),
-('2', '92032111', '27311522Y', 'pasquale.piechnik.c@uni.pe', 'eP3,?tse_s'),
-('3', '12124287', '14914779E', 'ernestine.leroux.c@uni.pe', 'xO7}=gc)'),
-('4', '15967527', '32333207E', 'joline.currin.m@uni.pe', 'lR9|3Op/z.y5qOP'),
-('5', '46872746', '59711093L', 'esteban.arnal.v@uni.pe', 'fE9\\ccqXmq'),
-('6', '50249379', '28442685J', 'walden.butler-bowdon.b@uni.pe', 'bM1&,Fe3\'),
-('7', '12452535', '90523126I', 'orville.clemmett.d@uni.pe', 'qY5&90J9+Z.2DH61'),
-('8', '93122098', '60459791O', 'anne-marie.cartwright.c@uni.pe', 'tP7++=U3JgJQ@'),
-('9', '67522177', '69845460L', 'ancell.leroux.l@uni.pe', 'iK0>)<1>po{k)'),
-('10', '29855394', '53195372K', 'herb.gonning.b@uni.pe', 'dR6t%r\o}*j'),
-('11', '81684988', '47744821T', 'chloris.bertelmot.h@uni.pe', 'zE4$w$1vq'),
-('12', '67623604', '84584606V', 'annaliese.kiebes.w@uni.pe', 'xH8\Mq|#fNxT9'),
-('13', '11779020', '84294264E', 'ardelle.bamfield.s@uni.pe', 'kJ6~q\p/S_'),
-('14', '26879857', '68509634F', 'rudolph.docksey.b@uni.pe', 'cQ3<C6i!~Gc#'),
-('15', '90633110', '97465614A', 'bette.reedy.r@uni.pe', 'zO1${N(Hzr');
+INSERT INTO usuario (DNI, Cod_uni, Correo_uni, Contrasena) VALUES
+('75512214', '50785498K', 'gunther.agneau.t@uni.pe', 'iG2/koYU0TX'),
+('92032111', '27311522Y', 'pasquale.piechnik.c@uni.pe', 'eP3,?tse_s'),
+('12124287', '14914779E', 'ernestine.leroux.c@uni.pe', 'xO7}=gc)'),
+('15967527', '32333207E', 'joline.currin.m@uni.pe', 'lR9|3Op/z.y5qOP'),
+('46872746', '59711093L', 'esteban.arnal.v@uni.pe', 'fE9\\ccqXmq'),
+('50249379', '28442685J', 'walden.butler-bowdon.b@uni.pe', 'bM1&,Fe3\'),
+('12452535', '90523126I', 'orville.clemmett.d@uni.pe', 'qY5&90J9+Z.2DH61'),
+('93122098', '60459791O', 'anne-marie.cartwright.c@uni.pe', 'tP7++=U3JgJQ@'),
+('67522177', '69845460L', 'ancell.leroux.l@uni.pe', 'iK0>)<1>po{k)'),
+('29855394', '53195372K', 'herb.gonning.b@uni.pe', 'dR6t%r\o}*j'),
+('81684988', '47744821T', 'chloris.bertelmot.h@uni.pe', 'zE4$w$1vq'),
+('67623604', '84584606V', 'annaliese.kiebes.w@uni.pe', 'xH8\Mq|#fNxT9'),
+('11779020', '84294264E', 'ardelle.bamfield.s@uni.pe', 'kJ6~q\p/S_'),
+('26879857', '68509634F', 'rudolph.docksey.b@uni.pe', 'cQ3<C6i!~Gc#'),
+('90633110', '97465614A', 'bette.reedy.r@uni.pe', 'zO1${N(Hzr');
 
 -- Insertar datos en la tabla Administrador
 INSERT INTO Administrador (Id_administrador, Dni, Cargo, Contrasena) VALUES 
