@@ -917,6 +917,128 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 1. El usuario solo puede pedir un prestamo a la vez, por reglas del CEIIS
 
 ## 9. Índices y otros objetos de BD
+**VISTAS:**
+**-Módulo Seguridad:** En el módulo seguridad se utilizaron 2 vistas para simplificar los querys de reportes que se presentan en el perfil del usuario y el perfil del administrador. Estas vistas nos auydan a hacer más sencillo el llamado de la consulta al momento de realizar el backend de la pagina web, en lugar de realizar consultas complejas que involucren múltiples tablas se puede realizar una consulta más simple a la vista.
+
+- QUERY PERFIL DEL USUARIO
+ 
+      CREATE VIEW REPORTE_FULL_U AS
+      	SELECT  
+          Ar.Nombre_articulo AS Nombre_producto,
+          Ar.Tipo_articulo AS Tipo_servicio,
+          A.Fecha_alquiler AS Fecha_operacion,
+          A.Hora_inicio,
+          A.Hora_fin,
+      	NULL AS Fecha_devolucion,
+      	A.Monto,
+          A.Estado_alquiler AS Estado_operacion,
+      	A.Id_usuario
+      	FROM
+      		Alquiler A
+      	INNER JOIN
+      		 Usuario U ON A.Id_usuario = U.Id_usuario
+      	INNER JOIN
+      		Articulo Ar ON A.Id_articulo = Ar.Id_articulo
+        
+      	UNION
+       
+      	SELECT
+      		Ar.Nombre_articulo AS Nombre_producto,
+      		Ar.Tipo_articulo AS Tipo_servicio,
+      		P.Fecha_prestamo AS Fecha_operacion,
+      		P.Hora_prestamo AS Hora_inicio, 
+      		P.Hora_devolucion  As Hora_fin,
+      		P.Fecha_devolucion, 
+      		NULL AS Monto,
+      		P.Estado_prestamo AS Estado_operacion,
+      		 P.Id_usuario
+      	FROM
+      		Prestamo P
+      	INNER JOIN
+      		Usuario U ON P.Id_usuario = U.Id_usuario
+      	INNER JOIN
+      		Articulo Ar ON P.Id_articulo = Ar.Id_articulo
+      
+      	UNION
+      
+      	SELECT
+      		A.Nombre_articulo AS Nombre_producto,
+      		A.Tipo_articulo AS Tipo_servicio,
+      		V.Fecha_venta AS Fecha_operacion,
+      		NULL AS Hora_inicio,
+      		NULL AS Hora_fin,
+      		NULL AS Fecha_devolucion,
+      		A.Precio_unitario AS Monto,
+      		V.Estado_pago AS Estado_operacion,
+      		U.Id_usuario
+      	FROM
+      		Detalle_venta DV
+      	INNER JOIN
+      		Venta V ON DV.Id_venta = V.Id_venta
+      	INNER JOIN
+      		Articulo A ON DV.Id_articulo = A.Id_articulo
+      	INNER JOIN
+      		Usuario U ON V.Id_usuario = U.Id_usuario;
+      
+      
+      SELECT * FROM REPORTE_FULL_U
+      WHERE Id_usuario  = '1' ;
+
+- QUERY PERFIL DEL ADMINISTRADOR
+  
+      CREATE VIEW REPORTE_ADMI AS
+        SELECT  
+            Ar.Nombre_articulo AS Nombre_producto,
+            Ar.Tipo_articulo AS Tipo_servicio,
+            A.Fecha_alquiler AS Fecha_operacion,
+            A.Hora_inicio,
+            A.Hora_fin,
+        	NULL AS Fecha_devolucion,
+        	A.Monto,
+            A.Estado_alquiler AS Estado_operacion,
+        	A.Medio_pago
+        FROM
+            Alquiler A
+        INNER JOIN
+            Articulo Ar ON A.Id_articulo = Ar.Id_articulo
+      
+        UNION
+        
+        SELECT
+            Ar.Nombre_articulo AS Nombre_producto,
+            Ar.Tipo_articulo AS Tipo_servicio,
+            P.Fecha_prestamo AS Fecha_operacion,
+            P.Hora_prestamo AS Hora_inicio, 
+        	P.Hora_devolucion  As Hora_fin,
+            P.Fecha_devolucion, 
+        	NULL AS Monto,
+            P.Estado_prestamo AS Estado_operacion,
+        	NULL AS Medio_pago
+        FROM
+            Prestamo P
+        INNER JOIN
+            Articulo Ar ON P.Id_articulo = Ar.Id_articulo
+        	
+        UNION
+        
+        SELECT
+            A.Nombre_articulo AS Nombre_producto,
+            A.Tipo_articulo AS Tipo_servicio,
+            V.Fecha_venta AS Fecha_operacion,
+        	NULL AS Hora_inicio,
+        	NULL AS Hora_fin,
+        	NULL AS Fecha_devolucion,
+            A.Precio_unitario AS Monto,
+            V.Estado_pago AS Estado_operacion,
+        	DV.Medio_pago
+        FROM
+            Detalle_venta DV
+        INNER JOIN
+            Venta V ON DV.Id_venta = V.Id_venta
+        INNER JOIN
+            Articulo A ON DV.Id_articulo = A.Id_articulo;
+      
+        SELECT * FROM REPORTE_ADMI;
 
 
 ## 10. PL/pgSQL – Proceso Batch
