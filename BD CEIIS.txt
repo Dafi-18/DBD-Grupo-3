@@ -48,7 +48,7 @@ create table Articulo(
 
 create table Venta( 
 		Id_venta varchar(8) PRIMARY KEY,
-		Id_usuario varchar(8) references Usuario(Id_usuario),
+		Id_usuario INTEGER REFERENCES Usuario(Id_usuario),
  		Fecha_venta date,
  		Monto_final numeric(4,2),
  		Estado_pago varchar(10)
@@ -65,7 +65,7 @@ create table Detalle_venta(
 
 create table Alquiler(
 		Id_alquiler varchar(8) PRIMARY KEY,
-		Id_usuario varchar(8) references Usuario(Id_usuario),
+		Id_usuario INTEGER REFERENCES Usuario(Id_usuario),
 		Id_articulo varchar(8) references Articulo(Id_articulo),
 		Fecha_alquiler date,
 		Hora_inicio time,
@@ -77,7 +77,7 @@ create table Alquiler(
 
 create table Prestamo(
 		Id_prestamo varchar(8) PRIMARY KEY,
-		Id_usuario varchar(8) references Usuario(Id_usuario),
+		Id_usuario INTEGER REFERENCES Usuario(Id_usuario),
 		Id_articulo varchar(8) references Articulo(Id_articulo),
 		Fecha_prestamo date,
 		Hora_prestamo time,
