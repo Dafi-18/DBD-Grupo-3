@@ -2,4 +2,4 @@
 Andía Fernández Diego Paolo
 20212104I
 
-[Video Individual]()
+[Video Individual](https://youtu.be/I7R_tjh3kuI)
