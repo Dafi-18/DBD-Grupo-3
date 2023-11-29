@@ -1081,7 +1081,9 @@ Para ver el prototipo debe ingresar al siguiente enlace:
         $$
 
 ## 11.Actualizaciones a la Arquitectura de la Aplicación
-**- Estructura de la aplicación:** 
+**- Estructura de la aplicación:**  La estructura de la aplicación cuenta con la interaccion de todos los modulos que se crearon al principio en base a la funcionalidad de los requerimientos.
+
+![Alt texasdt](paquetesUML.jpeg)
 
 **- Tecnología utilizada:** 
 
