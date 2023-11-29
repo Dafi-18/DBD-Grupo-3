@@ -1,5 +1,5 @@
 # Video Individual PC 4
-Andía Fernández Diego Paolo
-20212104I
+Huaman Manayay Linda Lizet
+20210304K
 
 [Video Individual](https://youtu.be/I7R_tjh3kuI)
