@@ -1043,7 +1043,7 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 
 
 ## 10. PL/pgSQL – Proceso Batch
-- Procedimiento para generar los horarios de reservas de la semana
+Procedimiento para generar los horarios de reservas de la semana
   
         CREATE OR REPLACE PROCEDURE generate_calendario(fecha date)
         LANGUAGE PLPGSQL
@@ -1070,8 +1070,8 @@ Para ver el prototipo debe ingresar al siguiente enlace:
         	end loop;
         END;
         $$
-        
-- Llamar al procedimiento Generar_calendario
+
+  Llamar al procedimiento Generar_calendario
   
         DO
         $$
