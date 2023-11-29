@@ -1134,3 +1134,4 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 
 
 ## 13. Próximos Pasos
+  Como próximos pasos tenemos planeado agregar nuevas funcionalidades como por ejemplo, la de exportar los reportes con fines de auditoría, añadir e implementar los medios de pagos virtuales en la aplicación. También tenemos planeado rediseñar esta aplicación para que tenga soporte en celulares y tablets. Por último, implementar y adaptar nuestro aplicación a las reglas y políticas del CEIIS en el paso del tiempo. Buscamos la mejora continua de nuestro sistema a través del tiempo.
