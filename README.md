@@ -1087,11 +1087,14 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 
 **Backend**
 - Base de Datos
-  1. Postgres SQL :
-    
+  
+   1. Postgres SQL :
+     Elijimos el gestor PostgresSQL debido a que en el grupo habian integrantes que ya conocían la sintaxis para este gestor.
+     
 - Lenguaje de programación
   
-  1. Python:
+  1. Python: Se seleccionó python para el desarollo de la pagina web debido a que es un lenguaje de programación que todos los integrantes del grupo conocemos y eso facilitaría la participación de todos al momento de desarrollar el backend.
+     
      
 - Frameworks
 
