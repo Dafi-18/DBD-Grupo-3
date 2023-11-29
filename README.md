@@ -1098,7 +1098,7 @@ Para ver el prototipo debe ingresar al siguiente enlace:
      
 - Frameworks
 
-  1. Flask:
+  1. Flask: Se selecciono Flask como framework web de python para el backend ya que es un framework que permite crear aplicaciones web de manera rápida y sencilla, por lo que la documentació facil de leer y entender y la facilidad de implementarla en el proyecto.
 
 - Librerias
   
@@ -1112,15 +1112,15 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 
 - Lenguajes
   
-  1. HTML:
+  1. HTML: HTML es el lenguaje principal para la web, el lenguaje de etiquetas, aunque se utilize una librería como React, se sigue utilizando HTML para la estructura de la página.
      
-  3. CSS :
+  3. CSS : CSS es el lenguaje de estilos, el cual se utiliza para darle estilo a la página web, como colores, tamaños, etc.
      
-  5. JavaScript :
+  5. JavaScript : React, trabaja con JavaScript, por lo que es necesario conocerlo para poder utilizar React.
 
 - Frameworks
 
-  1. React
+  1. React: Se seleccionó React como framework web, debido a que es uno de los más usados actualmente, además que permite una creación de paginas web de manera sencilla y ordenada a través de componentes.
 
 - Liberias
   
