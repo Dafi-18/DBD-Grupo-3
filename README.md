@@ -1084,6 +1084,10 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 
   1. React
 
+- Liberias
+  
+  1. React-Dom
+
 ## 12. Versión Final de la Aplicación
 
 **Link del repositorio:**  [Pagina CEIIS](https://github.com/Dafi-18/Proyecto_DBD_Grupo3)
