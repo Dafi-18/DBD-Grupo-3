@@ -918,7 +918,8 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 
 ## 9. Índices y otros objetos de BD
 **VISTAS:**
-**-Módulo Seguridad:** En el módulo seguridad se utilizaron 2 vistas para simplificar los querys de reportes que se presentan en el perfil del usuario y el perfil del administrador. Estas vistas nos auydan a hacer más sencillo el llamado de la consulta al momento de realizar el backend de la pagina web, en lugar de realizar consultas complejas que involucren múltiples tablas se puede realizar una consulta más simple a la vista.
+
+**-Módulo Seguridad:** En el módulo seguridad se utilizaron 2 vistas para simplificar los querys de reportes que se presentan en el perfil del usuario y el perfil del administrador. Estas vistas nos ayudan a hacer más sencillo el llamado de la consulta al momento de realizar el backend de la pagina web, en lugar de realizar consultas complejas que involucren múltiples tablas se puede realizar una consulta más simple a la vista.
 
 - QUERY PERFIL DEL USUARIO
  
@@ -1048,6 +1049,40 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 **- Estructura de la aplicación:** 
 
 **- Tecnología utilizada:** 
+
+**Backend**
+- Base de Datos
+  1. Postgres SQL :
+    
+- Lenguaje de programación
+  
+  1. Python:
+     
+- Frameworks
+
+  1. Flask:
+
+- Librerias
+  
+  1. Psycopg2
+  2. Flask
+  3. python-decouple
+  4. python-dotenv
+  5. Flask-Cors
+
+**Frontend**
+
+- Lenguajes
+  
+  1. HTML:
+     
+  3. CSS :
+     
+  5. JavaScript :
+
+- Frameworks
+
+  1. React
 
 ## 12. Versión Final de la Aplicación
 
