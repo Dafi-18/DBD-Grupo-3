@@ -313,16 +313,28 @@ INSERT INTO Pregunta (Id_pregunta, Id_encuesta, Id_administrador, Tipo_respuesta
 ('PRE010', 'ENC005', 'ADM006', 'una sola opcion');
 
 -- Procedimiento para generar los horarios de reservas de la semana
-CREATE OR REPLACE PROCEDURE Generar_Calendario()
+CREATE OR REPLACE PROCEDURE generate_calendario(fecha date)
 LANGUAGE PLPGSQL
 AS
 $$
+declare 
+	fecha_actual date;
 begin
-	for fecha in 0..6 loop
-		for id in 1..14 loop
-			insert into Calendario(Id_hora, Fecha, Hora_inicio, Hora_fin , Estado) values
-			(id, current_date+fecha, ('08:00:00'::time + (id - 1) * interval '1 hour')::time, ('08:00:00'::time + (id) * interval '1 hour')::time,'Disponible');
-		end loop;
+	for aumento_fecha in 0..6 loop
+		fecha_actual := fecha + aumento_fecha;
+		if EXTRACT(dow from fecha_actual) not in (0) then
+			if EXTRACT(dow from fecha_actual) not in (6) then
+				for id in 1..14 loop
+					insert into Calendario(Id_hora, Fecha, Hora_inicio, Hora_fin , Estado) values
+					(id, fecha_actual, ('08:00:00'::time + (id - 1) * interval '1 hour')::time, ('08:00:00'::time + (id) * interval '1 hour')::time,'Disponible');
+				end loop;
+			else
+				for id in 1..12 loop
+					insert into Calendario(Id_hora, Fecha, Hora_inicio, Hora_fin , Estado) values
+					(id, fecha_actual, ('08:00:00'::time + (id - 1) * interval '1 hour')::time, ('08:00:00'::time + (id) * interval '1 hour')::time,'Disponible');
+				end loop;			
+			end if;
+		end if;
 	end loop;
 END;
 $$
@@ -331,7 +343,7 @@ $$
 DO
 $$
 BEGIN
-	call Generar_Calendario();
+	call generate_calendario(<FECHA>);
 END;
 $$
 
