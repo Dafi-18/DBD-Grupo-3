@@ -27,6 +27,13 @@ ScyllaDB no se apoya en la caché de páginas, destinando la mayoría de su memo
 
 ### 1.2 Descripción de escenario de uso
 
+**Escenario: Finanzas**
+
+En el desarrollo de la pagina web para el CEIIS se identificó al módulo de finanzas como un escenario que puede beneficiarse significativamente de una base de datos columnar en comparación con uno realcional. A continuación, se exploran las tareas que se realizan en este módulo y las ventajas especificas en la eficiencia de tareas financieras clave utilizan un motor de tipo columnar (ScyllaDB) en contraste con un motor relacional (PostgresSQL):
+ - Tarea 1: Total de transacciones al Mes
+ - Tarea 2: Total recaudado al mes por venta y alquiler (separado y junto)
+
+ **Ventajas de un motor columnar sobre un motor realacional**
 
 
   **Referencias**
