@@ -31,10 +31,14 @@ ScyllaDB no se apoya en la caché de páginas, destinando la mayoría de su memo
 
 En el desarrollo de la pagina web para el CEIIS se identificó al módulo de finanzas como un escenario que puede beneficiarse significativamente de una base de datos columnar en comparación con uno realcional. A continuación, se exploran las tareas que se realizan en este módulo y las ventajas especificas en la eficiencia de tareas financieras clave utilizan un motor de tipo columnar (ScyllaDB) en contraste con un motor relacional (PostgresSQL):
  - Tarea 1: Total de transacciones al Mes
+   
+   En esta tarea se tiene que gestionar el total de transacciones realizadas mediante la pagina web del CEIIS en un mes, el enfoque columnar muentra ventajas dado que las bases de datos columanres almacenan datos en columnas en lugar de filas, realizr agregaciones como el conteo de transacciones se vuelve más eficiente. ScyllaDB puede escalar horizontalmente para manejar grandes volúmenes de datos, lo que facilita el procesamiento rápido y eficiente de las transacciones mensuales.
  - Tarea 2: Total recaudado al mes por venta y alquiler (separado y junto)
+   
+   Gestion las ventas y alquiles, tanto separado como en conjunto, se beneficia de la estructura columnar. Los datos se almacenan en columnas, las consultas analíticas para calcular el total recaudado se realizan de manera más eficiente, ay que solo se accede a las columnas relevantes. Además, ScyllaDB tiene la capacidad para manejar grandes cantidades de datos y consultas paralelas garantizando un rendimiento óptimo, incluso en situaciones donde se deben analizar grandes conjuntos de información.
 
  **Ventajas de un motor columnar sobre un motor realacional**
-
+1. Rendimiento en consultas analíticas
 
   **Referencias**
 
