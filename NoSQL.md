@@ -106,6 +106,34 @@ Con esto ya se pueden crear las tablas, hacer los inserts y hacer consultas.
 
    ![Alt texasdt](ScyllaDB_Imágenes/5.png)
 
+## Consultas a la base de datos para finanzas 
+
+#### Totala recaudado por mes en alquiler:
+![Alt text](image.png)
+
+      SELECT SUM(Monto) AS TotalRecaudado FROM Alquiler WHERE Fecha_alquiler >= '2023-11-01' AND Fecha_alquiler < '2023-12-01' ALLOW FILTERING;
+
+### Total Recuadado por mes en Venta:
+![Alt text](image-1.png)
+      SELECT SUM(Monto_final) AS TotalVentas FROM Venta WHERE Fecha_venta >= '2023-11-01' AND Fecha_venta < '2023-12-01' ALLOW FILTERING;
+
+### Total de Ventas realizadas:
+![Alt text](image-3.png)
+      SELECT COUNT(*) AS TotalVentas
+      FROM Venta;
+
+### Total de Alquileres realizados:
+![Alt text](image-2.png)
+
+      SELECT COUNT(*) AS TotalAlquileres
+      FROM Alquiler;
+
+### Total de Prestamos realizados:
+![Alt text](image-4.png)
+
+      SELECT COUNT(*) AS TotalPrestamos
+      FROM Prestamo;
+
   **Referencias**
 
 [1]https://gravitar.biz/bi/base-datos-columnar/
