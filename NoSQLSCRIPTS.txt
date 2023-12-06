@@ -50,3 +50,60 @@ INSERT INTO Detalle_venta (Id_venta, Id_articulo, Medio_pago, Cantidad, Subtotal
 INSERT INTO Detalle_venta (Id_venta, Id_articulo, Medio_pago, Cantidad, Subtotal) VALUES ('VEN5', 'ART13526', 'Yape', 1, 2.00);
 INSERT INTO Detalle_venta (Id_venta, Id_articulo, Medio_pago, Cantidad, Subtotal) VALUES ('VEN6', 'ART38621', 'Yape', 2, 10.00);
 APPLY BATCH;
+
+
+-- Creación de las tablas alquiler y prestamo
+
+CREATE TABLE IF NOT EXISTS Alquiler (
+    Id_alquiler TEXT PRIMARY KEY,
+    Id_usuario TEXT,
+    Id_articulo TEXT,
+    Fecha_alquiler DATE,
+    Hora_inicio TIME,
+    Hora_fin TIME,
+    Medio_pago TEXT,
+    Monto DECIMAL,
+    Estado_alquiler TEXT
+);
+
+CREATE TABLE IF NOT EXISTS Prestamo(
+		Id_prestamo TEXT PRIMARY KEY,
+		Id_usuario TEXT,
+		Id_articulo TEXT,
+		Fecha_prestamo date,
+		Hora_prestamo time,
+ 		Fecha_devolucion date,
+ 		Hora_devolucion time,
+ 		Estado_prestamo TEXT
+);
+
+-- Insertar datos en las tablas alquiler y prestamo
+
+-- Para alquiler:
+
+BEGIN BATCH
+INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES ('ALQ1', '1', 'ART38723', '2023-11-13', '08:00:00', '10:00:00', '', 0.00, 'Devuelto');
+INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES ('ALQ2', '2', 'ART12378', '2023-11-13', '10:30:00', '12:30:00', '', 0.00, 'Devuelto');
+INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES ('ALQ3', '3', 'ART43791', '2023-11-13', '13:00:00', '15:00:00', 'Efectivo', 1.20, 'Devuelto');
+INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES ('ALQ4', '4', 'ART12378', '2023-11-14', '09:00:00', '11:00:00', '', 0.00, 'Devuelto');
+INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES ('ALQ5', '6', 'ART43791', '2023-11-14', '11:30:00', '13:30:00', 'Yape', 1.20, 'Devuelto');
+INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES ('ALQ6', '1', 'ART98213', '2023-11-14', '14:00:00', '16:00:00', 'Efectivo',1.20, 'Pendiente');
+INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES ('ALQ7', '7', 'ART18738', '2023-11-15', '08:00:00', '10:00:00', '', 0.00, 'Devuelto');
+INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES ('ALQ8', '8', 'ART98213', '2023-11-15', '10:30:00', '12:30:00', 'Yape', 2.40, 'Pendiente'),;
+INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES ('ALQ9', '6', 'ART18738', '2023-11-15', '13:00:00', '15:00:00', '',0.00, 'Devuelto');
+INSERT INTO Alquiler (Id_alquiler, Id_usuario, Id_articulo, Fecha_alquiler, Hora_inicio, Hora_fin, Medio_pago, Monto, Estado_alquiler) VALUES ('ALQ10', '10', 'ART43791', '2023-11-16', '09:00:00', '11:00:00', 'Yape', 1.20, 'Devuelto');
+APPLY BATCH;
+
+-- Para prestamo:
+BEGIN BATCH
+INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES ('PRE1', '1', 'ART18723', '2023-11-01', '09:30:00', '2023-11-10', '10:30:00', 'Devuelto');
+INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES ('PRE2', '2', 'ART98123', '2023-11-03', '11:45:00', null, null, 'No devuelto');
+INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES ('PRE3', '2', 'ART38172', '2023-11-06', '14:15:00', '2023-11-21', '15:30:00', 'Devuelto');
+INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES ('PRE4', '4', 'ART64271', '2023-11-10', '16:45:00', null, null, 'No devuelto');
+INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES ('PRE5', '6', 'ART93128', '2023-11-14', '19:00:00', null, null, 'No devuelto');
+INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES ('PRE6', '3', 'ART64271', '2023-11-24', '14:00:00', '2023-11-24', '16:30:00', 'Devuelto');
+INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES ('PRE7', '8', 'ART93128', '2023-11-17', '10:00:00', null, null, 'No devuelto');
+INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES ('PRE8', '7', 'ART18723', '2023-11-22', '15:00:00', '2023-11-23', '16:00:00', 'Devuelto');
+INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES ('PRE9', '9', 'ART38172', '2023-11-23', '15:30:00', '2023-11-23', '18:30:00', 'Devuelto');
+INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES ('PRE10', '4', 'ART98123', '2023-12-07', '13:00:00', null, null, 'No devuelto');
+APPLY BATCH;
