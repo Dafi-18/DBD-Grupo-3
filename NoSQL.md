@@ -118,7 +118,7 @@ Con esto ya se pueden crear las tablas, hacer los inserts y hacer consultas.
    
  - Para la tabla Prestamos:
   
-   ![Alt texasdt](ScyllaDB_Imágenes/InsertPrestamo.png)
+   ![Alt texasdt](ScyllaDB_Imágenes/InsertPrestamos.png)
    
 #. Comprobamos que los datos insertados estén correctos:
 
