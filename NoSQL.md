@@ -106,6 +106,26 @@ Con esto ya se pueden crear las tablas, hacer los inserts y hacer consultas.
 
    ![Alt texasdt](ScyllaDB_Imágenes/5.png)
 
+#. Vamos a crear las tablas de Alquiler y Prestamo:
+
+   ![Alt texasdt](ScyllaDB_Imágenes/TablaAlquilerPrestamo.png)
+   
+#. Una vez creadas la tablas procedemos a realizar los inserts:
+
+ - Para la tabla Alquiler:
+  
+   ![Alt texasdt](ScyllaDB_Imágenes/InsertAlquiler.png)
+   
+ - Para la tabla Prestamos:
+  
+   ![Alt texasdt](ScyllaDB_Imágenes/InsertPrestamo.png)
+   
+#. Comprobamos que los datos insertados estén correctos:
+
+   ![Alt texasdt](ScyllaDB_Imágenes/VistaAlquiler.png)
+
+   ![Alt texasdt](ScyllaDB_Imágenes/VistaPrestamo.png)
+   
 ## Consultas a la base de datos para finanzas 
 
 #### Totala recaudado por mes en alquiler:
