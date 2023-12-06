@@ -53,25 +53,27 @@ Para hacer uso de ScyllaDB nos apoyaremos de Play with Docker.
 
 2. En Docker hub buscaremos ScyllaDB y descargaremos la imagen con el comando:
 
+   ![Alt texasdt](ScyllaDB_Instalación/1.png)
+
        docker pull scylladb/scylla
 
-3. Después iniciaremos un clúster de un solo nodo de Scylla en modo desarrollador con el siguiente comando:
+4. Después iniciaremos un clúster de un solo nodo de Scylla en modo desarrollador con el siguiente comando:
 
        docker run --name some-scylla --hostname some-scylla -d scylladb/scylla --smp 1
 
-4. Luego ejecutamos un nodetool con el siguiente comando:
+5. Luego ejecutamos un nodetool con el siguiente comando:
 
        docker exec -it some-scylla nodetool status
 
-5. Seguido ejecutamos un cqlsh con este comando:
+6. Seguido ejecutamos un cqlsh con este comando:
 
        docker exec -it some-scylla cqlsh
 
-6. A continuación, cree un espacio de claves llamado ceiis:
+7. A continuación, cree un espacio de claves llamado ceiis:
 
        CREATE KEYSPACE ceiis WITH replication = {'class': 'NetworkTopologyStrategy', 'replication_factor' : 3} AND durable_writes = true;
 
-7. Utilice el espacio de claves recién definido con:
+8. Utilice el espacio de claves recién definido con:
 
        USE ceiis;
 
