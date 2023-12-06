@@ -79,7 +79,25 @@ Para hacer uso de ScyllaDB nos apoyaremos de Play with Docker.
 
 Con esto ya se pueden crear las tablas, hacer los inserts y hacer consultas.
 
+### 1.4 Implementación
 
+#. Vamos a crear las tablas de venta y detalle_venta:
+
+   ![Alt texasdt](ScyllaDB_Imágenes/1.png)
+   
+#. Una vez creadas la tablas procedemos a realizar los inserts:
+
+  Para la tabla Venta:
+   ![Alt texasdt](ScyllaDB_Imágenes/2.png)
+   
+  Para la tabla Detalle_venta:
+   ![Alt texasdt](ScyllaDB_Imágenes/4.png)
+   
+#. Comprobamos que los datos insertados estén correctos:
+
+   ![Alt texasdt](ScyllaDB_Imágenes/3.png)
+
+   ![Alt texasdt](ScyllaDB_Imágenes/5.png)
 
   **Referencias**
 
