@@ -38,7 +38,14 @@ En el desarrollo de la pagina web para el CEIIS se identificó al módulo de fin
    Gestion las ventas y alquiles, tanto separado como en conjunto, se beneficia de la estructura columnar. Los datos se almacenan en columnas, las consultas analíticas para calcular el total recaudado se realizan de manera más eficiente, ay que solo se accede a las columnas relevantes. Además, ScyllaDB tiene la capacidad para manejar grandes cantidades de datos y consultas paralelas garantizando un rendimiento óptimo, incluso en situaciones donde se deben analizar grandes conjuntos de información.
 
  **Ventajas de un motor columnar sobre un motor realacional**
-1. Rendimiento en consultas analíticas
+1. Rendimiento en consultas analíticas:
+   - La estructura columnar supera a los motores relacionales al realizar consultas analíticas complejas de manera eficeinte. Esto es crucial para calcular totales y estadisticas financieras.
+    
+2. Escalabilidad Horizontal:
+   - En comparación con lo moteres relaciones, se destaca en las bases de datos columnares la escalabilidad horizontal, permitiendo manejar grandes volúmenes de datos de manera efectiva y sostenible a medida que crecerá la actividad financiera de la pagina web del CEIIS.
+     
+3. Baja latencia:
+   - La baja latencia predecible de ScyllaDB garantiza respuestas rápidas en la obtención de datos financieros, contribuyendo a una experiencia de usuario más ági y eficiente.
 
   **Referencias**
 
