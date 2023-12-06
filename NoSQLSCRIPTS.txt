@@ -107,3 +107,22 @@ INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora
 INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES ('PRE9', '9', 'ART38172', '2023-11-23', '15:30:00', '2023-11-23', '18:30:00', 'Devuelto');
 INSERT INTO Prestamo (Id_prestamo, Id_usuario, Id_articulo, Fecha_prestamo, Hora_prestamo, Fecha_devolucion, Hora_devolucion, Estado_prestamo) VALUES ('PRE10', '4', 'ART98123', '2023-12-07', '13:00:00', null, null, 'No devuelto');
 APPLY BATCH;
+
+
+--- Total recaudado de alquiler al mes
+SELECT SUM(Monto) AS TotalRecaudado FROM Alquiler WHERE Fecha_alquiler >= '2023-11-01' AND Fecha_alquiler < '2023-12-01' ALLOW FILTERING;
+
+--- Total recaudado por ventas al mes
+SELECT SUM(Monto_final) AS TotalVentas FROM Venta WHERE Fecha_venta >= '2023-11-01' AND Fecha_venta < '2023-12-01' ALLOW FILTERING;
+
+--- Total transacciones en ventas;
+SELECT COUNT(*) AS TotalVentas
+FROM Venta;
+
+--- Total transacciones en alquileres
+SELECT COUNT(*) AS TotalAlquileres
+FROM Alquiler;
+
+--- Total transacciones en prestamos
+SELECT COUNT(*) AS TotalPrestamos
+FROM Prestamo;
