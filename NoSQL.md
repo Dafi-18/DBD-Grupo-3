@@ -49,19 +49,32 @@ En el desarrollo de la pagina web para el CEIIS se identificó al módulo de fin
 
 ### 1.3 Configuración
 Para hacer uso de ScyllaDB nos apoyaremos de Play with Docker.
-1.Primero ingresaremos a Play with Docker y agregaremos una nueva instancia.
-2.En Docker hub buscaremos ScyllaDB y descargaremos la imagen con el comando:
-docker pull scylladb/scylla
-3.Después iniciaremos un clúster de un solo nodo de Scylla en modo desarrollador con el siguiente comando:
-docker run --name some-scylla --hostname some-scylla -d scylladb/scylla --smp 1
-4.Luego ejecutamos un nodetool con el siguiente comando:
-docker exec -it some-scylla nodetool status
-5.Seguido ejecutamos un cqlsh con este comando:
-docker exec -it some-scylla cqlsh
-6.A continuación, cree un espacio de claves llamado ceiis:
-CREATE KEYSPACE ceiis WITH replication = {'class': 'NetworkTopologyStrategy', 'replication_factor' : 3} AND durable_writes = true;
-7.Utilice el espacio de claves recién definido con:
-USE ceiis;
+1. Primero ingresaremos a Play with Docker y agregaremos una nueva instancia.
+
+2. En Docker hub buscaremos ScyllaDB y descargaremos la imagen con el comando:
+
+       docker pull scylladb/scylla
+
+3. Después iniciaremos un clúster de un solo nodo de Scylla en modo desarrollador con el siguiente comando:
+
+       docker run --name some-scylla --hostname some-scylla -d scylladb/scylla --smp 1
+
+4. Luego ejecutamos un nodetool con el siguiente comando:
+
+       docker exec -it some-scylla nodetool status
+
+5. Seguido ejecutamos un cqlsh con este comando:
+
+       docker exec -it some-scylla cqlsh
+
+6. A continuación, cree un espacio de claves llamado ceiis:
+
+       CREATE KEYSPACE ceiis WITH replication = {'class': 'NetworkTopologyStrategy', 'replication_factor' : 3} AND durable_writes = true;
+
+7. Utilice el espacio de claves recién definido con:
+
+       USE ceiis;
+
 Con esto ya se pueden crear las tablas, hacer los inserts y hacer consultas.
 
 
