@@ -8,7 +8,7 @@
 | Codigo interfaz |  I-001 |
 | Imagen interfaz  |
 
-![Alt texasdt](Registro.png)
+![Alt texasdt](Vistas_Seguridad/Registro.png)
 
 | Sentencias SQL |
 | --- |
@@ -23,7 +23,7 @@
 | Codigo interfaz |  I-002 |
 | Imagen interfaz  |
 
-![Alt texasdt](Loginpage.png)
+![Alt texasdt](Vistas_Seguridad/Loginpage.png)
 
 | Sentencias SQL |
 | --- |
@@ -37,7 +37,7 @@
 | Codigo interfaz |  I-003 |
 | Imagen interfaz  |
 
-![Alt texasdt](Recuperarcuenta.png)
+![Alt texasdt](Vistas_Seguridad/Recuperarcuenta.png)
 
 | Sentencias SQL |
 | --- |
@@ -51,7 +51,7 @@
 | Codigo interfaz |  I-004 |
 | Imagen interfaz  |
 
-![Alt texasdt](Recuperarcontraseña.png)
+![Alt texasdt](Vistas_Seguridad/Recuperarcontraseña.png)
 
 | Sentencias SQL |
 | --- |
@@ -68,7 +68,7 @@
 | Codigo interfaz |  I-005 |
 | Imagen interfaz  |
 
-![Alt texasdt](PerfilUsuario.png)
+![Alt texasdt](Vistas_Seguridad/PerfilUsuario.png)
 
 | Sentencias SQL |
 | --- |
@@ -193,7 +193,7 @@
 | Codigo interfaz |  I-005 |
 | Imagen interfaz  |
 
-![Alt texasdt](Historialdelusuario.png)
+![Alt texasdt](Vistas_Seguridad/Historialdelusuario.png)
 
 | Sentencias SQL |
 | --- |
@@ -270,7 +270,7 @@
 | Codigo interfaz |  I-005 |
 | Imagen interfaz  |
 
-![Alt texasdt](ConfiguraciondePerfilUsuario.png) 
+![Alt texasdt](Vistas_Seguridad/ConfiguraciondePerfilUsuario.png) 
 
 | Sentencias SQL |
 | --- |
@@ -288,7 +288,7 @@
 | Codigo interfaz |  I-005 |
 | Imagen interfaz  |
 
-![Alt texasdt](PerfilAdministrador.png) 
+![Alt texasdt](Vistas_Seguridad/PerfilAdministrador.png) 
 
 | Sentencias SQL |
 | --- |
