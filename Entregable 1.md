@@ -901,4 +901,4 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 
 ### 5.1 Diagrama Entidad-Relación
 
-![Alt text](<Modelo Conceptual final.jpg>)
+![Alt text](<Modelos ER-RELACIONAL/ModeloConceptualCeiis.jpeg>)
