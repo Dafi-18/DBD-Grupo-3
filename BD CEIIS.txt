@@ -343,7 +343,7 @@ $$
 DO
 $$
 BEGIN
-	call generate_calendario(<FECHA>);
+	call generate_calendario("2023-12-04");
 END;
 $$
 
