@@ -17,7 +17,6 @@ create table Persona(
 		Segundo_nombre varchar(30), 
 		Primer_apellido varchar(30), 
 		Segundo_apellido varchar(30), 
-		Correo varchar(50), 
 		Celular varchar(9) 
 );
 
@@ -32,6 +31,7 @@ create table Usuario(
 create table Administrador( 
 		Id_administrador varchar(8) PRIMARY KEY,
 		Dni varchar(8) references Persona(Dni),
+		Correo varchar(50), 
 		Cargo varchar(30),  
  		Contrasena varchar(30)
 );
