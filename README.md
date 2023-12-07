@@ -19,4 +19,4 @@
 
 # APLICACION DE UNA BASE DE DATOS NoSQL
 
-**Link del repositorio:**  [ScyllaDB](https://github.com/Dafi-18/DBD-Grupo-3/blob/main/NoSQL.md)
+**Link del repositorio:**  [NoSQL](https://github.com/Dafi-18/DBD-Grupo-3/blob/main/NoSQL.md)
