@@ -1,8 +1,17 @@
 # DBD-Grupo-3
-# "Implementación de software para el CEIIS"
+# Monografía "Implementación de software para el CEIIS"
 
+## Entregable N°1
 
+**Link del repositorio:**  [Documentacion Entregable 1]()
 
+## Entregable N°2
+
+**Link del repositorio:**  [Documentacion Entregable 2]()
+
+## Entregable N°
+
+**Link del repositorio:**  [Documentacion Entregable 3]()
 
 ## Entregable N°4
 
