@@ -888,7 +888,7 @@ La motivación para realizar este rtabajo se basa en el deseo de desarrollar un 
 
   ### 3.2 Diagrama de paquetes UML
   
-![Alt texasdt](paquetesUML.jpeg)
+![Alt texasdt](<Modelos ER-RELACIONAL/paquetesUML.jpg>)
 
 ## 4. Prototipo 
 
