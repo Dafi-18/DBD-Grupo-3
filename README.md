@@ -3,15 +3,15 @@
 
 ## Entregable N°1
 
-**Link del repositorio:**  [Documentacion Entregable 1]()
+**Link del repositorio:**  [Documentacion Entregable 1](<Entregable 1.md>)
 
 ## Entregable N°2
 
-**Link del repositorio:**  [Documentacion Entregable 2]()
+**Link del repositorio:**  [Documentacion Entregable 2](<Entregable 2.md>)
 
 ## Entregable N°
 
-**Link del repositorio:**  [Documentacion Entregable 3]()
+**Link del repositorio:**  [Documentacion Entregable 3](<PC3-Prototipo-Querys.md>)
 
 ## Entregable N°4
 
