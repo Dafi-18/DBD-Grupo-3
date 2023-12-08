@@ -440,7 +440,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | Codigo interfaz |  I-12 |
 | Imagen interfaz  |
 
-![Alt texasdt](reservasyalquileres.png)
+![Alt texasdt](Vistas_productos/reservasyalquileres.png)
 
 | Sentencias SQL |
 | --- |
@@ -454,7 +454,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | Codigo interfaz |  I-13 |
 | Imagen interfaz  |
 
-![Alt texasdt](productos_ventas.png)
+![Alt texasdt](Vistas_productos/productos_ventas.png)
 
 | Sentencias SQL |
 | --- |
@@ -468,7 +468,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | Codigo interfaz |  I-14 |
 | Imagen interfaz  |
 
-![Alt texasdt](productos_prestamos.png)
+![Alt texasdt](Vistas_productos/productos_prestamos.png)
 
 | Sentencias SQL |
 | --- |
