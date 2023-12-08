@@ -386,7 +386,7 @@ tipo de servicios realizado por el Ceiis y un conteo total de los servicio prest
 | Codigo interfaz |  I-09 |
 | Imagen interfaz  |
 
-![Alt texasdt](Preguntas.png)
+![Alt texasdt](preguntas/Preguntas.png)
 
 | Sentencias SQL |
 | --- |
