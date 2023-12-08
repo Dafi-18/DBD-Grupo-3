@@ -1,0 +1,213 @@
+DROP TABLE IF EXISTS Persona CASCADE;
+DROP TABLE IF EXISTS Usuario CASCADE;
+DROP TABLE IF EXISTS Administrador CASCADE;
+DROP TABLE IF EXISTS Articulo CASCADE;
+DROP TABLE IF EXISTS Venta CASCADE;
+DROP TABLE IF EXISTS Detalle_venta CASCADE;
+DROP TABLE IF EXISTS Prestamo CASCADE;
+DROP TABLE IF EXISTS Alquiler CASCADE;
+DROP TABLE IF EXISTS Calendario CASCADE;
+DROP TABLE IF EXISTS Noticia CASCADE;
+DROP TABLE IF EXISTS Encuesta CASCADE;
+DROP TABLE IF EXISTS Pregunta CASCADE;
+drop sequence if exists venta_id_seq cascade;
+drop sequence if exists alquiler_id_seq cascade;
+drop sequence if exists prestamo_id_seq cascade;
+
+
+create table Persona( 
+		Dni varchar(8) PRIMARY KEY,
+		Primer_nombre varchar(30), 
+		Segundo_nombre varchar(30), 
+		Primer_apellido varchar(30), 
+		Segundo_apellido varchar(30), 
+		Correo varchar(50), 
+		Celular varchar(9) 
+);
+
+create table Usuario( 
+		Id_usuario varchar(8) PRIMARY KEY,
+		Dni varchar(8) references Persona(Dni),
+		Cod_uni varchar(9) unique,
+		Correo_uni varchar(50) unique,  
+ 		Contrasena varchar(30)
+);
+
+create table Administrador( 
+		Id_administrador varchar(8) PRIMARY KEY,
+		Dni varchar(8) references Persona(Dni),
+		Cargo varchar(30),  
+ 		Contrasena varchar(30)
+);
+
+create table Articulo(
+		Id_articulo varchar(8) PRIMARY KEY,
+		Nombre_articulo varchar(25),
+		Tipo_articulo varchar(25),
+		Cantidad numeric(2),
+		check (Cantidad >= 0),
+		Descripcion varchar(50),
+		Precio_unitario numeric(3,2),
+		check (Precio_unitario > 0),
+ 		Disponibilidad varchar(20)
+);
+
+create sequence venta_id_seq;
+create sequence alquiler_id_seq;
+create sequence prestamo_id_seq;
+
+create table Venta( 
+		Id_venta VARCHAR(8) PRIMARY KEY DEFAULT ('VEN' || nextval('venta_id_seq')),
+		Id_usuario varchar(8) references Usuario(Id_usuario),
+ 		Fecha_venta date,
+ 		Monto_final numeric(4,2),
+ 		Estado_pago varchar(10)
+);
+
+create table Detalle_venta( 
+		Id_venta varchar(8) references Venta(Id_venta),  
+		Id_articulo varchar(8) references Articulo(Id_articulo),
+		Medio_pago varchar(25),
+		Cantidad numeric(2),
+ 		Subtotal numeric(4,2),
+ 		PRIMARY KEY(Id_venta, Id_articulo)
+);
+
+create table Alquiler(
+		Id_alquiler varchar(8) PRIMARY KEY DEFAULT ('ALQ' || nextval('alquiler_id_seq')),
+		Id_usuario varchar(8) references Usuario(Id_usuario),
+		Id_articulo varchar(8) references Articulo(Id_articulo),
+		Fecha_alquiler date,
+		Hora_inicio time,
+		Hora_fin time,
+		Medio_pago varchar(20),
+		Monto numeric(3,2),
+ 		Estado_alquiler varchar(15)
+);
+
+create table Prestamo(
+		Id_prestamo varchar(8) PRIMARY KEY DEFAULT ('PRE' || nextval('prestamo_id_seq')),
+		Id_usuario varchar(8) references Usuario(Id_usuario),
+		Id_articulo varchar(8) references Articulo(Id_articulo),
+		Fecha_prestamo date,
+		Hora_prestamo time,
+ 		Fecha_devolucion date,
+ 		Hora_devolucion time,
+ 		Estado_prestamo varchar(15)
+);
+
+create table Calendario(
+		Id_hora numeric(2),
+		Fecha date,
+		Hora_inicio time,
+		Hora_fin time,
+		Estado varchar(10),
+		primary key(Id_hora, Fecha)
+);
+
+create table Noticia( 
+		Id_noticia varchar(8) primary key,  
+		Id_administrador varchar(8) references Administrador(Id_administrador),
+		Fecha date,
+		Titulo varchar(100),
+		Descripcion varchar(275)
+);
+
+create table Encuesta( 
+		Id_encuesta varchar(8) primary key,  
+		Id_administrador varchar(8) references Administrador(Id_administrador),
+		Fecha_apertura date,
+		Fecha_cierre date,
+		Cantidad_preguntas numeric(2),
+		Cantidad_respuestas numeric(2),
+		Estado_encuesta varchar(10)
+);
+
+create table Pregunta( 
+		Id_pregunta varchar(8) ,  
+		Id_encuesta varchar(8) references Encuesta(Id_encuesta),
+		Id_administrador varchar(8) references Administrador(Id_administrador),
+		Tipo_respuesta varchar(15),
+		PRIMARY KEY (Id_encuesta, Id_pregunta)
+	
+);
+
+### Para registrar las ventas
+
+CREATE OR REPLACE PROCEDURE Registrar_ventas(usuario varchar(8), id_art varchar(8), cantidades numeric, pago varchar(8))
+LANGUAGE PLPGSQL
+AS $$ 
+declare
+	v_Id_venta varchar(8);
+	subtot numeric;
+begin
+	insert into Venta(Id_usuario, Fecha_venta, Monto_final, Estado_pago) values (usuario, current_date, 0, 'Pendiente')
+	RETURNING Venta.id_venta INTO v_Id_venta;
+	subtot := Calcular_subtotal(id_art, cantidades);
+	insert into Detalle_venta(Id_venta, Id_articulo, Medio_pago, Cantidad, Subtotal) values (v_Id_venta, id_art, pago, cantidades, subtot);
+	update Venta set Monto_final = Calcular_monto(v_id_venta) where Venta.id_venta = v_id_venta;
+	update Articulo set cantidad = Stock_restante(id_art, cantidades);
+END; $$
+
+-- Llamar al procedimiento:
+
+call registrar_ventas('6', 'ART38723', 4, 'Efectivo');
+
+-- Comprobar que se ejecutó exitosamente:
+
+select * from venta;
+select * from detalle_venta;
+select * from articulo where id_articulo = 'ART38723';
+
+
+## Funciones necesarias:
+
+-- Para calcular el subtotal del artículo vendido:
+
+CREATE OR REPLACE FUNCTION Calcular_subtotal(id_art Articulo.id_articulo%TYPE, cantidades Articulo.cantidad%TYPE)
+returns NUMERIC
+LANGUAGE PLPGSQL
+AS
+$$
+declare 
+	subtotal NUMERIC;
+BEGIN
+	subtotal := cantidades*art.Precio_unitario from articulo art where art.id_articulo=id_art;
+	return subtotal;
+END;
+$$
+
+-- Para calcular el monto total de la venta de los artículos:
+
+CREATE OR REPLACE FUNCTION Calcular_monto(id_vent Venta.id_venta%TYPE)
+returns NUMERIC
+LANGUAGE PLPGSQL
+AS
+$$
+declare 
+	monto numeric := 0;
+	cursorVentas CURSOR 
+	FOR SELECT * FROM Detalle_venta
+	where Detalle_venta.id_venta = id_vent; --DECLARACION
+begin
+	FOR vent IN CursorVentas LOOP --POR CADA ELEMENTO DEL CURSOR
+			monto := monto + vent.subtotal;
+	END LOOP;
+	return monto;
+END;
+$$
+
+-- Para calcular el stock del artículo luego de la venta:
+
+CREATE OR REPLACE FUNCTION Stock_restante(id_art Articulo.id_articulo%type, cantidades numeric)
+returns NUMERIC
+LANGUAGE PLPGSQL
+AS
+$$
+declare 
+	stock_restante numeric;
+begin
+	stock_restante := art.cantidad-cantidades from articulo art where art.id_articulo=id_art;
+	return stock_restante;
+END;
+$$
