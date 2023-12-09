@@ -19,6 +19,10 @@
 y
 [Link del repositorio con el código](https://github.com/Dafi-18/Proyecto_DBD_Grupo3)
 
+## Flujo de la aplicación
+
+**Flujo:**  [Flujo de aplicación](<Flujo de la aplicación.md>)
+
 # APLICACION DE UNA BASE DE DATOS NoSQL
 
 **Link del repositorio:**  [NoSQL](<Entregable NoSQL.md>)
