@@ -29,7 +29,7 @@ El proceso de reserva de las lozas deportivas empieza cuando el estudiante consu
 
 ### 1.3 Diagrama de Procesos
 - Proceso de alquiler
-![Alt texasdt](alquiler.jpeg)
+![Alt texasdt](Flujogramas/alquiler.jpeg)
 
 | Código | Nombre de la actividad | Descripción | Responsable de la actividad |
 | --- | --- | --- | --- |
@@ -51,7 +51,7 @@ El proceso de reserva de las lozas deportivas empieza cuando el estudiante consu
 
 
 - Proceso de préstamo
-![Alt texasdt](prestamo.jpeg)
+![Alt texasdt](Flujogramas/prestamo.jpeg)
 
 | Código | Nombre de la actividad | Descripción | Responsable de la actividad |
 | --- | --- | --- | --- |
@@ -68,7 +68,7 @@ El proceso de reserva de las lozas deportivas empieza cuando el estudiante consu
 
 
 - Proceso de ventas
-![Alt texasdt](ventas.jpeg)
+![Alt texasdt](Flujogramas/ventas.jpeg)
 
 | Código | Nombre de la actividad | Descripción | Responsable de la actividad |
 | --- | --- | --- | --- |
@@ -82,7 +82,7 @@ El proceso de reserva de las lozas deportivas empieza cuando el estudiante consu
 
 
 - Proceso de reserva
-![Alt texasdt](reserva.jpeg)
+![Alt texasdt](Flujogramas/reserva.jpeg)
 
 | Código | Nombre de la actividad | Descripción | Responsable de la actividad |
 | --- | --- | --- | --- |
