@@ -11,12 +11,14 @@
 
 ## Entregable N°
 
-**Link del repositorio:**  [Documentacion Entregable 3](<PC3-Prototipo-Querys.md>)
+**Link del repositorio:**  [Documentacion Entregable 3](<Entregable 3.md>)
 
 ## Entregable N°4
 
 **Link del repositorio:**  [Documentacion Entregable 4](https://github.com/Dafi-18/DBD-Grupo-3/blob/main/Entregable%204.md)
-1
+y
+[Link del repositorio con el código](https://github.com/Dafi-18/Proyecto_DBD_Grupo3)
+
 # APLICACION DE UNA BASE DE DATOS NoSQL
 
-**Link del repositorio:**  [NoSQL](https://github.com/Dafi-18/DBD-Grupo-3/blob/main/NoSQL.md)
+**Link del repositorio:**  [NoSQL](<Entregable NoSQL.md>)
