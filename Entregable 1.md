@@ -888,7 +888,7 @@ La motivación para realizar este rtabajo se basa en el deseo de desarrollar un 
 
   ### 3.2 Diagrama de paquetes UML
   
-![Alt texasdt](<Modelos ER-RELACIONAL/paquetesUML.jpg>)
+![Alt texasdt](<Modelos_ER-RELACIONAL/paquetesUML.jpg>)
 
 ## 4. Prototipo 
 
@@ -901,4 +901,4 @@ Para ver el prototipo debe ingresar al siguiente enlace:
 
 ### 5.1 Diagrama Entidad-Relación
 
-![Alt text](<Modelos ER-RELACIONAL/ModeloConceptualCeiis.jpeg>)
+![Alt text](<Modelos_ER-RELACIONAL/ModeloConceptualCeiis.jpeg>)
