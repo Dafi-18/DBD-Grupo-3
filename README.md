@@ -9,7 +9,7 @@
 
 **Link del repositorio:**  [Documentacion Entregable 2](<Entregable 2.md>)
 
-## Entregable N°
+## Entregable N°3
 
 **Link del repositorio:**  [Documentacion Entregable 3](<Entregable 3.md>)
 
