@@ -166,7 +166,7 @@
 ## 3.Actualizaciones a la Arquitectura de la Aplicación
 **- Estructura de la aplicación:**  La estructura de la aplicación cuenta con la interaccion de todos los modulos que se crearon al principio en base a la funcionalidad de los requerimientos.
 
-![Alt texasdt](paquetesUML.jpeg)
+![Alt texasdt](Modelos_ER-RELACIONAL/paquetesUML.jpg)
 
 **- Tecnología utilizada:** 
 
